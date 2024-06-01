@@ -1,0 +1,9 @@
+package me.gamrboy4life.paradox.module;
+
+import net.minecraft.client.Minecraft;
+
+public class Module {
+	
+	protected Minecraft mc=Minecraft.getMinecraft();
+
+}

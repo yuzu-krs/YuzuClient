@@ -6,8 +6,9 @@
 		<item key="DIALOG_WIDTH" value="284"/>
 		<item key="DIALOG_HEIGHT" value="427"/>
 		<item key="DIALOG_FONT_NAME" value="1|Yu Gothic UI|9.0|0|WINDOWS|1|-21|0|0|0|400|0|0|0|1|0|0|0|0|Yu Gothic UI"/>
-		<item key="ShowViewDialog.STORE_SELECTED_VIEW_ID" value="org.eclipse.jdt.ui.PackageExplorer"/>
+		<item key="ShowViewDialog.STORE_SELECTED_VIEW_ID" value="org.eclipse.ui.console.ConsoleView"/>
 		<list key="ShowViewDialog.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="一般"/>
 			<item value="Java"/>
 		</list>
 	</section>

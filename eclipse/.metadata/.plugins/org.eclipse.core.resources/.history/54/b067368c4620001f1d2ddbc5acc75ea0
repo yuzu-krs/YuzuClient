@@ -1,0 +1,7 @@
+package me.gamrboy4life.paradox;
+
+public class Paradox {
+	
+	public static String name="Paradox",version="1.8.8b1",creator="Gamrboy4life";
+
+}

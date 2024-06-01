@@ -1,0 +1,7 @@
+package me.gamrboy4life.paradox.module;
+
+public class ModuleManager {
+	
+	private static ArrayList<Module> mods;
+
+}

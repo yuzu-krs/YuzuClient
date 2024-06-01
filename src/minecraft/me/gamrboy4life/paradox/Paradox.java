@@ -1,0 +1,22 @@
+package me.gamrboy4life.paradox;
+
+import org.lwjgl.opengl.Display;
+
+import me.gamrboy4life.paradox.module.ModuleManager;
+
+public class Paradox {
+	
+	public static String name="Paradox",version="1.8.8b1",creator="Gamrboy4life";
+	
+	public static ModuleManager moduleManager;
+	
+	public static void startClient() {
+		moduleManager=new ModuleManager();
+		
+		
+		
+		
+		Display.setTitle(name+" "+version+" by "+creator);
+	}
+
+}

@@ -1,0 +1,9 @@
+package me.gamrboy4life.paradox.module;
+
+import java.util.ArrayList;
+
+public class ModuleManager {
+	
+	private static ArrayList<Module> mods;
+
+}
