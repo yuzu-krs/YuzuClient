@@ -46,5 +46,4 @@ INDEX VERSION 1.131+C:\Users\yztim\OneDrive\デスクトップ\Yuzuclient 1.8.8\eclips
 1817792134.index
 2898287317.index
 1832114453.index
-137624701.index
 2124573845.index

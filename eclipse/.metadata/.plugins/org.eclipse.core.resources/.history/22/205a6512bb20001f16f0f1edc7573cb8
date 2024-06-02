@@ -1,0 +1,15 @@
+package me.gamrboy4life.paradox.module.combat;
+
+import me.gamrboy4life.paradox.module.Category;
+import me.gamrboy4life.paradox.module.Module;
+
+public class KillAura extends Module{
+
+	public KillAura() {
+		super("KillAura",keyboard.KEY_R, Category.COMBAT);
+	}
+	
+	
+	
+	
+}

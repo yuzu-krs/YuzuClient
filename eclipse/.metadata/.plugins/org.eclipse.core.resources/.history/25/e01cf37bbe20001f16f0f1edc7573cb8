@@ -1,0 +1,22 @@
+package me.gamrboy4life.paradox.module.combat;
+
+import org.lwjgl.input.Keyboard;
+
+import me.gamrboy4life.paradox.module.Category;
+import me.gamrboy4life.paradox.module.Module;
+
+public class FastBow extends Module{
+
+	public FastBow() {
+		super("FastBow", Keyboard.KEY_B, Category.COMBAT);
+	}
+	
+	@Override
+	public void onUpdate() {
+		if(this.isToggled()) {
+			
+		}
+	}
+	
+
+}

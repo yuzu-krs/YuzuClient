@@ -2,6 +2,8 @@ package me.gamrboy4life.paradox.module;
 
 import java.util.ArrayList;
 
+import me.gamrboy4life.paradox.module.combat.FastBow;
+import me.gamrboy4life.paradox.module.combat.KillAura;
 import me.gamrboy4life.paradox.module.movement.AutoSprint;
 
 public class ModuleManager {
@@ -12,6 +14,8 @@ public class ModuleManager {
 		mods=new ArrayList<Module>();
 		
 		//COMBAT
+		newMod(new FastBow());
+		newMod(new KillAura());
 		
 		//MOVEMENT
 		newMod(new AutoSprint());

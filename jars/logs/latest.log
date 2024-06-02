@@ -1,0 +1,80 @@
+[18:29:19] [Client thread/INFO]: Setting user: Player859
+[18:29:19] [Client thread/INFO]: (Session ID is token:0:Player859)
+[18:29:20] [Client thread/INFO]: LWJGL Version: 2.9.4
+[18:29:20] [Client thread/INFO]: Reloading ResourceManager: Default
+[18:29:20] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[18:29:21] [Thread-7/INFO]: Initializing LWJGL OpenAL
+[18:29:21] [Thread-7/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[18:29:21] [Thread-7/ERROR]: Error in class 'LibraryLWJGLOpenAL'
+[18:29:21] [Thread-7/ERROR]: Unable to initialize OpenAL.  Probable cause: OpenAL not supported.
+[18:29:21] [Thread-7/WARN]: ERROR MESSAGE:
+[18:29:21] [Thread-7/INFO]: Could not locate OpenAL library.
+[18:29:21] [Thread-7/WARN]: STACK TRACE:
+[18:29:21] [Thread-7/INFO]: org.lwjgl.openal.AL.create(AL.java:156)
+[18:29:21] [Thread-7/INFO]: org.lwjgl.openal.AL.create(AL.java:102)
+[18:29:21] [Thread-7/INFO]: org.lwjgl.openal.AL.create(AL.java:206)
+[18:29:21] [Thread-7/INFO]: paulscode.sound.libraries.LibraryLWJGLOpenAL.init(LibraryLWJGLOpenAL.java:164)
+[18:29:21] [Thread-7/INFO]: paulscode.sound.SoundSystem.CommandNewLibrary(SoundSystem.java:1576)
+[18:29:21] [Thread-7/INFO]: paulscode.sound.SoundSystem.CommandQueue(SoundSystem.java:2572)
+[18:29:21] [Thread-7/INFO]: paulscode.sound.CommandThread.run(CommandThread.java:121)
+[18:29:21] [Sound Library Loader/WARN]: ERROR MESSAGE:
+[18:29:21] [Sound Library Loader/INFO]: Could not locate OpenAL library.
+[18:29:21] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[18:29:21] [Thread-9/INFO]: Switching to No Sound
+[18:29:21] [Thread-9/INFO]: (Silent Mode)
+[18:29:22] [Sound Library Loader/INFO]: Sound engine started
+[18:29:23] [Client thread/INFO]: Created: 1024x512 textures-atlas
+[18:29:30] [Server thread/INFO]: Starting integrated minecraft server version 1.8.8
+[18:29:30] [Server thread/INFO]: Generating keypair
+[18:29:30] [Server thread/INFO]: Preparing start region for level 0
+[18:29:31] [Server thread/INFO]: Changing view distance to 8, from 10
+[18:29:32] [Server thread/INFO]: Player859[local:E:e8f0c9e6] logged in with entity id 208 at (627.130297235551, 68.0, 278.9955350809465)
+[18:29:32] [Server thread/INFO]: Player859 joined the game
+[18:29:32] [Client thread/INFO]: [CHAT] A new §eOptiFine§f version is available: §eHD Ultra I7§f
+[18:29:34] [Server thread/INFO]: Saving and pausing game...
+[18:29:34] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[18:29:35] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[18:29:35] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[18:29:37] [Server thread/INFO]: Saving and pausing game...
+[18:29:37] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[18:29:37] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[18:29:37] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[18:29:40] [Server thread/INFO]: Saving and pausing game...
+[18:29:40] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[18:29:40] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[18:29:40] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[18:29:50] [Server thread/INFO]: Saving and pausing game...
+[18:29:50] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[18:29:50] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[18:29:50] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[18:29:54] [Client thread/INFO]: Using default channel type
+[18:29:54] [Client thread/INFO]: Started on 50522
+[18:29:54] [Client thread/INFO]: [CHAT] Local game hosted on port 50522
+[18:30:13] [User Authenticator #1/INFO]: UUID of player oudoncat is f096321e-87e5-4d58-be22-a377c781e63f
+[18:30:13] [Server thread/INFO]: oudoncat[/192.168.56.1:50540] logged in with entity id 348 at (627.2024887896619, 68.0, 281.6291774412397)
+[18:30:13] [Server thread/INFO]: oudoncat joined the game
+[18:30:13] [Client thread/INFO]: [CHAT] oudoncat joined the game
+[18:30:17] [Server thread/INFO]: Player859 has just earned the achievement [Taking Inventory]
+[18:30:17] [Client thread/INFO]: [CHAT] Player859 has just earned the achievement [Taking Inventory]
+[18:31:22] [Server thread/INFO]: oudoncat was slain by Player859
+[18:31:22] [Client thread/INFO]: [CHAT] oudoncat was slain by Player859
+[18:33:18] [Server thread/INFO]: oudoncat was shot by Player859
+[18:33:18] [Client thread/INFO]: [CHAT] oudoncat was shot by Player859
+[18:35:24] [Server thread/INFO]: oudoncat was shot by Player859
+[18:35:24] [Client thread/INFO]: [CHAT] oudoncat was shot by Player859
+[18:35:55] [Server thread/INFO]: oudoncat was slain by Player859
+[18:35:55] [Client thread/INFO]: [CHAT] oudoncat was slain by Player859
+[18:36:04] [Server thread/INFO]: oudoncat was slain by Player859
+[18:36:04] [Client thread/INFO]: [CHAT] oudoncat was slain by Player859
+[18:36:10] [Server thread/INFO]: Player859 lost connection: TextComponent{text='Disconnected', siblings=[], style=Style{hasParent=false, color=null, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=null, insertion=null}}
+[18:36:10] [Server thread/INFO]: Player859 left the game
+[18:36:10] [Server thread/INFO]: Stopping singleplayer server as player logged out
+[18:36:10] [Server thread/INFO]: Stopping server
+[18:36:10] [Server thread/INFO]: Saving players
+[18:36:10] [Server thread/INFO]: Saving worlds
+[18:36:10] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[18:36:10] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[18:36:10] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[18:36:14] [Client thread/INFO]: Stopping!
+[18:36:14] [Client thread/INFO]: SoundSystem shutting down...
+[18:36:14] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com

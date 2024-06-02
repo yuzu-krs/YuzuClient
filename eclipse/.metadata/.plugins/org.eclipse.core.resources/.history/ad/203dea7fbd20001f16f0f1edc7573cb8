@@ -1,0 +1,11 @@
+package me.gamrboy4life.paradox.module.combat;
+
+import me.gamrboy4life.paradox.module.Module;
+
+public class FastBow extends Module{
+
+	public FastBow() {
+		super(nm, k, c);
+	}
+
+}
