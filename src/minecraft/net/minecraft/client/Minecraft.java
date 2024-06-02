@@ -57,6 +57,7 @@ import com.mojang.authlib.properties.PropertyMap;
 import com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService;
 
 import me.gamrboy4life.paradox.Paradox;
+import me.gamrboy4life.paradox.gui.GuiIngameHook;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.audio.MusicTicker;
@@ -563,7 +564,7 @@ public class Minecraft implements IThreadListener, IPlayerUsage
         GlStateManager.viewport(0, 0, this.displayWidth, this.displayHeight);
         this.effectRenderer = new EffectRenderer(this.theWorld, this.renderEngine);
         this.checkGLError("Post startup");
-        this.ingameGUI = new GuiIngame(this);
+        this.ingameGUI = new GuiIngameHook(this);
         
         //Paradox
         Paradox.startClient();
@@ -624,7 +625,7 @@ public class Minecraft implements IThreadListener, IPlayerUsage
     private void createDisplay() throws LWJGLException
     {
         Display.setResizable(true);
-        Display.setTitle("Loading Paradox Client");
+        Display.setTitle("Loading YuzuClient");
 
         try
         {

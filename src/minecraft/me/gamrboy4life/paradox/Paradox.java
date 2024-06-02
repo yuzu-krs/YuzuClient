@@ -6,7 +6,9 @@ import me.gamrboy4life.paradox.module.ModuleManager;
 
 public class Paradox {
 	
-	public static String name="Paradox",version="1.8.8b1",creator="Gamrboy4life";
+	public static Paradox instance=new Paradox();
+	
+	public static String name="YuzuClient",version="1.0",creator="Yuzu";
 	
 	public static ModuleManager moduleManager;
 	

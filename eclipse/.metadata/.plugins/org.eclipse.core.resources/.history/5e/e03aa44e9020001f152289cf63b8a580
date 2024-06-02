@@ -1,0 +1,9 @@
+package me.gamrboy4life.paradox.utils;
+
+public class ColorUtils {
+	public static Color rainbowEffect(long offset,float fade) {
+		float hue=(float)(System.nanoTime()+offset)
+		
+	}
+
+}

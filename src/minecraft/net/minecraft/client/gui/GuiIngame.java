@@ -1,11 +1,13 @@
 package net.minecraft.client.gui;
 
-import com.google.common.base.Predicate;
-import com.google.common.collect.Iterables;
-import com.google.common.collect.Lists;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Random;
+
+import com.google.common.base.Predicate;
+import com.google.common.collect.Iterables;
+import com.google.common.collect.Lists;
+
 import net.minecraft.block.material.Material;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.GlStateManager;
@@ -49,7 +51,7 @@ public class GuiIngame extends Gui
     private static final ResourceLocation widgetsTexPath = new ResourceLocation("textures/gui/widgets.png");
     private static final ResourceLocation pumpkinBlurTexPath = new ResourceLocation("textures/misc/pumpkinblur.png");
     private final Random rand = new Random();
-    private final Minecraft mc;
+    protected final Minecraft mc;
     private final RenderItem itemRenderer;
 
     /** ChatGUI instance that retains all previous chat data */

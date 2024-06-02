@@ -1,2 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy/>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="net.minecraft.client.Minecraft"/>
+    <fullyQualifiedTypeName name="org.lwjgl.opengl.Display"/>
+    <fullyQualifiedTypeName name="me.gamrboy4life.paradox.Paradox"/>
+    <fullyQualifiedTypeName name="org.lwjgl.input.Keyboard"/>
+</qualifiedTypeNameHistroy>
