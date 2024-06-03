@@ -23,7 +23,4 @@ public class BunnyHop extends Module{
 			mc.gameSettings.keyBindJump.pressed=true;
 		}
 	}
-	
-	
-	
 }
