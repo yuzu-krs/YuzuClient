@@ -1,0 +1,13 @@
+package me.gamrboy4life.paradox.module.movement;
+
+import me.gamrboy4life.paradox.module.Category;
+import me.gamrboy4life.paradox.module.Module;
+
+public class Speed extends Module{
+
+	public Speed() {
+		super("Speed",0,Category.MOVEMENT);
+	}
+	
+
+}

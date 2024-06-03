@@ -1,0 +1,68 @@
+package me.gamrboy4life.paradox.module;
+
+import java.util.ArrayList;
+
+import me.gamrboy4life.paradox.module.combat.FastBow;
+import me.gamrboy4life.paradox.module.combat.KillAura;
+import me.gamrboy4life.paradox.module.movement.AutoSprint;
+import me.gamrboy4life.paradox.module.movement.AutoWalk;
+import me.gamrboy4life.paradox.module.movement.BunnyHop;
+import me.gamrboy4life.paradox.module.movement.Dolphin;
+import me.gamrboy4life.paradox.module.movement.Flight;
+import me.gamrboy4life.paradox.module.player.ChestStealer;
+
+public class ModuleManager {
+	
+	private static ArrayList<Module> mods;
+	
+	public ModuleManager() {
+		mods=new ArrayList<Module>();
+		newMod(new ChestStealer());
+		
+		//COMBAT
+		newMod(new FastBow());
+		newMod(new KillAura());
+		
+		//MOVEMENT
+		newMod(new AutoSprint());
+		newMod(new BunnyHop());
+		newMod(new AutoWalk());
+		newMod(new Dolphin());
+		newMod(new Flight());
+		newMod(new NoFall())
+		
+		//PLAYER
+		
+		//RENDER
+		
+		//MISC
+	}
+	
+	public static void newMod(Module m) {
+		mods.add(m);
+	}
+	
+	public static ArrayList<Module> getModules(){
+		return mods;
+	}
+	
+	public static void onUpdate() {
+		for(Module m:mods) {
+			m.onUpdate();
+		}
+	}
+	
+	public static void onRender() {
+		for(Module m:mods) {
+			m.onRender();
+		}
+	}
+	
+	public static void onKey(int k) {
+		for(Module m:mods) {
+			if(m.getKey()==k) {
+				m.toggle();
+			}
+		}
+	}
+}

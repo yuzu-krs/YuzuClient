@@ -5,7 +5,18 @@ import java.util.ArrayList;
 import me.gamrboy4life.paradox.module.combat.FastBow;
 import me.gamrboy4life.paradox.module.combat.KillAura;
 import me.gamrboy4life.paradox.module.movement.AutoSprint;
+import me.gamrboy4life.paradox.module.movement.AutoWalk;
 import me.gamrboy4life.paradox.module.movement.BunnyHop;
+import me.gamrboy4life.paradox.module.movement.Dolphin;
+import me.gamrboy4life.paradox.module.movement.Flight;
+import me.gamrboy4life.paradox.module.movement.Glide;
+import me.gamrboy4life.paradox.module.movement.Jetpack;
+import me.gamrboy4life.paradox.module.movement.NoFall;
+import me.gamrboy4life.paradox.module.movement.Parkour;
+import me.gamrboy4life.paradox.module.movement.Sneak;
+import me.gamrboy4life.paradox.module.movement.Speed;
+import me.gamrboy4life.paradox.module.movement.Spider;
+import me.gamrboy4life.paradox.module.movement.Step;
 import me.gamrboy4life.paradox.module.player.ChestStealer;
 
 public class ModuleManager {
@@ -23,6 +34,17 @@ public class ModuleManager {
 		//MOVEMENT
 		newMod(new AutoSprint());
 		newMod(new BunnyHop());
+		newMod(new AutoWalk());
+		newMod(new Dolphin());
+		newMod(new Flight());
+		newMod(new Glide());
+		newMod(new Jetpack());
+		newMod(new NoFall());
+		newMod(new Parkour());
+		newMod(new Sneak());
+		newMod(new Speed());
+		newMod(new Spider());
+		newMod(new Step());
 		
 		//PLAYER
 		

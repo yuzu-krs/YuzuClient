@@ -1,0 +1,10 @@
+package me.gamrboy4life.paradox.module.movement;
+
+import me.gamrboy4life.paradox.module.Category;
+
+public class Parkour extends Module{
+	public Parkour() {
+		super("Parkour",Keyboard.KEY_Z,Category.MOVEMENT);
+	}
+
+}

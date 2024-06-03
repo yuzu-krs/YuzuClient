@@ -1,10 +1,12 @@
 package net.minecraft.enchantment;
 
-import com.google.common.collect.Lists;
-import com.google.common.collect.Maps;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+
+import com.google.common.collect.Lists;
+import com.google.common.collect.Maps;
+
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.EnumCreatureAttribute;
@@ -15,7 +17,7 @@ import net.minecraft.util.StatCollector;
 
 public abstract class Enchantment
 {
-    private static final Enchantment[] enchantmentsList = new Enchantment[256];
+    public static final Enchantment[] enchantmentsList = new Enchantment[256];
     public static final Enchantment[] enchantmentsBookList;
     private static final Map<ResourceLocation, Enchantment> locationEnchantments = Maps.<ResourceLocation, Enchantment>newHashMap();
     public static final Enchantment protection = new EnchantmentProtection(0, new ResourceLocation("protection"), 10, 0);

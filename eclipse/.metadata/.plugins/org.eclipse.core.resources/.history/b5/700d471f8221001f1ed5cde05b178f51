@@ -1,0 +1,7 @@
+package me.gamrboy4life.paradox.module.movement;
+
+import me.gamrboy4life.paradox.module.Module;
+
+public class Step extends Module{
+
+}
