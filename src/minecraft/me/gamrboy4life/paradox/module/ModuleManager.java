@@ -5,6 +5,8 @@ import java.util.ArrayList;
 import me.gamrboy4life.paradox.module.combat.FastBow;
 import me.gamrboy4life.paradox.module.combat.KillAura;
 import me.gamrboy4life.paradox.module.movement.AutoSprint;
+import me.gamrboy4life.paradox.module.movement.BunnyHop;
+import me.gamrboy4life.paradox.module.player.ChestStealer;
 
 public class ModuleManager {
 	
@@ -12,6 +14,7 @@ public class ModuleManager {
 	
 	public ModuleManager() {
 		mods=new ArrayList<Module>();
+		newMod(new ChestStealer());
 		
 		//COMBAT
 		newMod(new FastBow());
@@ -19,6 +22,9 @@ public class ModuleManager {
 		
 		//MOVEMENT
 		newMod(new AutoSprint());
+		newMod(new BunnyHop());
+		
+		//PLAYER
 		
 		//RENDER
 		

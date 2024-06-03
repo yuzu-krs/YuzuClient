@@ -1,9 +1,13 @@
 package net.minecraft.client.gui.inventory;
 
+import java.io.IOException;
+
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.gui.GuiButton;
 import net.minecraft.client.renderer.GlStateManager;
 import net.minecraft.inventory.ContainerChest;
 import net.minecraft.inventory.IInventory;
+import net.minecraft.inventory.Slot;
 import net.minecraft.util.ResourceLocation;
 
 public class GuiChest extends GuiContainer
@@ -51,4 +55,78 @@ public class GuiChest extends GuiContainer
         this.drawTexturedModalRect(i, j, 0, 0, this.xSize, this.inventoryRows * 18 + 17);
         this.drawTexturedModalRect(i, j + this.inventoryRows * 18 + 17, 0, 126, this.xSize, 96);
     }
+    
+    
+    //Paradox
+    public void initGui() {
+    	super.initGui();
+    		int posY=(height-ySize)/2+2;
+    		buttonList.add(new GuiButton(1,width/2,posY,40,12,"Steal"));
+    		buttonList.add(new GuiButton(2,width/2+42,posY,40,12,"Store"));
+    }
+    
+    @Override
+    public void actionPerformed(GuiButton button) throws IOException{
+    	super.actionPerformed(button);
+    	
+    	if(button.id==1) {
+    		new Thread(new Runnable() {
+    			@Override
+    			public void run() {
+    				try {
+    					for(int i=0;i<GuiChest.this.inventoryRows*9;i++) {
+    						Slot slot=(Slot)GuiChest.this.inventorySlots.inventorySlots.get(i);
+    						if(slot.getStack()!=null) {
+    							Thread.sleep(150L);
+    							GuiChest.this.handleMouseClick(slot,slot.slotNumber,0,1);
+    							GuiChest.this.handleMouseClick(slot,slot.slotNumber,0,6);
+    						}
+    					}
+    				}catch(Exception e){
+    					e.printStackTrace();
+    				}
+    			}
+    		})
+    		.start();
+    	}else if(button.id==2) {
+    		new Thread(new Runnable() {
+    			@Override
+    			public void run() {
+    				try {
+    					for(int i=GuiChest.this.inventoryRows*9;i<GuiChest.this.inventoryRows*9+44;i++) {
+    						Slot slot=(Slot) GuiChest.this.inventorySlots.inventorySlots.get(i);
+    						if(slot.getStack()!=null) {
+    							Thread.sleep(150L);
+    							GuiChest.this.handleMouseClick(slot, slot.slotNumber, 0, 1);
+    							GuiChest.this.handleMouseClick(slot, slot.slotNumber, 0, 6);
+    						}
+    					}
+    				}catch(Exception e) {
+    					e.printStackTrace();
+    				}
+    			}
+    		})
+    		.start();
+    	}
+    }
+    
+    
+    
+    
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
