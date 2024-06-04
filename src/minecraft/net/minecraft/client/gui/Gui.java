@@ -47,20 +47,20 @@ public class Gui
     /**
      * Draws a solid color rectangle with the specified coordinates and color (ARGB format). Args: x1, y1, x2, y2, color
      */
-    public static void drawRect(int left, int top, int right, int bottom, int color)
+    public static void drawRect(double x, double y, double d, double e, int color)
     {
-        if (left < right)
+        if (x < d)
         {
-            int i = left;
-            left = right;
-            right = i;
+            double i = x;
+            x = d;
+            d = i;
         }
 
-        if (top < bottom)
+        if (y < e)
         {
-            int j = top;
-            top = bottom;
-            bottom = j;
+            double j = y;
+            y = e;
+            e = j;
         }
 
         float f3 = (float)(color >> 24 & 255) / 255.0F;
@@ -74,10 +74,10 @@ public class Gui
         GlStateManager.tryBlendFuncSeparate(770, 771, 1, 0);
         GlStateManager.color(f, f1, f2, f3);
         worldrenderer.begin(7, DefaultVertexFormats.POSITION);
-        worldrenderer.pos((double)left, (double)bottom, 0.0D).endVertex();
-        worldrenderer.pos((double)right, (double)bottom, 0.0D).endVertex();
-        worldrenderer.pos((double)right, (double)top, 0.0D).endVertex();
-        worldrenderer.pos((double)left, (double)top, 0.0D).endVertex();
+        worldrenderer.pos((double)x, (double)e, 0.0D).endVertex();
+        worldrenderer.pos((double)d, (double)e, 0.0D).endVertex();
+        worldrenderer.pos((double)d, (double)y, 0.0D).endVertex();
+        worldrenderer.pos((double)x, (double)y, 0.0D).endVertex();
         tessellator.draw();
         GlStateManager.enableTexture2D();
         GlStateManager.disableBlend();

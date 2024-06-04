@@ -16,6 +16,7 @@ public class Module {
 		key=k;
 		category=c;
 		toggled=false;
+		setup();
 	}
 	
 	public void toggle() {
@@ -31,6 +32,7 @@ public class Module {
 	public void onDisable() {}
 	public void onUpdate() {}
 	public void onRender() {}
+	public void setup() {}
 
 	public Minecraft getMc() {
 		return mc;
@@ -64,6 +66,14 @@ public class Module {
 		this.toggled = toggled;
 	}
 	
+	public Category getCategory() {
+		return category;
+	}
 	
+	public void setCategory(Category category) {
+		this.category=category;
+	}
+	
+
 
 }
