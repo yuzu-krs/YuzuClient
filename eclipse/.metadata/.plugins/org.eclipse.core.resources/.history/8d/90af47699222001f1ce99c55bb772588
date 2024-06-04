@@ -1,0 +1,32 @@
+package me.gamrboy4life.paradox.extensions;
+
+import net.arikia.dev.drpc.DiscordEventHandlers;
+import net.arikia.dev.drpc.DiscordRPC;
+import net.arikia.dev.drpc.DiscordUser;
+import net.arikia.dev.drpc.callbacks.ReadyCallback;
+
+public class DiscordRP {
+	
+	private boolean running=true;
+	private long created=0;
+	
+	public void start() {
+		this.created=System.currentTimeMillis();
+		
+		
+		DiscordEventHandlers handlers=new DiscordEventHandlers.Builder().setReadyEventHandler(new ReadyCallback(){
+			@Override
+			public void apply(DiscordUser user) {
+				System.out.println("Welcome "+user.username+"#"+user.discriminator);
+				update("Loading YuzuClient","");
+				
+			}
+		}).build();
+		
+		DiscordRPC.discordInitialize(1247588266929029232, handlers, autoRegister);
+		
+		
+		
+	}
+
+}

@@ -1,0 +1,12 @@
+package me.gamrboy4life.paradox.extensions;
+
+public class DiscordRP {
+	
+	private boolean running=true;
+	private long created=0;
+	
+	public void start() {
+		this.created=System.currentTimeMillis();
+	}
+
+}
