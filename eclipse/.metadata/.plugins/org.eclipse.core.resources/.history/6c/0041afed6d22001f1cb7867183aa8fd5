@@ -2411,7 +2411,7 @@ public class EntityRenderer implements IResourceManagerReloadListener
         Config.checkDisplayMode();
         World world = this.mc.theWorld;
 
-        /*if (world != null)
+        if (world != null)
         {
             if (Config.getNewRelease() != null)
             {
@@ -2428,7 +2428,7 @@ public class EntityRenderer implements IResourceManagerReloadListener
                 ChatComponentText chatcomponenttext1 = new ChatComponentText("You can install \u00a7e64-bit Java\u00a7f to increase performance");
                 this.mc.ingameGUI.getChatGUI().printChatMessage(chatcomponenttext1);
             }
-        }*/
+        }
 
         if (this.mc.currentScreen instanceof GuiMainMenu)
         {
