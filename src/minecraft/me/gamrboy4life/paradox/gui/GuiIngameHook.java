@@ -15,13 +15,14 @@ public class GuiIngameHook extends GuiIngame{
 	
 	public void renderGameOverlay(float p_175180_1_) {
 		super.renderGameOverlay(p_175180_1_);
-		
-		drawRect(2,2,110,14,0x80000000);
-		Wrapper.fr.drawString("YuzuClient", 4,4,0xFFE600);
-		Wrapper.fr.drawString("FPS: "+mc.getDebugFPS(),60,4,-1);
-		
-		renderArrayList();
 
+		if(!mc.gameSettings.showDebugInfo) {
+			drawRect(2,2,110,14,0x80000000);
+			Wrapper.fr.drawString("YuzuClient", 4,4,0xFFE600);
+			Wrapper.fr.drawString("FPS: "+mc.getDebugFPS(),60,4,-1);
+			renderArrayList();			
+
+		}
 	}
 
 	
