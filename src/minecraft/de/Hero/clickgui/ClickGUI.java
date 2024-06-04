@@ -23,7 +23,6 @@ import net.minecraft.client.gui.GuiScreen;
 import net.minecraft.client.gui.ScaledResolution;
 import net.minecraft.client.renderer.OpenGlHelper;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.util.ResourceLocation;
 
 //Deine Imports
 
@@ -318,7 +317,7 @@ public class ClickGUI extends GuiScreen {
 			if (mc.entityRenderer.theShaderGroup != null) {
 				mc.entityRenderer.theShaderGroup.deleteShaderGroup();
 			}
-			mc.entityRenderer.loadShader(new ResourceLocation("shaders/post/blur.json"));
+			//mc.entityRenderer.loadShader(new ResourceLocation("shaders/post/blur.json"));
 		}
 	}
 

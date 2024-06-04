@@ -18,6 +18,7 @@ import me.gamrboy4life.paradox.module.movement.Speed;
 import me.gamrboy4life.paradox.module.movement.Spider;
 import me.gamrboy4life.paradox.module.movement.Step;
 import me.gamrboy4life.paradox.module.player.ChestStealer;
+import me.gamrboy4life.paradox.module.render.ClickGui;
 
 public class ModuleManager {
 	
@@ -49,6 +50,7 @@ public class ModuleManager {
 		//PLAYER
 		
 		//RENDER
+		newMod(new ClickGui());
 		
 		//MISC
 	}
