@@ -16,7 +16,7 @@ public class Spider extends Module{
 			if(Invoker.isCollidedHorizontally()) {
 				Invoker.setMotionY(0.2);
 				
-				float var6=0.15F;
+				float var6=0.005F;
 				
 				if(Invoker.getMotionX()<(double)-var6) {
 					Invoker.setMotionX((double)-var6);
@@ -39,12 +39,7 @@ public class Spider extends Module{
 				if(Invoker.getMotionY()<0.15D) {
 					Invoker.setMotionY(-0.15D);
 				}
-				
-				
-				
 			}
-			
 		}
 	}
-
 }
