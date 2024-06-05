@@ -1,0 +1,28 @@
+package me.gamrboy4life.paradox.utils.esp;
+
+import net.minecraft.client.Minecraft;
+import net.minecraft.util.BlockPos;
+
+public class ChestESP {
+	
+	public static void blockESPBox(BlockPos blockPos) {
+		
+		
+		
+		double x=
+				blockPos.getX()
+					-Minecraft.getMinecraft().getRenderManager().renderPosX;
+		
+		double y=
+				blockPos.getY()
+					-Minecraft.getMinecraft().getRenderManager().renderPosY;
+		
+		double z=
+				blockPos.getZ()
+					-Minecraft.getMinecraft().getRenderManager().renderPosZ;
+		
+		
+		
+	}
+
+}

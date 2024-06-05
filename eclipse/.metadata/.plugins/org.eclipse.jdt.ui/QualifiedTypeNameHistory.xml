@@ -3,7 +3,6 @@
     <fullyQualifiedTypeName name="org.lwjgl.opengl.Display"/>
     <fullyQualifiedTypeName name="org.lwjgl.input.Keyboard"/>
     <fullyQualifiedTypeName name="net.minecraft.client.gui.GuiIngame"/>
-    <fullyQualifiedTypeName name="me.gamrboy4life.paradox.Paradox"/>
     <fullyQualifiedTypeName name="me.gamrboy4life.paradox.utils.Wrapper"/>
     <fullyQualifiedTypeName name="java.awt.Color"/>
     <fullyQualifiedTypeName name="me.gamrboy4life.paradox.utils.ColorUtils"/>
@@ -15,4 +14,12 @@
     <fullyQualifiedTypeName name="net.minecraft.network.play.client.C07PacketPlayerDigging.Action"/>
     <fullyQualifiedTypeName name="net.minecraft.util.EnumFacing"/>
     <fullyQualifiedTypeName name="net.minecraft.network.play.client.C03PacketPlayer"/>
+    <fullyQualifiedTypeName name="net.arikia.dev.drpc.DiscordEventHandlers.Builder"/>
+    <fullyQualifiedTypeName name="net.arikia.dev.drpc.callbacks.ReadyCallback"/>
+    <fullyQualifiedTypeName name="net.arikia.dev.drpc.DiscordUser"/>
+    <fullyQualifiedTypeName name="net.arikia.dev.drpc.DiscordRPC"/>
+    <fullyQualifiedTypeName name="net.arikia.dev.drpc.DiscordRichPresence"/>
+    <fullyQualifiedTypeName name="net.arikia.dev.drpc.DiscordRichPresence.Builder"/>
+    <fullyQualifiedTypeName name="me.gamrboy4life.paradox.Paradox"/>
+    <fullyQualifiedTypeName name="java.util.Base64"/>
 </qualifiedTypeNameHistroy>

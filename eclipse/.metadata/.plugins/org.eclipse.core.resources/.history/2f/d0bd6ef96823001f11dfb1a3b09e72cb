@@ -1,0 +1,11 @@
+package me.gamrboy4life.paradox.module.render;
+
+import me.gamrboy4life.paradox.module.Category;
+import me.gamrboy4life.paradox.module.Module;
+
+public class ChestESP extends Module{
+
+	public ChestESP() {
+		super("ChestESP",0,Category.RENDER);
+	}
+}

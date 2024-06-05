@@ -18,7 +18,10 @@ import me.gamrboy4life.paradox.module.movement.Speed;
 import me.gamrboy4life.paradox.module.movement.Spider;
 import me.gamrboy4life.paradox.module.movement.Step;
 import me.gamrboy4life.paradox.module.player.ChestStealer;
+import me.gamrboy4life.paradox.module.render.ChestESP;
 import me.gamrboy4life.paradox.module.render.ClickGui;
+import me.gamrboy4life.paradox.module.render.MobESP;
+import me.gamrboy4life.paradox.module.render.PlayerESP;
 
 public class ModuleManager {
 	
@@ -50,6 +53,10 @@ public class ModuleManager {
 		//PLAYER
 		
 		//RENDER
+		newMod(new ChestESP());
+		newMod(new MobESP());
+		newMod(new PlayerESP());
+		
 		newMod(new ClickGui());
 		
 		//MISC
