@@ -1,0 +1,22 @@
+package me.gamrboy4life.paradox.module.render;
+
+import me.gamrboy4life.paradox.module.Category;
+import me.gamrboy4life.paradox.module.Module;
+import net.minecraft.tileentity.Entity.Render;
+
+public class BedESP extends Module{
+
+	public BedESP() {
+		super("BedESP",0,Category.RENDER);
+	}
+	
+	public void onRender() {
+        if (this.isToggled()) {
+            for (Object o : mc.theWorld.loadedTileEntityList) {
+                if (o instanceof ) {
+                    BedESPUtils.blockESPBox(((TileEntityBed) o).getPos());
+                }
+            }
+        }
+    }
+}

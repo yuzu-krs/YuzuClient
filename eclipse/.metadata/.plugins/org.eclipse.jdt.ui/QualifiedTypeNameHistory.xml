@@ -6,11 +6,7 @@
     <fullyQualifiedTypeName name="me.gamrboy4life.paradox.utils.Wrapper"/>
     <fullyQualifiedTypeName name="java.awt.Color"/>
     <fullyQualifiedTypeName name="me.gamrboy4life.paradox.utils.ColorUtils"/>
-    <fullyQualifiedTypeName name="me.gamrboy4life.paradox.module.Module"/>
-    <fullyQualifiedTypeName name="net.minecraft.entity.Entity"/>
     <fullyQualifiedTypeName name="java.util.Iterator"/>
-    <fullyQualifiedTypeName name="me.gamrboy4life.paradox.module.Category"/>
-    <fullyQualifiedTypeName name="net.minecraft.client.Minecraft"/>
     <fullyQualifiedTypeName name="net.minecraft.network.play.client.C07PacketPlayerDigging.Action"/>
     <fullyQualifiedTypeName name="net.minecraft.util.EnumFacing"/>
     <fullyQualifiedTypeName name="net.minecraft.network.play.client.C03PacketPlayer"/>
@@ -22,4 +18,15 @@
     <fullyQualifiedTypeName name="net.arikia.dev.drpc.DiscordRichPresence.Builder"/>
     <fullyQualifiedTypeName name="me.gamrboy4life.paradox.Paradox"/>
     <fullyQualifiedTypeName name="java.util.Base64"/>
+    <fullyQualifiedTypeName name="net.minecraft.util.BlockPos"/>
+    <fullyQualifiedTypeName name="org.lwjgl.opengl.GL11"/>
+    <fullyQualifiedTypeName name="net.minecraft.client.Minecraft"/>
+    <fullyQualifiedTypeName name="me.gamrboy4life.paradox.utils.esp.ChestESPUtils"/>
+    <fullyQualifiedTypeName name="net.minecraft.tileentity.TileEntityChest"/>
+    <fullyQualifiedTypeName name="me.gamrboy4life.paradox.module.Module"/>
+    <fullyQualifiedTypeName name="me.gamrboy4life.paradox.utils.esp.MobESPUtils"/>
+    <fullyQualifiedTypeName name="net.minecraft.entity.Entity"/>
+    <fullyQualifiedTypeName name="net.minecraft.block.BlockBed"/>
+    <fullyQualifiedTypeName name="me.gamrboy4life.paradox.module.Category"/>
+    <fullyQualifiedTypeName name="net.minecraft.potion.Potion"/>
 </qualifiedTypeNameHistroy>
