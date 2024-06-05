@@ -23,6 +23,7 @@ import me.gamrboy4life.paradox.module.render.ClickGui;
 import me.gamrboy4life.paradox.module.render.FullBright;
 import me.gamrboy4life.paradox.module.render.MobESP;
 import me.gamrboy4life.paradox.module.render.PlayerESP;
+import me.gamrboy4life.paradox.module.render.XYZ;
 
 public class ModuleManager {
 	
@@ -55,11 +56,13 @@ public class ModuleManager {
 		
 		//RENDER
 		newMod(new ChestESP());
+		newMod(new ClickGui());
 		newMod(new FullBright());
 		newMod(new MobESP());
 		newMod(new PlayerESP());
+		newMod(new XYZ());
 		
-		newMod(new ClickGui());
+		
 		
 		//MISC
 	}

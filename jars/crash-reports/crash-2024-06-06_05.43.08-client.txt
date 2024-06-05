@@ -1,0 +1,91 @@
+---- Minecraft Crash Report ----
+// I bet Cylons wouldn't have this problem.
+
+Time: 24/06/06 5:43
+Description: Unexpected error
+
+java.util.IllegalFormatConversionException: d != java.lang.Double
+	at java.util.Formatter$FormatSpecifier.failConversion(Formatter.java:4302)
+	at java.util.Formatter$FormatSpecifier.printInteger(Formatter.java:2793)
+	at java.util.Formatter$FormatSpecifier.print(Formatter.java:2747)
+	at java.util.Formatter.format(Formatter.java:2520)
+	at java.util.Formatter.format(Formatter.java:2455)
+	at java.lang.String.format(String.java:2940)
+	at me.gamrboy4life.paradox.module.render.XYZ.onRender(XYZ.java:16)
+	at me.gamrboy4life.paradox.module.ModuleManager.onRender(ModuleManager.java:86)
+	at net.minecraft.client.renderer.EntityRenderer.renderWorldPass(EntityRenderer.java:1665)
+	at net.minecraft.client.renderer.EntityRenderer.renderWorld(EntityRenderer.java:1445)
+	at net.minecraft.client.renderer.EntityRenderer.func_181560_a(EntityRenderer.java:1239)
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1133)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:424)
+	at net.minecraft.client.main.Main.main(Main.java:113)
+	at Start.main(Start.java:11)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Stacktrace:
+	at java.util.Formatter$FormatSpecifier.failConversion(Formatter.java:4302)
+	at java.util.Formatter$FormatSpecifier.printInteger(Formatter.java:2793)
+	at java.util.Formatter$FormatSpecifier.print(Formatter.java:2747)
+	at java.util.Formatter.format(Formatter.java:2520)
+	at java.util.Formatter.format(Formatter.java:2455)
+	at java.lang.String.format(String.java:2940)
+	at me.gamrboy4life.paradox.module.render.XYZ.onRender(XYZ.java:16)
+	at me.gamrboy4life.paradox.module.ModuleManager.onRender(ModuleManager.java:86)
+	at net.minecraft.client.renderer.EntityRenderer.renderWorldPass(EntityRenderer.java:1665)
+	at net.minecraft.client.renderer.EntityRenderer.renderWorld(EntityRenderer.java:1445)
+
+-- Affected level --
+Details:
+	Level name: MpServer
+	All players: 1 total; [EntityPlayerSP['Player531'/123, l='MpServer', x=537.83, y=70.00, z=1184.58]]
+	Chunk stats: MultiplayerChunkCache: 287, 287
+	Level seed: 0
+	Level generator: ID 02 - largeBiomes, ver 0. Features enabled: false
+	Level generator options: 
+	Level spawn location: 584.00,64.00,166.00 - World: (584,64,166), Chunk: (at 8,4,6 in 36,10; contains blocks 576,0,160 to 591,255,175), Region: (1,0; contains chunks 32,0 to 63,31, blocks 512,0,0 to 1023,255,511)
+	Level time: 103878 game time, 17240 day time
+	Level dimension: 0
+	Level storage version: 0x00000 - Unknown?
+	Level weather: Rain time: 0 (now: false), thunder time: 0 (now: false)
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: false
+	Forced entities: 47 total; [EntityCreeper['Creeper'/192, l='MpServer', x=564.91, y=16.00, z=1252.47], EntityCreeper['Creeper'/132, l='MpServer', x=462.50, y=34.00, z=1236.69], EntitySkeleton['Skeleton'/133, l='MpServer', x=462.50, y=34.00, z=1235.81], EntityBat['Bat'/198, l='MpServer', x=589.19, y=26.13, z=1156.75], EntityBat['Bat'/199, l='MpServer', x=584.63, y=25.22, z=1155.78], EntitySkeleton['Skeleton'/200, l='MpServer', x=582.47, y=50.00, z=1209.16], EntitySkeleton['Skeleton'/136, l='MpServer', x=478.91, y=63.00, z=1190.47], EntitySpider['Spider'/201, l='MpServer', x=590.69, y=55.00, z=1201.69], EntitySpider['Spider'/137, l='MpServer', x=474.50, y=21.00, z=1246.50], EntitySkeleton['Skeleton'/202, l='MpServer', x=589.50, y=71.00, z=1214.50], EntityCreeper['Creeper'/138, l='MpServer', x=466.44, y=20.00, z=1246.06], EntitySpider['Spider'/139, l='MpServer', x=475.88, y=63.00, z=1246.50], EntitySpider['Spider'/204, l='MpServer', x=593.50, y=72.00, z=1154.50], EntityBat['Bat'/205, l='MpServer', x=597.50, y=58.84, z=1194.38], EntityZombie['Zombie'/206, l='MpServer', x=596.41, y=71.00, z=1205.53], EntityZombie['Zombie'/207, l='MpServer', x=597.50, y=71.00, z=1208.50], EntityZombie['Zombie'/212, l='MpServer', x=613.50, y=72.00, z=1243.94], EntityZombie['Zombie'/213, l='MpServer', x=610.78, y=72.00, z=1243.78], EntitySkeleton['Skeleton'/150, l='MpServer', x=490.44, y=63.00, z=1172.69], EntityCreeper['Creeper'/214, l='MpServer', x=614.50, y=72.00, z=1240.50], EntityVillager['Villager'/151, l='MpServer', x=491.25, y=64.00, z=1188.59], EntitySkeleton['Skeleton'/152, l='MpServer', x=490.72, y=46.00, z=1203.78], EntityBat['Bat'/153, l='MpServer', x=499.38, y=45.22, z=1206.16], EntityCreeper['Creeper'/158, l='MpServer', x=510.50, y=27.00, z=1142.50], EntityPlayerSP['Player531'/123, l='MpServer', x=537.83, y=70.00, z=1184.58], EntitySkeleton['Skeleton'/160, l='MpServer', x=504.66, y=64.00, z=1199.06], EntityZombie['Zombie'/161, l='MpServer', x=502.13, y=64.00, z=1192.06], EntityVillager['Villager'/162, l='MpServer', x=500.31, y=64.00, z=1191.09], EntityVillager['Villager'/163, l='MpServer', x=492.34, y=64.00, z=1198.91], EntitySpider['Spider'/168, l='MpServer', x=516.09, y=70.00, z=1153.06], EntityItem['item.item.carrots'/169, l='MpServer', x=523.00, y=67.00, z=1194.47], EntityBat['Bat'/170, l='MpServer', x=514.18, y=43.10, z=1206.47], EntityVillager['Villager'/171, l='MpServer', x=512.66, y=65.00, z=1201.72], EntitySquid['Squid'/172, l='MpServer', x=520.23, y=58.11, z=1250.09], EntityEnderman['Enderman'/176, l='MpServer', x=536.53, y=11.00, z=1257.75], EntityWitch['Witch'/177, l='MpServer', x=540.34, y=27.00, z=1248.13], EntitySpider['Spider'/183, l='MpServer', x=553.22, y=62.03, z=1189.00], EntityCreeper['Creeper'/119, l='MpServer', x=506.59, y=67.00, z=1176.00], EntityZombie['Zombie'/120, l='MpServer', x=524.44, y=71.00, z=1170.47], EntitySpider['Spider'/184, l='MpServer', x=546.94, y=21.00, z=1238.28], EntityVillager['Villager'/121, l='MpServer', x=515.25, y=66.00, z=1180.09], EntitySpider['Spider'/185, l='MpServer', x=555.44, y=19.00, z=1248.84], EntityVillager['Villager'/122, l='MpServer', x=523.44, y=71.00, z=1169.19], EntityCreeper['Creeper'/186, l='MpServer', x=546.69, y=22.00, z=1248.66], EntityCreeper['Creeper'/189, l='MpServer', x=569.50, y=29.00, z=1166.50], EntityCreeper['Creeper'/190, l='MpServer', x=568.31, y=26.00, z=1176.09], EntityCreeper['Creeper'/191, l='MpServer', x=573.50, y=57.00, z=1194.50]]
+	Retry entities: 0 total; []
+	Server brand: vanilla
+	Server type: Integrated singleplayer server
+Stacktrace:
+	at net.minecraft.client.multiplayer.WorldClient.addWorldInfoToCrashReport(WorldClient.java:390)
+	at net.minecraft.client.Minecraft.addGraphicsAndWorldToCrashReport(Minecraft.java:2757)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:453)
+	at net.minecraft.client.main.Main.main(Main.java:113)
+	at Start.main(Start.java:11)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.8.8
+	Operating System: Windows 11 (amd64) version 10.0
+	CPU: 16x 12th Gen Intel(R) Core(TM) i5-12600K
+	Java Version: 1.8.0_412, Temurin
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode), Temurin
+	Memory: 770186856 bytes (734 MB) / 1037959168 bytes (989 MB) up to 1037959168 bytes (989 MB)
+	JVM Flags: 3 total; -Xincgc -Xmx1024M -Xms1024M
+	IntCache: cache: 0, tcache: 0, allocated: 13, tallocated: 99
+	Launched Version: mcp
+	LWJGL: 2.9.4
+	OpenGL: NVIDIA GeForce RTX 3060/PCIe/SSE2 GL version 4.6.0 NVIDIA 560.38, NVIDIA Corporation
+	GL Caps: Using GL 1.3 multitexturing.
+Using GL 1.3 texture combiners.
+Using framebuffer objects because OpenGL 3.0 is supported and separate blending is supported.
+Shaders are available because OpenGL 2.1 is supported.
+VBOs are available because OpenGL 1.5 is supported.
+
+	Using VBOs: No
+	Is Modded: Very likely; Jar signature invalidated
+	Type: Client (map_client.txt)
+	Resource Packs: 
+	Current Language: English (US)
+	Profiler Position: N/A (disabled)
+	CPU: 16x 12th Gen Intel(R) Core(TM) i5-12600K
