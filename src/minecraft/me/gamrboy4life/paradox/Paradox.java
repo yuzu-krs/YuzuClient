@@ -4,6 +4,7 @@ import org.lwjgl.opengl.Display;
 
 import de.Hero.clickgui.ClickGUI;
 import de.Hero.settings.SettingsManager;
+import me.gamrboy4life.paradox.alt.AltManager;
 import me.gamrboy4life.paradox.extensions.DiscordRP;
 import me.gamrboy4life.paradox.module.ModuleManager;
 
@@ -16,6 +17,7 @@ public class Paradox {
 	public static SettingsManager settingsManager;
 	public static ModuleManager moduleManager;
 	public static ClickGUI clickGUI;
+	public static AltManager altManager;
 	
 	public static DiscordRP discordRP=new DiscordRP();
 	
@@ -23,6 +25,7 @@ public class Paradox {
 		settingsManager=new SettingsManager();
 		moduleManager=new ModuleManager();
 		clickGUI=new ClickGUI();
+		altManager=new AltManager();
 		discordRP.start();
 		
 		

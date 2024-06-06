@@ -29,4 +29,7 @@
     <fullyQualifiedTypeName name="net.minecraft.block.BlockBed"/>
     <fullyQualifiedTypeName name="me.gamrboy4life.paradox.module.Category"/>
     <fullyQualifiedTypeName name="net.minecraft.potion.Potion"/>
+    <fullyQualifiedTypeName name="net.minecraft.item.Item"/>
+    <fullyQualifiedTypeName name="net.minecraft.init.Items"/>
+    <fullyQualifiedTypeName name="net.minecraft.client.renderer.RenderHelper"/>
 </qualifiedTypeNameHistroy>

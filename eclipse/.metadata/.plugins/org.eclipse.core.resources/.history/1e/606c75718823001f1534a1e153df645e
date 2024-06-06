@@ -1,0 +1,67 @@
+package me.gamrboy4life.paradox.module.render;
+
+import me.gamrboy4life.paradox.module.Category;
+import me.gamrboy4life.paradox.module.Module;
+import me.gamrboy4life.paradox.utils.Wrapper;
+import net.minecraft.client.renderer.RenderHelper;
+import net.minecraft.init.Items;
+import net.minecraft.item.ItemStack;
+
+public class ArmorStatus extends Module{
+
+	public ArmorStatus() {
+		super("ArmorStatus",0,Category.RENDER);
+	}
+	
+	@Override
+	public void onRender() {
+	    if (this.isToggled()) {
+	        for (int i = 0; i < 4; i++) {
+	            renderDummyItem(i);
+	        }
+	    }
+	}
+
+	private void renderDummyItem(int i) {
+	    ItemStack dummyItem = getDummyItem(i);
+	    if (dummyItem == null) {
+	        return;
+	    }
+	    renderItemStack(i, dummyItem);
+	}
+
+	private ItemStack getDummyItem(int i) {
+	    switch (i) {
+	        case 0:
+	            return new ItemStack(Items.diamond_boots);
+	        case 1:
+	            return new ItemStack(Items.diamond_leggings);
+	        case 2:
+	            return new ItemStack(Items.diamond_chestplate);
+	        case 3:
+	            return new ItemStack(Items.diamond_helmet);
+	        default:
+	            return null;
+	    }
+	}
+
+	private void renderItemStack(int i, ItemStack is) {
+	    if (is == null||is.Empty) {
+	        return;
+	    }
+
+	    //GL11.glPushMatrix(); // 行列を保存
+
+	    int yAdd = (-16 * i) + 48;
+
+	    if (is.getItem().isDamageable()) {
+	        double damage = ((is.getMaxDamage() - is.getItemDamage()) / (double) is.getMaxDamage()) * 100;
+	        Wrapper.fr.drawString(String.format("%.2f%%", damage), 120, 4 + yAdd, -1); // ダメージを表示
+	    }
+
+	    RenderHelper.enableGUIStandardItemLighting();
+	    mc.getRenderItem().renderItemAndEffectIntoGUI(is, 100, 4 + yAdd); // アイテムを表示
+
+	    //GL11.glPopMatrix(); // 保存した行列を復元
+	}
+}

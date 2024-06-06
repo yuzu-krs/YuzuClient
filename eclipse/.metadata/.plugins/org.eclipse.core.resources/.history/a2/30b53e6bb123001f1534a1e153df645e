@@ -1,0 +1,40 @@
+package me.gamrboy4life.paradox.module.render;
+
+import me.gamrboy4life.paradox.module.Category;
+import me.gamrboy4life.paradox.module.Module;
+import me.gamrboy4life.paradox.utils.Wrapper;
+import net.minecraft.client.renderer.RenderHelper;
+import net.minecraft.item.ItemStack;
+
+public class ArmorStatus extends Module{
+
+	public ArmorStatus() {
+		super("ArmorStatus",0,Category.RENDER);
+	}
+	
+	@Override
+	public void onRender() {
+	    if(this.isToggled()) {
+	        
+	        for(int i = 0; i < mc.thePlayer.inventory.armorInventory.length; i++) {
+	            ItemStack itemStack = mc.thePlayer.inventory.armorInventory[i];
+	            
+	            if(itemStack != null) {
+	                GL11.glPushMatrix();
+	                int yAdd = (-16 * i) + 48;
+	                
+	                if(itemStack.getItem().isDamageable()) {
+	                    double damage = ((itemStack.getMaxDamage() - itemStack.getItemDamage()) / (double)itemStack.getMaxDamage()) * 100;
+	                    Wrapper.fr.drawString(String.format("%.2f%%", damage), 100, 4 + yAdd, -1);
+	                }
+	                
+	                //RenderHelper.enableGUIStandardItemLighting();
+	                mc.getRenderItem().renderItemAndEffectIntoGUI(itemStack, 100, 4 + yAdd);
+	                
+	                GL11.glPopMatrix();
+	            }
+	        }
+	        
+	    }
+	}
+}

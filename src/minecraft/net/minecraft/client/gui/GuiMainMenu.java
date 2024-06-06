@@ -20,6 +20,7 @@ import org.lwjgl.util.glu.Project;
 import com.google.common.collect.Lists;
 
 import me.gamrboy4life.paradox.Paradox;
+import me.gamrboy4life.paradox.alt.GuiAltManager;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.GlStateManager;
 import net.minecraft.client.renderer.OpenGlHelper;
@@ -241,7 +242,7 @@ public class GuiMainMenu extends GuiScreen implements GuiYesNoCallback
     {
         this.buttonList.add(new GuiButton(1, this.width / 2 - 100, p_73969_1_, I18n.format("menu.singleplayer", new Object[0])));
         this.buttonList.add(new GuiButton(2, this.width / 2 - 100, p_73969_1_ + p_73969_2_ * 1, I18n.format("menu.multiplayer", new Object[0])));
-        this.buttonList.add(this.realmsButton = new GuiButton(14, this.width / 2 - 100, p_73969_1_ + p_73969_2_ * 2, I18n.format("menu.online", new Object[0])));
+        this.buttonList.add(this.realmsButton = new GuiButton(14, this.width / 2 - 100, p_73969_1_ + p_73969_2_ * 2, I18n.format("Alt Manager", new Object[0])));
     }
 
     /**
@@ -287,7 +288,7 @@ public class GuiMainMenu extends GuiScreen implements GuiYesNoCallback
 
         if (button.id == 14 && this.realmsButton.visible)
         {
-            this.switchToRealms();
+            this.mc.displayGuiScreen(new GuiAltManager());
         }
 
         if (button.id == 4)
