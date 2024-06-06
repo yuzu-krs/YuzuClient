@@ -35,4 +35,5 @@
     <fullyQualifiedTypeName name="org.lwjgl.input.Keyboard"/>
     <fullyQualifiedTypeName name="net.minecraft.block.Block"/>
     <fullyQualifiedTypeName name="me.gamrboy4life.paradox.module.render.Xray"/>
+    <fullyQualifiedTypeName name="me.gamrboy4life.paradox.module.render.BedWarsXray"/>
 </qualifiedTypeNameHistroy>
