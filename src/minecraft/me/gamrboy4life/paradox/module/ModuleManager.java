@@ -18,12 +18,11 @@ import me.gamrboy4life.paradox.module.movement.Speed;
 import me.gamrboy4life.paradox.module.movement.Spider;
 import me.gamrboy4life.paradox.module.movement.Step;
 import me.gamrboy4life.paradox.module.player.ChestStealer;
-import me.gamrboy4life.paradox.module.render.ChestESP;
 import me.gamrboy4life.paradox.module.render.ClickGui;
+import me.gamrboy4life.paradox.module.render.ESP;
 import me.gamrboy4life.paradox.module.render.FullBright;
-import me.gamrboy4life.paradox.module.render.MobESP;
-import me.gamrboy4life.paradox.module.render.PlayerESP;
 import me.gamrboy4life.paradox.module.render.XYZ;
+import me.gamrboy4life.paradox.module.render.Xray;
 
 public class ModuleManager {
 	
@@ -55,11 +54,10 @@ public class ModuleManager {
 		//PLAYER
 		
 		//RENDER
-		newMod(new ChestESP());
 		newMod(new ClickGui());
+		newMod(new ESP());
 		newMod(new FullBright());
-		newMod(new MobESP());
-		newMod(new PlayerESP());
+		newMod(new Xray());
 		newMod(new XYZ());
 		
 		

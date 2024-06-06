@@ -1,0 +1,23 @@
+package me.gamrboy4life.paradox.module.render;
+
+import de.Hero.settings.Setting;
+import me.gamrboy4life.paradox.Paradox;
+import me.gamrboy4life.paradox.module.Category;
+import me.gamrboy4life.paradox.module.Module;
+
+public class ESP extends Module{
+
+	public ESP() {
+		super("ESP",0,Category.RENDER);
+	}
+	
+	public void setup() {
+		Paradox.instance.settingsManager.rSetting(new Setting("Player",this,false));
+		Paradox.instance.settingsManager.rSetting(new Setting("Chest",this,false));
+		Paradox.instance.settingsManager.rSetting(new Setting("HostileMobs",this,false));
+		Paradox.instance.settingsManager.rSetting(new Setting("FriendlyMobs",this,false));
+	}
+	
+	public void
+
+}

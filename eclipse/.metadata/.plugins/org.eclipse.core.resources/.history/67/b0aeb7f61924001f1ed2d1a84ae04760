@@ -1,0 +1,28 @@
+package me.gamrboy4life.paradox.module.render;
+
+import org.lwjgl.input.Keyboard;
+
+import me.gamrboy4life.paradox.module.Category;
+import me.gamrboy4life.paradox.module.Module;
+
+public class Xray extends Module{
+
+	public Xray() {
+		super("Xray",Keyboard.KEY_X,Category.RENDER);
+	}
+
+	
+	@Override
+	public void onEnable() {
+		xray.enabled=true;
+		this.oldGamma=mc.getSettings.gammaSetting;
+	}
+	
+	
+	
+	
+	
+	
+	
+
+}

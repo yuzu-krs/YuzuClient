@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="org.lwjgl.opengl.Display"/>
-    <fullyQualifiedTypeName name="org.lwjgl.input.Keyboard"/>
     <fullyQualifiedTypeName name="net.minecraft.client.gui.GuiIngame"/>
     <fullyQualifiedTypeName name="me.gamrboy4life.paradox.utils.Wrapper"/>
     <fullyQualifiedTypeName name="java.awt.Color"/>
@@ -16,20 +15,24 @@
     <fullyQualifiedTypeName name="net.arikia.dev.drpc.DiscordRPC"/>
     <fullyQualifiedTypeName name="net.arikia.dev.drpc.DiscordRichPresence"/>
     <fullyQualifiedTypeName name="net.arikia.dev.drpc.DiscordRichPresence.Builder"/>
-    <fullyQualifiedTypeName name="me.gamrboy4life.paradox.Paradox"/>
     <fullyQualifiedTypeName name="java.util.Base64"/>
     <fullyQualifiedTypeName name="net.minecraft.util.BlockPos"/>
     <fullyQualifiedTypeName name="org.lwjgl.opengl.GL11"/>
     <fullyQualifiedTypeName name="net.minecraft.client.Minecraft"/>
-    <fullyQualifiedTypeName name="me.gamrboy4life.paradox.utils.esp.ChestESPUtils"/>
     <fullyQualifiedTypeName name="net.minecraft.tileentity.TileEntityChest"/>
     <fullyQualifiedTypeName name="me.gamrboy4life.paradox.module.Module"/>
-    <fullyQualifiedTypeName name="me.gamrboy4life.paradox.utils.esp.MobESPUtils"/>
-    <fullyQualifiedTypeName name="net.minecraft.entity.Entity"/>
     <fullyQualifiedTypeName name="net.minecraft.block.BlockBed"/>
-    <fullyQualifiedTypeName name="me.gamrboy4life.paradox.module.Category"/>
     <fullyQualifiedTypeName name="net.minecraft.potion.Potion"/>
     <fullyQualifiedTypeName name="net.minecraft.item.Item"/>
     <fullyQualifiedTypeName name="net.minecraft.init.Items"/>
     <fullyQualifiedTypeName name="net.minecraft.client.renderer.RenderHelper"/>
+    <fullyQualifiedTypeName name="me.gamrboy4life.paradox.Paradox"/>
+    <fullyQualifiedTypeName name="net.minecraft.entity.player.EntityPlayer"/>
+    <fullyQualifiedTypeName name="me.gamrboy4life.paradox.utils.esp.MobESPUtils"/>
+    <fullyQualifiedTypeName name="net.minecraft.entity.Entity"/>
+    <fullyQualifiedTypeName name="me.gamrboy4life.paradox.utils.esp.ChestESPUtils"/>
+    <fullyQualifiedTypeName name="me.gamrboy4life.paradox.module.Category"/>
+    <fullyQualifiedTypeName name="org.lwjgl.input.Keyboard"/>
+    <fullyQualifiedTypeName name="net.minecraft.block.Block"/>
+    <fullyQualifiedTypeName name="me.gamrboy4life.paradox.module.render.Xray"/>
 </qualifiedTypeNameHistroy>
