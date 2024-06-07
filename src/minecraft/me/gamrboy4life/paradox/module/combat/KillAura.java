@@ -2,8 +2,6 @@ package me.gamrboy4life.paradox.module.combat;
 
 import java.util.Iterator;
 
-import org.lwjgl.input.Keyboard;
-
 import me.gamrboy4life.paradox.module.Category;
 import me.gamrboy4life.paradox.module.Module;
 import net.minecraft.client.entity.EntityPlayerSP;
@@ -13,7 +11,7 @@ import net.minecraft.entity.EntityLivingBase;
 public class KillAura extends Module{
 
 	public KillAura() {
-		super("KillAura",Keyboard.KEY_R, Category.COMBAT);
+		super("KillAura",0, Category.COMBAT);
 	}
 	
 	@Override

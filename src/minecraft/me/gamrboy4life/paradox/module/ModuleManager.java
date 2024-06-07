@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 import me.gamrboy4life.paradox.module.combat.FastBow;
 import me.gamrboy4life.paradox.module.combat.KillAura;
+import me.gamrboy4life.paradox.module.combat.MineClicker;
 import me.gamrboy4life.paradox.module.movement.AutoSprint;
 import me.gamrboy4life.paradox.module.movement.AutoWalk;
 import me.gamrboy4life.paradox.module.movement.Dolphin;
@@ -43,6 +44,7 @@ public class ModuleManager {
 		//COMBAT
 		newMod(new FastBow());
 		newMod(new KillAura());
+		newMod(new MineClicker());
 		
 		//MOVEMENT
 		newMod(new AutoSprint());
