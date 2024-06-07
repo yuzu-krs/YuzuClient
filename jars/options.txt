@@ -16,7 +16,7 @@ ao:1
 renderClouds:true
 resourcePacks:[]
 incompatibleResourcePacks:[]
-lastServer:192.168.100.31:25565
+lastServer:anticheat-test.com
 lang:en_US
 chatVisibility:0
 chatColors:true

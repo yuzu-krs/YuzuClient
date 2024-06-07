@@ -1,0 +1,11 @@
+package me.gamrboy4life.paradox.module.player;
+
+import me.gamrboy4life.paradox.module.Module;
+
+public class AntiAFK extends Module{
+
+	public AntiAFK() {
+		super(nm, k, c);
+	}
+
+}

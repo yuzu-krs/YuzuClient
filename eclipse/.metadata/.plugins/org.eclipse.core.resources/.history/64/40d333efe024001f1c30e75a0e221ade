@@ -1,0 +1,13 @@
+package me.gamrboy4life.paradox.module.player;
+
+import me.gamrboy4life.paradox.module.Category;
+import me.gamrboy4life.paradox.module.Module;
+
+public class AutoMine extends Module{
+
+	public AutoMine(String nm, int k, Category c) {
+		super(nm, k, c);
+	}
+	
+
+}

@@ -1,0 +1,13 @@
+package me.gamrboy4life.paradox.module.player;
+
+import me.gamrboy4life.paradox.module.Category;
+import me.gamrboy4life.paradox.module.Module;
+
+public class AntiCobweb extends Module{
+
+	public AntiCobweb(String nm, int k, Category c) {
+		super(nm, k, c);
+	}
+	
+
+}

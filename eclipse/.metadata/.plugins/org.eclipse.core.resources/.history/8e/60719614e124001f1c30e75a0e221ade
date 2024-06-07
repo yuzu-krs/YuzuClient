@@ -1,0 +1,18 @@
+package me.gamrboy4life.paradox.module.player;
+
+import me.gamrboy4life.paradox.module.Category;
+import me.gamrboy4life.paradox.module.Module;
+
+public class AutoMine extends Module{
+
+	public AutoMine() {
+		super("AutoMine",0,Category.PLAYER);
+	}
+	
+	@Override
+	public void onUpdate() {
+		
+	}
+	
+
+}

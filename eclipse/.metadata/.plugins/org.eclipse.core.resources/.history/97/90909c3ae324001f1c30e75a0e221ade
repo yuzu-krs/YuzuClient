@@ -1,0 +1,11 @@
+package me.gamrboy4life.paradox.utils;
+
+public class Timer {
+	
+	private long prevTime;
+	
+	public Timer() {
+		prevTime=0;
+	}
+
+}

@@ -1,0 +1,21 @@
+package me.gamrboy4life.paradox.module.player;
+
+import me.gamrboy4life.paradox.module.Category;
+import me.gamrboy4life.paradox.module.Module;
+import me.gamrboy4life.paradox.utils.Invoker;
+
+public class AutoMine extends Module{
+
+	public AutoMine() {
+		super("AutoMine",0,Category.PLAYER);
+	}
+	
+	@Override
+	public void onUpdate() {
+		if(this.isToggled()) {
+			MovingObjectPosition hover=Invoker.getObjectMouseOver();
+		}
+	}
+	
+
+}

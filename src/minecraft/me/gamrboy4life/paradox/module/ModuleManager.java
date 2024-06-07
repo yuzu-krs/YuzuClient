@@ -6,7 +6,6 @@ import me.gamrboy4life.paradox.module.combat.FastBow;
 import me.gamrboy4life.paradox.module.combat.KillAura;
 import me.gamrboy4life.paradox.module.movement.AutoSprint;
 import me.gamrboy4life.paradox.module.movement.AutoWalk;
-import me.gamrboy4life.paradox.module.movement.BunnyHop;
 import me.gamrboy4life.paradox.module.movement.Dolphin;
 import me.gamrboy4life.paradox.module.movement.Flight;
 import me.gamrboy4life.paradox.module.movement.Glide;
@@ -18,7 +17,14 @@ import me.gamrboy4life.paradox.module.movement.Sneak;
 import me.gamrboy4life.paradox.module.movement.Speed;
 import me.gamrboy4life.paradox.module.movement.Spider;
 import me.gamrboy4life.paradox.module.movement.Step;
+import me.gamrboy4life.paradox.module.player.AntiAFK;
+import me.gamrboy4life.paradox.module.player.AntiCobweb;
+import me.gamrboy4life.paradox.module.player.AutoMine;
+import me.gamrboy4life.paradox.module.player.AutoRespawn;
+import me.gamrboy4life.paradox.module.player.Bhop;
 import me.gamrboy4life.paradox.module.player.ChestStealer;
+import me.gamrboy4life.paradox.module.player.FastLadder;
+import me.gamrboy4life.paradox.module.player.FastPlace;
 import me.gamrboy4life.paradox.module.render.BedWarsXray;
 import me.gamrboy4life.paradox.module.render.ClickGui;
 import me.gamrboy4life.paradox.module.render.ESP;
@@ -32,7 +38,7 @@ public class ModuleManager {
 	
 	public ModuleManager() {
 		mods=new ArrayList<Module>();
-		newMod(new ChestStealer());
+
 		
 		//COMBAT
 		newMod(new FastBow());
@@ -41,7 +47,6 @@ public class ModuleManager {
 		//MOVEMENT
 		newMod(new AutoSprint());
 		newMod(new AutoWalk());
-		newMod(new BunnyHop());
 		newMod(new Dolphin());
 		newMod(new Flight());
 		newMod(new Glide());
@@ -55,6 +60,14 @@ public class ModuleManager {
 		newMod(new Step());
 		
 		//PLAYER
+		newMod(new AntiAFK());
+		newMod(new AntiCobweb());
+		newMod(new AutoMine());
+		newMod(new AutoRespawn());
+		newMod(new Bhop());
+		newMod(new ChestStealer());
+		newMod(new FastLadder());
+		newMod(new FastPlace());
 		
 		//RENDER
 		newMod(new BedWarsXray());
