@@ -1,0 +1,27 @@
+package me.gamrboy4life.paradox.module.movement;
+
+import me.gamrboy4life.paradox.module.Category;
+import me.gamrboy4life.paradox.module.Module;
+
+public class JumpReset extends Module{
+
+    private boolean jumped = false;
+
+    public JumpReset() {
+        super("JumpReset", 0, Category.MOVEMENT);
+    }
+    
+    @Override
+    public void onUpdate() {
+        if (this.isToggled() && !jumped && mc.thePlayer.hurtTime > 0) {
+        	try {
+				Thread.sleep(1000);
+			} catch (InterruptedException e) {
+				// TODO 自動生成された catch ブロック
+				e.printStackTrace();
+			} // 1秒待つ
+            mc.gameSettings.keyBindJump.pressed = true;
+            jumped = true;
+        }
+    }
+}

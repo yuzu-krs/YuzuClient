@@ -11,6 +11,7 @@ import me.gamrboy4life.paradox.module.movement.Dolphin;
 import me.gamrboy4life.paradox.module.movement.Flight;
 import me.gamrboy4life.paradox.module.movement.Glide;
 import me.gamrboy4life.paradox.module.movement.Jetpack;
+import me.gamrboy4life.paradox.module.movement.JumpReset;
 import me.gamrboy4life.paradox.module.movement.NoFall;
 import me.gamrboy4life.paradox.module.movement.Parkour;
 import me.gamrboy4life.paradox.module.movement.Sneak;
@@ -39,12 +40,13 @@ public class ModuleManager {
 		
 		//MOVEMENT
 		newMod(new AutoSprint());
-		newMod(new BunnyHop());
 		newMod(new AutoWalk());
+		newMod(new BunnyHop());
 		newMod(new Dolphin());
 		newMod(new Flight());
 		newMod(new Glide());
 		newMod(new Jetpack());
+		newMod(new JumpReset());
 		newMod(new NoFall());
 		newMod(new Parkour());
 		newMod(new Sneak());

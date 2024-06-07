@@ -1,0 +1,28 @@
+package me.gamrboy4life.paradox.module.movement;
+
+import me.gamrboy4life.paradox.module.Category;
+import me.gamrboy4life.paradox.module.Module;
+
+public class JumpReset extends Module {
+
+    private boolean hasBeenHit = false;
+    private long lastHitTime = 0;
+
+    public JumpReset() {
+        super("JumpReset", 0, Category.MOVEMENT);
+    }
+
+    @Override
+    public void onUpdate() {
+        if (this.isToggled() && !hasBeenHit && mc.thePlayer.hurtTime > 0) {
+            long currentTime = System.currentTimeMillis();
+            if (currentTime - lastHitTime >= 1000) { // 1秒経過しているかをチェック
+                mc.thePlayer.jump();
+                hasBeenHit = true;
+            }
+        } else if (mc.thePlayer.hurtTime <= 0) {
+            hasBeenHit = false;
+            lastHitTime = System.currentTimeMillis();
+        }
+    }
+}

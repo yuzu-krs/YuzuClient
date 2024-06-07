@@ -1,7 +1,7 @@
 invertYMouse:false
 mouseSensitivity:0.5
 fov:1.0
-gamma:10.0
+gamma:100.0
 saturation:0.0
 renderDistance:8
 guiScale:0
@@ -16,7 +16,7 @@ ao:1
 renderClouds:true
 resourcePacks:[]
 incompatibleResourcePacks:[]
-lastServer:2b2t.jp
+lastServer:192.168.100.31
 lang:en_US
 chatVisibility:0
 chatColors:true

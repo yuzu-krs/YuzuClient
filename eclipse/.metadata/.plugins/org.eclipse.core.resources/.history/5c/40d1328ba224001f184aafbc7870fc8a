@@ -1,0 +1,21 @@
+package me.gamrboy4life.paradox.module.movement;
+
+import me.gamrboy4life.paradox.module.Category;
+import me.gamrboy4life.paradox.module.Module;
+
+public class JumpReset extends Module{
+
+    private boolean jumped = false;
+
+    public JumpReset() {
+        super("JumpReset", 0, Category.MOVEMENT);
+    }
+    
+    @Override
+    public void onUpdate() {
+        if (this.isToggled() && !jumped && mc.thePlayer.hurtResistantTime == 0) {
+            mc.gameSettings.keyBindJump.pressed = true;
+            jumped = true;
+        }
+    }
+}
