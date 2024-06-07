@@ -1,0 +1,34 @@
+package me.gamrboy4life.paradox.module.combat;
+
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+
+import me.gamrboy4life.paradox.module.Category;
+import me.gamrboy4life.paradox.module.Module;
+
+public class MineClicker extends Module {
+
+    public MineClicker() {
+        super("MineClicker", 0, Category.COMBAT); // キーバインドは0にしておきます
+    }
+
+    @Override
+    public void onUpdate() {
+        // マウスのサイドボタンを監視
+        // MouseAdapterを作成し、mousePressedメソッドでサイドボタンのクリックを検出します
+        MouseAdapter mouseAdapter = new MouseAdapter() {
+            @Override
+            public void mousePressed(MouseEvent e) {
+                // マウスのサイドボタンが押された場合
+                if (e.getButton() == MouseEvent.BUTTON3) {
+                    System.out.println("Mouse back button is pressed");
+                    // ここに左クリックを連打するコードを追加します
+                }
+            }
+        };
+
+        // MouseAdapterをフレームに追加することで、マウスのイベントを検出できます
+        // ただし、MinecraftのModdingではフレームを作成することは珍しいので、
+        // 代わりにマウスのイベントを直接キャプチャする必要があります。
+    }
+}

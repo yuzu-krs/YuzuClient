@@ -12,7 +12,7 @@ public class FastPlace extends Module{
 	@Override
 	public void onUpdate() {
 		if(this.isToggled()) {
-			mc.rightClickDelayTimer=0;
+			mc.rightClickDelayTimer=1;
 		}
 	}
 	

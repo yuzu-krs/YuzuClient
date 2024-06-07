@@ -39,6 +39,6 @@
     <fullyQualifiedTypeName name="java.util.Timer"/>
     <fullyQualifiedTypeName name="me.gamrboy4life.paradox.utils.timers.Timer"/>
     <fullyQualifiedTypeName name="me.gamrboy4life.paradox.module.Category"/>
-    <fullyQualifiedTypeName name="org.lwjgl.input.Mouse"/>
     <fullyQualifiedTypeName name="org.lwjgl.input.Keyboard"/>
+    <fullyQualifiedTypeName name="org.lwjgl.input.Mouse"/>
 </qualifiedTypeNameHistroy>

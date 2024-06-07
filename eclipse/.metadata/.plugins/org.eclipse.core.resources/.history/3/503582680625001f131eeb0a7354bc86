@@ -1,0 +1,26 @@
+package me.gamrboy4life.paradox.module.combat;
+
+import org.lwjgl.input.Keyboard;
+import org.lwjgl.input.Mouse;
+
+import me.gamrboy4life.paradox.module.Category;
+import me.gamrboy4life.paradox.module.Module;
+
+public class MineClicker extends Module {
+
+    public MineClicker() {
+        super("MineClicker", Keyboard.KEY_R, Category.COMBAT);
+    }
+
+    @Override
+    public void onUpdate() {
+        // マウスの戻るボタンを監視
+        if (Mouse.isButtonDown(3)) {
+            System.out.println("Mouse back button is pressed");
+			mc.thePlayer.swingItem();
+        }
+        if (Mouse.isButtonDown(4)) {
+            System.out.println("Mouse sususmu button is pressed");
+        }
+    }
+}

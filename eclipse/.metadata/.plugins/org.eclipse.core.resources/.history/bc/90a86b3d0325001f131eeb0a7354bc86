@@ -1,0 +1,48 @@
+package me.gamrboy4life.paradox.module.combat;
+
+import me.gamrboy4life.paradox.module.Category;
+import me.gamrboy4life.paradox.module.Module;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.settings.KeyBinding;
+import net.minecraftforge.client.event.MouseEvent;
+import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import org.lwjgl.input.Keyboard;
+
+public class MineClicker extends Module {
+
+    private final Minecraft mc = Minecraft.getMinecraft();
+    private final KeyBinding leftClickBind = mc.gameSettings.keyBindAttack;
+    private final KeyBinding rightClickBind = mc.gameSettings.keyBindUseItem;
+
+    public MineClicker() {
+        super("MineClicker", Keyboard.KEY_R, Category.COMBAT);
+    }
+
+    @Override
+    public void onEnable() {
+        MinecraftForge.EVENT_BUS.register(this);
+    }
+
+    @Override
+    public void onDisable() {
+        MinecraftForge.EVENT_BUS.unregister(this);
+    }
+
+    @SubscribeEvent
+    public void onMouseInput(MouseEvent event) {
+        if (event.isButtonstate() && mc.currentScreen == null) {
+            if (event.getButton() == 3) { // マウスの戻るボタンが押されたとき
+                while (leftClickBind.isKeyDown()) {
+                    mc.clickMouse();
+                    mc.player.swingArm(mc.player.getActiveHand());
+                }
+            } else if (event.getButton() == 4) { // マウスの進むボタンが押されたとき
+                while (rightClickBind.isKeyDown()) {
+                    mc.rightClickMouse();
+                    mc.player.swingArm(mc.player.getActiveHand());
+                }
+            }
+        }
+    }
+}
