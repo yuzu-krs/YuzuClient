@@ -1,0 +1,6 @@
+package me.gamrboy4life.paradox.module.misc;
+
+public class ChannelIcon extends Module{
+	
+
+}

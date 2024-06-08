@@ -1,0 +1,28 @@
+package me.gamrboy4life.paradox.gui;
+
+import me.gamrboy4life.paradox.Paradox;
+import net.minecraft.client.gui.GuiScreen;
+import net.minecraft.util.ResourceLocation;
+
+public class MainMenu extends GuiScreen{
+
+	public MainMenu() {
+		
+	}
+	
+	public void initGui() {
+		
+	}
+	
+	public void drawScreen(int mouseX,int mouseY,float partialticks) {
+		mc.getTextureManager().bindTexture(new ResourceLocation("yuzuclient/yuzuclient.png"));
+		this.drawModalRectWithCustomSizedTexture(0, 0, 0, 0,this.width, this.height, this.width, this.height);
+		this.drawGradientRect(0, height-120, width, height, 0x00000000, 0xff000000);
+		
+		this.drawCenteredString(mc.fontRendererObj, Paradox.name, width/2, height/2- mc.fontRendererObj.FONT_HEIGHT/2f, -1);
+		
+	}
+	
+	
+	
+}

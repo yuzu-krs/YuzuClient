@@ -1,0 +1,5 @@
+package me.gamrboy4life.paradox.gui;
+
+public class MainMenu extends GuiScreen{
+
+}

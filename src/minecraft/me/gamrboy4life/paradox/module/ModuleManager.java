@@ -7,6 +7,7 @@ import me.gamrboy4life.paradox.Paradox;
 import me.gamrboy4life.paradox.module.combat.AutoClicker;
 import me.gamrboy4life.paradox.module.combat.FastBow;
 import me.gamrboy4life.paradox.module.combat.KillAura;
+import me.gamrboy4life.paradox.module.misc.ChannelIcon;
 import me.gamrboy4life.paradox.module.movement.AutoSprint;
 import me.gamrboy4life.paradox.module.movement.AutoWalk;
 import me.gamrboy4life.paradox.module.movement.Dolphin;
@@ -89,6 +90,7 @@ public class ModuleManager {
 		
 		
 		//MISC
+		newMod(new ChannelIcon());
 	}
 	
 	
