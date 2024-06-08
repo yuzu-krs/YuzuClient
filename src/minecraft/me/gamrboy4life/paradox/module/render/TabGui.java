@@ -17,7 +17,11 @@ public class TabGui extends Module{
 
 	public TabGui() {
 		super("TabGui",0,Category.RENDER);
-		toggled=true;
+	}
+	
+	@Override
+	public void onRender() {
+		draw();
 	}
 	
 	public void draw() {
