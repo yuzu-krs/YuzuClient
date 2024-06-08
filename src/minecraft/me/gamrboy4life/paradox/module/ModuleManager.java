@@ -14,6 +14,7 @@ import me.gamrboy4life.paradox.module.movement.Jetpack;
 import me.gamrboy4life.paradox.module.movement.JumpReset;
 import me.gamrboy4life.paradox.module.movement.NoFall;
 import me.gamrboy4life.paradox.module.movement.Parkour;
+import me.gamrboy4life.paradox.module.movement.Scaffold;
 import me.gamrboy4life.paradox.module.movement.Sneak;
 import me.gamrboy4life.paradox.module.movement.Speed;
 import me.gamrboy4life.paradox.module.movement.Spider;
@@ -57,6 +58,7 @@ public class ModuleManager {
 		newMod(new JumpReset());
 		newMod(new NoFall());
 		newMod(new Parkour());
+		newMod(new Scaffold());
 		newMod(new Sneak());
 		newMod(new Speed());
 		newMod(new Spider());

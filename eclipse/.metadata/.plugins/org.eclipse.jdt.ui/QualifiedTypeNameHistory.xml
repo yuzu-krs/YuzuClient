@@ -28,7 +28,6 @@
     <fullyQualifiedTypeName name="me.gamrboy4life.paradox.Paradox"/>
     <fullyQualifiedTypeName name="net.minecraft.entity.player.EntityPlayer"/>
     <fullyQualifiedTypeName name="me.gamrboy4life.paradox.utils.esp.MobESPUtils"/>
-    <fullyQualifiedTypeName name="net.minecraft.entity.Entity"/>
     <fullyQualifiedTypeName name="me.gamrboy4life.paradox.utils.esp.ChestESPUtils"/>
     <fullyQualifiedTypeName name="net.minecraft.block.Block"/>
     <fullyQualifiedTypeName name="me.gamrboy4life.paradox.module.render.Xray"/>
@@ -41,4 +40,6 @@
     <fullyQualifiedTypeName name="me.gamrboy4life.paradox.module.Category"/>
     <fullyQualifiedTypeName name="org.lwjgl.input.Keyboard"/>
     <fullyQualifiedTypeName name="org.lwjgl.input.Mouse"/>
+    <fullyQualifiedTypeName name="net.minecraft.network.Packet"/>
+    <fullyQualifiedTypeName name="net.minecraft.entity.Entity"/>
 </qualifiedTypeNameHistroy>

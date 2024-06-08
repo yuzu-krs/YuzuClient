@@ -1,6 +1,10 @@
 package me.gamrboy4life.paradox.module;
 
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.entity.EntityPlayerSP;
+import net.minecraft.client.multiplayer.PlayerControllerMP;
+import net.minecraft.client.multiplayer.WorldClient;
+import net.minecraft.network.Packet;
 
 public class Module {
 	
@@ -72,6 +76,23 @@ public class Module {
 	
 	public void setCategory(Category category) {
 		this.category=category;
+	}
+	
+	protected EntityPlayerSP player() {
+		return mc.thePlayer;
+	}
+	
+	protected PlayerControllerMP playerController() {
+		return mc.playerController;
+	}
+	
+	protected WorldClient world() {
+		return mc.theWorld;
+	}
+	
+	@SuppressWarnings("rawtypes")
+	protected void sendPacket(Packet p){
+		player().sendQueue.addToSendQueue(p);
 	}
 	
 

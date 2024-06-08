@@ -1,0 +1,20 @@
+package me.gamrboy4life.paradox.module.movement;
+
+import me.gamrboy4life.paradox.module.Category;
+import me.gamrboy4life.paradox.module.Module;
+
+public class Scaffold extends Module{
+
+	public Scaffold(String nm, int k, Category c) {
+		super("Scaffold",0,Category.MOVEMENT);
+	} 
+	
+	@Override
+	public void onUpdate() {
+		if(this.isToggled()) {
+			Entity p=player();
+		}
+	}
+	
+
+}

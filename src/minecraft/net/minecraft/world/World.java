@@ -1,8 +1,5 @@
 package net.minecraft.world;
 
-import com.google.common.base.Predicate;
-import com.google.common.collect.Lists;
-import com.google.common.collect.Sets;
 import java.util.Calendar;
 import java.util.Collection;
 import java.util.Iterator;
@@ -11,6 +8,11 @@ import java.util.Random;
 import java.util.Set;
 import java.util.UUID;
 import java.util.concurrent.Callable;
+
+import com.google.common.base.Predicate;
+import com.google.common.collect.Lists;
+import com.google.common.collect.Sets;
+
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockHopper;
 import net.minecraft.block.BlockLiquid;
@@ -246,6 +248,12 @@ public abstract class World implements IBlockAccess
      * Checks to see if an air block exists at the provided location. Note that this only checks to see if the blocks
      * material is set to air, meaning it is possible for non-vanilla blocks to still pass this check.
      */
+    
+    //Paradox
+    public Block getBlock(BlockPos pos) {
+    	return this.getBlockState(pos).getBlock();
+    }
+    
     public boolean isAirBlock(BlockPos pos)
     {
         return this.getBlockState(pos).getBlock().getMaterial() == Material.air;
