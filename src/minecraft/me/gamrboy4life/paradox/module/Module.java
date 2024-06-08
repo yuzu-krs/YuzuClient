@@ -10,10 +10,10 @@ public class Module {
 	
 	protected Minecraft mc=Minecraft.getMinecraft();
 	
-	private String name;
+	public String name;
 	private int key;
-	private boolean toggled;
-	private Category category;
+	protected boolean toggled;
+	Category category;
 	
 	public Module(String nm,int k,Category c) {
 		name=nm;

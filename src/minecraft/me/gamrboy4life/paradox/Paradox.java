@@ -7,6 +7,7 @@ import de.Hero.settings.SettingsManager;
 import me.gamrboy4life.paradox.alt.AltManager;
 import me.gamrboy4life.paradox.extensions.DiscordRP;
 import me.gamrboy4life.paradox.module.ModuleManager;
+import me.gamrboy4life.paradox.module.render.TabGui;
 
 public class Paradox {
 	
@@ -18,6 +19,7 @@ public class Paradox {
 	public static ModuleManager moduleManager;
 	public static ClickGUI clickGUI;
 	public static AltManager altManager;
+	public static TabGui hud;
 	
 	public static DiscordRP discordRP=new DiscordRP();
 	
@@ -26,6 +28,7 @@ public class Paradox {
 		moduleManager=new ModuleManager();
 		clickGUI=new ClickGUI();
 		altManager=new AltManager();
+		hud=new TabGui();
 		discordRP.start();
 		
 		

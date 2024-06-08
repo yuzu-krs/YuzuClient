@@ -2,7 +2,6 @@
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="org.lwjgl.opengl.Display"/>
     <fullyQualifiedTypeName name="net.minecraft.client.gui.GuiIngame"/>
-    <fullyQualifiedTypeName name="me.gamrboy4life.paradox.utils.Wrapper"/>
     <fullyQualifiedTypeName name="java.awt.Color"/>
     <fullyQualifiedTypeName name="me.gamrboy4life.paradox.utils.ColorUtils"/>
     <fullyQualifiedTypeName name="java.util.Iterator"/>
@@ -25,7 +24,6 @@
     <fullyQualifiedTypeName name="net.minecraft.item.Item"/>
     <fullyQualifiedTypeName name="net.minecraft.init.Items"/>
     <fullyQualifiedTypeName name="net.minecraft.client.renderer.RenderHelper"/>
-    <fullyQualifiedTypeName name="me.gamrboy4life.paradox.Paradox"/>
     <fullyQualifiedTypeName name="net.minecraft.entity.player.EntityPlayer"/>
     <fullyQualifiedTypeName name="me.gamrboy4life.paradox.utils.esp.MobESPUtils"/>
     <fullyQualifiedTypeName name="me.gamrboy4life.paradox.utils.esp.ChestESPUtils"/>
@@ -37,9 +35,12 @@
     <fullyQualifiedTypeName name="net.minecraft.util.MovingObjectPosition.MovingObjectType"/>
     <fullyQualifiedTypeName name="java.util.Timer"/>
     <fullyQualifiedTypeName name="me.gamrboy4life.paradox.utils.timers.Timer"/>
-    <fullyQualifiedTypeName name="me.gamrboy4life.paradox.module.Category"/>
-    <fullyQualifiedTypeName name="org.lwjgl.input.Keyboard"/>
     <fullyQualifiedTypeName name="org.lwjgl.input.Mouse"/>
     <fullyQualifiedTypeName name="net.minecraft.network.Packet"/>
     <fullyQualifiedTypeName name="net.minecraft.entity.Entity"/>
+    <fullyQualifiedTypeName name="net.minecraft.client.gui.Gui"/>
+    <fullyQualifiedTypeName name="me.gamrboy4life.paradox.utils.Wrapper"/>
+    <fullyQualifiedTypeName name="me.gamrboy4life.paradox.Paradox"/>
+    <fullyQualifiedTypeName name="org.lwjgl.input.Keyboard"/>
+    <fullyQualifiedTypeName name="me.gamrboy4life.paradox.module.Category"/>
 </qualifiedTypeNameHistroy>

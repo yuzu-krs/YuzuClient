@@ -1930,6 +1930,7 @@ public class Minecraft implements IThreadListener, IPlayerUsage
                     	
                     	//Paradox
                     	Paradox.moduleManager.onKey(k);
+                    	Paradox.instance.hud.keyPressed(k);
                     	
                     	
                         if (k == 1)

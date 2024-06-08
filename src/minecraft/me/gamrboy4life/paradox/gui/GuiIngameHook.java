@@ -35,7 +35,7 @@ public class GuiIngameHook extends GuiIngame{
 			
 			if(m.isToggled()) {
 				
-				Wrapper.fr.drawString("- " + m.getName(), 5, yCount + 5, ColorUtils.rainbowEffect(index+x*2000000000L, 1.0F).getRGB()); // 赤色
+				Wrapper.fr.drawString("- " + m.getName(), 400, yCount -7, ColorUtils.rainbowEffect(index+x*2000000000L, 1.0F).getRGB()); // 赤色
 				yCount+=10;
 				index++;
 				x++;

@@ -8,6 +8,7 @@ import com.google.common.base.Predicate;
 import com.google.common.collect.Iterables;
 import com.google.common.collect.Lists;
 
+import me.gamrboy4life.paradox.Paradox;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.GlStateManager;
@@ -344,6 +345,10 @@ public class GuiIngame extends Gui
         {
             this.overlayPlayerList.updatePlayerList(true);
             this.overlayPlayerList.renderPlayerlist(i, scoreboard, scoreobjective1);
+        }
+        
+        if(Paradox.instance.moduleManager.getModules().get(0).isToggled()) {
+        	Paradox.instance.hud.draw();
         }
 
         GlStateManager.color(1.0F, 1.0F, 1.0F, 1.0F);

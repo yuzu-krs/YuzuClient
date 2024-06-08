@@ -1,7 +1,9 @@
 package me.gamrboy4life.paradox.module;
 
 import java.util.ArrayList;
+import java.util.List;
 
+import me.gamrboy4life.paradox.Paradox;
 import me.gamrboy4life.paradox.module.combat.AutoClicker;
 import me.gamrboy4life.paradox.module.combat.FastBow;
 import me.gamrboy4life.paradox.module.combat.KillAura;
@@ -31,6 +33,7 @@ import me.gamrboy4life.paradox.module.render.BedWarsXray;
 import me.gamrboy4life.paradox.module.render.ClickGui;
 import me.gamrboy4life.paradox.module.render.ESP;
 import me.gamrboy4life.paradox.module.render.FullBright;
+import me.gamrboy4life.paradox.module.render.TabGui;
 import me.gamrboy4life.paradox.module.render.XYZ;
 import me.gamrboy4life.paradox.module.render.Xray;
 
@@ -40,6 +43,7 @@ public class ModuleManager {
 	
 	public ModuleManager() {
 		mods=new ArrayList<Module>();
+		newMod(new TabGui());
 
 		
 		//COMBAT
@@ -86,6 +90,21 @@ public class ModuleManager {
 		
 		//MISC
 	}
+	
+	
+	public static List<Module> getModulesbyCategory(Category c){
+		List<Module> modules=new ArrayList<Module>();
+		
+		for(Module m:Paradox.instance.moduleManager.getModules()) {
+			if(m.category==c) {
+				modules.add(m);
+			}
+		}
+		return modules;
+		
+	}
+	
+	
 	
 	public static void newMod(Module m) {
 		mods.add(m);

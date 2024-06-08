@@ -2,6 +2,17 @@ package me.gamrboy4life.paradox.module;
 
 public enum Category {
 	
-	COMBAT,MOVEMENT,PLAYER,RENDER,MISC
+	COMBAT("Combat"),
+	MOVEMENT("Movement"),
+	PLAYER("Player"),
+	RENDER("Render"),
+	MISC("Misc");
+	
+	public String name;
+	public int moduleIndex;
+	
+	Category(String name){
+		this.name=name;
+	}
 
 }
