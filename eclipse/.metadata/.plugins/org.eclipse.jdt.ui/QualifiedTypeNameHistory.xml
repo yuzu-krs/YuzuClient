@@ -17,7 +17,6 @@
     <fullyQualifiedTypeName name="java.util.Base64"/>
     <fullyQualifiedTypeName name="net.minecraft.util.BlockPos"/>
     <fullyQualifiedTypeName name="org.lwjgl.opengl.GL11"/>
-    <fullyQualifiedTypeName name="net.minecraft.client.Minecraft"/>
     <fullyQualifiedTypeName name="net.minecraft.tileentity.TileEntityChest"/>
     <fullyQualifiedTypeName name="net.minecraft.block.BlockBed"/>
     <fullyQualifiedTypeName name="net.minecraft.potion.Potion"/>
@@ -30,7 +29,6 @@
     <fullyQualifiedTypeName name="net.minecraft.block.Block"/>
     <fullyQualifiedTypeName name="me.gamrboy4life.paradox.module.render.Xray"/>
     <fullyQualifiedTypeName name="me.gamrboy4life.paradox.module.render.BedWarsXray"/>
-    <fullyQualifiedTypeName name="me.gamrboy4life.paradox.module.Module"/>
     <fullyQualifiedTypeName name="me.gamrboy4life.paradox.utils.Invoker"/>
     <fullyQualifiedTypeName name="net.minecraft.util.MovingObjectPosition.MovingObjectType"/>
     <fullyQualifiedTypeName name="java.util.Timer"/>
@@ -40,9 +38,15 @@
     <fullyQualifiedTypeName name="net.minecraft.entity.Entity"/>
     <fullyQualifiedTypeName name="net.minecraft.client.gui.Gui"/>
     <fullyQualifiedTypeName name="me.gamrboy4life.paradox.utils.Wrapper"/>
-    <fullyQualifiedTypeName name="org.lwjgl.input.Keyboard"/>
     <fullyQualifiedTypeName name="me.gamrboy4life.paradox.module.Category"/>
-    <fullyQualifiedTypeName name="me.gamrboy4life.paradox.Paradox"/>
     <fullyQualifiedTypeName name="net.minecraft.client.renderer.GlStateManager"/>
     <fullyQualifiedTypeName name="net.minecraft.client.gui.GuiScreen"/>
+    <fullyQualifiedTypeName name="me.gamrboy4life.paradox.event.Event"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="me.gamrboy4life.paradox.command.Command"/>
+    <fullyQualifiedTypeName name="org.lwjgl.input.Keyboard"/>
+    <fullyQualifiedTypeName name="me.gamrboy4life.paradox.Paradox"/>
+    <fullyQualifiedTypeName name="me.gamrboy4life.paradox.module.Module"/>
+    <fullyQualifiedTypeName name="net.minecraft.client.Minecraft"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
 </qualifiedTypeNameHistroy>

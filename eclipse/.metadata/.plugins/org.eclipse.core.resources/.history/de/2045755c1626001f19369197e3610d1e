@@ -1,0 +1,34 @@
+package me.gamrboy4life.paradox.event;
+
+public class Event {
+	
+	public boolean cancelled;
+	public EventType type;
+	public EventDirection direction;
+	public boolean isCancelled() {
+		return cancelled;
+	}
+	public void setCancelled(boolean cancelled) {
+		this.cancelled = cancelled;
+	}
+	public EventType getType() {
+		return type;
+	}
+	public void setType(EventType type) {
+		this.type = type;
+	}
+	public EventDirection getDirection() {
+		return direction;
+	}
+	public void setDirection(EventDirection direction) {
+		this.direction = direction;
+	}
+
+	public boolean isPre() {
+		if(type==null) {
+			return false;
+		}
+		return type==EventType.PRE;
+	}
+	
+}

@@ -37,6 +37,8 @@ import me.gamrboy4life.paradox.module.render.FullBright;
 import me.gamrboy4life.paradox.module.render.TabGui;
 import me.gamrboy4life.paradox.module.render.XYZ;
 import me.gamrboy4life.paradox.module.render.Xray;
+import net.minecraft.client.Minecraft;
+import net.minecraft.util.ChatComponentText;
 
 public class ModuleManager {
 	
@@ -134,5 +136,11 @@ public class ModuleManager {
 				m.toggle();
 			}
 		}
+	}
+
+
+	public static void addChatMessage(String message) {
+		message="\u00A7e"+Paradox.name+"\2477: "+message;
+		Minecraft.getMinecraft().thePlayer.addChatMessage(new ChatComponentText(message));
 	}
 }

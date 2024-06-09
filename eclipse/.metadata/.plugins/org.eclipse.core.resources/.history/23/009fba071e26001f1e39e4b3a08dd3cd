@@ -1,0 +1,5 @@
+package me.gamrboy4life.paradox.command;
+
+public class CommandManager {
+
+}

@@ -1,6 +1,7 @@
 package net.minecraft.client.entity;
 
 import me.gamrboy4life.paradox.Paradox;
+import me.gamrboy4life.paradox.event.events.EventChat;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.audio.MovingSoundMinecartRiding;
 import net.minecraft.client.audio.PositionedSoundRecord;
@@ -296,7 +297,17 @@ public class EntityPlayerSP extends AbstractClientPlayer
      */
     public void sendChatMessage(String message)
     {
-        this.sendQueue.addToSendQueue(new C01PacketChatMessage(message));
+    	//Paradox
+    	EventChat event=new EventChat(message);
+    	
+    	Paradox.onEvent(event);
+    	
+    	if(event.isCancelled())
+    		return;
+    	
+    	
+    	
+        this.sendQueue.addToSendQueue(new C01PacketChatMessage(event.getMessage()));
     }
 
     /**

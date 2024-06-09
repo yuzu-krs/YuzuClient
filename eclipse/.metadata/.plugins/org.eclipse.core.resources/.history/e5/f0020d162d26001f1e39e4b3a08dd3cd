@@ -1,0 +1,12 @@
+package me.gamrboy4life.paradox.command.commands;
+
+import me.gamrboy4life.paradox.command.Command;
+
+public class Say extends Command{
+
+	public Say() {
+		super("Say","Says things in chat","say","s");
+
+	}
+
+}

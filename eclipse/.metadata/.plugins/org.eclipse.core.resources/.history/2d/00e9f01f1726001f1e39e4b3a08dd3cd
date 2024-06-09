@@ -1,0 +1,5 @@
+package me.gamrboy4life.paradox.event.events;
+
+public class EventChat {
+
+}

@@ -1,5 +1,6 @@
 package me.gamrboy4life.paradox.module;
 
+import me.gamrboy4life.paradox.event.Event;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.entity.EntityPlayerSP;
 import net.minecraft.client.multiplayer.PlayerControllerMP;
@@ -12,7 +13,7 @@ public class Module {
 	
 	public String name;
 	private int key;
-	protected boolean toggled;
+	public boolean toggled;
 	Category category;
 	
 	public Module(String nm,int k,Category c) {
@@ -37,6 +38,10 @@ public class Module {
 	public void onUpdate() {}
 	public void onRender() {}
 	public void setup() {}
+	
+	public void onEvent(Event e) {
+		
+	}
 
 	public Minecraft getMc() {
 		return mc;

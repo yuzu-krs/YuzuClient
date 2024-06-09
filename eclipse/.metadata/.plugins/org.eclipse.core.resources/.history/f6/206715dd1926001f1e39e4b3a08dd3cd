@@ -1,0 +1,7 @@
+package me.gamrboy4life.paradox.command;
+
+public abstract class Command {
+	
+	public String name,description,syntax;
+
+}

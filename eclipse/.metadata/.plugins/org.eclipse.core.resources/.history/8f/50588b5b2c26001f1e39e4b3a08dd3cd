@@ -1,0 +1,12 @@
+package me.gamrboy4life.paradox.command.commands;
+
+import me.gamrboy4life.paradox.command.Command;
+
+public class Toggle extends Command{
+
+	public Toggle() {
+		super("Toggle","Toggles a module by name","toggle <name>","t");
+	}
+
+
+}
