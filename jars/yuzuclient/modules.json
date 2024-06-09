@@ -1,18 +1,18 @@
 {
   "TabGui": {
-    "enabled": false
+    "enabled": true
   },
   "AutoClicker": {
-    "enabled": false
+    "enabled": true
   },
   "FastBow": {
-    "enabled": false
+    "enabled": true
   },
   "KillAura": {
-    "enabled": false
+    "enabled": true
   },
   "AutoSprint": {
-    "enabled": false
+    "enabled": true
   },
   "AutoWalk": {
     "enabled": false
@@ -39,7 +39,7 @@
     "enabled": false
   },
   "Scaffold": {
-    "enabled": true
+    "enabled": false
   },
   "Sneak": {
     "enabled": false
