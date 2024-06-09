@@ -3,16 +3,16 @@
     "enabled": true
   },
   "AutoClicker": {
-    "enabled": true
+    "enabled": false
   },
   "FastBow": {
-    "enabled": true
+    "enabled": false
   },
   "KillAura": {
-    "enabled": true
+    "enabled": false
   },
   "AutoSprint": {
-    "enabled": true
+    "enabled": false
   },
   "AutoWalk": {
     "enabled": false
@@ -84,7 +84,7 @@
     "enabled": false
   },
   "ESP": {
-    "enabled": false
+    "enabled": true
   },
   "FullBright": {
     "enabled": false
