@@ -1,0 +1,39 @@
+package me.gamrboy4life.paradox.extensions;
+
+import java.io.File;
+
+public class FileManager {
+	public static File ROOT_DIR=new File("yuzuclient");
+	public static File modules=new File(ROOT_DIR,"modules.json");
+	
+	public void init() {
+		//Make Root Directory
+		if(!ROOT_DIR.exists()) {ROOT_DIR.mkdirs();}
+	
+		//Handles Module
+		if(!modules.exists())
+			saveMods();
+		else
+			loadMods();
+
+	}
+	
+	public void saveMods() {
+		try {
+			JsonObject json=new JsonObject();
+			
+			
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+		
+	}
+	
+	
+	public void loadMods() {
+		
+		
+	}
+	
+
+}

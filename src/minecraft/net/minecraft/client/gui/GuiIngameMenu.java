@@ -2,6 +2,7 @@ package net.minecraft.client.gui;
 
 import java.io.IOException;
 
+import me.gamrboy4life.paradox.Paradox;
 import me.gamrboy4life.paradox.gui.MainMenu;
 import net.minecraft.client.gui.achievement.GuiAchievements;
 import net.minecraft.client.gui.achievement.GuiStats;
@@ -80,6 +81,7 @@ public class GuiIngameMenu extends GuiScreen
             case 4:
                 this.mc.displayGuiScreen((GuiScreen)null);
                 this.mc.setIngameFocus();
+                Paradox.instance.fileManager.saveMods();
                 break;
 
             case 5:

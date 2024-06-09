@@ -1430,6 +1430,8 @@ public class Minecraft implements IThreadListener, IPlayerUsage
      */
     public void shutdown()
     {
+    	//Paradox
+    	Paradox.instance.stopClient();
         this.running = false;
     }
 

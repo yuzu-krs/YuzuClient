@@ -1,0 +1,101 @@
+{
+  "TabGui": {
+    "enabled": false
+  },
+  "AutoClicker": {
+    "enabled": false
+  },
+  "FastBow": {
+    "enabled": false
+  },
+  "KillAura": {
+    "enabled": false
+  },
+  "AutoSprint": {
+    "enabled": false
+  },
+  "AutoWalk": {
+    "enabled": false
+  },
+  "Dolphin": {
+    "enabled": false
+  },
+  "Flight": {
+    "enabled": false
+  },
+  "Glide": {
+    "enabled": false
+  },
+  "Jetpack": {
+    "enabled": false
+  },
+  "JumpReset": {
+    "enabled": false
+  },
+  "NoFall": {
+    "enabled": false
+  },
+  "Parkour": {
+    "enabled": false
+  },
+  "Scaffold": {
+    "enabled": true
+  },
+  "Sneak": {
+    "enabled": false
+  },
+  "Speed": {
+    "enabled": false
+  },
+  "Spider": {
+    "enabled": false
+  },
+  "Step": {
+    "enabled": false
+  },
+  "AntiAFK": {
+    "enabled": false
+  },
+  "AntiCobweb": {
+    "enabled": false
+  },
+  "AutoMine": {
+    "enabled": false
+  },
+  "AutoRespawn": {
+    "enabled": false
+  },
+  "BunnyHop": {
+    "enabled": false
+  },
+  "ChestStealer": {
+    "enabled": false
+  },
+  "FastLadder": {
+    "enabled": false
+  },
+  "FastPlace": {
+    "enabled": false
+  },
+  "BedWarsXray": {
+    "enabled": false
+  },
+  "ClickGui": {
+    "enabled": false
+  },
+  "ESP": {
+    "enabled": false
+  },
+  "FullBright": {
+    "enabled": false
+  },
+  "Xray": {
+    "enabled": false
+  },
+  "XYZ": {
+    "enabled": false
+  },
+  "ChannelIcon": {
+    "enabled": false
+  }
+}

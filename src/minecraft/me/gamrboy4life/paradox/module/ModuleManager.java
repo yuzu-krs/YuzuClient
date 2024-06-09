@@ -143,4 +143,20 @@ public class ModuleManager {
 		message="\u00A7e"+Paradox.name+"\2477: "+message;
 		Minecraft.getMinecraft().thePlayer.addChatMessage(new ChatComponentText(message));
 	}
+	
+	public static Module getModuleByName(String moduleName) {
+		for(Module m:Paradox.instance.moduleManager.getModules()) {
+			if(!m.getName().trim().equalsIgnoreCase(moduleName)&&!m.toString().equalsIgnoreCase(moduleName.trim())) continue;
+			return m;
+		}
+		return null;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
 }

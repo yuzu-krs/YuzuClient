@@ -4,7 +4,6 @@
     <fullyQualifiedTypeName name="net.minecraft.client.gui.GuiIngame"/>
     <fullyQualifiedTypeName name="java.awt.Color"/>
     <fullyQualifiedTypeName name="me.gamrboy4life.paradox.utils.ColorUtils"/>
-    <fullyQualifiedTypeName name="java.util.Iterator"/>
     <fullyQualifiedTypeName name="net.minecraft.network.play.client.C07PacketPlayerDigging.Action"/>
     <fullyQualifiedTypeName name="net.minecraft.util.EnumFacing"/>
     <fullyQualifiedTypeName name="net.minecraft.network.play.client.C03PacketPlayer"/>
@@ -45,8 +44,13 @@
     <fullyQualifiedTypeName name="java.util.Arrays"/>
     <fullyQualifiedTypeName name="me.gamrboy4life.paradox.command.Command"/>
     <fullyQualifiedTypeName name="org.lwjgl.input.Keyboard"/>
-    <fullyQualifiedTypeName name="me.gamrboy4life.paradox.Paradox"/>
     <fullyQualifiedTypeName name="me.gamrboy4life.paradox.module.Module"/>
     <fullyQualifiedTypeName name="net.minecraft.client.Minecraft"/>
     <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="me.gamrboy4life.paradox.extensions.FileManager"/>
+    <fullyQualifiedTypeName name="me.gamrboy4life.paradox.utils.JsonUtils"/>
+    <fullyQualifiedTypeName name="de.Hero.clickgui.ClickGUI"/>
+    <fullyQualifiedTypeName name="java.util.Map.Entry"/>
+    <fullyQualifiedTypeName name="java.util.Iterator"/>
+    <fullyQualifiedTypeName name="me.gamrboy4life.paradox.Paradox"/>
 </qualifiedTypeNameHistroy>

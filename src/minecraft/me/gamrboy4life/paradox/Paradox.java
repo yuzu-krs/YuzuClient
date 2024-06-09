@@ -11,6 +11,7 @@ import me.gamrboy4life.paradox.command.CommandManager;
 import me.gamrboy4life.paradox.event.Event;
 import me.gamrboy4life.paradox.event.events.EventChat;
 import me.gamrboy4life.paradox.extensions.DiscordRP;
+import me.gamrboy4life.paradox.extensions.FileManager;
 import me.gamrboy4life.paradox.module.Module;
 import me.gamrboy4life.paradox.module.ModuleManager;
 import me.gamrboy4life.paradox.module.render.TabGui;
@@ -27,6 +28,7 @@ public class Paradox {
 	public static AltManager altManager;
 	public static TabGui hud;
 	public static CommandManager cmdManager;
+	public static FileManager fileManager;
 	
 	public static DiscordRP discordRP=new DiscordRP();
 	public static CopyOnWriteArrayList<Module> modules=new CopyOnWriteArrayList<Module>();
@@ -38,6 +40,11 @@ public class Paradox {
 		altManager=new AltManager();
 		hud=new TabGui();
 		cmdManager=new CommandManager();
+		fileManager = new FileManager();
+		
+		
+		fileManager.init();
+		
 		discordRP.start();
 		
 		
@@ -45,6 +52,10 @@ public class Paradox {
 		
 		
 		Display.setTitle(name+" "+version+" by "+creator);
+	}
+	
+	public static void stopClient() {
+		Paradox.instance.fileManager.saveMods();
 	}
 	
 	public static void onEvent(Event e) {

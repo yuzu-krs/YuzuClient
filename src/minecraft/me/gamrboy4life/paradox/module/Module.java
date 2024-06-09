@@ -100,6 +100,16 @@ public class Module {
 		player().sendQueue.addToSendQueue(p);
 	}
 	
+	public void enableOnStartUp() {
+		toggled=true;
+		try {
+			toggle();
+			onEnable();
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+	}
+	
 
 
 }
