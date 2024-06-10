@@ -1,0 +1,43 @@
+package me.gamrboy4life.paradox.module.combat;
+
+import me.gamrboy4life.paradox.module.Category;
+import me.gamrboy4life.paradox.module.Module;
+import net.minecraft.client.entity.EntityPlayerSP;
+import net.minecraft.entity.Entity;
+import net.minecraft.util.MovingObjectPosition;
+
+public class Reach extends Module {
+
+    public Reach() {
+        super("Reach", 0, Category.COMBAT);
+    }
+
+    @Override
+    public void onUpdate() {
+        if (!this.isToggled()) 
+            return;
+
+        // リーチを変更したい範囲（例えば10ブロック）
+        float customReach = 10.0F;
+
+        MovingObjectPosition objectMouseOver = mc.objectMouseOver;
+        if (objectMouseOver != null && objectMouseOver.entityHit != null) {
+            Entity targetEntity = objectMouseOver.entityHit;
+
+            // プレイヤー自身を無視
+            if (targetEntity instanceof EntityPlayerSP) 
+                return;
+
+            // エンティティが攻撃範囲内にあるかチェック
+            if (mc.thePlayer.getDistanceToEntity(targetEntity) <= customReach) {
+                // エンティティが生存しているかどうかを確認
+                if (targetEntity.isEntityAlive()) {
+                    // エンティティを攻撃
+                    mc.playerController.attackEntity(mc.thePlayer, targetEntity);
+                    mc.thePlayer.swingItem();
+                }
+            }
+        }
+        super.onUpdate();
+    }
+}

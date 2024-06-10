@@ -1,0 +1,49 @@
+package me.gamrboy4life.paradox.module.combat;
+
+import java.util.Iterator;
+
+import me.gamrboy4life.paradox.module.Category;
+import me.gamrboy4life.paradox.module.Module;
+import net.minecraft.client.entity.EntityPlayerSP;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.EntityLivingBase;
+
+public class Reach extends Module{
+
+	public Reach() {
+		super("Reach",0,Category.COMBAT);
+	}
+	
+	@Override
+	public void onUpdate() {
+	       if (!this.isToggled()) 
+	            return;
+
+	        // リーチを変更したい範囲（例えば10ブロック）
+	        float customReach = 10.0F;
+
+	        for (Iterator<Entity> entities = mc.theWorld.loadedEntityList.iterator(); entities.hasNext();) {
+	            Object theObject = entities.next();
+	            if (theObject instanceof EntityLivingBase) {
+	                EntityLivingBase entity = (EntityLivingBase) theObject;
+
+	                // プレイヤー自身を無視
+	                if (entity instanceof EntityPlayerSP) 
+	                    continue;
+
+	                // プレイヤーからエンティティまでの距離がカスタムリーチ内にあるかチェック
+	                if (mc.thePlayer.getDistanceToEntity(entity) <= customReach) {
+	                    // エンティティが生存しているかどうかを確認
+	                    if (entity.isEntityAlive()) {
+	                        // エンティティを攻撃
+	                        mc.playerController.attackEntity(mc.thePlayer, entity);
+	                        mc.thePlayer.swingItem();
+	                        continue;
+	                    }
+	                }
+	            }
+	        }
+	        super.onUpdate();
+	    }
+
+}

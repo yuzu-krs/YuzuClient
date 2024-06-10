@@ -1,7 +1,0 @@
-package me.gamrboy4life.paradox.extensions;
-
-public class FileManager {
-	public static File ROOT_DIR=new File("yuzuclient");
-	public static File modules=new File(ROOT_DIR,"modules.json");
-
-}

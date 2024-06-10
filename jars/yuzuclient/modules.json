@@ -1,6 +1,6 @@
 {
   "TabGui": {
-    "enabled": false
+    "enabled": true
   },
   "AntiFire": {
     "enabled": false
@@ -30,28 +30,28 @@
     "enabled": false
   },
   "AutoSprint": {
-    "enabled": false
+    "enabled": true
   },
   "AutoWalk": {
     "enabled": false
   },
   "Dolphin": {
-    "enabled": false
+    "enabled": true
   },
   "Flight": {
     "enabled": false
   },
   "Glide": {
-    "enabled": false
+    "enabled": true
   },
   "Jetpack": {
     "enabled": false
   },
   "JumpReset": {
-    "enabled": false
+    "enabled": true
   },
   "NoFall": {
-    "enabled": false
+    "enabled": true
   },
   "Parkour": {
     "enabled": false

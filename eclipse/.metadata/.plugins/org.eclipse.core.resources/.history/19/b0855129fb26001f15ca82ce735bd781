@@ -1,0 +1,45 @@
+package me.gamrboy4life.paradox.module.combat;
+
+import java.util.Iterator;
+
+import me.gamrboy4life.paradox.module.Category;
+import me.gamrboy4life.paradox.module.Module;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.util.math.RayTraceResult;
+
+public class Reach extends Module {
+
+    public Reach() {
+        super("Reach", 0, Category.COMBAT);
+    }
+
+    @Override
+    public void onUpdate() {
+        if (!this.isToggled()) 
+            return;
+
+        // レイキャスト（カーソルの位置からの直線）を取得
+        RayTraceResult objectMouseOver = mc.objectMouseOver;
+
+        // レイキャストが存在し、それがエンティティを指している場合
+        if (objectMouseOver != null && objectMouseOver.entityHit != null) {
+            Entity targetEntity = objectMouseOver.entityHit;
+            
+            // エンティティが生きている場合
+            if (targetEntity instanceof EntityLivingBase && targetEntity.isEntityAlive()) {
+                // プレイヤーとエンティティの距離を計算
+                double distanceToEntity = mc.thePlayer.getDistanceToEntity(targetEntity);
+
+                // 設定したリーチ範囲内にいる場合
+                if (distanceToEntity <= 6.2173613F) {
+                    // 攻撃を実行
+                    mc.playerController.attackEntity(mc.thePlayer, targetEntity);
+                    mc.thePlayer.swingItem();
+                }
+            }
+        }
+        
+        super.onUpdate();
+    }
+}

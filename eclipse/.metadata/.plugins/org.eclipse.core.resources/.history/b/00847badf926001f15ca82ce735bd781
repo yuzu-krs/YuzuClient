@@ -1,0 +1,37 @@
+package me.gamrboy4life.paradox.module.combat;
+
+import me.gamrboy4life.paradox.module.Category;
+import me.gamrboy4life.paradox.module.Module;
+import net.minecraft.client.entity.EntityPlayerSP;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.EntityLivingBase;
+
+public class Reach extends Module {
+
+    public Reach() {
+        super("Reach", 0, Category.COMBAT);
+    }
+
+    @Override
+    public void onUpdate() {
+        if (!this.isToggled())
+            return;
+
+        for (Entity entity : mc.theWorld.loadedEntityList) {
+            if (!(entity instanceof EntityLivingBase) || entity instanceof EntityPlayerSP)
+                continue;
+
+            EntityLivingBase livingEntity = (EntityLivingBase) entity;
+            if (!mc.objectMouseOver.entityHit.equals(livingEntity))
+                continue;
+
+            float reachDistance = 10.0F; // 攻撃範囲を拡大
+            if (mc.thePlayer.getDistanceToEntity(livingEntity) <= reachDistance && livingEntity.isEntityAlive()) {
+                mc.playerController.attackEntity(mc.thePlayer, livingEntity);
+                mc.thePlayer.swingItem();
+            }
+        }
+
+        super.onUpdate();
+    }
+}

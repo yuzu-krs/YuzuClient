@@ -1,0 +1,36 @@
+package me.gamrboy4life.paradox.module.movement;
+
+import java.util.ArrayList;
+
+import de.Hero.settings.Setting;
+import me.gamrboy4life.paradox.Paradox;
+import me.gamrboy4life.paradox.module.Category;
+import me.gamrboy4life.paradox.module.Module;
+
+public class Speed extends Module{
+
+    private double speed;
+
+    public Speed() {
+        super("Speed", 0, Category.MOVEMENT);
+    }
+    
+    @Override
+    public void setup() {
+        speed = Paradox.instance.settingsManager.getSettingByName("Run Speed").getValDouble();
+        ArrayList<String> options = new ArrayList<String>();
+        options.add("Run Speed");
+        Paradox.instance.settingsManager.rSetting(new Setting("Run Speed", this, speed, 1, 20, false));
+    }
+    
+    @Override
+    public void onUpdate() {
+        if (this.isToggled()) {
+            speed = Paradox.instance.settingsManager.getSettingByName("Run Speed").getValDouble();
+            if (mc.thePlayer.onGround) {
+                mc.thePlayer.motionX *= speed / 10.0; // X軸方向の速度を設定
+                mc.thePlayer.motionZ *= speed / 10.0; // Z軸方向の速度を設定
+            }
+        }
+    }
+}

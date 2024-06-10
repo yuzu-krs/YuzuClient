@@ -1,7 +1,0 @@
-package me.gamrboy4life.paradox.module.movement;
-
-public class NoFall {
-	public NoFall() {
-		super();
-	}
-}

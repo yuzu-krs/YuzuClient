@@ -44,14 +44,12 @@
     <fullyQualifiedTypeName name="me.gamrboy4life.paradox.extensions.FileManager"/>
     <fullyQualifiedTypeName name="me.gamrboy4life.paradox.utils.JsonUtils"/>
     <fullyQualifiedTypeName name="java.util.Map.Entry"/>
-    <fullyQualifiedTypeName name="java.util.Iterator"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="de.Hero.clickgui.ClickGUI"/>
     <fullyQualifiedTypeName name="me.gamrboy4life.paradox.module.misc.SmartDisabler"/>
     <fullyQualifiedTypeName name="org.lwjgl.input.Keyboard"/>
     <fullyQualifiedTypeName name="net.minecraft.potion.Potion"/>
     <fullyQualifiedTypeName name="me.gamrboy4life.paradox.module.Category"/>
-    <fullyQualifiedTypeName name="net.minecraft.entity.Entity"/>
     <fullyQualifiedTypeName name="net.minecraft.enchantment.EnchantmentHelper"/>
     <fullyQualifiedTypeName name="net.minecraft.enchantment.Enchantment"/>
     <fullyQualifiedTypeName name="net.minecraft.client.Minecraft"/>
@@ -59,4 +57,6 @@
     <fullyQualifiedTypeName name="me.gamrboy4life.paradox.Paradox"/>
     <fullyQualifiedTypeName name="net.minecraft.client.network.NetHandlerPlayClient"/>
     <fullyQualifiedTypeName name="net.minecraft.network.play.client.C03PacketPlayer.C04PacketPlayerPosition"/>
+    <fullyQualifiedTypeName name="java.util.Iterator"/>
+    <fullyQualifiedTypeName name="net.minecraft.entity.Entity"/>
 </qualifiedTypeNameHistroy>
