@@ -1,12 +1,12 @@
 {
   "TabGui": {
-    "enabled": true
+    "enabled": false
   },
   "AntiFire": {
-    "enabled": true
+    "enabled": false
   },
   "AntiPotion": {
-    "enabled": true
+    "enabled": false
   },
   "AutoClicker": {
     "enabled": false
@@ -116,7 +116,10 @@
   "ChannelIcon": {
     "enabled": false
   },
-  "SmartDisabler": {
+  "DeadPanic": {
+    "enabled": false
+  },
+  "Panic": {
     "enabled": false
   }
 }

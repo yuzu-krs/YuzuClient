@@ -1,0 +1,101 @@
+---- Minecraft Crash Report ----
+// Why did you do that?
+
+Time: 24/06/10 14:11
+Description: Ticking entity
+
+java.lang.NullPointerException: Ticking entity
+	at me.gamrboy4life.paradox.module.misc.AllDisabler.onUpdate(AllDisabler.java:16)
+	at me.gamrboy4life.paradox.module.ModuleManager.onUpdate(ModuleManager.java:136)
+	at net.minecraft.client.entity.EntityPlayerSP.onLivingUpdate(EntityPlayerSP.java:731)
+	at net.minecraft.entity.EntityLivingBase.onUpdate(EntityLivingBase.java:1825)
+	at net.minecraft.entity.player.EntityPlayer.onUpdate(EntityPlayer.java:335)
+	at net.minecraft.client.entity.EntityPlayerSP.onUpdate(EntityPlayerSP.java:174)
+	at net.minecraft.world.World.updateEntityWithOptionalForce(World.java:1887)
+	at net.minecraft.world.World.updateEntity(World.java:1856)
+	at net.minecraft.world.World.updateEntities(World.java:1708)
+	at net.minecraft.client.Minecraft.runTick(Minecraft.java:2199)
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1107)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:424)
+	at net.minecraft.client.main.Main.main(Main.java:113)
+	at Start.main(Start.java:11)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Stacktrace:
+	at me.gamrboy4life.paradox.module.misc.AllDisabler.onUpdate(AllDisabler.java:16)
+	at me.gamrboy4life.paradox.module.ModuleManager.onUpdate(ModuleManager.java:136)
+	at net.minecraft.client.entity.EntityPlayerSP.onLivingUpdate(EntityPlayerSP.java:731)
+	at net.minecraft.entity.EntityLivingBase.onUpdate(EntityLivingBase.java:1825)
+	at net.minecraft.entity.player.EntityPlayer.onUpdate(EntityPlayer.java:335)
+	at net.minecraft.client.entity.EntityPlayerSP.onUpdate(EntityPlayerSP.java:174)
+	at net.minecraft.world.World.updateEntityWithOptionalForce(World.java:1887)
+	at net.minecraft.world.World.updateEntity(World.java:1856)
+
+-- Entity being ticked --
+Details:
+	Entity Type: null (net.minecraft.client.entity.EntityPlayerSP)
+	Entity ID: 194
+	Entity Name: Player562
+	Entity's Exact location: 596.78, 70.25, 150.58
+	Entity's Block location: 596.00,70.00,150.00 - World: (596,70,150), Chunk: (at 4,4,6 in 37,9; contains blocks 592,0,144 to 607,255,159), Region: (1,0; contains chunks 32,0 to 63,31, blocks 512,0,0 to 1023,255,511)
+	Entity's Momentum: 0.20, 0.00, 0.15
+	Entity's Rider: ~~ERROR~~ NullPointerException: null
+	Entity's Vehicle: ~~ERROR~~ NullPointerException: null
+Stacktrace:
+	at net.minecraft.world.World.updateEntities(World.java:1708)
+
+-- Affected level --
+Details:
+	Level name: MpServer
+	All players: 1 total; [EntityPlayerSP['Player562'/194, l='MpServer', x=596.78, y=70.25, z=150.58]]
+	Chunk stats: MultiplayerChunkCache: 289, 289
+	Level seed: 0
+	Level generator: ID 02 - largeBiomes, ver 0. Features enabled: false
+	Level generator options: 
+	Level spawn location: 584.00,64.00,166.00 - World: (584,64,166), Chunk: (at 8,4,6 in 36,10; contains blocks 576,0,160 to 591,255,175), Region: (1,0; contains chunks 32,0 to 63,31, blocks 512,0,0 to 1023,255,511)
+	Level time: 450235 game time, 99 day time
+	Level dimension: 0
+	Level storage version: 0x00000 - Unknown?
+	Level weather: Rain time: 0 (now: false), thunder time: 0 (now: false)
+	Level game mode: Game mode: survival (ID 0). Hardcore: false. Cheats: false
+	Forced entities: 75 total; [EntityChicken['Chicken'/128, l='MpServer', x=648.13, y=66.00, z=221.47], EntityCreeper['Creeper'/129, l='MpServer', x=658.66, y=12.00, z=77.03], EntityEnderman['Enderman'/131, l='MpServer', x=662.50, y=40.00, z=154.50], EntityCreeper['Creeper'/261, l='MpServer', x=538.50, y=43.00, z=102.50], EntityCreeper['Creeper'/263, l='MpServer', x=538.50, y=43.00, z=104.50], EntityCreeper['Creeper'/264, l='MpServer', x=539.32, y=42.00, z=107.40], EntityZombie['Zombie'/265, l='MpServer', x=537.50, y=43.00, z=105.50], EntityBat['Bat'/266, l='MpServer', x=517.41, y=52.09, z=179.34], EntityBat['Bat'/267, l='MpServer', x=517.81, y=52.66, z=177.41], EntityZombie['Zombie'/45, l='MpServer', x=525.88, y=56.00, z=177.69], EntitySkeleton['Skeleton'/47, l='MpServer', x=516.50, y=32.00, z=216.50], EntitySheep['Sheep'/48, l='MpServer', x=525.06, y=67.00, z=223.44], EntityCreeper['Creeper'/51, l='MpServer', x=532.50, y=40.00, z=70.50], EntitySquid['Squid'/52, l='MpServer', x=539.44, y=56.60, z=88.69], EntitySkeleton['Skeleton'/53, l='MpServer', x=536.50, y=43.00, z=105.50], EntityZombie['Zombie'/54, l='MpServer', x=537.50, y=43.00, z=100.50], EntityZombie['Zombie'/55, l='MpServer', x=537.50, y=43.00, z=101.50], EntityCreeper['Creeper'/56, l='MpServer', x=531.94, y=24.00, z=134.50], EntityZombie['Zombie'/57, l='MpServer', x=532.38, y=23.00, z=138.94], EntityZombie['Zombie'/58, l='MpServer', x=534.03, y=18.00, z=151.41], EntityCreeper['Creeper'/59, l='MpServer', x=532.47, y=21.00, z=148.75], EntitySkeleton['Skeleton'/60, l='MpServer', x=527.97, y=50.00, z=175.19], EntitySheep['Sheep'/61, l='MpServer', x=538.09, y=64.00, z=164.81], EntityZombie['Zombie'/62, l='MpServer', x=532.06, y=57.00, z=180.34], EntitySkeleton['Skeleton'/320, l='MpServer', x=630.50, y=16.00, z=216.50], EntityBat['Bat'/65, l='MpServer', x=552.18, y=18.08, z=169.62], EntityZombie['Zombie'/66, l='MpServer', x=554.50, y=53.00, z=188.06], EntityPlayerSP['Player562'/194, l='MpServer', x=596.78, y=70.25, z=150.58], EntitySkeleton['Skeleton'/67, l='MpServer', x=553.44, y=53.00, z=186.91], EntityCreeper['Creeper'/68, l='MpServer', x=550.50, y=58.00, z=179.50], EntityCreeper['Creeper'/69, l='MpServer', x=550.25, y=58.00, z=181.69], EntityCreeper['Creeper'/70, l='MpServer', x=551.15, y=58.00, z=181.67], EntityCreeper['Creeper'/71, l='MpServer', x=550.94, y=58.00, z=182.50], EntityZombie['Zombie'/72, l='MpServer', x=572.91, y=40.00, z=153.50], EntitySpider['Spider'/73, l='MpServer', x=573.31, y=25.00, z=166.31], EntityZombie['Zombie'/74, l='MpServer', x=571.14, y=27.00, z=164.60], EntityBat['Bat'/75, l='MpServer', x=568.55, y=39.13, z=160.61], EntityVillager['Villager'/76, l='MpServer', x=568.50, y=66.00, z=226.94], EntitySpider['Spider'/77, l='MpServer', x=577.28, y=55.00, z=138.97], EntityBat['Bat'/78, l='MpServer', x=580.31, y=54.10, z=138.10], EntitySkeleton['Skeleton'/79, l='MpServer', x=590.94, y=21.00, z=172.31], EntitySpider['Spider'/80, l='MpServer', x=590.87, y=22.69, z=170.05], EntityBat['Bat'/81, l='MpServer', x=596.01, y=37.03, z=174.46], EntityCreeper['Creeper'/82, l='MpServer', x=586.50, y=24.00, z=182.50], EntityZombie['Zombie'/83, l='MpServer', x=580.50, y=54.00, z=217.50], EntityZombie['Zombie'/87, l='MpServer', x=596.50, y=22.00, z=169.84], EntitySkeleton['Skeleton'/88, l='MpServer', x=602.63, y=45.00, z=164.63], EntitySkeleton['Skeleton'/89, l='MpServer', x=601.28, y=46.50, z=172.28], EntityBat['Bat'/90, l='MpServer', x=594.87, y=40.10, z=173.59], EntityCreeper['Creeper'/91, l='MpServer', x=603.50, y=48.00, z=170.50], EntityEnderman['Enderman'/347, l='MpServer', x=643.60, y=12.00, z=190.63], EntityWitch['Witch'/92, l='MpServer', x=595.50, y=23.00, z=181.50], EntityCreeper['Creeper'/93, l='MpServer', x=603.78, y=34.00, z=188.22], EntityCreeper['Creeper'/94, l='MpServer', x=604.17, y=34.00, z=189.41], EntityCreeper['Creeper'/95, l='MpServer', x=603.35, y=34.00, z=189.58], EntityCreeper['Creeper'/96, l='MpServer', x=601.50, y=34.00, z=182.50], EntitySkeleton['Skeleton'/224, l='MpServer', x=608.50, y=34.00, z=185.50], EntityZombie['Zombie'/97, l='MpServer', x=603.63, y=53.00, z=185.84], EntitySkeleton['Skeleton'/225, l='MpServer', x=605.50, y=34.00, z=187.50], EntitySkeleton['Skeleton'/98, l='MpServer', x=597.47, y=53.00, z=185.88], EntityZombie['Zombie'/226, l='MpServer', x=603.50, y=34.00, z=183.50], EntityZombie['Zombie'/227, l='MpServer', x=607.50, y=34.00, z=183.50], EntityCreeper['Creeper'/358, l='MpServer', x=539.50, y=43.00, z=87.50], EntityMinecartChest['container.minecart'/106, l='MpServer', x=613.50, y=12.06, z=82.50], EntityZombie['Zombie'/107, l='MpServer', x=613.55, y=34.83, z=182.50], EntityBat['Bat'/108, l='MpServer', x=618.50, y=15.10, z=199.53], EntityBat['Bat'/109, l='MpServer', x=621.97, y=20.00, z=228.84], EntitySkeleton['Skeleton'/367, l='MpServer', x=655.50, y=24.00, z=193.50], EntitySkeleton['Skeleton'/115, l='MpServer', x=624.88, y=19.00, z=197.38], EntitySquid['Squid'/122, l='MpServer', x=653.75, y=51.76, z=140.95], EntitySheep['Sheep'/123, l='MpServer', x=645.41, y=63.00, z=157.25], EntitySquid['Squid'/124, l='MpServer', x=651.42, y=62.38, z=155.90], EntityChicken['Chicken'/125, l='MpServer', x=651.53, y=62.47, z=196.06], EntityCreeper['Creeper'/126, l='MpServer', x=645.28, y=24.00, z=212.69], EntityCreeper['Creeper'/127, l='MpServer', x=650.32, y=19.00, z=209.75]]
+	Retry entities: 0 total; []
+	Server brand: vanilla
+	Server type: Integrated singleplayer server
+Stacktrace:
+	at net.minecraft.client.multiplayer.WorldClient.addWorldInfoToCrashReport(WorldClient.java:390)
+	at net.minecraft.client.Minecraft.addGraphicsAndWorldToCrashReport(Minecraft.java:2760)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:445)
+	at net.minecraft.client.main.Main.main(Main.java:113)
+	at Start.main(Start.java:11)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.8.8
+	Operating System: Windows 11 (amd64) version 10.0
+	CPU: 16x 12th Gen Intel(R) Core(TM) i5-12600K
+	Java Version: 1.8.0_412, Temurin
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode), Temurin
+	Memory: 625032680 bytes (596 MB) / 1037959168 bytes (989 MB) up to 1037959168 bytes (989 MB)
+	JVM Flags: 3 total; -Xincgc -Xmx1024M -Xms1024M
+	IntCache: cache: 1, tcache: 1, allocated: 12, tallocated: 98
+	Launched Version: mcp
+	LWJGL: 2.9.4
+	OpenGL: NVIDIA GeForce RTX 3060/PCIe/SSE2 GL version 4.6.0 NVIDIA 560.38, NVIDIA Corporation
+	GL Caps: Using GL 1.3 multitexturing.
+Using GL 1.3 texture combiners.
+Using framebuffer objects because OpenGL 3.0 is supported and separate blending is supported.
+Shaders are available because OpenGL 2.1 is supported.
+VBOs are available because OpenGL 1.5 is supported.
+
+	Using VBOs: No
+	Is Modded: Very likely; Jar signature invalidated
+	Type: Client (map_client.txt)
+	Resource Packs: 
+	Current Language: English (US)
+	Profiler Position: N/A (disabled)
+	CPU: 16x 12th Gen Intel(R) Core(TM) i5-12600K

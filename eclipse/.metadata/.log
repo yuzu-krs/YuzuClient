@@ -4954,3 +4954,115 @@ java.lang.ExceptionInInitializerError
 Caused by: java.lang.NullPointerException: Cannot invoke "org.eclipse.ui.ISharedImages.getImageDescriptor(String)" because the return value of "org.eclipse.ui.IWorkbench.getSharedImages()" is null
 	at net.sf.eclipsecs.ui.CheckstyleUIPluginImages.<clinit>(CheckstyleUIPluginImages.java:108)
 	... 18 more
+!SESSION 2024-06-10 13:09:12.772 -----------------------------------------------
+eclipse.buildId=4.26.0.20221201-1200
+java.version=17.0.6
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ja_JP
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY mergedoc.encoding 2 0 2024-06-10 14:10:38.141
+!MESSAGE リソース '/Client/src/me/gamrboy4life/paradox/module/misc/SmartDisabler.java' が存在しません。
+
+!ENTRY mergedoc.encoding 2 0 2024-06-10 14:10:38.142
+!MESSAGE リソース '/Client/src/me/gamrboy4life/paradox/module/misc/SmartDisabler.java' が存在しません。
+
+!ENTRY mergedoc.encoding 2 0 2024-06-10 14:10:38.143
+!MESSAGE リソース '/Client/src/me/gamrboy4life/paradox/module/misc/SmartDisabler.java' が存在しません。
+
+!ENTRY mergedoc.encoding 2 0 2024-06-10 14:10:38.143
+!MESSAGE リソース '/Client/src/me/gamrboy4life/paradox/module/misc/SmartDisabler.java' が存在しません。
+
+!ENTRY mergedoc.encoding 2 0 2024-06-10 14:10:38.144
+!MESSAGE リソース '/Client/src/me/gamrboy4life/paradox/module/misc/SmartDisabler.java' が存在しません。
+
+!ENTRY mergedoc.encoding 2 0 2024-06-10 14:10:38.144
+!MESSAGE リソース '/Client/src/me/gamrboy4life/paradox/module/misc/SmartDisabler.java' が存在しません。
+
+!ENTRY mergedoc.encoding 2 0 2024-06-10 14:10:38.145
+!MESSAGE リソース '/Client/src/me/gamrboy4life/paradox/module/misc/SmartDisabler.java' が存在しません。
+
+!ENTRY mergedoc.encoding 2 0 2024-06-10 14:10:38.145
+!MESSAGE リソース '/Client/src/me/gamrboy4life/paradox/module/misc/SmartDisabler.java' が存在しません。
+
+!ENTRY mergedoc.encoding 2 0 2024-06-10 14:10:38.169
+!MESSAGE リソース '/Client/src/me/gamrboy4life/paradox/module/misc/SmartDisabler.java' が存在しません。
+
+!ENTRY mergedoc.encoding 2 0 2024-06-10 14:10:38.170
+!MESSAGE リソース '/Client/src/me/gamrboy4life/paradox/module/misc/SmartDisabler.java' が存在しません。
+
+!ENTRY mergedoc.encoding 2 0 2024-06-10 14:11:22.379
+!MESSAGE リソース '/Client/src/me/gamrboy4life/paradox/module/misc/Disabler.java' が存在しません。
+
+!ENTRY mergedoc.encoding 2 0 2024-06-10 14:11:22.379
+!MESSAGE リソース '/Client/src/me/gamrboy4life/paradox/module/misc/Disabler.java' が存在しません。
+
+!ENTRY mergedoc.encoding 2 0 2024-06-10 14:11:22.380
+!MESSAGE リソース '/Client/src/me/gamrboy4life/paradox/module/misc/Disabler.java' が存在しません。
+
+!ENTRY mergedoc.encoding 2 0 2024-06-10 14:11:22.380
+!MESSAGE リソース '/Client/src/me/gamrboy4life/paradox/module/misc/Disabler.java' が存在しません。
+
+!ENTRY mergedoc.encoding 2 0 2024-06-10 14:11:22.381
+!MESSAGE リソース '/Client/src/me/gamrboy4life/paradox/module/misc/Disabler.java' が存在しません。
+
+!ENTRY mergedoc.encoding 2 0 2024-06-10 14:11:22.381
+!MESSAGE リソース '/Client/src/me/gamrboy4life/paradox/module/misc/Disabler.java' が存在しません。
+
+!ENTRY mergedoc.encoding 2 0 2024-06-10 14:11:22.382
+!MESSAGE リソース '/Client/src/me/gamrboy4life/paradox/module/misc/Disabler.java' が存在しません。
+
+!ENTRY mergedoc.encoding 2 0 2024-06-10 14:11:22.382
+!MESSAGE リソース '/Client/src/me/gamrboy4life/paradox/module/misc/Disabler.java' が存在しません。
+
+!ENTRY mergedoc.encoding 2 0 2024-06-10 14:11:22.404
+!MESSAGE リソース '/Client/src/me/gamrboy4life/paradox/module/misc/Disabler.java' が存在しません。
+
+!ENTRY mergedoc.encoding 2 0 2024-06-10 14:11:22.405
+!MESSAGE リソース '/Client/src/me/gamrboy4life/paradox/module/misc/Disabler.java' が存在しません。
+
+!ENTRY mergedoc.encoding 2 0 2024-06-10 14:12:57.404
+!MESSAGE リソース '/Client/src/me/gamrboy4life/paradox/module/misc/AllDisabler.java' が存在しません。
+
+!ENTRY mergedoc.encoding 2 0 2024-06-10 14:12:57.404
+!MESSAGE リソース '/Client/src/me/gamrboy4life/paradox/module/misc/AllDisabler.java' が存在しません。
+
+!ENTRY mergedoc.encoding 2 0 2024-06-10 14:12:57.405
+!MESSAGE リソース '/Client/src/me/gamrboy4life/paradox/module/misc/AllDisabler.java' が存在しません。
+
+!ENTRY mergedoc.encoding 2 0 2024-06-10 14:12:57.406
+!MESSAGE リソース '/Client/src/me/gamrboy4life/paradox/module/misc/AllDisabler.java' が存在しません。
+
+!ENTRY mergedoc.encoding 2 0 2024-06-10 14:12:57.406
+!MESSAGE リソース '/Client/src/me/gamrboy4life/paradox/module/misc/AllDisabler.java' が存在しません。
+
+!ENTRY mergedoc.encoding 2 0 2024-06-10 14:12:57.407
+!MESSAGE リソース '/Client/src/me/gamrboy4life/paradox/module/misc/AllDisabler.java' が存在しません。
+
+!ENTRY mergedoc.encoding 2 0 2024-06-10 14:12:57.409
+!MESSAGE リソース '/Client/src/me/gamrboy4life/paradox/module/misc/AllDisabler.java' が存在しません。
+
+!ENTRY mergedoc.encoding 2 0 2024-06-10 14:12:57.409
+!MESSAGE リソース '/Client/src/me/gamrboy4life/paradox/module/misc/AllDisabler.java' が存在しません。
+
+!ENTRY mergedoc.encoding 2 0 2024-06-10 14:12:57.431
+!MESSAGE リソース '/Client/src/me/gamrboy4life/paradox/module/misc/AllDisabler.java' が存在しません。
+
+!ENTRY mergedoc.encoding 2 0 2024-06-10 14:12:57.431
+!MESSAGE リソース '/Client/src/me/gamrboy4life/paradox/module/misc/AllDisabler.java' が存在しません。
+
+!ENTRY org.eclipse.ui 2 2 2024-06-10 14:13:46.381
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
+
+!ENTRY org.eclipse.lsp4e 2 0 2024-06-10 14:18:14.704
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:70)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)

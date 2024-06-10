@@ -28,7 +28,7 @@ public class MainMenu extends GuiScreen{
 		this.drawModalRectWithCustomSizedTexture(0, 0, 0, 0,this.width, this.height, this.width, this.height);
 		this.drawGradientRect(0, height-120, width, height, 0x00000000, 0xff000000);
 		
-		String[] buttons= {"シングルプレイ","マルチプレイ","ＡＬＴ","設定","言語","登録","やめる"};
+		String[] buttons= {"SinglePlayer","MultiPlayer","AltManager","Settings","Language","Subscribe","Quit"};
 		int count=0;
 		for(String name:buttons) {
 			float x=(width/buttons.length)*count+(width/buttons.length)/2f+8-mc.fontRendererObj.getStringWidth(name)/2f;
@@ -51,7 +51,7 @@ public class MainMenu extends GuiScreen{
 	}
 	
 	public void mouseClicked(int mouseX,int mouseY,int button) {
-		String[] buttons= {"シングルプレイ","マルチプレイ","ＡＬＴ","設定","言語","登録","やめる"};
+		String[] buttons= {"SinglePlayer","MultiPlayer","AltManager","Settings","Language","Subscribe","Quit"};
 		
 		int count=0;
 		for(String name : buttons) {
@@ -60,17 +60,17 @@ public class MainMenu extends GuiScreen{
 		    float y = height - 20;
 
 		    if(mouseX >= x && mouseY >= y && mouseX < x + mc.fontRendererObj.getStringWidth(name) && mouseY < y + mc.fontRendererObj.FONT_HEIGHT) {
-		        if(name.equals("シングルプレイ")) {
+		        if(name.equals("SinglePlayer")) {
 		            mc.displayGuiScreen(new GuiSelectWorld(this));
-		        } else if(name.equals("マルチプレイ")) {
+		        } else if(name.equals("MultiPlayer")) {
 		            mc.displayGuiScreen(new GuiMultiplayer(this));
-		        } else if(name.equals("ＡＬＴ")) {
+		        } else if(name.equals("AltManager")) {
 		            mc.displayGuiScreen(new GuiAltManager());
-		        } else if(name.equals("設定")) {
+		        } else if(name.equals("Settings")) {
 		            mc.displayGuiScreen(new GuiOptions(this, mc.gameSettings));
-		        } else if(name.equals("言語")) {
+		        } else if(name.equals("Language")) {
 		            mc.displayGuiScreen(new GuiLanguage(this, mc.gameSettings, mc.getLanguageManager()));
-		        }else if(name.equals("登録")) {
+		        }else if(name.equals("Subscribe")) {
 		        	 try {
 		                    Desktop desktop = Desktop.getDesktop();
 		                    URI uri = new URI("https://www.youtube.com/@yuzu_krs");
@@ -78,7 +78,7 @@ public class MainMenu extends GuiScreen{
 		                } catch (Exception e) {
 		                    e.printStackTrace();
 		                }
-		        } else if(name.equals("やめる")) {
+		        } else if(name.equals("Quit")) {
 		            mc.shutdown();
 		        }
 		    }

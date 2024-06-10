@@ -1,0 +1,31 @@
+package me.gamrboy4life.paradox.module.misc;
+
+import me.gamrboy4life.paradox.Paradox;
+import me.gamrboy4life.paradox.module.Category;
+import me.gamrboy4life.paradox.module.Module;
+
+public class AllDisabler extends Module{
+
+	public AllDisabler() {
+		super("AllDisabler",0,Category.MISC);
+	}
+	
+	
+	@Override
+	public void onUpdate() {
+		if(this.isToggled()&& Paradox.instance.settingsManager.getSettingByName("Normal").getValBoolean()) {
+			for(Module m:Paradox.instance.moduleManager.getModules()) {
+				m.setToggled(false);
+			}
+			Paradox.instance.moduleManager.addChatMessage("すべてのMODが無効になりました!");
+		} 
+		
+		//if(this.isToggled()&&mc.thePlayer.isDead
+			//	&& Paradox.instance.settingsManager.getSettingByName("OnDeath").getValBoolean()) {
+			//for(Module m:Paradox.instance.moduleManager.getModules()) {
+//				m.setToggled(false);
+	//		}
+		//}
+	}
+
+}
