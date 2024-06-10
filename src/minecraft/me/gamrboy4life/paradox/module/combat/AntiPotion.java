@@ -17,8 +17,8 @@ public class AntiPotion extends Module{
 			Potion.harm,Potion.confusion,Potion.blindness,Potion.weakness,Potion.wither,Potion.poison};
 	
 	public void onUpdate() {
-		if(mc.thePlayer.capabilities.isCreativeMode&&mc.thePlayer.onGround&&hasBadEffect()) {
-			for(int i=0;i<1000;i++) {
+		if(!mc.thePlayer.capabilities.isCreativeMode&&mc.thePlayer.onGround&&hasBadEffect()) {
+			for(int i=0;i<100;i++) {
 				mc.thePlayer.sendQueue.addToSendQueue(new C03PacketPlayer());
 			}
 		}

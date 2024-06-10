@@ -3,10 +3,10 @@
     "enabled": true
   },
   "AntiFire": {
-    "enabled": false
+    "enabled": true
   },
   "AntiPotion": {
-    "enabled": false
+    "enabled": true
   },
   "AutoClicker": {
     "enabled": false
@@ -15,7 +15,7 @@
     "enabled": false
   },
   "Criticals": {
-    "enabled": true
+    "enabled": false
   },
   "FastBow": {
     "enabled": false
@@ -24,7 +24,7 @@
     "enabled": false
   },
   "MineClicker": {
-    "enabled": true
+    "enabled": false
   },
   "Regen": {
     "enabled": false
