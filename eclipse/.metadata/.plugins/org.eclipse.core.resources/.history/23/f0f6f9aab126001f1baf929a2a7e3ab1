@@ -1,0 +1,11 @@
+package me.gamrboy4life.paradox.module.combat;
+
+import me.gamrboy4life.paradox.module.Module;
+
+public class AutoClicker extends Module{
+
+	public AutoClicker() {
+		super(nm, k, c);
+	}
+
+}

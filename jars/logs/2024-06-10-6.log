@@ -1,0 +1,150 @@
+[12:39:02] [Client thread/INFO]: Setting user: Player187
+[12:39:02] [Client thread/INFO]: (Session ID is token:0:Player187)
+[12:39:03] [Client thread/INFO]: LWJGL Version: 2.9.4
+[12:39:03] [Client thread/INFO]: Reloading ResourceManager: Default
+[12:39:03] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[12:39:03] [Thread-7/INFO]: Initializing LWJGL OpenAL
+[12:39:03] [Thread-7/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[12:39:03] [Thread-7/ERROR]: Error in class 'LibraryLWJGLOpenAL'
+[12:39:03] [Thread-7/ERROR]: Unable to initialize OpenAL.  Probable cause: OpenAL not supported.
+[12:39:03] [Thread-7/WARN]: ERROR MESSAGE:
+[12:39:03] [Thread-7/INFO]: Could not locate OpenAL library.
+[12:39:03] [Thread-7/WARN]: STACK TRACE:
+[12:39:03] [Thread-7/INFO]: org.lwjgl.openal.AL.create(AL.java:156)
+[12:39:03] [Thread-7/INFO]: org.lwjgl.openal.AL.create(AL.java:102)
+[12:39:03] [Thread-7/INFO]: org.lwjgl.openal.AL.create(AL.java:206)
+[12:39:03] [Thread-7/INFO]: paulscode.sound.libraries.LibraryLWJGLOpenAL.init(LibraryLWJGLOpenAL.java:164)
+[12:39:03] [Thread-7/INFO]: paulscode.sound.SoundSystem.CommandNewLibrary(SoundSystem.java:1576)
+[12:39:03] [Thread-7/INFO]: paulscode.sound.SoundSystem.CommandQueue(SoundSystem.java:2572)
+[12:39:03] [Thread-7/INFO]: paulscode.sound.CommandThread.run(CommandThread.java:121)
+[12:39:04] [Sound Library Loader/WARN]: ERROR MESSAGE:
+[12:39:04] [Sound Library Loader/INFO]: Could not locate OpenAL library.
+[12:39:04] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[12:39:04] [Thread-9/INFO]: Switching to No Sound
+[12:39:04] [Thread-9/INFO]: (Silent Mode)
+[12:39:04] [Sound Library Loader/INFO]: Sound engine started
+[12:39:06] [Client thread/INFO]: Created: 1024x512 textures-atlas
+[12:39:17] [Server thread/INFO]: Starting integrated minecraft server version 1.8.8
+[12:39:17] [Server thread/INFO]: Generating keypair
+[12:39:17] [Server thread/INFO]: Preparing start region for level 0
+[12:39:17] [Server thread/INFO]: Changing view distance to 8, from 10
+[12:39:18] [Server thread/INFO]: Player187[local:E:52d601dd] logged in with entity id 80 at (-1692.4507594528447, 94.0, 1033.5926383017802)
+[12:39:18] [Server thread/INFO]: Player187 joined the game
+[12:39:18] [Client thread/ERROR]: Item entity 173 has no item?!
+[12:39:23] [Server thread/INFO]: Saving and pausing game...
+[12:39:23] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[12:39:23] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[12:39:23] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[12:40:00] [Server thread/INFO]: Saving and pausing game...
+[12:40:00] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[12:40:00] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[12:40:00] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[12:40:08] [Server thread/INFO]: Saving and pausing game...
+[12:40:08] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[12:40:08] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[12:40:08] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[12:40:16] [Server thread/INFO]: Saving and pausing game...
+[12:40:16] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[12:40:16] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[12:40:16] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[12:41:09] [Server thread/INFO]: Saving and pausing game...
+[12:41:09] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[12:41:09] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[12:41:09] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[12:41:16] [Server thread/INFO]: Saving and pausing game...
+[12:41:16] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[12:41:16] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[12:41:16] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[12:41:25] [Server thread/INFO]: Saving and pausing game...
+[12:41:25] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[12:41:26] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[12:41:26] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[12:41:56] [Client thread/INFO]: [CHAT] §eYuzuClient§7: すべてのキーバインドがクリアされました!
+[12:42:00] [Client thread/INFO]: [CHAT] §eYuzuClient§7: SmartDisabler を Hキー に設定しました
+[12:45:09] [Server thread/WARN]: The save is being accessed from another location, aborting
+[12:45:54] [Server thread/WARN]: The save is being accessed from another location, aborting
+[12:46:39] [Server thread/WARN]: The save is being accessed from another location, aborting
+[12:47:24] [Server thread/WARN]: The save is being accessed from another location, aborting
+[12:48:09] [Server thread/WARN]: The save is being accessed from another location, aborting
+[12:48:54] [Server thread/WARN]: The save is being accessed from another location, aborting
+[Thread-6/ERROR]: Unable to initialize OpenAL.  Probable cause: OpenAL not supported.
+[12:44:21] [Thread-6/WARN]: ERROR MESSAGE:
+[12:44:21] [Thread-6/INFO]: Could not locate OpenAL library.
+[12:44:21] [Thread-6/WARN]: STACK TRACE:
+[12:44:21] [Thread-6/INFO]: org.lwjgl.openal.AL.create(AL.java:156)
+[12:44:21] [Thread-6/INFO]: org.lwjgl.openal.AL.create(AL.java:102)
+[12:44:21] [Thread-6/INFO]: org.lwjgl.openal.AL.create(AL.java:206)
+[12:44:21] [Thread-6/INFO]: paulscode.sound.libraries.LibraryLWJGLOpenAL.init(LibraryLWJGLOpenAL.java:164)
+[12:44:21] [Thread-6/INFO]: paulscode.sound.SoundSystem.CommandNewLibrary(SoundSystem.java:1576)
+[12:44:21] [Thread-6/INFO]: paulscode.sound.SoundSystem.CommandQueue(SoundSystem.java:2572)
+[12:44:21] [Thread-6/INFO]: paulscode.sound.CommandThread.run(CommandThread.java:121)
+[12:44:21] [Sound Library Loader/WARN]: ERROR MESSAGE:
+[12:44:21] [Sound Library Loader/INFO]: Could not locate OpenAL library.
+[12:44:21] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[12:44:21] [Thread-8/INFO]: Switching to No Sound
+[12:44:21] [Thread-8/INFO]: (Silent Mode)
+[12:44:22] [Sound Library Loader/INFO]: Sound engine started
+[12:44:23] [Client thread/INFO]: Created: 1024x512 textures-atlas
+[12:45:08] [Server thread/INFO]: Starting integrated minecraft server version 1.8.8
+[12:45:08] [Server thread/INFO]: Generating keypair
+[12:45:08] [Server thread/INFO]: Preparing start region for level 0
+[12:45:09] [Server thread/INFO]: Changing view distance to 8, from 10
+[12:45:09] [Server thread/INFO]: Player687[local:E:921b1b4a] logged in with entity id 79 at (-1560.1382363806883, 92.0, 974.1225329919635)
+[12:45:09] [Server thread/INFO]: Player687 joined the game
+[12:45:25] [Server thread/INFO]: Saving and pausing game...
+[12:45:25] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[12:45:25] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[12:45:25] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[12:46:22] [Server thread/INFO]: Saving and pausing game...
+[12:46:22] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[12:46:22] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[12:46:22] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[12:46:57] [Server thread/INFO]: Saving and pausing game...
+[12:46:57] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[12:46:57] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[12:46:57] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[12:47:30] [Server thread/INFO]: Saving and pausing game...
+[12:47:30] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[12:47:30] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[12:47:30] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[12:47:44] [Client thread/INFO]: [CHAT] §eYuzuClient§7: SmartDisabler を Hキー に設定しました
+[12:47:47] [Client thread/INFO]: [CHAT] §eYuzuClient§7: すべてのMODが無効になりました
+[12:47:47] [Client thread/INFO]: [CHAT] §eYuzuClient§7: すべてのMODが無効になりました
+[12:47:47] [Client thread/INFO]: [CHAT] §eYuzuClient§7: すべてのMODが無効になりました
+[12:47:47] [Client thread/INFO]: [CHAT] §eYuzuClient§7: すべてのMODが無効になりました
+[12:47:47] [Client thread/INFO]: [CHAT] §eYuzuClient§7: すべてのMODが無効になりました
+[12:47:47] [Client thread/INFO]: [CHAT] §eYuzuClient§7: すべてのMODが無効になりました
+[12:47:47] [Client thread/INFO]: [CHAT] §eYuzuClient§7: すべてのMODが無効になりました
+[12:47:47] [Client thread/INFO]: [CHAT] §eYuzuClient§7: すべてのMODが無効になりました
+[12:47:47] [Client thread/INFO]: [CHAT] §eYuzuClient§7: すべてのMODが無効になりました
+[12:47:47] [Client thread/INFO]: [CHAT] §eYuzuClient§7: すべてのMODが無効になりました
+[12:47:47] [Client thread/INFO]: [CHAT] §eYuzuClient§7: すべてのMODが無効になりました
+[12:47:47] [Client thread/INFO]: [CHAT] §eYuzuClient§7: すべてのMODが無効になりました
+[12:47:47] [Client thread/INFO]: [CHAT] §eYuzuClient§7: すべてのMODが無効になりました
+[12:47:47] [Client thread/INFO]: [CHAT] §eYuzuClient§7: すべてのMODが無効になりました
+[12:47:47] [Client thread/INFO]: [CHAT] §eYuzuClient§7: すべてのMODが無効になりました
+[12:47:47] [Client thread/INFO]: [CHAT] §eYuzuClient§7: すべてのMODが無効になりました
+[12:47:47] [Client thread/INFO]: [CHAT] §eYuzuClient§7: すべてのMODが無効になりました
+[12:47:47] [Client thread/INFO]: [CHAT] §eYuzuClient§7: すべてのMODが無効になりました
+[12:47:47] [Client thread/INFO]: [CHAT] §eYuzuClient§7: すべてのMODが無効になりました
+[12:47:47] [Client thread/INFO]: [CHAT] §eYuzuClient§7: すべてのMODが無効になりました
+[12:47:47] [Client thread/INFO]: [CHAT] §eYuzuClient§7: すべてのMODが無効になりました
+[12:47:47] [Client thread/INFO]: [CHAT] §eYuzuClient§7: すべてのMODが無効になりました
+[12:47:47] [Client thread/INFO]: [CHAT] §eYuzuClient§7: すべてのMODが無効になりました
+[12:47:47] [Client thread/INFO]: [CHAT] §eYuzuClient§7: すべてのMODが無効になりました
+[12:47:47] [Client thread/INFO]: [CHAT] §eYuzuClient§7: すべてのMODが無効になりました
+[12:47:47] [Client thread/INFO]: [CHAT] §eYuzuClient§7: すべてのMODが無効になりました
+[12:47:47] [Client thread/INFO]: [CHAT] §eYuzuClient§7: すべてのMODが無効になりました
+[12:47:47] [Client thread/INFO]: [CHAT] §eYuzuClient§7: すべてのMODが無効になりました
+[12:47:47] [Client thread/INFO]: [CHAT] §eYuzuClient§7: すべてのMODが無効になりました
+[12:47:47] [Client thread/INFO]: [CHAT] §eYuzuClient§7: すべてのMODが無効になりました
+[12:47:47] [Client thread/INFO]: [CHAT] §eYuzuClient§7: すべてのMODが無効になりました
+[12:47:47] [Client thread/INFO]: [CHAT] §eYuzuClient§7: すべてのMODが無効になりました
+[12:47:47] [Client thread/INFO]: [CHAT] §eYuzuClient§7: すべてのMODが無効になりました
+[12:47:47] [Client thread/INFO]: [CHAT] §eYuzuClient§7: すべてのMODが無効になりました
+[12:47:47] [Client thread/INFO]: [CHAT] §eYuzuClient§7: すべてのMODが無効になりました
+[12:47:47] [Client thread/INFO]: [CHAT] §eYuzuClient§7: すべてのMODが無効になりました
+[12:47:47] [Client thread/INFO]: [CHAT] §eYuzuClient§7: すべてのMODが無効になりました
+[12:47:47] [Client thread/INFO]: [CHAT] §eYuzuClient§7: すべてのMODが無効になりました
+[12:47:47] [Client thread/INFO]: [CHAT] §eYuzuClient§7: すべてのMODが無効になりました
+[12:47:47] [Client thread/INFO]: [CHAT] §eYuzuClient§7: すべてのMODが無効になりました

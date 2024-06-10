@@ -2,13 +2,31 @@
   "TabGui": {
     "enabled": true
   },
+  "AntiFire": {
+    "enabled": false
+  },
+  "AntiPotion": {
+    "enabled": false
+  },
   "AutoClicker": {
     "enabled": false
+  },
+  "AutoSword": {
+    "enabled": false
+  },
+  "Criticals": {
+    "enabled": true
   },
   "FastBow": {
     "enabled": false
   },
   "KillAura": {
+    "enabled": false
+  },
+  "MineClicker": {
+    "enabled": true
+  },
+  "Regen": {
     "enabled": false
   },
   "AutoSprint": {
@@ -84,7 +102,7 @@
     "enabled": false
   },
   "ESP": {
-    "enabled": true
+    "enabled": false
   },
   "FullBright": {
     "enabled": false
@@ -96,6 +114,9 @@
     "enabled": false
   },
   "ChannelIcon": {
+    "enabled": false
+  },
+  "SmartDisabler": {
     "enabled": false
   }
 }

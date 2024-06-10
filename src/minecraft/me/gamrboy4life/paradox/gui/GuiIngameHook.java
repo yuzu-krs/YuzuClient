@@ -1,7 +1,13 @@
 package me.gamrboy4life.paradox.gui;
 
+import java.util.HashSet;
+
+import com.google.common.collect.Sets;
+
+import de.Hero.clickgui.ClickGUI;
 import me.gamrboy4life.paradox.Paradox;
 import me.gamrboy4life.paradox.module.Module;
+import me.gamrboy4life.paradox.module.misc.SmartDisabler;
 import me.gamrboy4life.paradox.utils.ColorUtils;
 import me.gamrboy4life.paradox.utils.Wrapper;
 import net.minecraft.client.Minecraft;
@@ -26,6 +32,12 @@ public class GuiIngameHook extends GuiIngame{
 
 		}
 	}
+	
+	private HashSet<String> modBlackList=Sets.newHashSet(ClickGUI.class.getName(),SmartDisabler.class.getName());
+	
+	public boolean isModBlackListed(Module m) {
+		return modBlackList.contains(m.getClass().getName());
+	}
 
 	
 	private void renderArrayList() {
@@ -39,12 +51,13 @@ public class GuiIngameHook extends GuiIngame{
 			double offset = yCount*(Wrapper.fr.FONT_HEIGHT + 6);
 			
 			if(m.isToggled()) {
+				if(!modBlackList.contains(m.getClass().getName())) {
 				Gui.drawRect(sr.getScaledWidth() - Wrapper.fr.getStringWidth(m.getName()) - 15, offset, sr.getScaledWidth(), 6 + Wrapper.fr.FONT_HEIGHT + offset, 0x80000000);
 	            Wrapper.fr.drawString("- " + m.getName(), sr.getScaledWidth() - Wrapper.fr.getStringWidth(m.getName()) - 13 , 4 + offset , ColorUtils.rainbowEffect(index + x*200000000L, 1.0f).getRGB());
 					yCount ++;
 					index++;
 					x++;
-
+				}
 			}
 		}
 	}

@@ -1,0 +1,31 @@
+package me.gamrboy4life.paradox.module.combat;
+
+import me.gamrboy4life.paradox.module.Category;
+import me.gamrboy4life.paradox.module.Module;
+
+public class AutoSword extends Module{
+
+	public AutoSword() {
+		super("AutoSword",0,Category.COMBAT);
+	}
+	
+	@Override
+	public void onUpdate() {
+		if(this.isToggled()) {
+			getBestWeapon(null);
+		}
+	}
+	
+	
+	
+	
+	
+	
+	
+	public static int getEnchantDamageVsEntity(ItemStack i,Entity e) {
+		if(e instanceof EntityZombie || e instanceof EntityPigZombie|| e instanceof EntitySkeleton) {
+			
+		}
+	}
+
+}

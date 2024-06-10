@@ -1,0 +1,12 @@
+package me.gamrboy4life.paradox.module.combat;
+
+import me.gamrboy4life.paradox.module.Category;
+import me.gamrboy4life.paradox.module.Module;
+
+public class AutoSword extends Module{
+
+	public AutoSword() {
+		super("AutoSword",0,Category.COMBAT);
+	}
+
+}

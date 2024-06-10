@@ -1,0 +1,7 @@
+package me.gamrboy4life.paradox.module.combat;
+
+import me.gamrboy4life.paradox.module.Module;
+
+public class Regen extends Module{
+
+}

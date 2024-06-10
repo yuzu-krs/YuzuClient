@@ -4,10 +4,17 @@ import java.util.ArrayList;
 import java.util.List;
 
 import me.gamrboy4life.paradox.Paradox;
+import me.gamrboy4life.paradox.module.combat.AntiFire;
+import me.gamrboy4life.paradox.module.combat.AntiPotion;
 import me.gamrboy4life.paradox.module.combat.AutoClicker;
+import me.gamrboy4life.paradox.module.combat.AutoSword;
+import me.gamrboy4life.paradox.module.combat.Criticals;
 import me.gamrboy4life.paradox.module.combat.FastBow;
 import me.gamrboy4life.paradox.module.combat.KillAura;
+import me.gamrboy4life.paradox.module.combat.MineClicker;
+import me.gamrboy4life.paradox.module.combat.Regen;
 import me.gamrboy4life.paradox.module.misc.ChannelIcon;
+import me.gamrboy4life.paradox.module.misc.SmartDisabler;
 import me.gamrboy4life.paradox.module.movement.AutoSprint;
 import me.gamrboy4life.paradox.module.movement.AutoWalk;
 import me.gamrboy4life.paradox.module.movement.Dolphin;
@@ -50,10 +57,15 @@ public class ModuleManager {
 
 		
 		//COMBAT
+		newMod(new AntiFire());
+		newMod(new AntiPotion());
 		newMod(new AutoClicker());
+		newMod(new AutoSword());
+		newMod(new Criticals());
 		newMod(new FastBow());
 		newMod(new KillAura());
-		
+		newMod(new MineClicker());
+		newMod(new Regen());
 		
 		//MOVEMENT
 		newMod(new AutoSprint());
@@ -93,6 +105,7 @@ public class ModuleManager {
 		
 		//MISC
 		newMod(new ChannelIcon());
+		newMod(new SmartDisabler());
 	}
 	
 	

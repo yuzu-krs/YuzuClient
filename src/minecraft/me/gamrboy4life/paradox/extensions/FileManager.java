@@ -15,6 +15,7 @@ import com.google.gson.JsonObject;
 
 import me.gamrboy4life.paradox.Paradox;
 import me.gamrboy4life.paradox.module.Module;
+import me.gamrboy4life.paradox.module.misc.SmartDisabler;
 import me.gamrboy4life.paradox.module.render.ClickGui;
 import me.gamrboy4life.paradox.utils.JsonUtils;
 
@@ -54,7 +55,7 @@ public class FileManager {
 	
 	//保存したくないハック
 	//ClickGuiは標準で表示する
-	private HashSet<String> modBlackList=Sets.newHashSet(ClickGui.class.getName());
+	private HashSet<String> modBlackList=Sets.newHashSet(ClickGui.class.getName(),SmartDisabler.class.getName());
 	
 	public boolean isModBlackListed(Module m) {
 		return modBlackList.contains(m.getClass().getName());
