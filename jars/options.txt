@@ -12,7 +12,7 @@ maxFps:260
 fboEnable:true
 difficulty:2
 fancyGraphics:true
-ao:1
+ao:2
 renderClouds:true
 resourcePacks:[]
 incompatibleResourcePacks:[]
@@ -24,7 +24,7 @@ chatLinks:true
 chatLinksPrompt:true
 chatOpacity:1.0
 snooperEnabled:true
-fullscreen:false
+fullscreen:true
 enableVsync:false
 useVbo:false
 hideServerAddress:false

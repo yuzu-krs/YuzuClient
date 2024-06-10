@@ -14,7 +14,7 @@ public class ChannelIcon extends Module{
 	public void onRender() {
 		if(this.isToggled()) {
 			mc.getTextureManager().bindTexture(new ResourceLocation("yuzuclient/yuzu.jpg"));
-			GuiScreen.drawModalRectWithCustomSizedTexture(410, 190, 0, 0, 50, 50, 50, 50);
+			GuiScreen.drawModalRectWithCustomSizedTexture(300, 150, 0, 0, 50, 50, 50, 50);
 		}
 	}
 	

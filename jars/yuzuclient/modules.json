@@ -1,6 +1,6 @@
 {
   "TabGui": {
-    "enabled": true
+    "enabled": false
   },
   "AntiFire": {
     "enabled": false
@@ -114,7 +114,7 @@
     "enabled": false
   },
   "ChannelIcon": {
-    "enabled": false
+    "enabled": true
   },
   "DeadPanic": {
     "enabled": false
