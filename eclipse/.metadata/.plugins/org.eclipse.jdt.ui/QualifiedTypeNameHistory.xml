@@ -54,9 +54,10 @@
     <fullyQualifiedTypeName name="net.minecraft.enchantment.Enchantment"/>
     <fullyQualifiedTypeName name="net.minecraft.client.Minecraft"/>
     <fullyQualifiedTypeName name="me.gamrboy4life.paradox.module.Module"/>
-    <fullyQualifiedTypeName name="me.gamrboy4life.paradox.Paradox"/>
     <fullyQualifiedTypeName name="net.minecraft.client.network.NetHandlerPlayClient"/>
     <fullyQualifiedTypeName name="net.minecraft.network.play.client.C03PacketPlayer.C04PacketPlayerPosition"/>
     <fullyQualifiedTypeName name="java.util.Iterator"/>
     <fullyQualifiedTypeName name="net.minecraft.entity.Entity"/>
+    <fullyQualifiedTypeName name="me.gamrboy4life.paradox.Paradox"/>
+    <fullyQualifiedTypeName name="me.gamrboy4life.paradox.gui.SplashProgress"/>
 </qualifiedTypeNameHistroy>

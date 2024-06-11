@@ -1,6 +1,6 @@
 {
   "TabGui": {
-    "enabled": false
+    "enabled": true
   },
   "AntiFire": {
     "enabled": false
@@ -30,28 +30,28 @@
     "enabled": false
   },
   "AutoSprint": {
-    "enabled": true
+    "enabled": false
   },
   "AutoWalk": {
     "enabled": false
   },
   "Dolphin": {
-    "enabled": true
+    "enabled": false
   },
   "Flight": {
     "enabled": false
   },
   "Glide": {
-    "enabled": true
+    "enabled": false
   },
   "Jetpack": {
     "enabled": false
   },
   "JumpReset": {
-    "enabled": true
+    "enabled": false
   },
   "NoFall": {
-    "enabled": true
+    "enabled": false
   },
   "Parkour": {
     "enabled": false
@@ -114,7 +114,7 @@
     "enabled": false
   },
   "ChannelIcon": {
-    "enabled": true
+    "enabled": false
   },
   "DeadPanic": {
     "enabled": false

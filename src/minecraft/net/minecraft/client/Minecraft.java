@@ -59,6 +59,7 @@ import com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService;
 import me.gamrboy4life.paradox.Paradox;
 import me.gamrboy4life.paradox.gui.GuiIngameHook;
 import me.gamrboy4life.paradox.gui.MainMenu;
+import me.gamrboy4life.paradox.gui.SplashProgress;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.audio.MusicTicker;
@@ -495,7 +496,10 @@ public class Minecraft implements IThreadListener, IPlayerUsage
         this.refreshResources();
         this.renderEngine = new TextureManager(this.mcResourceManager);
         this.mcResourceManager.registerReloadListener(this.renderEngine);
-        this.drawSplashScreen(this.renderEngine);
+        //this.drawSplashScreen(this.renderEngine);
+        SplashProgress.drawSplash(getTextureManager());
+        
+        
         this.initStream();
         this.skinManager = new SkinManager(this.renderEngine, new File(this.fileAssets, "skins"), this.sessionService);
         this.saveLoader = new AnvilSaveConverter(new File(this.mcDataDir, "saves"));
@@ -548,17 +552,24 @@ public class Minecraft implements IThreadListener, IPlayerUsage
         this.renderEngine.loadTickableTexture(TextureMap.locationBlocksTexture, this.textureMapBlocks);
         this.renderEngine.bindTexture(TextureMap.locationBlocksTexture);
         this.textureMapBlocks.setBlurMipmapDirect(false, this.gameSettings.mipmapLevels > 0);
+        SplashProgress.setProgress(2, "YuzuClient - ModuleManager");
         this.modelManager = new ModelManager(this.textureMapBlocks);
         this.mcResourceManager.registerReloadListener(this.modelManager);
         this.renderItem = new RenderItem(this.renderEngine, this.modelManager);
+        SplashProgress.setProgress(3, "YuzuClient - RenderItem");
         this.renderManager = new RenderManager(this.renderEngine, this.renderItem);
+        SplashProgress.setProgress(4, "YuzuClient - RenderManager");
         this.itemRenderer = new ItemRenderer(this);
+        SplashProgress.setProgress(5, "YuzuClient - ItemRender");
         this.mcResourceManager.registerReloadListener(this.renderItem);
         this.entityRenderer = new EntityRenderer(this, this.mcResourceManager);
+        SplashProgress.setProgress(6, "YuzuClient - EntityRender");
         this.mcResourceManager.registerReloadListener(this.entityRenderer);
         this.blockRenderDispatcher = new BlockRendererDispatcher(this.modelManager.getBlockModelShapes(), this.gameSettings);
+        SplashProgress.setProgress(6, "YuzuClient - BlockRenderDispatcher");
         this.mcResourceManager.registerReloadListener(this.blockRenderDispatcher);
         this.renderGlobal = new RenderGlobal(this);
+        SplashProgress.setProgress(7, "YuzuClient - RenderGlobal");
         this.mcResourceManager.registerReloadListener(this.renderGlobal);
         this.guiAchievement = new GuiAchievement(this);
         GlStateManager.viewport(0, 0, this.displayWidth, this.displayHeight);

@@ -12,6 +12,7 @@ import me.gamrboy4life.paradox.event.Event;
 import me.gamrboy4life.paradox.event.events.EventChat;
 import me.gamrboy4life.paradox.extensions.DiscordRP;
 import me.gamrboy4life.paradox.extensions.FileManager;
+import me.gamrboy4life.paradox.gui.SplashProgress;
 import me.gamrboy4life.paradox.module.Module;
 import me.gamrboy4life.paradox.module.ModuleManager;
 import me.gamrboy4life.paradox.module.render.TabGui;
@@ -44,6 +45,8 @@ public class Paradox {
 		
 		
 		fileManager.init();
+		
+		SplashProgress.setProgress(1, "YuzuClient - Discord RP");
 		
 		discordRP.start();
 		
