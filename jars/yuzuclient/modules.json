@@ -1,6 +1,6 @@
 {
   "TabGui": {
-    "enabled": false
+    "enabled": true
   },
   "AntiFire": {
     "enabled": true
