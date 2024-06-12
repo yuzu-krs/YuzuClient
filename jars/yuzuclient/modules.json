@@ -1,6 +1,6 @@
 {
   "TabGui": {
-    "enabled": true
+    "enabled": false
   },
   "AntiFire": {
     "enabled": true
@@ -109,9 +109,6 @@
   },
   "Xray": {
     "enabled": false
-  },
-  "XYZ": {
-    "enabled": true
   },
   "ChannelIcon": {
     "enabled": false
