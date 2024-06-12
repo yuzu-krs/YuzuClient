@@ -13,7 +13,9 @@ import me.gamrboy4life.paradox.utils.Wrapper;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.Gui;
 import net.minecraft.client.gui.GuiIngame;
+import net.minecraft.client.gui.GuiScreen;
 import net.minecraft.client.gui.ScaledResolution;
+import net.minecraft.util.ResourceLocation;
 
 public class GuiIngameHook extends GuiIngame {
 
@@ -25,8 +27,10 @@ public class GuiIngameHook extends GuiIngame {
         super.renderGameOverlay(p_175180_1_);
 
         if (!mc.gameSettings.showDebugInfo) {
-            drawRect(2, 2, 110, 14, 0x80000000);
-            Wrapper.fr.drawString("YuzuClient", 4, 4, 0xFFE600);
+			mc.getTextureManager().bindTexture(new ResourceLocation("yuzuclient/yuzuclientlogo.png"));
+			GuiScreen.drawModalRectWithCustomSizedTexture(3, 0, 1, 5,60,30, 60, 30);
+            
+            
             renderArrayList();
         }
     }
