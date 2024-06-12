@@ -1,0 +1,47 @@
+package me.gamrboy4life.paradox.mods.impl;
+
+import me.gamrboy4life.paradox.gui.hud.ScreenPosition;
+import me.gamrboy4life.paradox.mods.ModDraggable;
+
+public class ModArmorStatus extends ModDraggable{
+
+	@Override
+	public int getWidth() {
+		return 64;
+	}
+
+	@Override
+	public int getHeight() {
+		return 64;
+	}
+
+	@Override
+	public void render(ScreenPosition pos) {
+		
+	}
+
+	@Override
+	public void renderDummy(ScreenPosition pos) {
+		// TODO 自動生成されたメソッド・スタブ
+		
+	}
+
+	@Override
+	public boolean isEnabled() {
+		// TODO 自動生成されたメソッド・スタブ
+		return false;
+	}
+
+	@Override
+	public void save(ScreenPosition pos) {
+		// TODO 自動生成されたメソッド・スタブ
+		
+	}
+
+	@Override
+	public ScreenPosition load() {
+		// TODO 自動生成されたメソッド・スタブ
+		return null;
+	}
+
+}

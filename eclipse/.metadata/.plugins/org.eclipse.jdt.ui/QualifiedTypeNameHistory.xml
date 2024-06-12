@@ -1,12 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="org.lwjgl.opengl.Display"/>
-    <fullyQualifiedTypeName name="net.minecraft.client.gui.GuiIngame"/>
-    <fullyQualifiedTypeName name="java.awt.Color"/>
-    <fullyQualifiedTypeName name="me.gamrboy4life.paradox.utils.ColorUtils"/>
-    <fullyQualifiedTypeName name="net.minecraft.network.play.client.C07PacketPlayerDigging.Action"/>
-    <fullyQualifiedTypeName name="net.minecraft.util.EnumFacing"/>
-    <fullyQualifiedTypeName name="net.minecraft.network.play.client.C03PacketPlayer"/>
     <fullyQualifiedTypeName name="net.arikia.dev.drpc.DiscordEventHandlers.Builder"/>
     <fullyQualifiedTypeName name="net.arikia.dev.drpc.callbacks.ReadyCallback"/>
     <fullyQualifiedTypeName name="net.arikia.dev.drpc.DiscordUser"/>
@@ -36,28 +29,35 @@
     <fullyQualifiedTypeName name="net.minecraft.client.gui.Gui"/>
     <fullyQualifiedTypeName name="me.gamrboy4life.paradox.utils.Wrapper"/>
     <fullyQualifiedTypeName name="net.minecraft.client.renderer.GlStateManager"/>
-    <fullyQualifiedTypeName name="net.minecraft.client.gui.GuiScreen"/>
     <fullyQualifiedTypeName name="me.gamrboy4life.paradox.event.Event"/>
     <fullyQualifiedTypeName name="java.util.Arrays"/>
     <fullyQualifiedTypeName name="me.gamrboy4life.paradox.command.Command"/>
     <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="me.gamrboy4life.paradox.extensions.FileManager"/>
     <fullyQualifiedTypeName name="me.gamrboy4life.paradox.utils.JsonUtils"/>
-    <fullyQualifiedTypeName name="java.util.Map.Entry"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="de.Hero.clickgui.ClickGUI"/>
     <fullyQualifiedTypeName name="me.gamrboy4life.paradox.module.misc.SmartDisabler"/>
-    <fullyQualifiedTypeName name="org.lwjgl.input.Keyboard"/>
     <fullyQualifiedTypeName name="net.minecraft.potion.Potion"/>
     <fullyQualifiedTypeName name="me.gamrboy4life.paradox.module.Category"/>
     <fullyQualifiedTypeName name="net.minecraft.enchantment.EnchantmentHelper"/>
     <fullyQualifiedTypeName name="net.minecraft.enchantment.Enchantment"/>
-    <fullyQualifiedTypeName name="net.minecraft.client.Minecraft"/>
     <fullyQualifiedTypeName name="me.gamrboy4life.paradox.module.Module"/>
     <fullyQualifiedTypeName name="net.minecraft.client.network.NetHandlerPlayClient"/>
     <fullyQualifiedTypeName name="net.minecraft.network.play.client.C03PacketPlayer.C04PacketPlayerPosition"/>
-    <fullyQualifiedTypeName name="java.util.Iterator"/>
     <fullyQualifiedTypeName name="net.minecraft.entity.Entity"/>
     <fullyQualifiedTypeName name="me.gamrboy4life.paradox.Paradox"/>
     <fullyQualifiedTypeName name="me.gamrboy4life.paradox.gui.SplashProgress"/>
+    <fullyQualifiedTypeName name="java.lang.reflect.Method"/>
+    <fullyQualifiedTypeName name="java.util.Iterator"/>
+    <fullyQualifiedTypeName name="net.minecraft.client.gui.GuiScreen"/>
+    <fullyQualifiedTypeName name="java.util.HashMap"/>
+    <fullyQualifiedTypeName name="java.util.Optional"/>
+    <fullyQualifiedTypeName name="java.util.Collection"/>
+    <fullyQualifiedTypeName name="org.lwjgl.input.Keyboard"/>
+    <fullyQualifiedTypeName name="java.io.IOException"/>
+    <fullyQualifiedTypeName name="me.gamrboy4life.paradox.mods.ModInstances"/>
+    <fullyQualifiedTypeName name="me.gamrboy4life.paradox.gvent.GventManager"/>
+    <fullyQualifiedTypeName name="net.minecraft.client.Minecraft"/>
+    <fullyQualifiedTypeName name="java.util.Map.Entry"/>
 </qualifiedTypeNameHistroy>

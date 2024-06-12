@@ -1,0 +1,58 @@
+package me.gamrboy4life.paradox.mods.impl;
+
+import me.gamrboy4life.paradox.gui.hud.ScreenPosition;
+import me.gamrboy4life.paradox.mods.ModDraggable;
+import net.minecraft.init.Items;
+import net.minecraft.item.ItemStack;
+
+public class ModArmorStatus extends ModDraggable{
+	
+	private ScreenPosition pos=ScreenPosition.fromRelativePosition(0.5,0.5);
+
+	@Override
+	public int getWidth() {
+		return 64;
+	}
+
+	@Override
+	public int getHeight() {
+		return 64;
+	}
+
+	@Override
+	public void render(ScreenPosition pos) {
+	    for (int i = 0; i < mc.thePlayer.inventory.armorInventory.length; i++) {
+	        ItemStack itemStack = mc.thePlayer.inventory.armorInventory[i];
+	        renderItemStack(i, itemStack);
+	    }
+	}
+
+	private void renderItemStack(int i, ItemStack itemStack) {
+		// TODO 自動生成されたメソッド・スタブ
+		
+	}
+
+	@Override
+	public void renderDummy(ScreenPosition pos) {
+	    renderItemStack(3, new ItemStack(Items.diamond_helmet));
+	    renderItemStack(2, new ItemStack(Items.diamond_chestplate));
+	    renderItemStack(1, new ItemStack(Items.diamond_leggings));
+	    renderItemStack(0, new ItemStack(Items.diamond_boots));
+	}
+
+	@Override
+	public boolean isEnabled() {
+		return true;
+	}
+
+	@Override
+	public void save(ScreenPosition pos) {
+		this.pos=pos;
+	}
+
+	@Override
+	public ScreenPosition load() {
+		return pos;
+	}
+
+}
