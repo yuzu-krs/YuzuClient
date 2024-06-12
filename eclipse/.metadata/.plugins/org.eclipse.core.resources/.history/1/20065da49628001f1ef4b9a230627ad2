@@ -27,6 +27,7 @@ public class GuiIngameHook extends GuiIngame {
         if (!mc.gameSettings.showDebugInfo) {
             drawRect(2, 2, 110, 14, 0x80000000);
             Wrapper.fr.drawString("YuzuClient", 4, 4, 0xFFE600);
+            Wrapper.fr.drawString("FPS: " + mc.getDebugFPS(), 60, 4, -1);
             renderArrayList();
         }
     }
