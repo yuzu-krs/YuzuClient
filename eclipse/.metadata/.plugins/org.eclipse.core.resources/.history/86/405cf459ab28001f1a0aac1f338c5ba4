@@ -1,0 +1,73 @@
+package me.gamrboy4life.paradox.mods.impl;
+
+import me.gamrboy4life.paradox.gui.hud.ScreenPosition;
+import me.gamrboy4life.paradox.mods.ModDraggable;
+
+public class ModKeystorokes extends ModDraggable{
+	
+    private static class Key {
+        private final String name;
+        private final KeyBinding keyBind;
+        private final int x;
+        private final int y;
+        private final int width;
+        private final int height;
+        
+        public Key(String name, KeyBinding keyBind, int x, int y, int width, int height) {
+            this.name = name;
+            this.keyBind = keyBind;
+            this.x = x;
+            this.y = y;
+            this.width = width;
+            this.height = height;
+        }
+        
+        public boolean isDown() {
+            return keyBind.isKeyDown();
+        }
+	
+	private ScreenPosition pos;
+
+	@Override
+	public int getWidth() {
+		
+		return 0;
+	}
+
+	@Override
+	public int getHeight() {
+		// TODO 自動生成されたメソッド・スタブ
+		return 0;
+	}
+
+	@Override
+	public void render(ScreenPosition pos) {
+		// TODO 自動生成されたメソッド・スタブ
+		
+	}
+
+	@Override
+	public void renderDummy(ScreenPosition pos) {
+		// TODO 自動生成されたメソッド・スタブ
+		
+	}
+
+	@Override
+	public boolean isEnabled() {
+		// TODO 自動生成されたメソッド・スタブ
+		return false;
+	}
+
+	@Override
+	public void save(ScreenPosition pos) {
+		// TODO 自動生成されたメソッド・スタブ
+		
+	}
+
+	@Override
+	public ScreenPosition load() {
+		// TODO 自動生成されたメソッド・スタブ
+		return null;
+	}
+
+}

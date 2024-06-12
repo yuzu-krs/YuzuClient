@@ -6087,3 +6087,130 @@ java.lang.ExceptionInInitializerError
 Caused by: java.lang.NullPointerException: Cannot invoke "org.eclipse.ui.ISharedImages.getImageDescriptor(String)" because the return value of "org.eclipse.ui.IWorkbench.getSharedImages()" is null
 	at net.sf.eclipsecs.ui.CheckstyleUIPluginImages.<clinit>(CheckstyleUIPluginImages.java:108)
 	... 18 more
+!SESSION 2024-06-12 18:01:01.852 -----------------------------------------------
+eclipse.buildId=4.26.0.20221201-1200
+java.version=17.0.6
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ja_JP
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.ui 2 2 2024-06-12 19:26:43.763
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
+
+!ENTRY mergedoc.encoding 2 0 2024-06-12 19:27:29.948
+!MESSAGE リソース '/Client/src/me/gamrboy4life/paradox/mods/impl/ModPotion.java' が存在しません。
+
+!ENTRY mergedoc.encoding 2 0 2024-06-12 19:27:29.949
+!MESSAGE リソース '/Client/src/me/gamrboy4life/paradox/mods/impl/ModPotion.java' が存在しません。
+
+!ENTRY mergedoc.encoding 2 0 2024-06-12 19:27:29.966
+!MESSAGE リソース '/Client/src/me/gamrboy4life/paradox/mods/impl/ModPotion.java' が存在しません。
+
+!ENTRY mergedoc.encoding 2 0 2024-06-12 19:27:29.967
+!MESSAGE リソース '/Client/src/me/gamrboy4life/paradox/mods/impl/ModPotion.java' が存在しません。
+
+!ENTRY mergedoc.encoding 2 0 2024-06-12 19:27:29.968
+!MESSAGE リソース '/Client/src/me/gamrboy4life/paradox/mods/impl/ModPotion.java' が存在しません。
+
+!ENTRY mergedoc.encoding 2 0 2024-06-12 19:27:29.968
+!MESSAGE リソース '/Client/src/me/gamrboy4life/paradox/mods/impl/ModPotion.java' が存在しません。
+
+!ENTRY mergedoc.encoding 2 0 2024-06-12 19:27:29.968
+!MESSAGE リソース '/Client/src/me/gamrboy4life/paradox/mods/impl/ModPotion.java' が存在しません。
+
+!ENTRY mergedoc.encoding 2 0 2024-06-12 19:27:29.969
+!MESSAGE リソース '/Client/src/me/gamrboy4life/paradox/mods/impl/ModPotion.java' が存在しません。
+
+!ENTRY mergedoc.encoding 2 0 2024-06-12 19:27:29.970
+!MESSAGE リソース '/Client/src/me/gamrboy4life/paradox/mods/impl/ModPotion.java' が存在しません。
+
+!ENTRY mergedoc.encoding 2 0 2024-06-12 19:27:29.970
+!MESSAGE リソース '/Client/src/me/gamrboy4life/paradox/mods/impl/ModPotion.java' が存在しません。
+
+!ENTRY mergedoc.encoding 2 0 2024-06-12 19:27:29.994
+!MESSAGE リソース '/Client/src/me/gamrboy4life/paradox/mods/impl/ModPotion.java' が存在しません。
+
+!ENTRY mergedoc.encoding 2 0 2024-06-12 19:27:29.995
+!MESSAGE リソース '/Client/src/me/gamrboy4life/paradox/mods/impl/ModPotion.java' が存在しません。
+
+!ENTRY mergedoc.encoding 2 0 2024-06-12 19:39:31.495
+!MESSAGE リソース '/Client/src/me/gamrboy4life/paradox/mods/impl/ModPotionEffects.java' が存在しません。
+
+!ENTRY mergedoc.encoding 2 0 2024-06-12 19:39:31.497
+!MESSAGE リソース '/Client/src/me/gamrboy4life/paradox/mods/impl/ModPotionEffects.java' が存在しません。
+
+!ENTRY mergedoc.encoding 2 0 2024-06-12 19:39:31.498
+!MESSAGE リソース '/Client/src/me/gamrboy4life/paradox/mods/impl/ModPotionEffects.java' が存在しません。
+
+!ENTRY mergedoc.encoding 2 0 2024-06-12 19:39:31.498
+!MESSAGE リソース '/Client/src/me/gamrboy4life/paradox/mods/impl/ModPotionEffects.java' が存在しません。
+
+!ENTRY mergedoc.encoding 2 0 2024-06-12 19:39:31.498
+!MESSAGE リソース '/Client/src/me/gamrboy4life/paradox/mods/impl/ModPotionEffects.java' が存在しません。
+
+!ENTRY mergedoc.encoding 2 0 2024-06-12 19:39:31.499
+!MESSAGE リソース '/Client/src/me/gamrboy4life/paradox/mods/impl/ModPotionEffects.java' が存在しません。
+
+!ENTRY mergedoc.encoding 2 0 2024-06-12 19:39:31.500
+!MESSAGE リソース '/Client/src/me/gamrboy4life/paradox/mods/impl/ModPotionEffects.java' が存在しません。
+
+!ENTRY mergedoc.encoding 2 0 2024-06-12 19:39:31.500
+!MESSAGE リソース '/Client/src/me/gamrboy4life/paradox/mods/impl/ModPotionEffects.java' が存在しません。
+
+!ENTRY mergedoc.encoding 2 0 2024-06-12 19:39:31.525
+!MESSAGE リソース '/Client/src/me/gamrboy4life/paradox/mods/impl/ModPotionEffects.java' が存在しません。
+
+!ENTRY mergedoc.encoding 2 0 2024-06-12 19:39:31.526
+!MESSAGE リソース '/Client/src/me/gamrboy4life/paradox/mods/impl/ModPotionEffects.java' が存在しません。
+
+!ENTRY mergedoc.encoding 2 0 2024-06-12 19:40:54.850
+!MESSAGE リソース '/Client/src/me/gamrboy4life/paradox/mods/impl/ModPotion.java' が存在しません。
+
+!ENTRY mergedoc.encoding 2 0 2024-06-12 19:40:54.851
+!MESSAGE リソース '/Client/src/me/gamrboy4life/paradox/mods/impl/ModPotion.java' が存在しません。
+
+!ENTRY mergedoc.encoding 2 0 2024-06-12 19:40:54.869
+!MESSAGE リソース '/Client/src/me/gamrboy4life/paradox/mods/impl/ModPotion.java' が存在しません。
+
+!ENTRY mergedoc.encoding 2 0 2024-06-12 19:40:54.870
+!MESSAGE リソース '/Client/src/me/gamrboy4life/paradox/mods/impl/ModPotion.java' が存在しません。
+
+!ENTRY mergedoc.encoding 2 0 2024-06-12 19:40:54.870
+!MESSAGE リソース '/Client/src/me/gamrboy4life/paradox/mods/impl/ModPotion.java' が存在しません。
+
+!ENTRY mergedoc.encoding 2 0 2024-06-12 19:40:54.871
+!MESSAGE リソース '/Client/src/me/gamrboy4life/paradox/mods/impl/ModPotion.java' が存在しません。
+
+!ENTRY mergedoc.encoding 2 0 2024-06-12 19:40:54.871
+!MESSAGE リソース '/Client/src/me/gamrboy4life/paradox/mods/impl/ModPotion.java' が存在しません。
+
+!ENTRY mergedoc.encoding 2 0 2024-06-12 19:40:54.872
+!MESSAGE リソース '/Client/src/me/gamrboy4life/paradox/mods/impl/ModPotion.java' が存在しません。
+
+!ENTRY mergedoc.encoding 2 0 2024-06-12 19:40:54.873
+!MESSAGE リソース '/Client/src/me/gamrboy4life/paradox/mods/impl/ModPotion.java' が存在しません。
+
+!ENTRY mergedoc.encoding 2 0 2024-06-12 19:40:54.873
+!MESSAGE リソース '/Client/src/me/gamrboy4life/paradox/mods/impl/ModPotion.java' が存在しません。
+
+!ENTRY mergedoc.encoding 2 0 2024-06-12 19:40:54.893
+!MESSAGE リソース '/Client/src/me/gamrboy4life/paradox/mods/impl/ModPotion.java' が存在しません。
+
+!ENTRY mergedoc.encoding 2 0 2024-06-12 19:40:54.893
+!MESSAGE リソース '/Client/src/me/gamrboy4life/paradox/mods/impl/ModPotion.java' が存在しません。
+
+!ENTRY mergedoc.encoding 2 0 2024-06-12 19:55:15.550
+!MESSAGE リソース '/Client/src/me/gamrboy4life/paradox/mods/impl/ModPotionEffects.java' が存在しません。
+
+!ENTRY mergedoc.encoding 2 0 2024-06-12 19:55:15.551
+!MESSAGE リソース '/Client/src/me/gamrboy4life/paradox/mods/impl/ModPotionEffects.java' が存在しません。
+
+!ENTRY Activator 4 0 2024-06-12 20:02:19.553
+!MESSAGE NullPointerException: Cannot invoke "org.springsource.ide.eclipse.commons.livexp.core.LiveSetVariable.getValue()" because "this.this$0.applications" is null
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.springsource.ide.eclipse.commons.livexp.core.LiveSetVariable.getValue()" because "this.this$0.applications" is null
+	at org.springframework.ide.eclipse.boot.dash.model.LocalBootDashModel$2.bundleChanged(LocalBootDashModel.java:153)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.dispatchEvent(BundleContextImpl.java:949)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
