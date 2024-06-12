@@ -1,0 +1,30 @@
+package me.gamrboy4life.paradox.gui.hud;
+
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.Optional;
+
+import net.minecraft.client.gui.GuiScreen;
+
+public class HUDConfigScreen extends GuiScreen {
+    private final HashMap<IRenderer, ScreenPosition> renderers = new HashMap<>();
+    private Optional<IRenderer> selectedRenderer = Optional.empty();
+    private int prevX, prevY;
+
+    public HUDConfigScreen(HUDManager api) {
+        Collection<IRenderer> registeredRenderers = api.getRegisteredRenderers();
+        for (IRenderer ren : registeredRenderers) {
+            if (!ren.isEnabled()) {
+                continue;
+            }
+
+            ScreenPosition pos = ren.load();
+            if (pos == null) {
+                pos = ScreenPosition.fromRelativePosition(0.5, 0.5);
+            }
+
+            adjustBounds(ren, pos);
+            this.renderers.put(ren, pos);
+        }
+    }
+}

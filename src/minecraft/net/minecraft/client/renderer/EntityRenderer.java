@@ -23,6 +23,7 @@ import com.google.gson.JsonSyntaxException;
 
 import me.gamrboy4life.paradox.Paradox;
 import me.gamrboy4life.paradox.gui.MainMenu;
+import me.gamrboy4life.paradox.gvent.impl.RenderEvent;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockBed;
 import net.minecraft.block.material.Material;
@@ -1326,6 +1327,8 @@ public class EntityRenderer implements IResourceManagerReloadListener
                 }
             }
         }
+        
+        new RenderEvent().call();
 
         this.frameFinish();
         this.waitForServerThread();

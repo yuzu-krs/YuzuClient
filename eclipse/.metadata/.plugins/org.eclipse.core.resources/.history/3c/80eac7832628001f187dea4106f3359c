@@ -1,0 +1,24 @@
+package me.gamrboy4life.paradox.mods;
+
+public class Mod {
+    private boolean isEnabled = true;
+    protected final Minecraft mc;
+    protected final FontRenderer font;
+    protected final Client client;
+
+    public Mod() {
+        this.mc = Minecraft.getMinecraft();
+        this.font = this.mc.fontRendererObj;
+        this.client = Client.getInstance();
+        setEnabled(isEnabled);
+    }
+
+    public void setEnabled(boolean isEnabled) {
+        this.isEnabled = isEnabled;
+        if (isEnabled) {
+            EventManager.register(this);
+        } else {
+            // 何かの処理
+        }
+    }
+}

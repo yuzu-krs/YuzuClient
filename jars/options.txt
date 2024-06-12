@@ -12,7 +12,7 @@ maxFps:260
 fboEnable:true
 difficulty:2
 fancyGraphics:true
-ao:2
+ao:1
 renderClouds:true
 resourcePacks:[]
 incompatibleResourcePacks:[]
@@ -24,7 +24,7 @@ chatLinks:true
 chatLinksPrompt:true
 chatOpacity:1.0
 snooperEnabled:true
-fullscreen:true
+fullscreen:false
 enableVsync:false
 useVbo:false
 hideServerAddress:false
@@ -90,6 +90,7 @@ key_key.hotbar.7:8
 key_key.hotbar.8:9
 key_key.hotbar.9:10
 key_Zoom:46
+key_Mod Positioning:34
 soundCategory_master:1.0
 soundCategory_music:1.0
 soundCategory_record:1.0

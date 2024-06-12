@@ -1,0 +1,40 @@
+package me.gamrboy4life.paradox.mods;
+
+import me.gamrboy4life.paradox.gui.hud.IRenderer;
+import me.gamrboy4life.paradox.gui.hud.ScreenPosition;
+
+public abstract class ModDraggable extends Mod implements IRenderer {
+    private ScreenPosition pos;
+    private boolean dragging;
+    private int lastX, lastY;
+
+    @Override
+    public void onMouseClicked(int mouseX, int mouseY, int mouseButton) {
+        if (mouseButton == 0 && isOver(mouseX, mouseY)) {
+            dragging = true;
+            lastX = mouseX;
+            lastY = mouseY;
+        }
+    }
+
+    @Override
+    public void onMouseReleased(int mouseX, int mouseY, int mouseButton) {
+        if (mouseButton == 0) {
+            dragging = false;
+        }
+    }
+
+    @Override
+    public void onMouseDragged(int mouseX, int mouseY, int deltaX, int deltaY, int mouseButton) {
+        if (dragging) {
+            ScreenPosition pos = getPosition();
+            pos.setAbsolute(pos.getAbsoluteX() + deltaX, pos.getAbsoluteY() + deltaY);
+        }
+    }
+
+    private boolean isOver(int mouseX, int mouseY) {
+        ScreenPosition pos = getPosition();
+        return mouseX >= pos.getAbsoluteX() && mouseX <= pos.getAbsoluteX() + getWidth() &&
+               mouseY >= pos.getAbsoluteY() && mouseY <= pos.getAbsoluteY() + getHeight();
+    }
+}

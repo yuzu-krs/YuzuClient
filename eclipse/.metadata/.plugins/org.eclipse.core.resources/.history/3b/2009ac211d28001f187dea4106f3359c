@@ -1,0 +1,26 @@
+package me.gamrboy4life.paradox.gui.hud;
+
+
+import java.util.Set;
+
+import com.google.common.collect.Sets;
+
+
+public class HUDManager {
+    private HUDManager() {}
+
+    private static HUDManager instance = null;
+
+    public static HUDManager getInstance() {
+        if (instance != null) {
+            return instance;
+        }
+
+        instance = new HUDManager();
+        EventManager.register(instance);
+
+        return instance;
+    }
+
+    private Set<IRenderer> registeredRenderers = Sets.newHashSet();
+}

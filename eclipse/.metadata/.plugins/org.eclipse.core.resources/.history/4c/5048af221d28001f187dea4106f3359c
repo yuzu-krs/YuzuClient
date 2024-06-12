@@ -1,0 +1,32 @@
+package me.gamrboy4life.paradox.gui.hud;
+
+public class ExampleRender extends AbstractRender {
+    
+    @Override
+    public int getWidth() {
+        // 実装コード
+        return 0;
+    }
+    
+    @Override
+    public int getHeight() {
+        // 実装コード
+        return 0;
+    }
+    
+    @Override
+    public void render(ScreenPosition pos) {
+        // 実装コード
+    }
+
+    @Override
+    public void save(ScreenPosition pos) {
+        // 実装コード
+    }
+
+	@Override
+	public ScreenPosition load() {
+		// TODO 自動生成されたメソッド・スタブ
+		return null;
+	}
+}

@@ -60,6 +60,7 @@ import me.gamrboy4life.paradox.Paradox;
 import me.gamrboy4life.paradox.gui.GuiIngameHook;
 import me.gamrboy4life.paradox.gui.MainMenu;
 import me.gamrboy4life.paradox.gui.SplashProgress;
+import me.gamrboy4life.paradox.gvent.impl.ClientTickEvent;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.audio.MusicTicker;
@@ -609,6 +610,7 @@ public class Minecraft implements IThreadListener, IPlayerUsage
         }
 
         this.renderGlobal.makeEntityOutlineShader();
+        
     }
 
     private void registerMetadataSerializers()
@@ -2268,6 +2270,10 @@ public class Minecraft implements IThreadListener, IPlayerUsage
             this.mcProfiler.endStartSection("pendingConnection");
             this.myNetworkManager.processReceivedPackets();
         }
+        
+        new ClientTickEvent().call();
+        
+        		
 
         this.mcProfiler.endSection();
         this.systemTime = getSystemTime();

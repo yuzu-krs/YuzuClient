@@ -1,8 +1,0 @@
-package me.gamrboy4life.paradox.extensions;
-
-public class DiscordRP {
-	
-	private boolean running=true;
-	private long created=0;
-
-}

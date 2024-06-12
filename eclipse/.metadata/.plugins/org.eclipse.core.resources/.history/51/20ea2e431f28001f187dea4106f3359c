@@ -1,0 +1,21 @@
+package me.gamrboy4life.paradox.gvent;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
+
+public class GventManager {
+    private static final Map<Class<? extends Gvent>, ArrayList<GventData>> REGISTRY_MAP = new HashMap<Class<? extends Gvent>, ArrayList<GventData>>();
+
+    private static void sortListValue(final Class<? extends Gvent> clazz) {
+        final ArrayList<GventData> flexibleArray = new ArrayList<GventData>();
+        for (final byte b : GventPriority.VALUE_ARRAY) {
+            for (GventData methodData : GventManager_REGISTRY_MAP.get(clazz)) {
+                if (methodData.priority == b) {
+                    flexibleArray.add(methodData);
+                }
+            }
+        }
+        EventManager.REGISTRY_MAP.put(clazz, flexibleArray);
+    }
+}
