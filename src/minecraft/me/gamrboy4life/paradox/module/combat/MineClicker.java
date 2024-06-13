@@ -36,7 +36,6 @@ public class MineClicker extends Module {
         // マウスの戻るボタン
         if (Mouse.isButtonDown(3) && !isCtrlPressed) {
             if (currentTime - lastClickTime >= 50) { // 50ミリ秒ごとにクリックを許可
-                System.out.println("Mouse back button is pressed");
                 // 左クリックをシミュレート
                 robot.mousePress(InputEvent.BUTTON1_DOWN_MASK);
                 robot.mouseRelease(InputEvent.BUTTON1_DOWN_MASK);

@@ -54,7 +54,7 @@
     "enabled": false
   },
   "Parkour": {
-    "enabled": false
+    "enabled": true
   },
   "Scaffold": {
     "enabled": false
