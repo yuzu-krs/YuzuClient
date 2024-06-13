@@ -1,6 +1,6 @@
 {
   "TabGui": {
-    "enabled": true
+    "enabled": false
   },
   "AntiFire": {
     "enabled": true
@@ -51,7 +51,7 @@
     "enabled": false
   },
   "NoFall": {
-    "enabled": false
+    "enabled": true
   },
   "Parkour": {
     "enabled": true
