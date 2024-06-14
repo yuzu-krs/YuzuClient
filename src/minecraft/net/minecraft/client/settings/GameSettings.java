@@ -282,7 +282,7 @@ public class GameSettings {
 	public KeyBinding ofKeyBindZoom;
 	private File optionsFileOF;
 
-	public KeyBinding CLIENT_GUI_MOD_POS = new KeyBinding("Mod Positioning", Keyboard.KEY_INSERT, "ClientName");
+	public KeyBinding CLIENT_GUI_MOD_POS = new KeyBinding("PVP HUD", Keyboard.KEY_INSERT, "YuzuClient");
 
 	public GameSettings(Minecraft mcIn, File p_i46326_2_) {
 

@@ -90,7 +90,7 @@ key_key.hotbar.7:8
 key_key.hotbar.8:9
 key_key.hotbar.9:10
 key_Zoom:46
-key_Mod Positioning:210
+key_PVP HUD:210
 soundCategory_master:1.0
 soundCategory_music:1.0
 soundCategory_record:1.0
