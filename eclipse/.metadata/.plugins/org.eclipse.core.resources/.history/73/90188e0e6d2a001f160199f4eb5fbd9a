@@ -1,0 +1,37 @@
+package me.gamrboy4life.paradox.module.combat;
+
+import me.gamrboy4life.paradox.module.Category;
+import me.gamrboy4life.paradox.module.Module;
+import net.minecraft.client.entity.EntityPlayerSP;
+import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.util.MovingObjectPosition;
+
+public class Reach extends Module {
+
+    public Reach() {
+        super("Reach", 0, Category.COMBAT);
+    }
+
+    @Override
+    public void onUpdate() {
+        if (!this.isToggled()) 
+            return;
+
+        // プレイヤーが見ているエンティティを見つけるためのレイトレースを実行
+        MovingObjectPosition objectMouseOver = mc.objectMouseOver;
+        
+        if (objectMouseOver != null && objectMouseOver.entityHit != null && objectMouseOver.entityHit instanceof EntityLivingBase) {
+            EntityLivingBase entity = (EntityLivingBase) objectMouseOver.entityHit;
+
+            if (entity instanceof EntityPlayerSP) 
+                return;
+
+            if (mc.thePlayer.getDistanceToEntity(entity) <= 6.2173613F && entity.isEntityAlive()) {
+                mc.playerController.attackEntity(mc.thePlayer, entity);
+                mc.thePlayer.swingItem();
+            }
+        }
+        
+        super.onUpdate();
+    }
+}

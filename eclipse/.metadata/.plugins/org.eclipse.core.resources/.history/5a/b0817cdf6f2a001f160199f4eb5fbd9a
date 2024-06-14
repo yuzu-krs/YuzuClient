@@ -1,0 +1,54 @@
+package me.gamrboy4life.paradox.module.combat;
+
+import java.util.List;
+
+import me.gamrboy4life.paradox.module.Category;
+import me.gamrboy4life.paradox.module.Module;
+import net.minecraft.client.entity.EntityPlayerSP;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.util.AxisAlignedBB;
+import net.minecraft.util.Vec3;
+
+public class Reach extends Module {
+
+    public Reach() {
+        super("Reach", 0, Category.COMBAT);
+    }
+
+    @Override
+    public void onUpdate() {
+        if (!this.isToggled()) 
+            return;
+
+        EntityLivingBase closestEntity = null;
+        double closestDistanceSq = Double.MAX_VALUE;
+        Vec3 playerPos = mc.thePlayer.getPositionEyes(1.0F);
+        Vec3 playerLook = mc.thePlayer.getLook(1.0F);
+        Vec3 reachVec = playerPos.addVector(playerLook.xCoord * 4.0D, playerLook.yCoord * 4.0D, playerLook.zCoord * 4.0D);
+
+        AxisAlignedBB playerRange = mc.thePlayer.boundingBox.expand(4.0D, 4.0D, 4.0D);
+        List<Entity> entities = mc.theWorld.getEntitiesWithinAABBExcludingEntity(mc.thePlayer, playerRange);
+
+        for (Entity entity : entities) {
+            if (entity instanceof EntityLivingBase) {
+                EntityLivingBase living = (EntityLivingBase) entity;
+                if (living instanceof EntityPlayerSP)
+                    continue;
+
+                float distanceSq = living.getDistanceToEntity(mc.thePlayer);
+                if (distanceSq < closestDistanceSq) {
+                    closestDistanceSq = distanceSq;
+                    closestEntity = living;
+                }
+            }
+        }
+
+        if (closestEntity != null) {
+            mc.playerController.attackEntity(mc.thePlayer, closestEntity);
+            mc.thePlayer.swingItem();
+        }
+
+        super.onUpdate();
+    }
+}

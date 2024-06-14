@@ -3,7 +3,7 @@
     "enabled": false
   },
   "AntiFire": {
-    "enabled": true
+    "enabled": false
   },
   "AntiPotion": {
     "enabled": false
@@ -30,7 +30,7 @@
     "enabled": false
   },
   "AutoSprint": {
-    "enabled": true
+    "enabled": false
   },
   "AutoWalk": {
     "enabled": false
@@ -51,10 +51,10 @@
     "enabled": false
   },
   "NoFall": {
-    "enabled": true
+    "enabled": false
   },
   "Parkour": {
-    "enabled": true
+    "enabled": false
   },
   "Scaffold": {
     "enabled": false
@@ -63,7 +63,7 @@
     "enabled": false
   },
   "Speed": {
-    "enabled": false
+    "enabled": true
   },
   "Spider": {
     "enabled": false

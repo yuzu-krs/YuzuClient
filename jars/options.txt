@@ -16,7 +16,7 @@ ao:1
 renderClouds:true
 resourcePacks:[]
 incompatibleResourcePacks:[]
-lastServer:anticheat-test.com
+lastServer:mc.hypixel.net
 lang:en_US
 chatVisibility:0
 chatColors:true

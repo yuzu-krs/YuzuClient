@@ -24,7 +24,7 @@ public class DiscordRP {
 			}
 		}).build();
 		
-		DiscordRPC.discordInitialize("1247588266929029232", handlers, true);
+		DiscordRPC.discordInitialize("1251207898055577601", handlers, true);
 		
 		new Thread("Discord RPC Callback") {
 			@Override
@@ -44,7 +44,7 @@ public class DiscordRP {
 	public void update(String firstLine,String secondLine) {
 	
 		DiscordRichPresence.Builder b=new DiscordRichPresence.Builder(secondLine);
-		b.setBigImage("y_1_","");
+		b.setBigImage("large","");
 		b.setDetails(firstLine);
 		b.setStartTimestamps(created);
 		

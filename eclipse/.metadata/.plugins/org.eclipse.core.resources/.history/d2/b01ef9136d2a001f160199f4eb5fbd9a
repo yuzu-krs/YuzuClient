@@ -1,0 +1,56 @@
+package me.gamrboy4life.paradox.module.combat;
+
+import java.util.List;
+
+import me.gamrboy4life.paradox.module.Category;
+import me.gamrboy4life.paradox.module.Module;
+import net.minecraft.client.entity.EntityPlayerSP;
+import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.util.Vec3;
+
+public class Reach extends Module {
+
+    public Reach() {
+        super("Reach", 0, Category.COMBAT);
+    }
+
+    @Override
+    public void onUpdate() {
+        if (!this.isToggled()) 
+            return;
+
+        EntityLivingBase closestEntity = null;
+        double closestDistance = 6.2173613F;
+        Vec3 playerPos = mc.thePlayer.getPositionEyes(1.0F);
+        Vec3 playerLook = mc.thePlayer.getLook(1.0F);
+        Vec3 reachVec = playerPos.addVector(playerLook.xCoord * closestDistance, playerLook.yCoord * closestDistance, playerLook.zCoord * closestDistance);
+
+        List<EntityLivingBase> entities = mc.theWorld.getEntitiesWithinAABB(EntityLivingBase.class, mc.thePlayer.boundingBox.addCoord(playerLook.xCoord * closestDistance, playerLook.yCoord * closestDistance, playerLook.zCoord * closestDistance).expand(1.0D, 1.0D, 1.0D));
+
+        for (EntityLivingBase entity : entities) {
+            if (entity instanceof EntityPlayerSP) 
+                continue;
+
+            if (entity.isEntityAlive()) {
+                float targetBorder = entity.getCollisionBorderSize();
+                Vec3 hitVec = entity.getBoundingBox().expand(targetBorder, targetBorder, targetBorder).calculateIntercept(playerPos, reachVec).hitVec;
+
+                if (hitVec != null) {
+                    double distanceToHit = playerPos.distanceTo(hitVec);
+
+                    if (distanceToHit < closestDistance) {
+                        closestDistance = distanceToHit;
+                        closestEntity = entity;
+                    }
+                }
+            }
+        }
+
+        if (closestEntity != null) {
+            mc.playerController.attackEntity(mc.thePlayer, closestEntity);
+            mc.thePlayer.swingItem();
+        }
+
+        super.onUpdate();
+    }
+}

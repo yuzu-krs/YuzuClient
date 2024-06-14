@@ -70,7 +70,7 @@ public class GuiConnecting extends GuiScreen
                     GuiConnecting.this.networkManager.sendPacket(new C00Handshake(47, ip, port, EnumConnectionState.LOGIN));
                     GuiConnecting.this.networkManager.sendPacket(new C00PacketLoginStart(GuiConnecting.this.mc.getSession().getProfile()));
                 	//Paradox
-                	Paradox.getDiscordRP().update("Playing"+ip+(port!=25565?":"+port:""),"In Game");
+                	Paradox.getDiscordRP().update("Playing "+ip+(port!=25565?":"+port:""),"In Game");
                 }
                 catch (UnknownHostException unknownhostexception)
                 {
