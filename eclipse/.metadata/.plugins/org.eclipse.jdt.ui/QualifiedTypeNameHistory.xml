@@ -42,11 +42,9 @@
     <fullyQualifiedTypeName name="me.gamrboy4life.paradox.module.Module"/>
     <fullyQualifiedTypeName name="net.minecraft.client.network.NetHandlerPlayClient"/>
     <fullyQualifiedTypeName name="net.minecraft.network.play.client.C03PacketPlayer.C04PacketPlayerPosition"/>
-    <fullyQualifiedTypeName name="net.minecraft.entity.Entity"/>
     <fullyQualifiedTypeName name="me.gamrboy4life.paradox.Paradox"/>
     <fullyQualifiedTypeName name="me.gamrboy4life.paradox.gui.SplashProgress"/>
     <fullyQualifiedTypeName name="java.lang.reflect.Method"/>
-    <fullyQualifiedTypeName name="java.util.Iterator"/>
     <fullyQualifiedTypeName name="net.minecraft.client.gui.GuiScreen"/>
     <fullyQualifiedTypeName name="java.util.HashMap"/>
     <fullyQualifiedTypeName name="java.util.Optional"/>
@@ -60,4 +58,6 @@
     <fullyQualifiedTypeName name="net.minecraft.client.settings.KeyBinding"/>
     <fullyQualifiedTypeName name="java.awt.Color"/>
     <fullyQualifiedTypeName name="me.gamrboy4life.paradox.mods.impl.ModKeystrokes"/>
+    <fullyQualifiedTypeName name="java.util.Iterator"/>
+    <fullyQualifiedTypeName name="net.minecraft.entity.Entity"/>
 </qualifiedTypeNameHistroy>

@@ -1,5 +1,0 @@
-package me.gamrboy4life.paradox.module.player;
-
-public class AutoMine extends Module{
-
-}

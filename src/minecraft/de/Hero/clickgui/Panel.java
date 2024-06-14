@@ -62,7 +62,7 @@ public class Panel {
 			y = y2 + mouseY;
 		}
 		
-		Color baseColor = new Color(255, 140, 0); // 濃いオレンジ色
+		Color baseColor = new Color(255, 230, 0); // 濃いオレンジ色
 		Color temp = baseColor.darker();
 		int outlineColor = new Color(temp.getRed(), temp.getGreen(), temp.getBlue(), 170).getRGB();
 		
