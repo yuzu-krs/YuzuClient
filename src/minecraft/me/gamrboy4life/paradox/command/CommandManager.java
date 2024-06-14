@@ -6,6 +6,7 @@ import java.util.List;
 
 import me.gamrboy4life.paradox.Paradox;
 import me.gamrboy4life.paradox.command.commands.Bind;
+import me.gamrboy4life.paradox.command.commands.ChatSpam;
 import me.gamrboy4life.paradox.command.commands.Say;
 import me.gamrboy4life.paradox.command.commands.Toggle;
 import me.gamrboy4life.paradox.event.events.EventChat;
@@ -23,6 +24,7 @@ public class CommandManager {
 		commands.add(new Bind());
 		commands.add(new Say());
 		commands.add(new Toggle());
+		commands.add(new ChatSpam());
 	}
 	
 	public static List<Command> getCommands(){
