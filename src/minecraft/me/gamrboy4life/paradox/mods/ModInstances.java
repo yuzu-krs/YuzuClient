@@ -6,6 +6,7 @@ import me.gamrboy4life.paradox.mods.impl.ModCPS;
 import me.gamrboy4life.paradox.mods.impl.ModFPSEffects;
 import me.gamrboy4life.paradox.mods.impl.ModHelloWorld;
 import me.gamrboy4life.paradox.mods.impl.ModKeystrokes;
+import me.gamrboy4life.paradox.mods.impl.ModPerspective;
 import me.gamrboy4life.paradox.mods.impl.ModXYZ;
 
 public class ModInstances {
@@ -20,6 +21,8 @@ public class ModInstances {
     private static ModKeystrokes modKeystrokes;
     
     private static ModCPS modCPS;
+    
+    private static ModPerspective modPerspective;
 
     public static void register(HUDManager api) {
         modHelloWorld = new ModHelloWorld();
@@ -40,11 +43,22 @@ public class ModInstances {
         modCPS=new ModCPS();
         api.register(modCPS);
         
+        modPerspective=new ModPerspective();
+        api.register(modPerspective);
+        
     }
 
     public static ModHelloWorld getModHelloWorld() {
         return modHelloWorld;
     }
+    
+    public static ModPerspective getModPerspective() {
+    	return modPerspective;
+    }
+    
+    
+    
+    
     
     
 }

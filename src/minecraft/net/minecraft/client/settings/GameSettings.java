@@ -282,7 +282,8 @@ public class GameSettings {
 	public KeyBinding ofKeyBindZoom;
 	private File optionsFileOF;
 
-	public KeyBinding CLIENT_GUI_MOD_POS = new KeyBinding("PVP HUD", Keyboard.KEY_INSERT, "YuzuClient");
+	public KeyBinding CLIENT_GUI_MOD_POS = new KeyBinding("PVP HUD", Keyboard.KEY_INSERT, "1-YuzuClient");
+	public KeyBinding CLIENT_PERSPECTIVE =new KeyBinding("Toggle Perspective",Keyboard.KEY_F,"2-YuzuClient");
 
 	public GameSettings(Minecraft mcIn, File p_i46326_2_) {
 
@@ -329,7 +330,9 @@ public class GameSettings {
 		addClientKeybinds();
 	}
 	private void addClientKeybinds() {
-	    this.keyBindings = (KeyBinding[]) ArrayUtils.add(this.keyBindings,CLIENT_GUI_MOD_POS);
+		this.keyBindings = (KeyBinding[]) ArrayUtils.add(this.keyBindings,CLIENT_GUI_MOD_POS);
+		this.keyBindings = (KeyBinding[]) ArrayUtils.add(this.keyBindings,CLIENT_PERSPECTIVE);
+	    
 	}
  
 	/**

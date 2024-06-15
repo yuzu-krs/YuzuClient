@@ -1,6 +1,6 @@
 {
   "TabGui": {
-    "enabled": true
+    "enabled": false
   },
   "AntiFire": {
     "enabled": false
@@ -30,7 +30,7 @@
     "enabled": false
   },
   "AutoSprint": {
-    "enabled": false
+    "enabled": true
   },
   "AutoWalk": {
     "enabled": false
@@ -63,7 +63,7 @@
     "enabled": false
   },
   "Speed": {
-    "enabled": true
+    "enabled": false
   },
   "Spider": {
     "enabled": false

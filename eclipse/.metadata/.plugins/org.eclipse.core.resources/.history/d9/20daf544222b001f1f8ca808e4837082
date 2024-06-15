@@ -1,0 +1,28 @@
+package me.gamrboy4life.paradox.mods.impl;
+
+public class ModPerspective extends ModDraggable {
+    private boolean returnOnRelease = true; // hold down the key = true 
+    private boolean perspectiveToggled;
+
+    @Override
+    public int getWidth() {
+        return font.getStringWidth("[Perspective Toggled]");
+    }
+
+    @Override
+    public int getHeight() {
+        return font.FONT_HEIGHT;
+    }
+
+    @Override
+    public void render(ScreenPosition pos) {
+        if (perspectiveToggled) {
+            font.drawString("[Perspective Toggled]", pos.getAbsoluteX(), pos.getAbsoluteY(), -1);
+        }
+    }
+
+    @Override
+    public void renderDummy(ScreenPosition pos) {
+        font.drawString("[Perspective Toggled]", pos.getAbsoluteX(), pos.getAbsoluteY(), -1);
+    }
+}

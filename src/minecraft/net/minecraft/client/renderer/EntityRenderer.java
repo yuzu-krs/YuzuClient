@@ -24,6 +24,7 @@ import com.google.gson.JsonSyntaxException;
 import me.gamrboy4life.paradox.Paradox;
 import me.gamrboy4life.paradox.gui.MainMenu;
 import me.gamrboy4life.paradox.gvent.impl.RenderEvent;
+import me.gamrboy4life.paradox.mods.ModInstances;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockBed;
 import net.minecraft.block.material.Material;
@@ -719,8 +720,8 @@ public class EntityRenderer implements IResourceManagerReloadListener
                     GlStateManager.rotate((float)(j * 90), 0.0F, 1.0F, 0.0F);
                 }
 
-                GlStateManager.rotate(entity.prevRotationYaw + (entity.rotationYaw - entity.prevRotationYaw) * partialTicks + 180.0F, 0.0F, -1.0F, 0.0F);
-                GlStateManager.rotate(entity.prevRotationPitch + (entity.rotationPitch - entity.prevRotationPitch) * partialTicks, -1.0F, 0.0F, 0.0F);
+                GlStateManager.rotate(ModInstances.getModPerspective().getCameraYaw() + (ModInstances.getModPerspective().getCameraYaw() - ModInstances.getModPerspective().getCameraYaw()) * partialTicks + 180.0F, 0.0F, -1.0F, 0.0F);
+                GlStateManager.rotate(ModInstances.getModPerspective().getCameraPitch() + (ModInstances.getModPerspective().getCameraPitch() - ModInstances.getModPerspective().getCameraPitch()) * partialTicks, -1.0F, 0.0F, 0.0F);
             }
         }
         else if (this.mc.gameSettings.thirdPersonView > 0)
@@ -733,8 +734,8 @@ public class EntityRenderer implements IResourceManagerReloadListener
             }
             else
             {
-                float f1 = entity.rotationYaw;
-                float f2 = entity.rotationPitch;
+                float f1 = ModInstances.getModPerspective().getCameraYaw();
+                float f2 = ModInstances.getModPerspective().getCameraPitch();
 
                 if (this.mc.gameSettings.thirdPersonView == 2)
                 {
@@ -771,11 +772,11 @@ public class EntityRenderer implements IResourceManagerReloadListener
                     GlStateManager.rotate(180.0F, 0.0F, 1.0F, 0.0F);
                 }
 
-                GlStateManager.rotate(entity.rotationPitch - f2, 1.0F, 0.0F, 0.0F);
-                GlStateManager.rotate(entity.rotationYaw - f1, 0.0F, 1.0F, 0.0F);
+                GlStateManager.rotate(ModInstances.getModPerspective().getCameraPitch() - f2, 1.0F, 0.0F, 0.0F);
+                GlStateManager.rotate(ModInstances.getModPerspective().getCameraYaw() - f1, 0.0F, 1.0F, 0.0F);
                 GlStateManager.translate(0.0F, 0.0F, (float)(-d3));
-                GlStateManager.rotate(f1 - entity.rotationYaw, 0.0F, 1.0F, 0.0F);
-                GlStateManager.rotate(f2 - entity.rotationPitch, 1.0F, 0.0F, 0.0F);
+                GlStateManager.rotate(f1 - ModInstances.getModPerspective().getCameraYaw(), 0.0F, 1.0F, 0.0F);
+                GlStateManager.rotate(f2 - ModInstances.getModPerspective().getCameraPitch(), 1.0F, 0.0F, 0.0F);
             }
         }
         else
@@ -785,7 +786,7 @@ public class EntityRenderer implements IResourceManagerReloadListener
 
         if (!this.mc.gameSettings.debugCamEnable)
         {
-            GlStateManager.rotate(entity.prevRotationPitch + (entity.rotationPitch - entity.prevRotationPitch) * partialTicks, 1.0F, 0.0F, 0.0F);
+            GlStateManager.rotate(ModInstances.getModPerspective().getCameraPitch() + (ModInstances.getModPerspective().getCameraPitch() - ModInstances.getModPerspective().getCameraPitch()) * partialTicks, 1.0F, 0.0F, 0.0F);
 
             if (entity instanceof EntityAnimal)
             {
@@ -794,7 +795,7 @@ public class EntityRenderer implements IResourceManagerReloadListener
             }
             else
             {
-                GlStateManager.rotate(entity.prevRotationYaw + (entity.rotationYaw - entity.prevRotationYaw) * partialTicks + 180.0F, 0.0F, 1.0F, 0.0F);
+                GlStateManager.rotate(ModInstances.getModPerspective().getCameraYaw() + (ModInstances.getModPerspective().getCameraYaw() - ModInstances.getModPerspective().getCameraYaw()) * partialTicks + 180.0F, 0.0F, 1.0F, 0.0F);
             }
         }
 
@@ -1186,7 +1187,7 @@ public class EntityRenderer implements IResourceManagerReloadListener
             Mouse.setGrabbed(true);
         }
 
-        if (this.mc.inGameHasFocus && flag)
+        if (this.mc.inGameHasFocus && flag&&ModInstances.getModPerspective().overrideMouse())
         {
             this.mc.mouseHelper.mouseXYChange();
             float f = this.mc.gameSettings.mouseSensitivity * 0.6F + 0.2F;

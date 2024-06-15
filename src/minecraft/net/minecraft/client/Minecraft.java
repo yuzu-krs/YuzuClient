@@ -61,6 +61,7 @@ import me.gamrboy4life.paradox.gui.GuiIngameHook;
 import me.gamrboy4life.paradox.gui.MainMenu;
 import me.gamrboy4life.paradox.gui.SplashProgress;
 import me.gamrboy4life.paradox.gvent.impl.ClientTickEvent;
+import me.gamrboy4life.paradox.gvent.impl.KeyEvent;
 import me.gamrboy4life.paradox.gvent.impl.WorldUnloadEvent;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
@@ -1910,6 +1911,16 @@ public class Minecraft implements IThreadListener, IPlayerUsage
                 {
                     KeyBinding.onTick(k);
                 }
+                
+                
+                
+                KeyEvent event=new KeyEvent(k);
+                event.call();
+                
+                if(event.isCancelled()) {
+                	return;
+                }
+                
 
                 if (this.debugCrashKeyPressTime > 0L)
                 {
