@@ -69,8 +69,8 @@ public class ModPerspective extends ModDraggable {
 	        float f2 = (f1 * 3 * 8.0F);
 	        float f3 = (float) mc.mouseHelper.deltaX * f2;
 	        float f4 = (float) mc.mouseHelper.deltaY * f2;
-	        cameraYaw += f3 * 0.15F;
-	        cameraPitch += f4 * 0.15F;
+	        cameraYaw += f3 * 0.02F;
+	        cameraPitch += f4 * 0.02F;
 	        
 	        if (cameraPitch > 90) {
 	            cameraPitch = 90;
