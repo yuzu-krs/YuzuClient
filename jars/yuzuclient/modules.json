@@ -1,6 +1,6 @@
 {
   "TabGui": {
-    "enabled": false
+    "enabled": true
   },
   "AntiFire": {
     "enabled": false
@@ -30,7 +30,7 @@
     "enabled": false
   },
   "AutoSprint": {
-    "enabled": true
+    "enabled": false
   },
   "AutoWalk": {
     "enabled": false
@@ -117,10 +117,10 @@
     "enabled": false
   },
   "Eyes": {
-    "enabled": true
+    "enabled": false
   },
   "Hat": {
-    "enabled": true
+    "enabled": false
   },
   "Panic": {
     "enabled": false

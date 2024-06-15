@@ -1,7 +1,5 @@
 package me.gamrboy4life.paradox.module.movement;
 
-import org.lwjgl.input.Keyboard;
-
 import me.gamrboy4life.paradox.module.Category;
 import me.gamrboy4life.paradox.module.Module;
 import net.minecraft.client.Minecraft;
@@ -11,7 +9,7 @@ public class AutoSprint extends Module {
     private final Minecraft mc = Minecraft.getMinecraft();
 
     public AutoSprint() {
-        super("AutoSprint", Keyboard.KEY_F, Category.MOVEMENT);
+        super("AutoSprint", 0, Category.MOVEMENT);
     }
 
     public void onEnable() {

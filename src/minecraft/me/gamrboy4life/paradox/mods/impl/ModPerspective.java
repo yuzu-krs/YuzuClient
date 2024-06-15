@@ -97,13 +97,13 @@ public class ModPerspective extends ModDraggable {
     @Override
     public void render(ScreenPosition pos) {
         if (perspectiveToggled) {
-            font.drawString("[Perspective Toggled]", pos.getAbsoluteX(), pos.getAbsoluteY(), -1);
+           font.drawString("[Perspective Toggled]", pos.getAbsoluteX(), pos.getAbsoluteY(), -1);
         }
     }
 
     @Override
     public void renderDummy(ScreenPosition pos) {
-        font.drawString("[Perspective Toggled]", pos.getAbsoluteX(), pos.getAbsoluteY(), -1);
+    	font.drawString("[Perspective Toggled]", pos.getAbsoluteX(), pos.getAbsoluteY(), -1);
     }
 
 	@Override
