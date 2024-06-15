@@ -1,11 +1,14 @@
 package me.gamrboy4life.paradox.gui.hud;
 
 
+import com.google.gson.annotations.Expose;
+
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.ScaledResolution;
 
 public class ScreenPosition {
 	
+	@Expose(serialize=false)
 	private static final Minecraft mc=Minecraft.getMinecraft();
 	
 	private double x,y;

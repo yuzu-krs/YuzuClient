@@ -1,0 +1,50 @@
+package me.gamrboy4life.paradox.mods;
+
+import me.gamrboy4life.paradox.gui.hud.IRenderer;
+import me.gamrboy4life.paradox.gui.hud.ScreenPosition;
+
+public abstract class ModDraggable extends Mod implements IRenderer {
+	
+	protected ScreenPosition pos;
+	
+	public ModDraggable() {
+		pos=loadPositionFromFile();
+	}
+	
+	
+	
+
+
+
+
+	@Override
+	public ScreenPosition load() {
+		return pos;
+	}
+	
+	@Override
+	public void save(ScreenPosition pos) {
+		this.pos=pos;
+		savePositionToFile();
+	}
+	
+    private void savePositionToFile() {
+		// TODO 自動生成されたメソッド・スタブ
+		
+	}
+    
+	private ScreenPosition loadPositionFromFile() {
+
+		return null;
+	}
+
+	public final int getLineOffset(ScreenPosition pos, int lineNum) {
+        return pos.getAbsoluteY() + getLineOffset(lineNum);
+    }
+
+    private int getLineOffset(int lineNum) {
+        return (font.FONT_HEIGHT + 3) * lineNum;
+    }
+    
+
+}

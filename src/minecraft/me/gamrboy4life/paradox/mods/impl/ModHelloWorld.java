@@ -5,7 +5,7 @@ import me.gamrboy4life.paradox.mods.ModDraggable;
 
 public class ModHelloWorld extends ModDraggable{
 	
-	private ScreenPosition pos;
+
 
 	@Override
 	public int getWidth() {
@@ -38,16 +38,6 @@ public class ModHelloWorld extends ModDraggable{
 		return true;
 	}
 
-	@Override
-	public void save(ScreenPosition pos) {
-		// TODO 自動生成されたメソッド・スタブ
-		this.pos=pos;
-	}
 
-	@Override
-	public ScreenPosition load() {
-		// TODO 自動生成されたメソッド・スタブ
-		return pos;
-	}
 
 }

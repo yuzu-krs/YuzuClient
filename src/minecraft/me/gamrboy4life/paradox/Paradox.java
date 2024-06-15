@@ -66,6 +66,8 @@ public class Paradox {
         GventManager.register(instance); // GventManager に Paradox インスタンスを登録
 
         fileManager.init();
+        GileManager.init();
+        
         
         SplashProgress.setProgress(1, "YuzuClient - Discord RP");
         

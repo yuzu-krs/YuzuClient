@@ -10,7 +10,7 @@ import net.minecraft.item.ItemStack;
 
 public class ModArmorStatus extends ModDraggable{
 	
-	private ScreenPosition pos=ScreenPosition.fromRelativePosition(0.5,0.5);
+
 
 	@Override
 	public int getWidth() {
@@ -61,14 +61,6 @@ public class ModArmorStatus extends ModDraggable{
 		return true;
 	}
 
-	@Override
-	public void save(ScreenPosition pos) {
-		this.pos=pos;
-	}
 
-	@Override
-	public ScreenPosition load() {
-		return pos;
-	}
 
 }

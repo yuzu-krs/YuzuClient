@@ -5,7 +5,7 @@ import me.gamrboy4life.paradox.mods.ModDraggable;
 
 public class ModXYZ extends ModDraggable{
 
-	private ScreenPosition pos;
+	
 	
 	@Override
 	public int getWidth() {
@@ -43,14 +43,6 @@ public class ModXYZ extends ModDraggable{
 		return true;
 	}
 
-	@Override
-	public void save(ScreenPosition pos) {
-		this.pos=pos;
-	}
 
-	@Override
-	public ScreenPosition load() {
-		return pos;
-	}
 
 }
