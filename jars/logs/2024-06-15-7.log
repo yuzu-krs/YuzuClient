@@ -1,0 +1,132 @@
+[19:32:29] [Client thread/INFO]: Setting user: Player984
+[19:32:29] [Client thread/INFO]: (Session ID is token:0:Player984)
+[19:32:30] [Client thread/INFO]: LWJGL Version: 2.9.4
+[19:32:30] [Client thread/INFO]: Reloading ResourceManager: Default
+[19:32:30] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[19:32:30] [Thread-8/INFO]: Initializing LWJGL OpenAL
+[19:32:30] [Thread-8/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[19:32:30] [Thread-8/ERROR]: Error in class 'LibraryLWJGLOpenAL'
+[19:32:30] [Thread-8/ERROR]: Unable to initialize OpenAL.  Probable cause: OpenAL not supported.
+[19:32:30] [Thread-8/WARN]: ERROR MESSAGE:
+[19:32:30] [Thread-8/INFO]: Could not locate OpenAL library.
+[19:32:30] [Thread-8/WARN]: STACK TRACE:
+[19:32:30] [Thread-8/INFO]: org.lwjgl.openal.AL.create(AL.java:156)
+[19:32:30] [Thread-8/INFO]: org.lwjgl.openal.AL.create(AL.java:102)
+[19:32:30] [Thread-8/INFO]: org.lwjgl.openal.AL.create(AL.java:206)
+[19:32:30] [Thread-8/INFO]: paulscode.sound.libraries.LibraryLWJGLOpenAL.init(LibraryLWJGLOpenAL.java:164)
+[19:32:30] [Thread-8/INFO]: paulscode.sound.SoundSystem.CommandNewLibrary(SoundSystem.java:1576)
+[19:32:30] [Thread-8/INFO]: paulscode.sound.SoundSystem.CommandQueue(SoundSystem.java:2572)
+[19:32:30] [Thread-8/INFO]: paulscode.sound.CommandThread.run(CommandThread.java:121)
+[19:32:31] [Sound Library Loader/WARN]: ERROR MESSAGE:
+[19:32:31] [Sound Library Loader/INFO]: Could not locate OpenAL library.
+[19:32:31] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[19:32:31] [Thread-10/INFO]: Switching to No Sound
+[19:32:31] [Thread-10/INFO]: (Silent Mode)
+[19:32:31] [Sound Library Loader/INFO]: Sound engine started
+[19:32:32] [Client thread/INFO]: Created: 1024x512 textures-atlas
+[19:32:34] [Server thread/INFO]: Starting integrated minecraft server version 1.8.8
+[19:32:34] [Server thread/INFO]: Generating keypair
+[19:32:35] [Server thread/INFO]: Preparing start region for level 0
+[19:32:35] [Server thread/INFO]: Changing view distance to 8, from 10
+[19:32:35] [Server thread/INFO]: Player984[local:E:5be670ff] logged in with entity id 64 at (152.16854765786738, 72.0, 884.1983511087861)
+[19:32:35] [Server thread/INFO]: Player984 joined the game
+[19:32:35] [Server thread/INFO]: Saving and pausing game...
+[19:32:35] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[19:32:35] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[19:32:35] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[19:32:38] [Server thread/INFO]: Saving and pausing game...
+[19:32:38] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[19:32:38] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[19:32:38] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[19:33:49] [Client thread/INFO]: Stopping!
+[19:33:49] [Client thread/INFO]: SoundSystem shutting down...
+[19:33:49] [Server thread/INFO]: Stopping server
+[19:33:49] [Server threa[19:33:49] [Client thread/INFO]: Reloading ResourceManager: Default
+[19:33:50] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[19:33:50] [Thread-7/INFO]: Initializing LWJGL OpenAL
+[19:33:50] [Thread-7/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[19:33:50] [Thread-7/ERROR]: Error in class 'LibraryLWJGLOpenAL'
+[19:33:50] [Thread-7/ERROR]: Unable to initialize OpenAL.  Probable cause: OpenAL not supported.
+[19:33:50] [Thread-7/WARN]: ERROR MESSAGE:
+[19:33:50] [Thread-7/INFO]: Could not locate OpenAL library.
+[19:33:50] [Thread-7/WARN]: STACK TRACE:
+[19:33:50] [Thread-7/INFO]: org.lwjgl.openal.AL.create(AL.java:156)
+[19:33:50] [Thread-7/INFO]: org.lwjgl.openal.AL.create(AL.java:102)
+[19:33:50] [Thread-7/INFO]: org.lwjgl.openal.AL.create(AL.java:206)
+[19:33:50] [Thread-7/INFO]: paulscode.sound.libraries.LibraryLWJGLOpenAL.init(LibraryLWJGLOpenAL.java:164)
+[19:33:50] [Thread-7/INFO]: paulscode.sound.SoundSystem.CommandNewLibrary(SoundSystem.java:1576)
+[19:33:50] [Thread-7/INFO]: paulscode.sound.SoundSystem.CommandQueue(SoundSystem.java:2572)
+[19:33:50] [Thread-7/INFO]: paulscode.sound.CommandThread.run(CommandThread.java:121)
+[19:33:50] [Sound Library Loader/WARN]: ERROR MESSAGE:
+[19:33:50] [Sound Library Loader/INFO]: Could not locate OpenAL library.
+[19:33:50] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[19:33:51] [Thread-9/INFO]: Switching to No Sound
+[19:33:51] [Thread-9/INFO]: (Silent Mode)
+[19:33:51] [Sound Library Loader/INFO]: Sound engine started
+[19:33:51] [Client thread/INFO]: Created: 1024x512 textures-atlas
+[19:33:54] [Server thread/INFO]: Starting integrated minecraft server version 1.8.8
+[19:33:54] [Server thread/INFO]: Generating keypair
+[19:33:54] [Server thread/INFO]: Preparing start region for level 0
+[19:33:54] [Server thread/INFO]: Changing view distance to 8, from 10
+[19:33:54] [Server thread/INFO]: Player265[local:E:e4f372dc] logged in with entity id 64 at (150.74092229730826, 71.0, 889.9064074087365)
+[19:33:54] [Server thread/INFO]: Player265 joined the game
+[19:33:55] [Server thread/INFO]: Saving and pausing game...
+[19:33:55] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[19:33:55] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[19:33:55] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[19:33:57] [Server thread/INFO]: Saving and pausing game...
+[19:33:57] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[19:33:57] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[19:33:57] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[19:34:13] [Server thread/INFO]: Player265 has just earned the achievement [Taking Inventory]
+[19:34:13] [Client thread/INFO]: [CHAT] Player265 has just earned the achievement [Taking Inventory]
+[19:34:44] [Server thread/INFO]: Saving and pausing game...
+[19:34:44] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[19:34:44] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[19:34:44] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[19:37:02] [Client thread/INFO]: Stopping!
+[19:37:02] [Client thread/INFO]: SoundSystem shutting down...
+[19:37:02] [Client thread/INFO]: Setting user: Player343
+[19:37:02] [Client thread/INFO]: (Session ID is token:0:Player343)
+[19:37:03] [Client thread/INFO]: LWJGL Version: 2.9.4
+[19:37:03] [Client thread/INFO]: Reloading ResourceManager: Default
+[19:37:04] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[19:37:04] [Thread-7/INFO]: Initializing LWJGL OpenAL
+[19:37:04] [Thread-7/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[19:37:04] [Thread-7/ERROR]: Error in class 'LibraryLWJGLOpenAL'
+[19:37:04] [Thread-7/ERROR]: Unable to initialize OpenAL.  Probable cause: OpenAL not supported.
+[19:37:04] [Thread-7/WARN]: ERROR MESSAGE:
+[19:37:04] [Thread-7/INFO]: Could not locate OpenAL library.
+[19:37:04] [Thread-7/WARN]: STACK TRACE:
+[19:37:04] [Thread-7/INFO]: org.lwjgl.openal.AL.create(AL.java:156)
+[19:37:04] [Thread-7/INFO]: org.lwjgl.openal.AL.create(AL.java:102)
+[19:37:04] [Thread-7/INFO]: org.lwjgl.openal.AL.create(AL.java:206)
+[19:37:04] [Thread-7/INFO]: paulscode.sound.libraries.LibraryLWJGLOpenAL.init(LibraryLWJGLOpenAL.java:164)
+[19:37:04] [Thread-7/INFO]: paulscode.sound.SoundSystem.CommandNewLibrary(SoundSystem.java:1576)
+[19:37:04] [Thread-7/INFO]: paulscode.sound.SoundSystem.CommandQueue(SoundSystem.java:2572)
+[19:37:04] [Thread-7/INFO]: paulscode.sound.CommandThread.run(CommandThread.java:121)
+[19:37:04] [Sound Library Loader/WARN]: ERROR MESSAGE:
+[19:37:04] [Sound Library Loader/INFO]: Could not locate OpenAL library.
+[19:37:04] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[19:37:05] [Thread-9/INFO]: Switching to No Sound
+[19:37:05] [Thread-9/INFO]: (Silent Mode)
+[19:37:05] [Sound Library Loader/INFO]: Sound engine started
+[19:37:05] [Client thread/INFO]: Created: 1024x512 textures-atlas
+[19:37:10] [Server thread/INFO]: Starting integrated minecraft server version 1.8.8
+[19:37:10] [Server thread/INFO]: Generating keypair
+[19:37:10] [Server thread/INFO]: Preparing start region for level 0
+[19:37:10] [Server thread/INFO]: Changing view distance to 8, from 10
+[19:37:11] [Server thread/INFO]: Player343[local:E:7410ae03] logged in with entity id 64 at (107.03456757785801, 78.0, 892.4486356601144)
+[19:37:11] [Server thread/INFO]: Player343 joined the game
+[19:37:11] [Server thread/INFO]: Saving and pausing game...
+[19:37:11] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[19:37:11] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[19:37:11] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[19:37:17] [Server thread/INFO]: Saving and pausing game...
+[19:37:17] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[19:37:17] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[19:37:17] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[19:37:24] [Server thread/INFO]: Saving and pausing game...
+[19:37:24] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[19:37:24] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[19:37:24] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End

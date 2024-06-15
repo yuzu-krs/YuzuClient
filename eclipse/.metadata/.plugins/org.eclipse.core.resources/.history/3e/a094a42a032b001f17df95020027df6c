@@ -1,0 +1,90 @@
+package me.gamrboy4life.paradox.mods.impl;
+
+import org.lwjgl.input.Mouse;
+
+import me.gamrboy4life.paradox.gui.hud.ScreenPosition;
+import me.gamrboy4life.paradox.mods.ModDraggable;
+import net.minecraft.client.gui.FontRenderer;
+
+import java.util.ArrayDeque;
+import java.util.Deque;
+
+public class ModCPS extends ModDraggable {
+    private Deque<Long> leftClicks = new ArrayDeque<>();
+    private Deque<Long> rightClicks = new ArrayDeque<>();
+    private boolean wasLeftPressed;
+    private boolean wasRightPressed;
+    private long lastLeftPressed;
+    private long lastRightPressed;
+    private FontRenderer font;
+
+    @Override
+    public int getWidth() {
+        return font.getStringWidth("CPS: 00 / 00");
+    }
+
+    @Override
+    public int getHeight() {
+        return font.FONT_HEIGHT;
+    }
+
+    @Override
+    public void render(ScreenPosition pos) {
+        final boolean leftPressed = Mouse.isButtonDown(0);
+        final boolean rightPressed = Mouse.isButtonDown(1);
+
+        if (leftPressed != this.wasLeftPressed) {
+            this.lastLeftPressed = System.currentTimeMillis();
+            this.wasLeftPressed = leftPressed;
+            if (leftPressed) {
+                this.leftClicks.add(this.lastLeftPressed);
+            }
+        }
+
+        if (rightPressed != this.wasRightPressed) {
+            this.lastRightPressed = System.currentTimeMillis();
+            this.wasRightPressed = rightPressed;
+            if (rightPressed) {
+                this.rightClicks.add(this.lastRightPressed);
+            }
+        }
+
+        font.drawString("CPS: " + getCPS(leftClicks) + " / " + getCPS(rightClicks), pos.getAbsoluteX(), pos.getAbsoluteY(), -1);
+    }
+
+    private int getCPS(Deque<Long> clicks) {
+        final long time = System.currentTimeMillis();
+        clicks.removeIf(aLong -> aLong + 1000 < time);
+        return clicks.size();
+    }
+
+    @Override
+    public void renderDummy(ScreenPosition pos) {
+        // Dummy rendering logic, similar to render() method
+        final boolean leftPressed = Mouse.isButtonDown(0);
+        final boolean rightPressed = Mouse.isButtonDown(1);
+
+        if (leftPressed != this.wasLeftPressed) {
+            this.lastLeftPressed = System.currentTimeMillis();
+            this.wasLeftPressed = leftPressed;
+            if (leftPressed) {
+                this.leftClicks.add(this.lastLeftPressed);
+            }
+        }
+
+        if (rightPressed != this.wasRightPressed) {
+            this.lastRightPressed = System.currentTimeMillis();
+            this.wasRightPressed = rightPressed;
+            if (rightPressed) {
+                this.rightClicks.add(this.lastRightPressed);
+            }
+        }
+
+        font.drawString("CPS: " + getCPS(leftClicks) + " / " + getCPS(rightClicks), pos.getAbsoluteX(), pos.getAbsoluteY(), -1);
+    }
+
+    @Override
+    public boolean isEnabled() {
+        return true; // Modify as needed based on your logic
+    }
+}
