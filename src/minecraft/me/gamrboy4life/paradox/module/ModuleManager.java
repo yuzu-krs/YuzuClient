@@ -15,6 +15,7 @@ import me.gamrboy4life.paradox.module.combat.MineClicker;
 import me.gamrboy4life.paradox.module.combat.Regen;
 import me.gamrboy4life.paradox.module.misc.ChannelIcon;
 import me.gamrboy4life.paradox.module.misc.DeadPanic;
+import me.gamrboy4life.paradox.module.misc.Hat;
 import me.gamrboy4life.paradox.module.misc.Panic;
 import me.gamrboy4life.paradox.module.movement.AutoSprint;
 import me.gamrboy4life.paradox.module.movement.AutoWalk;
@@ -104,7 +105,9 @@ public class ModuleManager {
 		//MISC
 		newMod(new ChannelIcon());
 		newMod(new DeadPanic());
+		newMod(new Hat());
 		newMod(new Panic());
+		
 	}
 	
 	

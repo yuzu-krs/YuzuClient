@@ -1,0 +1,12 @@
+package me.gamrboy4life.paradox.cosmetics;
+
+import net.minecraft.client.model.ModelBase;
+
+public class CosmeticModelBase extends ModelBase {
+    
+   // protected final ModelBiped playerModel;
+
+    public CosmeticModelBase() {
+    //    this.playerModel = player.getMainModel();
+    }
+}

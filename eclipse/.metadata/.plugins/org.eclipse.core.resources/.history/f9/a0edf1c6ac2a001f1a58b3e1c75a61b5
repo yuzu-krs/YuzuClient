@@ -1,0 +1,10 @@
+package me.gamrboy4life.paradox.cosmetics;
+
+public class CosmeticModelBase extends ModelBase {
+    
+    protected final ModelBiped playerModel;
+
+    public CosmeticModelBase(RenderPlayer player) {
+        this.playerModel = player.getMainModel();
+    }
+}
