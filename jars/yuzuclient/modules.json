@@ -1,6 +1,6 @@
 {
   "TabGui": {
-    "enabled": true
+    "enabled": false
   },
   "AntiFire": {
     "enabled": false
@@ -115,6 +115,9 @@
   },
   "DeadPanic": {
     "enabled": false
+  },
+  "Eyes": {
+    "enabled": true
   },
   "Hat": {
     "enabled": true

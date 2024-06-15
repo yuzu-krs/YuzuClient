@@ -4,10 +4,19 @@ import java.util.ArrayList;
 import java.util.List;
 
 import me.gamrboy4life.paradox.Paradox;
+import me.gamrboy4life.paradox.module.combat.AntiFire;
+import me.gamrboy4life.paradox.module.combat.AntiPotion;
 import me.gamrboy4life.paradox.module.combat.AutoClicker;
+import me.gamrboy4life.paradox.module.combat.AutoSword;
+import me.gamrboy4life.paradox.module.combat.Criticals;
 import me.gamrboy4life.paradox.module.combat.FastBow;
 import me.gamrboy4life.paradox.module.combat.KillAura;
+import me.gamrboy4life.paradox.module.combat.MineClicker;
+import me.gamrboy4life.paradox.module.combat.Regen;
 import me.gamrboy4life.paradox.module.misc.ChannelIcon;
+import me.gamrboy4life.paradox.module.misc.DeadPanic;
+import me.gamrboy4life.paradox.module.misc.Hat;
+import me.gamrboy4life.paradox.module.misc.Panic;
 import me.gamrboy4life.paradox.module.movement.AutoSprint;
 import me.gamrboy4life.paradox.module.movement.AutoWalk;
 import me.gamrboy4life.paradox.module.movement.Dolphin;
@@ -35,7 +44,6 @@ import me.gamrboy4life.paradox.module.render.ClickGui;
 import me.gamrboy4life.paradox.module.render.ESP;
 import me.gamrboy4life.paradox.module.render.FullBright;
 import me.gamrboy4life.paradox.module.render.TabGui;
-import me.gamrboy4life.paradox.module.render.XYZ;
 import me.gamrboy4life.paradox.module.render.Xray;
 import net.minecraft.client.Minecraft;
 import net.minecraft.util.ChatComponentText;
@@ -50,10 +58,15 @@ public class ModuleManager {
 
 		
 		//COMBAT
+		newMod(new AntiFire());
+		newMod(new AntiPotion());
 		newMod(new AutoClicker());
+		newMod(new AutoSword());
+		newMod(new Criticals());
 		newMod(new FastBow());
 		newMod(new KillAura());
-		
+		newMod(new MineClicker());
+		newMod(new Regen());
 		
 		//MOVEMENT
 		newMod(new AutoSprint());
@@ -87,12 +100,15 @@ public class ModuleManager {
 		newMod(new ESP());
 		newMod(new FullBright());
 		newMod(new Xray());
-		newMod(new XYZ());
-		
-		
+
 		
 		//MISC
 		newMod(new ChannelIcon());
+		newMod(new DeadPanic());
+		newMod(new Eyes());
+		newMod(new Hat());
+		newMod(new Panic());
+		
 	}
 	
 	

@@ -1,0 +1,13 @@
+package me.gamrboy4life.paradox.gvent.impl;
+
+import me.gamrboy4life.paradox.gvent.Gvent;
+
+public class WorldUnloadEvent extends Gvent{
+	
+	private final World world;
+	
+	public WorldUnloadEvent(World world) {
+		this.world=world;
+	}
+
+}

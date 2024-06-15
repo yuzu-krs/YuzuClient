@@ -1,6 +1,7 @@
 package net.minecraft.client.renderer.entity;
 
 import me.gamrboy4life.paradox.cosmetics.impl.CosmeticTopHat;
+import me.gamrboy4life.paradox.cosmetics.impl.eyes.CosmeticEyes;
 import net.minecraft.client.entity.AbstractClientPlayer;
 import net.minecraft.client.entity.EntityPlayerSP;
 import net.minecraft.client.model.ModelPlayer;
@@ -40,6 +41,7 @@ public class RenderPlayer extends RendererLivingEntity<AbstractClientPlayer>
         this.addLayer(new LayerCape(this));
         this.addLayer(new LayerCustomHead(this.getMainModel().bipedHead));
         this.addLayer(new CosmeticTopHat(this)); //帽子をかぶる
+        this.addLayer(new CosmeticEyes(this));
     }
 
     public ModelPlayer getMainModel()
