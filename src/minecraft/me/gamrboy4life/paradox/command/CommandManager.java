@@ -57,7 +57,7 @@ public class CommandManager {
 			}
 		}
 		if(!foundCommand) {
-			Paradox.instance.moduleManager.addChatMessage("コマンドが見つかりません!");
+			Paradox.instance.moduleManager.addChatMessage("コマンドが見つかりません! [.help]");
 		}
 		
 		

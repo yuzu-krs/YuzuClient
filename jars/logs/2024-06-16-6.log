@@ -1,92 +1,65 @@
-[04:07:25] [Client thread/INFO]: Setting user: Player562
-[04:07:25] [Client thread/INFO]: (Session ID is token:0:Player562)
-[04:07:25] [Client thread/INFO]: LWJGL Version: 2.9.4
-[04:07:26] [Client thread/INFO]: Reloading ResourceManager: Default
-[04:07:26] [Sound Library Loader/INFO]: Starting up SoundSystem...
-[04:07:26] [Thread-8/INFO]: Initializing LWJGL OpenAL
-[04:07:26] [Thread-8/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
-[04:07:26] [Thread-8/ERROR]: Error in class 'LibraryLWJGLOpenAL'
-[04:07:26] [Thread-8/ERROR]: Unable to initialize OpenAL.  Probable cause: OpenAL not supported.
-[04:07:26] [Thread-8/WARN]: ERROR MESSAGE:
-[04:07:26] [Thread-8/INFO]: Could not locate OpenAL library.
-[04:07:26] [Thread-8/WARN]: STACK TRACE:
-[04:07:26] [Thread-8/INFO]: org.lwjgl.openal.AL.create(AL.java:156)
-[04:07:26] [Thread-8/INFO]: org.lwjgl.openal.AL.create(AL.java:102)
-[04:07:26] [Thread-8/INFO]: org.lwjgl.openal.AL.create(AL.java:206)
-[04:07:26] [Thread-8/INFO]: paulscode.sound.libraries.LibraryLWJGLOpenAL.init(LibraryLWJGLOpenAL.java:164)
-[04:07:26] [Thread-8/INFO]: paulscode.sound.SoundSystem.CommandNewLibrary(SoundSystem.java:1576)
-[04:07:26] [Thread-8/INFO]: paulscode.sound.SoundSystem.CommandQueue(SoundSystem.java:2572)
-[04:07:26] [Thread-8/INFO]: paulscode.sound.CommandThread.run(CommandThread.java:121)
-[04:07:27] [Sound Library Loader/WARN]: ERROR MESSAGE:
-[04:07:27] [Sound Library Loader/INFO]: Could not locate OpenAL library.
-[04:07:27] [Sound Library Loader/INFO]: Starting up SoundSystem...
-[04:07:27] [Thread-10/INFO]: Switching to No Sound
-[04:07:27] [Thread-10/INFO]: (Silent Mode)
-[04:07:27] [Sound Library Loader/INFO]: Sound engine started
-[04:07:27] [Client thread/INFO]: Created: 1024x512 textures-atlas
-[04:07:32] [Server thread/INFO]: Starting integrated minecraft server version 1.8.8
-[04:07:32] [Server thread/INFO]: Generating keypair
-[04:07:32] [Server thread/INFO]: Preparing start region for level 0
-[04:07:33] [Server thread/INFO]: Changing view distance to 8, from 10
-[04:07:33] [Server thread/INFO]: Player562[local:E:ddc3d734] logged in with entity id 72 at (-833.6999999880791, 69.24918707874468, -933.9908585725512)
-[04:07:33] [Server thread/INFO]: Player562 joined the game
-[04:07:34] [Server thread/INFO]: Saving and pausing game...
-[04:07:34] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
-[04:07:34] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
-[04:07:34] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
-[04:07:40] [Client thread/INFO]: [CHAT] §eYuzuClient§7: 大文字小文字問いません
-[04:07:40] [Client thread/INFO]: [CHAT] §eYuzuClient§7: キーバインド:.[b|bind] <Mod名> <key>
-[04:07:40] [Client thread/INFO]: [CHAT] §eYuzuClient§7: Mod即時オン:.[t|toggle] <Mod名>
-[04:07:40] [Client thread/INFO]: [CHAT] §eYuzuClient§7: Sayコマンド:.[s|say] <任意の文字列>
-[04:07:40] [Client thread/INFO]: [CHAT] §eYuzuClient§7: Spamコマンド:.[c|chatspam] <数> <任意の文字列>
-[04:07:45] [Server thread/INFO]: Saving and pausing game...
-[04:07:45] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
-[04:07:45] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
-[04:07:45] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
-[04:08:11] [Client thread/INFO]: Stopping!
-[04:08:11] [Client thread/INFO]: SoundSystem shutting down...
-[04:08:12] [Server thread/INFO]: Stopping server
-[04:08:12] [Server thread/INFO]: Saving players
-[04:08:12] [Server thread/I[04:08:12] [Client thread/INFO]: LWJGL Version: 2.9.4
-[04:08:12] [Client thread/INFO]: Reloading ResourceManager: Default
-[04:08:13] [Sound Library Loader/INFO]: Starting up SoundSystem...
-[04:08:13] [Thread-7/INFO]: Initializing LWJGL OpenAL
-[04:08:13] [Thread-7/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
-[04:08:13] [Thread-7/ERROR]: Error in class 'LibraryLWJGLOpenAL'
-[04:08:13] [Thread-7/ERROR]: Unable to initialize OpenAL.  Probable cause: OpenAL not supported.
-[04:08:13] [Thread-7/WARN]: ERROR MESSAGE:
-[04:08:13] [Thread-7/INFO]: Could not locate OpenAL library.
-[04:08:13] [Thread-7/WARN]: STACK TRACE:
-[04:08:13] [Thread-7/INFO]: org.lwjgl.openal.AL.create(AL.java:156)
-[04:08:13] [Thread-7/INFO]: org.lwjgl.openal.AL.create(AL.java:102)
-[04:08:13] [Thread-7/INFO]: org.lwjgl.openal.AL.create(AL.java:206)
-[04:08:13] [Thread-7/INFO]: paulscode.sound.libraries.LibraryLWJGLOpenAL.init(LibraryLWJGLOpenAL.java:164)
-[04:08:13] [Thread-7/INFO]: paulscode.sound.SoundSystem.CommandNewLibrary(SoundSystem.java:1576)
-[04:08:13] [Thread-7/INFO]: paulscode.sound.SoundSystem.CommandQueue(SoundSystem.java:2572)
-[04:08:13] [Thread-7/INFO]: paulscode.sound.CommandThread.run(CommandThread.java:121)
-[04:08:13] [Sound Library Loader/WARN]: ERROR MESSAGE:
-[04:08:13] [Sound Library Loader/INFO]: Could not locate OpenAL library.
-[04:08:13] [Sound Library Loader/INFO]: Starting up SoundSystem...
-[04:08:14] [Thread-9/INFO]: Switching to No Sound
-[04:08:14] [Thread-9/INFO]: (Silent Mode)
-[04:08:14] [Sound Library Loader/INFO]: Sound engine started
-[04:08:14] [Client thread/INFO]: Created: 1024x512 textures-atlas
-[04:08:19] [Server thread/INFO]: Starting integrated minecraft server version 1.8.8
-[04:08:19] [Server thread/INFO]: Generating keypair
-[04:08:19] [Server thread/INFO]: Preparing start region for level 0
-[04:08:19] [Server thread/INFO]: Changing view distance to 8, from 10
-[04:08:20] [Server thread/INFO]: Player437[local:E:a59fbe08] logged in with entity id 72 at (-817.1349934361393, 71.0155550727022, -942.9315532943017)
-[04:08:20] [Server thread/INFO]: Player437 joined the game
-[04:08:20] [Server thread/INFO]: Saving and pausing game...
-[04:08:20] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
-[04:08:20] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
-[04:08:20] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
-[04:08:24] [Client thread/INFO]: [CHAT] §eYuzuClient§7: 大文字小文字問いません
-[04:08:24] [Client thread/INFO]: [CHAT] §eYuzuClient§7: キーバインド	.[b|bind] <Mod名> <key>
-[04:08:24] [Client thread/INFO]: [CHAT] §eYuzuClient§7: Mod即時オン		.[t|toggle] <Mod名>
-[04:08:24] [Client thread/INFO]: [CHAT] §eYuzuClient§7: Sayコマンド		.[s|say] <任意の文字列>
-[04:08:24] [Client thread/INFO]: [CHAT] §eYuzuClient§7: Spamコマンド	.[c|chatspam] <数> <任意の文字列>
-[04:08:26] [Server thread/INFO]: Saving and pausing game...
-[04:08:26] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
-[04:08:26] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
-[04:08:26] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[04:19:21] [Client thread/INFO]: Setting user: Player765
+[04:19:21] [Client thread/INFO]: (Session ID is token:0:Player765)
+[04:19:21] [Client thread/INFO]: LWJGL Version: 2.9.4
+[04:19:22] [Client thread/INFO]: Reloading ResourceManager: Default
+[04:19:22] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[04:19:22] [Thread-8/INFO]: Initializing LWJGL OpenAL
+[04:19:22] [Thread-8/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[04:19:22] [Thread-8/ERROR]: Error in class 'LibraryLWJGLOpenAL'
+[04:19:22] [Thread-8/ERROR]: Unable to initialize OpenAL.  Probable cause: OpenAL not supported.
+[04:19:22] [Thread-8/WARN]: ERROR MESSAGE:
+[04:19:22] [Thread-8/INFO]: Could not locate OpenAL library.
+[04:19:22] [Thread-8/WARN]: STACK TRACE:
+[04:19:22] [Thread-8/INFO]: org.lwjgl.openal.AL.create(AL.java:156)
+[04:19:22] [Thread-8/INFO]: org.lwjgl.openal.AL.create(AL.java:102)
+[04:19:22] [Thread-8/INFO]: org.lwjgl.openal.AL.create(AL.java:206)
+[04:19:22] [Thread-8/INFO]: paulscode.sound.libraries.LibraryLWJGLOpenAL.init(LibraryLWJGLOpenAL.java:164)
+[04:19:22] [Thread-8/INFO]: paulscode.sound.SoundSystem.CommandNewLibrary(SoundSystem.java:1576)
+[04:19:22] [Thread-8/INFO]: paulscode.sound.SoundSystem.CommandQueue(SoundSystem.java:2572)
+[04:19:22] [Thread-8/INFO]: paulscode.sound.CommandThread.run(CommandThread.java:121)
+[04:19:23] [Sound Library Loader/WARN]: ERROR MESSAGE:
+[04:19:23] [Sound Library Loader/INFO]: Could not locate OpenAL library.
+[04:19:23] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[04:19:23] [Thread-10/INFO]: Switching to No Sound
+[04:19:23] [Thread-10/INFO]: (Silent Mode)
+[04:19:23] [Sound Library Loader/INFO]: Sound engine started
+[04:19:24] [Client thread/INFO]: Created: 1024x512 textures-atlas
+[04:19:31] [Server thread/INFO]: Starting integrated minecraft server version 1.8.8
+[04:19:31] [Server thread/INFO]: Generating keypair
+[04:19:31] [Server thread/INFO]: Preparing start region for level 0
+[04:19:32] [Server thread/INFO]: Changing view distance to 8, from 10
+[04:19:32] [Server thread/INFO]: Player765[local:E:24094f4e] logged in with entity id 74 at (-891.8695123033791, 71.1707870772188, -1024.4298431195446)
+[04:19:32] [Server thread/INFO]: Player765 joined the game
+[04:19:32] [Server thread/INFO]: Saving and pausing game...
+[04:19:32] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[04:19:32] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[04:19:32] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[04:20:55] [Client thread/INFO]: [CHAT] §eYuzuClient§7: 大文字小文字問いません
+[04:20:55] [Client thread/INFO]: [CHAT] §eYuzuClient§7: キーバインド  .[b|bind] <Mod名> <key>
+[04:20:55] [Client thread/INFO]: [CHAT] §eYuzuClient§7: Mod即時オン  .[t|toggle] <Mod名>
+[04:20:55] [Client thread/INFO]: [CHAT] §eYuzuClient§7: Sayコマンド  .[s|say] <任意の文字列>
+[04:20:55] [Client thread/INFO]: [CHAT] §eYuzuClient§7: Spamコマンド  .[c|chatspam] <数> <任意の文字列>
+[04:20:58] [Client thread/INFO]: [CHAT] §eYuzuClient§7: そのようなモデルはありません! [.help]
+[04:21:12] [Client thread/INFO]: [CHAT] §eYuzuClient§7: KillAura を Gキー に設定しました
+[04:21:24] [Client thread/INFO]: [CHAT] §eYuzuClient§7: そのようなモデルはありません! [.help] 
+[04:22:01] [Client thread/INFO]: [CHAT] §eYuzuClient§7: そのようなモデルはありません! [.help] 
+[04:22:02] [Client thread/INFO]: [CHAT] §eYuzuClient§7: そのようなモデルはありません! [.help] 
+[04:22:07] [Server thread/INFO]: <Player765> a
+[04:22:07] [Client thread/INFO]: [CHAT] <Player765> a
+[04:22:07] [Server thread/INFO]: <Player765> a
+[04:22:07] [Client thread/INFO]: [CHAT] <Player765> a
+[04:22:31] [Client thread/INFO]: [CHAT] §eYuzuClient§7: そのようなモデルはありません! [.help] 
+[04:22:51] [Client thread/INFO]: [CHAT] §eYuzuClient§7: そのようなモデルはありません! [.help] 
+[04:23:24] [Server thread/INFO]: <Player765> 
+[04:23:24] [Client thread/INFO]: [CHAT] <Player765> 
+[04:23:31] [Client thread/INFO]: [CHAT] §eYuzuClient§7: 大文字小文字問いません
+[04:23:31] [Client thread/INFO]: [CHAT] §eYuzuClient§7: キーバインド  .[b|bind] <Mod名> <key>
+[04:23:31] [Client thread/INFO]: [CHAT] §eYuzuClient§7: Mod即時オン  .[t|toggle] <Mod名>
+[04:23:31] [Client thread/INFO]: [CHAT] §eYuzuClient§7: Sayコマンド  .[s|say] <任意の文字列>
+[04:23:31] [Client thread/INFO]: [CHAT] §eYuzuClient§7: Spamコマンド  .[c|chatspam] <数> <任意の文字列>
+[04:23:45] [Client thread/INFO]: [CHAT] §eYuzuClient§7: そのようなモデルはありません! [.help]
+[04:23:48] [Client thread/INFO]: [CHAT] §eYuzuClient§7: そのようなモデルはありません! [.help]
+[04:23:48] [Server thread/INFO]: Saving and pausing game...
+[04:23:48] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[04:23:48] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[04:23:48] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End

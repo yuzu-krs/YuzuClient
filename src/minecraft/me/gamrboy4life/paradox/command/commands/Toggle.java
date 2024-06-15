@@ -27,7 +27,7 @@ public class Toggle extends Command{
 				}
 			}
 			if(!foundModule) {
-				Paradox.instance.moduleManager.addChatMessage("そのようなモデルはありません!");
+				Paradox.instance.moduleManager.addChatMessage("そのようなモデルはありません! [.help]");
 			}
 		}
 		

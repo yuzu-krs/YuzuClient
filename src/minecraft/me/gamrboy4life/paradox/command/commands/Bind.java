@@ -31,7 +31,7 @@ public class Bind extends Command{
 			}
 			
 			if(!foundModule) {
-				Paradox.instance.moduleManager.addChatMessage("そのようなモデルはありません!");
+				Paradox.instance.moduleManager.addChatMessage("そのようなモデルはありません! [.help] ");
 			}
 			
 		}
@@ -42,8 +42,10 @@ public class Bind extends Command{
 				for(Module module : Paradox.instance.moduleManager.getModules()) {
 					module.setKey(Keyboard.KEY_NONE);
 				}
+				Paradox.instance.moduleManager.addChatMessage("すべてのキーバインドがクリアされました!");
+			}else {
+				Paradox.instance.moduleManager.addChatMessage("そのようなモデルはありません! [.help] ");
 			}
-			Paradox.instance.moduleManager.addChatMessage("すべてのキーバインドがクリアされました!");
 		}
 		
 		

@@ -16,11 +16,12 @@ public class Help extends Command{
 		if(args.length==0) {
 			Paradox.instance.moduleManager.addChatMessage("大文字小文字問いません");
 			Paradox.instance.moduleManager.addChatMessage("キーバインド  .[b|bind] <Mod名> <key>");
+			Paradox.instance.moduleManager.addChatMessage("キーバインド初期化  .[b|bind] clear");
 			Paradox.instance.moduleManager.addChatMessage("Mod即時オン  .[t|toggle] <Mod名>");
 			Paradox.instance.moduleManager.addChatMessage("Sayコマンド  .[s|say] <任意の文字列>");
 			Paradox.instance.moduleManager.addChatMessage("Spamコマンド  .[c|chatspam] <数> <任意の文字列>");
 		}else{
-			Paradox.instance.moduleManager.addChatMessage("そのようなモデルはありません!");
+			Paradox.instance.moduleManager.addChatMessage("そのようなモデルはありません! [.help]");
 		}
 		
 	}
