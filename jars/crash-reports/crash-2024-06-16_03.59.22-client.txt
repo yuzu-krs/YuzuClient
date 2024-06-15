@@ -1,0 +1,99 @@
+---- Minecraft Crash Report ----
+// Daisy, daisy...
+
+Time: 24/06/16 3:59
+Description: Updating screen events
+
+java.util.MissingFormatArgumentException: Format specifier '%s'
+	at java.util.Formatter.format(Formatter.java:2519)
+	at java.util.Formatter.format(Formatter.java:2455)
+	at java.lang.String.format(String.java:2940)
+	at me.gamrboy4life.paradox.command.commands.Help.onCommand(Help.java:21)
+	at me.gamrboy4life.paradox.command.CommandManager.handleChat(CommandManager.java:53)
+	at me.gamrboy4life.paradox.Paradox.onEvent(Paradox.java:85)
+	at net.minecraft.client.entity.EntityPlayerSP.sendChatMessage(EntityPlayerSP.java:303)
+	at net.minecraft.client.gui.GuiScreen.sendChatMessage(GuiScreen.java:488)
+	at net.minecraft.client.gui.GuiScreen.sendChatMessage(GuiScreen.java:478)
+	at net.minecraft.client.gui.GuiChat.keyTyped(GuiChat.java:133)
+	at net.minecraft.client.gui.GuiScreen.handleKeyboardInput(GuiScreen.java:628)
+	at net.minecraft.client.gui.GuiScreen.handleInput(GuiScreen.java:579)
+	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1797)
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1122)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:428)
+	at net.minecraft.client.main.Main.main(Main.java:113)
+	at Start.main(Start.java:11)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Stacktrace:
+	at java.util.Formatter.format(Formatter.java:2519)
+	at java.util.Formatter.format(Formatter.java:2455)
+	at java.lang.String.format(String.java:2940)
+	at me.gamrboy4life.paradox.command.commands.Help.onCommand(Help.java:21)
+	at me.gamrboy4life.paradox.command.CommandManager.handleChat(CommandManager.java:53)
+	at me.gamrboy4life.paradox.Paradox.onEvent(Paradox.java:85)
+	at net.minecraft.client.entity.EntityPlayerSP.sendChatMessage(EntityPlayerSP.java:303)
+	at net.minecraft.client.gui.GuiScreen.sendChatMessage(GuiScreen.java:488)
+	at net.minecraft.client.gui.GuiScreen.sendChatMessage(GuiScreen.java:478)
+	at net.minecraft.client.gui.GuiChat.keyTyped(GuiChat.java:133)
+	at net.minecraft.client.gui.GuiScreen.handleKeyboardInput(GuiScreen.java:628)
+	at net.minecraft.client.gui.GuiScreen.handleInput(GuiScreen.java:579)
+
+-- Affected screen --
+Details:
+	Screen name: net.minecraft.client.gui.GuiChat
+
+-- Affected level --
+Details:
+	Level name: MpServer
+	All players: 1 total; [EntityPlayerSP['Player46'/63, l='MpServer', x=-773.31, y=70.00, z=-880.23]]
+	Chunk stats: MultiplayerChunkCache: 268, 268
+	Level seed: 0
+	Level generator: ID 02 - largeBiomes, ver 0. Features enabled: false
+	Level generator options: 
+	Level spawn location: 584.00,64.00,166.00 - World: (584,64,166), Chunk: (at 8,4,6 in 36,10; contains blocks 576,0,160 to 591,255,175), Region: (1,0; contains chunks 32,0 to 63,31, blocks 512,0,0 to 1023,255,511)
+	Level time: 686201 game time, 40000 day time
+	Level dimension: 0
+	Level storage version: 0x00000 - Unknown?
+	Level weather: Rain time: 0 (now: false), thunder time: 0 (now: false)
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: false
+	Forced entities: 36 total; [EntityBat['Bat'/64, l='MpServer', x=-793.67, y=38.27, z=-885.01], EntityZombie['Zombie'/129, l='MpServer', x=-786.50, y=66.00, z=-937.50], EntityBat['Bat'/130, l='MpServer', x=-779.84, y=38.83, z=-906.38], EntityBat['Bat'/131, l='MpServer', x=-787.71, y=45.74, z=-894.80], EntityBat['Bat'/132, l='MpServer', x=-789.75, y=30.10, z=-857.25], EntityEnderman['Enderman'/135, l='MpServer', x=-781.50, y=67.00, z=-953.50], EntityBat['Bat'/136, l='MpServer', x=-765.57, y=42.22, z=-926.49], EntityBat['Bat'/137, l='MpServer', x=-783.22, y=38.80, z=-903.34], EntityBat['Bat'/138, l='MpServer', x=-784.32, y=39.03, z=-890.71], EntitySkeleton['Skeleton'/139, l='MpServer', x=-766.49, y=64.00, z=-901.96], EntitySpider['Spider'/140, l='MpServer', x=-770.31, y=72.00, z=-809.03], EntityCreeper['Creeper'/142, l='MpServer', x=-761.50, y=64.00, z=-926.50], EntityCreeper['Creeper'/143, l='MpServer', x=-774.19, y=64.00, z=-935.16], EntityZombie['Zombie'/144, l='MpServer', x=-767.66, y=64.00, z=-931.69], EntitySkeleton['Skeleton'/145, l='MpServer', x=-767.17, y=67.00, z=-865.71], EntityPlayerSP['Player46'/63, l='MpServer', x=-773.31, y=70.00, z=-880.23], EntitySkeleton['Skeleton'/154, l='MpServer', x=-739.50, y=63.00, z=-805.50], EntityBat['Bat'/161, l='MpServer', x=-716.66, y=50.09, z=-864.06], EntityItem['item.item.dyePowder.black'/162, l='MpServer', x=-732.13, y=50.00, z=-849.88], EntityItem['item.item.dyePowder.black'/163, l='MpServer', x=-733.13, y=52.00, z=-843.81], EntityZombie['Zombie'/99, l='MpServer', x=-819.53, y=21.00, z=-937.31], EntityItem['item.item.dyePowder.black'/164, l='MpServer', x=-733.13, y=51.00, z=-844.88], EntityCreeper['Creeper'/100, l='MpServer', x=-831.28, y=69.00, z=-958.94], EntityItem['item.tile.torch'/101, l='MpServer', x=-820.56, y=21.00, z=-929.53], EntitySkeleton['Skeleton'/102, l='MpServer', x=-823.50, y=67.00, z=-912.50], EntitySkeleton['Skeleton'/103, l='MpServer', x=-820.91, y=72.00, z=-890.44], EntityCreeper['Creeper'/169, l='MpServer', x=-715.50, y=37.00, z=-916.50], EntityItem['item.tile.cactus'/170, l='MpServer', x=-710.41, y=66.00, z=-884.06], EntityZombie['Zombie'/171, l='MpServer', x=-719.50, y=51.00, z=-868.50], EntityItem['item.tile.cactus'/172, l='MpServer', x=-710.91, y=66.00, z=-879.34], EntityBat['Bat'/173, l='MpServer', x=-717.97, y=57.47, z=-834.41], EntitySkeleton['Skeleton'/174, l='MpServer', x=-712.50, y=37.00, z=-825.50], EntityEnderman['Enderman'/178, l='MpServer', x=-694.50, y=66.00, z=-856.50], EntitySpider['Spider'/121, l='MpServer', x=-804.69, y=66.00, z=-911.72], EntityCreeper['Creeper'/122, l='MpServer', x=-811.50, y=67.00, z=-903.50], EntityCreeper['Creeper'/123, l='MpServer', x=-803.34, y=26.00, z=-832.00]]
+	Retry entities: 0 total; []
+	Server brand: vanilla
+	Server type: Integrated singleplayer server
+Stacktrace:
+	at net.minecraft.client.multiplayer.WorldClient.addWorldInfoToCrashReport(WorldClient.java:390)
+	at net.minecraft.client.Minecraft.addGraphicsAndWorldToCrashReport(Minecraft.java:2794)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:449)
+	at net.minecraft.client.main.Main.main(Main.java:113)
+	at Start.main(Start.java:11)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.8.8
+	Operating System: Windows 11 (amd64) version 10.0
+	CPU: 16x 12th Gen Intel(R) Core(TM) i5-12600K
+	Java Version: 1.8.0_412, Temurin
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode), Temurin
+	Memory: 655335560 bytes (624 MB) / 1037959168 bytes (989 MB) up to 1037959168 bytes (989 MB)
+	JVM Flags: 3 total; -Xincgc -Xmx1024M -Xms1024M
+	IntCache: cache: 0, tcache: 0, allocated: 13, tallocated: 99
+	Launched Version: mcp
+	LWJGL: 2.9.4
+	OpenGL: NVIDIA GeForce RTX 3060/PCIe/SSE2 GL version 4.6.0 NVIDIA 560.38, NVIDIA Corporation
+	GL Caps: Using GL 1.3 multitexturing.
+Using GL 1.3 texture combiners.
+Using framebuffer objects because OpenGL 3.0 is supported and separate blending is supported.
+Shaders are available because OpenGL 2.1 is supported.
+VBOs are available because OpenGL 1.5 is supported.
+
+	Using VBOs: No
+	Is Modded: Very likely; Jar signature invalidated
+	Type: Client (map_client.txt)
+	Resource Packs: 
+	Current Language: English (US)
+	Profiler Position: N/A (disabled)
+	CPU: 16x 12th Gen Intel(R) Core(TM) i5-12600K

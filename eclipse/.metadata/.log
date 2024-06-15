@@ -7556,3 +7556,13 @@ java.lang.ExceptionInInitializerError
 Caused by: java.lang.NullPointerException: Cannot invoke "org.eclipse.ui.ISharedImages.getImageDescriptor(String)" because the return value of "org.eclipse.ui.IWorkbench.getSharedImages()" is null
 	at net.sf.eclipsecs.ui.CheckstyleUIPluginImages.<clinit>(CheckstyleUIPluginImages.java:108)
 	... 18 more
+!SESSION 2024-06-16 03:45:57.363 -----------------------------------------------
+eclipse.buildId=4.26.0.20221201-1200
+java.version=17.0.6
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ja_JP
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.ui 2 2 2024-06-16 03:48:47.939
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
