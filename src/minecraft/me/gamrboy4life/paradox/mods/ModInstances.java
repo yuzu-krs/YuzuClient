@@ -4,6 +4,7 @@ import me.gamrboy4life.paradox.gui.hud.HUDManager;
 import me.gamrboy4life.paradox.mods.impl.ModArmorStatus;
 import me.gamrboy4life.paradox.mods.impl.ModCPS;
 import me.gamrboy4life.paradox.mods.impl.ModFPSEffects;
+import me.gamrboy4life.paradox.mods.impl.ModGlintColor;
 import me.gamrboy4life.paradox.mods.impl.ModHelloWorld;
 import me.gamrboy4life.paradox.mods.impl.ModKeystrokes;
 import me.gamrboy4life.paradox.mods.impl.ModPerspective;
@@ -23,6 +24,8 @@ public class ModInstances {
     private static ModCPS modCPS;
     
     private static ModPerspective modPerspective;
+    
+    private static ModGlintColor glintColor;
 
     public static void register(HUDManager api) {
         modHelloWorld = new ModHelloWorld();
@@ -46,6 +49,8 @@ public class ModInstances {
         modPerspective=new ModPerspective();
         api.register(modPerspective);
         
+        glintColor = new ModGlintColor();
+        
     }
 
     public static ModHelloWorld getModHelloWorld() {
@@ -56,7 +61,9 @@ public class ModInstances {
     	return modPerspective;
     }
     
-    
+    public static ModGlintColor getModGlintColor() {
+    	return glintColor;
+    }
     
     
     

@@ -1,0 +1,20 @@
+package me.gamrboy4life.paradox.mods.impl;
+
+import me.gamrboy4life.paradox.module.Category;
+import me.gamrboy4life.paradox.module.Module;
+
+public class EnchantEffect extends Module{
+
+    public EnchantEffect() {
+        super("EnchantEffect", 0, Category.MISC);
+        modGlintColor=new ModGlintColor();
+    }
+
+    @Override
+    public void onRender() {
+    	if(isToggled()) {
+            modGlintColor.setEnable(isToggled());
+        }
+    }
+	
+}

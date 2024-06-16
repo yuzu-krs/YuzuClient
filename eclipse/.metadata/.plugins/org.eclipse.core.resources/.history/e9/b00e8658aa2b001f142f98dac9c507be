@@ -1,0 +1,18 @@
+package me.gamrboy4life.paradox.mods.impl;
+
+import me.gamrboy4life.paradox.cosmetics.CosmeticController;
+import me.gamrboy4life.paradox.module.Category;
+
+public class EnchantEffect extends Module{
+
+	
+    public Eyes() {
+        super("Eyes", 0, Category.MISC);
+    }
+
+    @Override
+    public void onRender() {
+        CosmeticController.setShouldRenderTopEyes(this.isToggled());
+    }
+	
+}

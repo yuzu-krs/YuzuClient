@@ -2,6 +2,8 @@ package net.minecraft.client.renderer.entity;
 
 import java.util.List;
 import java.util.concurrent.Callable;
+
+import me.gamrboy4life.paradox.mods.ModInstances;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockDirt;
 import net.minecraft.block.BlockDoublePlant;
@@ -167,20 +169,25 @@ public class RenderItem implements IResourceManagerReloadListener
         GlStateManager.disableLighting();
         GlStateManager.blendFunc(768, 1);
         this.textureManager.bindTexture(RES_ITEM_GLINT);
+        
+        
+        int customEnchantmentGlintColor=ModInstances.getModGlintColor().getColor().getRGB();
+        
+        
         GlStateManager.matrixMode(5890);
         GlStateManager.pushMatrix();
         GlStateManager.scale(8.0F, 8.0F, 8.0F);
         float f = (float)(Minecraft.getSystemTime() % 3000L) / 3000.0F / 8.0F;
         GlStateManager.translate(f, 0.0F, 0.0F);
         GlStateManager.rotate(-50.0F, 0.0F, 0.0F, 1.0F);
-        this.renderModel(model, -8372020);
+        this.renderModel(model, customEnchantmentGlintColor);
         GlStateManager.popMatrix();
         GlStateManager.pushMatrix();
         GlStateManager.scale(8.0F, 8.0F, 8.0F);
         float f1 = (float)(Minecraft.getSystemTime() % 4873L) / 4873.0F / 8.0F;
         GlStateManager.translate(-f1, 0.0F, 0.0F);
         GlStateManager.rotate(10.0F, 0.0F, 0.0F, 1.0F);
-        this.renderModel(model, -8372020);
+        this.renderModel(model, customEnchantmentGlintColor);
         GlStateManager.popMatrix();
         GlStateManager.matrixMode(5888);
         GlStateManager.blendFunc(770, 771);

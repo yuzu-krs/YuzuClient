@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import me.gamrboy4life.paradox.Paradox;
+import me.gamrboy4life.paradox.mods.impl.EnchantEffect;
 import me.gamrboy4life.paradox.module.combat.AntiFire;
 import me.gamrboy4life.paradox.module.combat.AntiPotion;
 import me.gamrboy4life.paradox.module.combat.AutoClicker;
@@ -106,6 +107,7 @@ public class ModuleManager {
 		//MISC
 		newMod(new ChannelIcon());
 		newMod(new DeadPanic());
+		newMod(new EnchantEffect());
 		newMod(new Eyes());
 		newMod(new Hat());
 		newMod(new Panic());

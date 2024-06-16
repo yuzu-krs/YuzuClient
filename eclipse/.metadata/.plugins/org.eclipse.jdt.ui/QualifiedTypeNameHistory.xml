@@ -48,7 +48,6 @@
     <fullyQualifiedTypeName name="net.minecraft.client.Minecraft"/>
     <fullyQualifiedTypeName name="java.util.Map.Entry"/>
     <fullyQualifiedTypeName name="net.minecraft.client.settings.KeyBinding"/>
-    <fullyQualifiedTypeName name="java.awt.Color"/>
     <fullyQualifiedTypeName name="me.gamrboy4life.paradox.mods.impl.ModKeystrokes"/>
     <fullyQualifiedTypeName name="java.util.Iterator"/>
     <fullyQualifiedTypeName name="net.minecraft.entity.Entity"/>
@@ -59,5 +58,6 @@
     <fullyQualifiedTypeName name="me.gamrboy4life.paradox.gvent.impl.KeyEvent"/>
     <fullyQualifiedTypeName name="org.lwjgl.input.Keyboard"/>
     <fullyQualifiedTypeName name="org.lwjgl.opengl.Display"/>
+    <fullyQualifiedTypeName name="java.awt.Color"/>
     <fullyQualifiedTypeName name="me.gamrboy4life.paradox.mods.ModInstances"/>
 </qualifiedTypeNameHistroy>

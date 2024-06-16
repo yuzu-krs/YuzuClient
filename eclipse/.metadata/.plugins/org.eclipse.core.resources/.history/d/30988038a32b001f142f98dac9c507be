@@ -1,0 +1,17 @@
+package me.gamrboy4life.paradox.mods.impl;
+
+import java.awt.Color;
+
+import me.gamrboy4life.paradox.mods.Mod;
+
+public class ModGlintColor extends Mod{
+	
+	private static final Color DEFAULT_COLOR=new Color(128,64,204);
+	
+	private Color customColor=new Color(204,64,64);
+	
+	public Color getColor() {
+		
+	}
+
+}

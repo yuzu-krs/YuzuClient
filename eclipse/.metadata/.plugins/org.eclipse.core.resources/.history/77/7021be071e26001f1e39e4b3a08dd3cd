@@ -1,8 +1,0 @@
-package me.gamrboy4life.paradox.command;
-
-public class CommandManager {
-	
-	public static List<Command> commands=new ArrayList<Command>();
-	
-	
-}

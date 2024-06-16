@@ -1,7 +1,10 @@
 package net.minecraft.client.renderer.entity.layers;
 
-import com.google.common.collect.Maps;
 import java.util.Map;
+
+import com.google.common.collect.Maps;
+
+import me.gamrboy4life.paradox.mods.ModInstances;
 import net.minecraft.client.model.ModelBase;
 import net.minecraft.client.renderer.GlStateManager;
 import net.minecraft.client.renderer.entity.RendererLivingEntity;
@@ -107,13 +110,15 @@ public abstract class LayerArmorBase<T extends ModelBase> implements LayerRender
         GlStateManager.depthMask(false);
         float f1 = 0.5F;
         GlStateManager.color(f1, f1, f1, 1.0F);
+        
+        float[] customGlintColor=ModInstances.getModGlintColor().getColor().getRGBColorComponents(null);
 
         for (int i = 0; i < 2; ++i)
         {
             GlStateManager.disableLighting();
             GlStateManager.blendFunc(768, 1);
             float f2 = 0.76F;
-            GlStateManager.color(0.5F * f2, 0.25F * f2, 0.8F * f2, 1.0F);
+            GlStateManager.color(customGlintColor[0],customGlintColor[1],customGlintColor[2], 1.0F);
             GlStateManager.matrixMode(5890);
             GlStateManager.loadIdentity();
             float f3 = 0.33333334F;
