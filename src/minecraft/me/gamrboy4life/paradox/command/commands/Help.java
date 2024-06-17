@@ -19,7 +19,8 @@ public class Help extends Command{
 			Paradox.instance.moduleManager.addChatMessage("キーバインド初期化  .[b|bind] clear");
 			Paradox.instance.moduleManager.addChatMessage("Mod即時オン  .[t|toggle] <Mod名>");
 			Paradox.instance.moduleManager.addChatMessage("Sayコマンド  .[s|say] <任意の文字列>");
-			Paradox.instance.moduleManager.addChatMessage("Spamコマンド  .[c|chatspam] <数> <任意の文字列>");
+			Paradox.instance.moduleManager.addChatMessage("Spamコマンド 使用例↓");
+			Paradox.instance.moduleManager.addChatMessage(".[c|chatspam] <数> <任意の文字列> <間隔(ミリ秒)>");
 		}else{
 			Paradox.instance.moduleManager.addChatMessage("そのようなモデルはありません! [.help]");
 		}

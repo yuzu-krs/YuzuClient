@@ -10,12 +10,12 @@ import net.minecraft.network.play.client.C01PacketChatMessage;
 public class ChatSpam extends Command {
 
     public ChatSpam() {
-        super("ChatSpam", "ChatSpamは、「.chatspam 数 任意の文字」でスパムを行える", "chatspam", "c");
+        super("ChatSpam", "ChatSpamは、「.chatspam 数 任意の文字 ms」でスパムを行える", "chatspam", "c");
     }
 
     @Override
     public void onCommand(String[] args, String command) {
-        if (args.length < 2) {
+        if (args.length < 3) {
 			Paradox.instance.moduleManager.addChatMessage("そのようなモデルはありません! [.help]");
             return;
         }
@@ -25,9 +25,14 @@ public class ChatSpam extends Command {
             return;
         }
         
+        if(!args[2].matches("\\d+")) {
+        	Paradox.instance.moduleManager.addChatMessage("そのようなモデルはありません! [.help]");
+        	return;
+        }
 
         final int spamCount = Integer.parseInt(args[0]);
         final String message = String.join(" ", args).substring(args[0].length() + 1);
+        final int delay = Integer.parseInt(args[2]); // msの待機時間
 
         // メッセージを1秒ごとに送信する
         Thread thread = new Thread(new Runnable() {
@@ -40,7 +45,7 @@ public class ChatSpam extends Command {
 			        Minecraft.getMinecraft().thePlayer.sendQueue.addToSendQueue(new C01PacketChatMessage(finalMessage));
 
 			        try {
-			            Thread.sleep(1000); // 1秒待機
+			        	Thread.sleep(delay); // 指定されたミリ秒待機
 			        } catch (InterruptedException e) {
 			            e.printStackTrace();
 			        }
