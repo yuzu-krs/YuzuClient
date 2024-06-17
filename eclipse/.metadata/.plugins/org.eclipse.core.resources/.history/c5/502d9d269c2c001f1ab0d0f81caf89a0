@@ -1,0 +1,10 @@
+package me.gamrboy4life.paradox.mods.impl;
+
+import me.gamrboy4life.paradox.mods.ModDraggable;
+
+public class TargetHUD extends ModDraggable{
+
+}
+
+
+

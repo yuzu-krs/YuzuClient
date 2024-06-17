@@ -24,7 +24,7 @@
     "enabled": false
   },
   "MineClicker": {
-    "enabled": false
+    "enabled": true
   },
   "Regen": {
     "enabled": false

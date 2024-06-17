@@ -1,0 +1,16 @@
+package me.gamrboy4life.paradox.mods.impl;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import me.gamrboy4life.paradox.gui.hud.ScreenPosition;
+import me.gamrboy4life.paradox.mods.ModDraggable;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.gui.FontRenderer;
+
+public class TargetHUD extends ModDraggable{
+
+}
+
+
+

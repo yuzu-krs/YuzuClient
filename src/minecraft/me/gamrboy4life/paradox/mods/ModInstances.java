@@ -5,13 +5,13 @@ import me.gamrboy4life.paradox.mods.impl.ModArmorStatus;
 import me.gamrboy4life.paradox.mods.impl.ModCPS;
 import me.gamrboy4life.paradox.mods.impl.ModFPSEffects;
 import me.gamrboy4life.paradox.mods.impl.ModGlintColor;
-import me.gamrboy4life.paradox.mods.impl.ModHelloWorld;
 import me.gamrboy4life.paradox.mods.impl.ModKeystrokes;
 import me.gamrboy4life.paradox.mods.impl.ModPerspective;
 import me.gamrboy4life.paradox.mods.impl.ModXYZ;
+import me.gamrboy4life.paradox.mods.impl.TargetHUD;
 
 public class ModInstances {
-    private static ModHelloWorld modHelloWorld;
+
     
     private static ModArmorStatus modArmorStatus;
     
@@ -26,10 +26,11 @@ public class ModInstances {
     private static ModPerspective modPerspective;
     
     private static ModGlintColor glintColor;
+    
+    private static TargetHUD targetHUD;
 
     public static void register(HUDManager api) {
-        modHelloWorld = new ModHelloWorld();
-        api.register(modHelloWorld);
+
         
         modArmorStatus=new ModArmorStatus();
         api.register(modArmorStatus);
@@ -51,11 +52,11 @@ public class ModInstances {
         
         glintColor = new ModGlintColor();
         
+        targetHUD=new TargetHUD();
+        api.register(targetHUD);
     }
 
-    public static ModHelloWorld getModHelloWorld() {
-        return modHelloWorld;
-    }
+
     
     public static ModPerspective getModPerspective() {
     	return modPerspective;
@@ -65,7 +66,9 @@ public class ModInstances {
     	return glintColor;
     }
     
-    
+    public static TargetHUD gettargetHUD() {
+    	return targetHUD;
+    }
     
     
 }

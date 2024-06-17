@@ -1,0 +1,45 @@
+package me.gamrboy4life.paradox.mods.impl;
+
+import me.gamrboy4life.paradox.gui.hud.ScreenPosition;
+import me.gamrboy4life.paradox.mods.ModDraggable;
+import net.minecraft.entity.EntityLivingBase;
+
+public class TargetHUD extends ModDraggable{
+
+	
+	@Override
+	public int getWidth() {
+		return font.getStringWidth("Hello World (Dummy)");
+	}
+
+	@Override
+	public int getHeight() {
+		return font.FONT_HEIGHT;
+		
+	}
+
+	@Override
+	public void render(ScreenPosition pos) {
+		EntityLivingBase target=(EntityLivingBase)mc.pointedEntity;
+		
+		font.drawString(target.getName(), pos.getAbsoluteX()+2, pos.getAbsoluteY()+2, -1);
+		font.drawString(target.getHealth()+"\u2764", pos.getAbsoluteX()+2, pos.getAbsoluteY()+2+font.FONT_HEIGHT, -1);
+	}
+
+	@Override
+	public void renderDummy(ScreenPosition pos) {
+		// TODO 自動生成されたメソッド・スタブ
+		font.drawString("Hello World (Dummy)", pos.getAbsoluteX()+1, pos.getAbsoluteY()+1, 0xFF00FF00);
+	}
+
+	@Override
+	public boolean isEnabled() {
+		// TODO 自動生成されたメソッド・スタブ
+		return true;
+	}
+
+
+}
+
+
+
