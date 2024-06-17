@@ -7,6 +7,7 @@ import me.gamrboy4life.paradox.mods.impl.ModFPSEffects;
 import me.gamrboy4life.paradox.mods.impl.ModGlintColor;
 import me.gamrboy4life.paradox.mods.impl.ModKeystrokes;
 import me.gamrboy4life.paradox.mods.impl.ModPerspective;
+import me.gamrboy4life.paradox.mods.impl.ModPing;
 import me.gamrboy4life.paradox.mods.impl.ModXYZ;
 import me.gamrboy4life.paradox.mods.impl.TargetHUD;
 
@@ -28,6 +29,8 @@ public class ModInstances {
     private static ModGlintColor glintColor;
     
     private static TargetHUD targetHUD;
+    
+    private static ModPing modPing;
 
     public static void register(HUDManager api) {
 
@@ -54,6 +57,10 @@ public class ModInstances {
         
         targetHUD=new TargetHUD();
         api.register(targetHUD);
+        
+        modPing=new ModPing();
+        api.register(modPing);
+        
     }
 
 

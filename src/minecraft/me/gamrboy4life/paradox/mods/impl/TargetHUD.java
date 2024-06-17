@@ -28,15 +28,15 @@ public class TargetHUD extends ModDraggable{
 			target=(EntityLivingBase)mc.pointedEntity;
 		
 			if(target!=null) {
-				font.drawStringWithShadow(target.getName(), pos.getAbsoluteX()+2, pos.getAbsoluteY()+2, -1);
+				font.drawString(target.getName(), pos.getAbsoluteX()+2, pos.getAbsoluteY()+2, -1);
 				GuiInventory.drawEntityOnScreen(pos.getAbsoluteX()+font.getStringWidth(target.getName())+30, pos.getAbsoluteY()+30, 20, 50, 0, target);
 				//自分の体力とターゲットの体力の比較
 				if(target.getHealth()>mc.thePlayer.getHealth()) {
-					font.drawStringWithShadow(String.format("§c"+"%.1f", target.getHealth()) + " \u2764", pos.getAbsoluteX() + 2, pos.getAbsoluteY() + 2 + font.FONT_HEIGHT, -1);
+					font.drawString(String.format("§c"+"%.1f", target.getHealth()) + " \u2764", pos.getAbsoluteX() + 2, pos.getAbsoluteY() + 2 + font.FONT_HEIGHT, -1);
 					
 				}else {
 					
-					font.drawStringWithShadow(String.format("§a"+"%.1f", target.getHealth()) + " \u2764", pos.getAbsoluteX() + 2, pos.getAbsoluteY() + 2 + font.FONT_HEIGHT, -1);				
+					font.drawString(String.format("§a"+"%.1f", target.getHealth()) + " \u2764", pos.getAbsoluteX() + 2, pos.getAbsoluteY() + 2 + font.FONT_HEIGHT, -1);				
 				}
 			}
 		}
@@ -44,8 +44,8 @@ public class TargetHUD extends ModDraggable{
 	
 	@Override
 	public void renderDummy(ScreenPosition pos) {
-		font.drawStringWithShadow(mc.thePlayer.getName(), pos.getAbsoluteX()+2, pos.getAbsoluteY()+2, -1);
-		font.drawStringWithShadow((int)mc.thePlayer.getHealth()+" \u2764", pos.getAbsoluteX()+2, pos.getAbsoluteY()+2+font.FONT_HEIGHT, -1);
+		font.drawString(mc.thePlayer.getName(), pos.getAbsoluteX()+2, pos.getAbsoluteY()+2, -1);
+		font.drawString((int)mc.thePlayer.getHealth()+" \u2764", pos.getAbsoluteX()+2, pos.getAbsoluteY()+2+font.FONT_HEIGHT, -1);
 		GuiInventory.drawEntityOnScreen(pos.getAbsoluteX()+font.getStringWidth(mc.thePlayer.getName())+30, pos.getAbsoluteY()+30, 20, 50, 0, mc.thePlayer);
 	}
 	

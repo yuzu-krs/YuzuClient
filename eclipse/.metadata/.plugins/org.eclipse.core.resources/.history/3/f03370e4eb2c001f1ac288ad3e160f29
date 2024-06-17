@@ -1,0 +1,55 @@
+package me.gamrboy4life.paradox.mods.impl;
+
+import me.gamrboy4life.paradox.gui.hud.ScreenPosition;
+import me.gamrboy4life.paradox.mods.ModDraggable;
+
+public class ModPing extends ModDraggable {
+
+    @Override
+    public int getWidth() {
+        return font.getStringWidth("png: 100");
+    }
+
+    @Override
+    public int getHeight() {
+        return font.FONT_HEIGHT;
+    }
+
+    @Override
+    public void render(ScreenPosition pos) {
+        String pingText = getPingText();
+        font.drawString(pingText, pos.getAbsoluteX(), pos.getAbsoluteY(), -1);
+    }
+
+    @Override
+    public void renderDummy(ScreenPosition pos) {
+        String pingText = getPingText();
+        font.drawString(pingText, pos.getAbsoluteX(), pos.getAbsoluteY(), -1);
+    }
+
+    @Override
+    public boolean isEnabled() {
+        return true;
+    }
+
+    @SubscribeEvent
+    public void onTick(TickEvent.ClientTickEvent event) {
+        if (event.phase == TickEvent.Phase.END) {
+            updatePing();
+        }
+    }
+
+    private String pingText = "png: Ping is null";
+
+    private void updatePing() {
+        if (mc.getNetHandler().getPlayerInfo(mc.thePlayer.getUniqueID()) != null) {
+            pingText = "png: " + mc.getNetHandler().getPlayerInfo(mc.thePlayer.getUniqueID()).getResponseTime();
+        } else {
+            pingText = "png: Ping is null";
+        }
+    }
+
+    private String getPingText() {
+        return pingText;
+    }
+}
