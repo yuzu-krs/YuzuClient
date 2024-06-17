@@ -1,14 +1,12 @@
 package me.gamrboy4life.paradox.module.movement;
 
-import org.lwjgl.input.Keyboard;
-
 import me.gamrboy4life.paradox.module.Category;
 import me.gamrboy4life.paradox.module.Module;
 import net.minecraft.entity.Entity;
 
 public class Parkour extends Module{
 	public Parkour() {
-		super("Parkour",Keyboard.KEY_Z,Category.MOVEMENT);
+		super("Parkour",0,Category.MOVEMENT);
 	}
 	
 	public void onUpdate() {

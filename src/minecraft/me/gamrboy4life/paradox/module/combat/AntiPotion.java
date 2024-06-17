@@ -1,7 +1,5 @@
 package me.gamrboy4life.paradox.module.combat;
 
-import org.lwjgl.input.Keyboard;
-
 import me.gamrboy4life.paradox.module.Category;
 import me.gamrboy4life.paradox.module.Module;
 import net.minecraft.network.play.client.C03PacketPlayer;
@@ -10,7 +8,7 @@ import net.minecraft.potion.Potion;
 public class AntiPotion extends Module{
 
 	public AntiPotion() {
-		super("AntiPotion",Keyboard.KEY_B,Category.COMBAT);
+		super("AntiPotion",0,Category.COMBAT);
 	}
 	
 	private Potion[] blockedEffects=new Potion[] {Potion.hunger,Potion.moveSlowdown,Potion.digSlowdown,

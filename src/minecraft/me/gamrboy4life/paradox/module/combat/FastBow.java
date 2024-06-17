@@ -1,7 +1,5 @@
 package me.gamrboy4life.paradox.module.combat;
 
-import org.lwjgl.input.Keyboard;
-
 import me.gamrboy4life.paradox.module.Category;
 import me.gamrboy4life.paradox.module.Module;
 import net.minecraft.client.Minecraft;
@@ -15,7 +13,7 @@ import net.minecraft.util.EnumFacing;
 public class FastBow extends Module{
 
 	public FastBow() {
-		super("FastBow", Keyboard.KEY_B, Category.COMBAT);
+		super("FastBow", 0, Category.COMBAT);
 	}
 	
 	@Override
