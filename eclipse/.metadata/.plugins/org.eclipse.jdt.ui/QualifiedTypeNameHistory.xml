@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="net.minecraft.init.Items"/>
     <fullyQualifiedTypeName name="net.minecraft.client.renderer.RenderHelper"/>
     <fullyQualifiedTypeName name="net.minecraft.entity.player.EntityPlayer"/>
     <fullyQualifiedTypeName name="me.gamrboy4life.paradox.utils.esp.MobESPUtils"/>
@@ -60,4 +59,5 @@
     <fullyQualifiedTypeName name="net.minecraft.entity.EntityLivingBase"/>
     <fullyQualifiedTypeName name="net.minecraft.client.gui.inventory.GuiInventory"/>
     <fullyQualifiedTypeName name="me.gamrboy4life.paradox.mods.impl.TargetHUD"/>
+    <fullyQualifiedTypeName name="net.minecraft.client.renderer.RenderGlobal"/>
 </qualifiedTypeNameHistroy>

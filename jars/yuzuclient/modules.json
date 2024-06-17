@@ -101,6 +101,9 @@
   "BedWarsXray": {
     "enabled": false
   },
+  "BlockOverlay": {
+    "enabled": true
+  },
   "ClickGui": {
     "enabled": false
   },
