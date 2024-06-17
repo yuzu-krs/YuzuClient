@@ -12,7 +12,7 @@ public class MobESPUtils {
 	public static void entityESPBox(Entity entity,int mode) {
 		GL11.glBlendFunc(770, 771);
 		GL11.glEnable(GL11.GL_BLEND);
-		GL11.glLineWidth(4.0F);
+		GL11.glLineWidth(3.0F);
 		GL11.glDisable(GL11.GL_TEXTURE_2D);
 		GL11.glDisable(GL11.GL_DEPTH_TEST);
 		GL11.glDepthMask(false);

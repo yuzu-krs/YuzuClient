@@ -45,7 +45,10 @@ import me.gamrboy4life.paradox.module.player.FastLadder;
 import me.gamrboy4life.paradox.module.player.FastPlace;
 import me.gamrboy4life.paradox.module.render.BedWarsXray;
 import me.gamrboy4life.paradox.module.render.ClickGui;
-import me.gamrboy4life.paradox.module.render.ESP;
+import me.gamrboy4life.paradox.module.render.EspChest;
+import me.gamrboy4life.paradox.module.render.EspFriendly;
+import me.gamrboy4life.paradox.module.render.EspHostile;
+import me.gamrboy4life.paradox.module.render.EspPlayer;
 import me.gamrboy4life.paradox.module.render.FullBright;
 import me.gamrboy4life.paradox.module.render.TabGui;
 import me.gamrboy4life.paradox.module.render.Xray;
@@ -102,10 +105,12 @@ public class ModuleManager {
 		//RENDER
 		newMod(new BedWarsXray());
 		newMod(new ClickGui());
-		newMod(new ESP());
+		newMod(new EspChest());
+		newMod(new EspFriendly());
+		newMod(new EspHostile());
+		newMod(new EspPlayer());
 		newMod(new FullBright());
 		newMod(new Xray());
-
 		
 		//MISC
 		newMod(new Cape());
