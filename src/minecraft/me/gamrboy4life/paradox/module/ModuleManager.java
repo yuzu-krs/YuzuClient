@@ -13,6 +13,7 @@ import me.gamrboy4life.paradox.module.combat.Criticals;
 import me.gamrboy4life.paradox.module.combat.FastBow;
 import me.gamrboy4life.paradox.module.combat.KillAura;
 import me.gamrboy4life.paradox.module.combat.MineClicker;
+import me.gamrboy4life.paradox.module.combat.Reach;
 import me.gamrboy4life.paradox.module.combat.Regen;
 import me.gamrboy4life.paradox.module.misc.Cape;
 import me.gamrboy4life.paradox.module.misc.ChannelIcon;
@@ -69,6 +70,7 @@ public class ModuleManager {
 		newMod(new FastBow());
 		newMod(new KillAura());
 		newMod(new MineClicker());
+		newMod(new Reach());
 		newMod(new Regen());
 		
 		//MOVEMENT

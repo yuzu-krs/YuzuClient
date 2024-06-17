@@ -1,6 +1,6 @@
 {
   "TabGui": {
-    "enabled": false
+    "enabled": true
   },
   "AntiFire": {
     "enabled": false
@@ -21,10 +21,13 @@
     "enabled": false
   },
   "KillAura": {
-    "enabled": false
+    "enabled": true
   },
   "MineClicker": {
-    "enabled": true
+    "enabled": false
+  },
+  "Reach": {
+    "enabled": false
   },
   "Regen": {
     "enabled": false
@@ -63,7 +66,7 @@
     "enabled": false
   },
   "Speed": {
-    "enabled": false
+    "enabled": true
   },
   "Spider": {
     "enabled": false
