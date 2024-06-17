@@ -1,5 +1,7 @@
 package net.minecraft.client.renderer;
 
+import org.lwjgl.opengl.GL11;
+
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
@@ -25,7 +27,6 @@ import net.minecraft.util.EnumWorldBlockLayer;
 import net.minecraft.util.MathHelper;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.storage.MapData;
-import org.lwjgl.opengl.GL11;
 
 public class ItemRenderer
 {
@@ -263,7 +264,7 @@ public class ItemRenderer
      */
     private void transformFirstPersonItem(float equipProgress, float swingProgress)
     {
-        GlStateManager.translate(0.56F, -0.52F, -0.71999997F);
+        GlStateManager.translate(0.56F, -0.48F, -0.71999997F);
         GlStateManager.translate(0.0F, equipProgress * -0.6F, 0.0F);
         GlStateManager.rotate(45.0F, 0.0F, 1.0F, 0.0F);
         float f = MathHelper.sin(swingProgress * swingProgress * (float)Math.PI);
@@ -271,7 +272,7 @@ public class ItemRenderer
         GlStateManager.rotate(f * -20.0F, 0.0F, 1.0F, 0.0F);
         GlStateManager.rotate(f1 * -20.0F, 0.0F, 0.0F, 1.0F);
         GlStateManager.rotate(f1 * -80.0F, 1.0F, 0.0F, 0.0F);
-        GlStateManager.scale(0.4F, 0.4F, 0.4F);
+        GlStateManager.scale(0.3F, 0.3F, 0.3F);
     }
 
     private void func_178098_a(float p_178098_1_, AbstractClientPlayer clientPlayer)
@@ -348,8 +349,9 @@ public class ItemRenderer
                         break;
 
                     case BLOCK:
-                        this.transformFirstPersonItem(f, 0.0F);
+                        this.transformFirstPersonItem(0.2f, f1);
                         this.func_178103_d();
+                        GlStateManager.translate(-0.5F, 0.2F, 0.0F);
                         break;
 
                     case BOW:

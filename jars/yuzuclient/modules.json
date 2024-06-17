@@ -33,7 +33,7 @@
     "enabled": false
   },
   "AutoSprint": {
-    "enabled": false
+    "enabled": true
   },
   "AutoWalk": {
     "enabled": false
@@ -96,7 +96,7 @@
     "enabled": false
   },
   "FastPlace": {
-    "enabled": false
+    "enabled": true
   },
   "BedWarsXray": {
     "enabled": false

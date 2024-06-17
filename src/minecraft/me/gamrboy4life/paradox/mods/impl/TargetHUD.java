@@ -4,6 +4,7 @@ import me.gamrboy4life.paradox.gui.hud.ScreenPosition;
 import me.gamrboy4life.paradox.mods.ModDraggable;
 import net.minecraft.client.gui.inventory.GuiInventory;
 import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.entity.item.EntityItemFrame;
 
 public class TargetHUD extends ModDraggable{
 
@@ -22,21 +23,22 @@ public class TargetHUD extends ModDraggable{
 
 	@Override
 	public void render(ScreenPosition pos) {
-		target=(EntityLivingBase)mc.pointedEntity;
 		
-		if(target!=null) {
-			font.drawStringWithShadow(target.getName(), pos.getAbsoluteX()+2, pos.getAbsoluteY()+2, -1);
-			GuiInventory.drawEntityOnScreen(pos.getAbsoluteX()+font.getStringWidth(target.getName())+30, pos.getAbsoluteY()+30, 20, 50, 0, target);
-			//自分の体力とターゲットの体力の比較
-			if(target.getHealth()>mc.thePlayer.getHealth()) {
-				font.drawStringWithShadow(String.format("§c"+"%.1f", target.getHealth()) + " \u2764", pos.getAbsoluteX() + 2, pos.getAbsoluteY() + 2 + font.FONT_HEIGHT, -1);
-				
-			}else {
-				
-				font.drawStringWithShadow(String.format("§a"+"%.1f", target.getHealth()) + " \u2764", pos.getAbsoluteX() + 2, pos.getAbsoluteY() + 2 + font.FONT_HEIGHT, -1);				
+		if(!(mc.pointedEntity instanceof EntityItemFrame)) {
+			target=(EntityLivingBase)mc.pointedEntity;
+		
+			if(target!=null) {
+				font.drawStringWithShadow(target.getName(), pos.getAbsoluteX()+2, pos.getAbsoluteY()+2, -1);
+				GuiInventory.drawEntityOnScreen(pos.getAbsoluteX()+font.getStringWidth(target.getName())+30, pos.getAbsoluteY()+30, 20, 50, 0, target);
+				//自分の体力とターゲットの体力の比較
+				if(target.getHealth()>mc.thePlayer.getHealth()) {
+					font.drawStringWithShadow(String.format("§c"+"%.1f", target.getHealth()) + " \u2764", pos.getAbsoluteX() + 2, pos.getAbsoluteY() + 2 + font.FONT_HEIGHT, -1);
+					
+				}else {
+					
+					font.drawStringWithShadow(String.format("§a"+"%.1f", target.getHealth()) + " \u2764", pos.getAbsoluteX() + 2, pos.getAbsoluteY() + 2 + font.FONT_HEIGHT, -1);				
+				}
 			}
-			
-			
 		}
 	}
 	
