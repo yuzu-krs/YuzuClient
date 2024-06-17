@@ -110,6 +110,9 @@
   "Xray": {
     "enabled": false
   },
+  "Cape": {
+    "enabled": true
+  },
   "ChannelIcon": {
     "enabled": false
   },

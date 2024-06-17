@@ -14,6 +14,7 @@ import me.gamrboy4life.paradox.module.combat.FastBow;
 import me.gamrboy4life.paradox.module.combat.KillAura;
 import me.gamrboy4life.paradox.module.combat.MineClicker;
 import me.gamrboy4life.paradox.module.combat.Regen;
+import me.gamrboy4life.paradox.module.misc.Cape;
 import me.gamrboy4life.paradox.module.misc.ChannelIcon;
 import me.gamrboy4life.paradox.module.misc.DeadPanic;
 import me.gamrboy4life.paradox.module.misc.Eyes;
@@ -105,6 +106,7 @@ public class ModuleManager {
 
 		
 		//MISC
+		newMod(new Cape());
 		newMod(new ChannelIcon());
 		newMod(new DeadPanic());
 		newMod(new EnchantEffect());
