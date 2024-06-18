@@ -1,5 +1,0 @@
-package me.gamrboy4life.paradox.gui.hud;
-
-public interface IRender {
-
-}

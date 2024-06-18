@@ -29,7 +29,7 @@ public class Paradox {
     
     public static Paradox instance = new Paradox();
     
-    public static String name = "YuzuClient", version = "1.0", creator = "Yuzu";
+    public static String name = "YuzuClient", version = "3.0", creator = "Yuzu";
     
     public static SettingsManager settingsManager;
     public static ModuleManager moduleManager;
