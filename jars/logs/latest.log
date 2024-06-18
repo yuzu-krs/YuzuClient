@@ -27,3 +27,822 @@
 [03:08:43] [Client thread/INFO]: Stopping!
 [03:08:43] [Client thread/INFO]: SoundSystem shutting down...
 [03:08:43] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
+[03:28:10] [Client thread/INFO]: Setting user: Player31
+[03:28:10] [Client thread/INFO]: (Session ID is token:0:Player31)
+[03:28:10] [Client thread/INFO]: LWJGL Version: 2.9.4
+[03:28:11] [Client thread/INFO]: Reloading ResourceManager: Default
+[03:28:11] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[03:28:11] [Thread-7/INFO]: Initializing LWJGL OpenAL
+[03:28:11] [Thread-7/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[03:28:11] [Thread-7/ERROR]: Error in class 'LibraryLWJGLOpenAL'
+[03:28:11] [Thread-7/ERROR]: Unable to initialize OpenAL.  Probable cause: OpenAL not supported.
+[03:28:11] [Thread-7/WARN]: ERROR MESSAGE:
+[03:28:11] [Thread-7/INFO]: Could not locate OpenAL library.
+[03:28:11] [Thread-7/WARN]: STACK TRACE:
+[03:28:11] [Thread-7/INFO]: org.lwjgl.openal.AL.create(AL.java:156)
+[03:28:11] [Thread-7/INFO]: org.lwjgl.openal.AL.create(AL.java:102)
+[03:28:11] [Thread-7/INFO]: org.lwjgl.openal.AL.create(AL.java:206)
+[03:28:11] [Thread-7/INFO]: paulscode.sound.libraries.LibraryLWJGLOpenAL.init(LibraryLWJGLOpenAL.java:164)
+[03:28:11] [Thread-7/INFO]: paulscode.sound.SoundSystem.CommandNewLibrary(SoundSystem.java:1576)
+[03:28:11] [Thread-7/INFO]: paulscode.sound.SoundSystem.CommandQueue(SoundSystem.java:2572)
+[03:28:11] [Thread-7/INFO]: paulscode.sound.CommandThread.run(CommandThread.java:121)
+[03:28:12] [Sound Library Loader/WARN]: ERROR MESSAGE:
+[03:28:12] [Sound Library Loader/INFO]: Could not locate OpenAL library.
+[03:28:12] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[03:28:12] [Thread-9/INFO]: Switching to No Sound
+[03:28:12] [Thread-9/INFO]: (Silent Mode)
+[03:28:12] [Sound Library Loader/INFO]: Sound engine started
+[03:28:13] [Client thread/INFO]: Created: 1024x512 textures-atlas
+[03:30:15] [Client thread/INFO]: Stopping!
+[03:30:15] [Client thread/INFO]: SoundSystem shutting down...
+[03:30:15] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
+inecraft server version 1.8.8
+[03:28:20] [Server thread/INFO]: Generating keypair
+[03:28:21] [Server thread/INFO]: Preparing start region for level 0
+[03:28:21] [Server thread/INFO]: Changing view distance to 8, from 10
+[03:28:21] [Server thread/INFO]: Player31[local:E:0fa7971a] logged in with entity id 66 at (10370.352168395562, 69.25625606091992, 1312.0378560931185)
+[03:28:21] [Server thread/INFO]: Player31 joined the game
+[03:28:21] [Server thread/INFO]: Saving and pausing game...
+[03:28:21] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[03:28:22] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[03:28:22] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[03:28:32] [Server thread/INFO]: Saving and pausing game...
+[03:28:32] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[03:28:32] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[03:28:32] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[03:28:33] [Server thread/INFO]: Saving and pausing game...
+[03:28:33] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[03:28:33] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[03:28:33] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[03:28:37] [Client thread/WARN]: Failed to load texture: minecraft:cape/capenow/21.png
+java.io.FileNotFoundException: minecraft:cape/capenow/21.png
+	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:64) ~[bin/:?]
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:61) ~[bin/:?]
+	at net.minecraft.client.renderer.texture.SimpleTexture.loadTexture(SimpleTexture.java:30) ~[bin/:?]
+	at net.minecraft.client.renderer.texture.TextureManager.loadTexture(TextureManager.java:75) [bin/:?]
+	at net.minecraft.client.renderer.texture.TextureManager.bindTexture(TextureManager.java:49) [bin/:?]
+	at net.minecraft.client.renderer.entity.Render.bindTexture(Render.java:102) [bin/:?]
+	at me.gamrboy4life.paradox.devlogs.cosmetic.impl.CosmeticSnowyCape.doRenderLayer(CosmeticSnowyCape.java:31) [bin/:?]
+	at me.gamrboy4life.paradox.devlogs.cosmetic.impl.CosmeticSnowyCape.doRenderLayer(CosmeticSnowyCape.java:1) [bin/:?]
+	at net.minecraft.client.renderer.entity.RendererLivingEntity.renderLayers(RendererLivingEntity.java:467) [bin/:?]
+	at optfine.RenderPlayerOF.renderLayers(RenderPlayerOF.java:21) [bin/:?]
+	at optfine.RenderPlayerOF.renderLayers(RenderPlayerOF.java:1) [bin/:?]
+	at net.minecraft.client.renderer.entity.RendererLivingEntity.doRender(RendererLivingEntity.java:181) [bin/:?]
+	at net.minecraft.client.renderer.entity.RenderPlayer.doRender(RenderPlayer.java:76) [bin/:?]
+	at net.minecraft.client.renderer.entity.RenderPlayer.doRender(RenderPlayer.java:1) [bin/:?]
+	at net.minecraft.client.renderer.entity.RendererLivingEntity.doRender(RendererLivingEntity.java:1) [bin/:?]
+	at net.minecraft.client.renderer.entity.RenderManager.doRenderEntity(RenderManager.java:379) [bin/:?]
+	at net.minecraft.client.renderer.entity.RenderManager.renderEntityStatic(RenderManager.java:336) [bin/:?]
+	at net.minecraft.client.renderer.entity.RenderManager.renderEntitySimple(RenderManager.java:303) [bin/:?]
+	at net.minecraft.client.renderer.RenderGlobal.renderEntities(RenderGlobal.java:767) [bin/:?]
+	at net.minecraft.client.renderer.EntityRenderer.renderWorldPass(EntityRenderer.java:1554) [bin/:?]
+	at net.minecraft.client.renderer.EntityRenderer.renderWorld(EntityRenderer.java:1449) [bin/:?]
+	at net.minecraft.client.renderer.EntityRenderer.func_181560_a(EntityRenderer.java:1241) [bin/:?]
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1148) [bin/:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:428) [bin/:?]
+	at net.minecraft.client.main.Main.main(Main.java:113) [bin/:?]
+	at Start.main(Start.java:11) [bin/:?]
+[03:28:38] [Client thread/WARN]: Failed to load texture: minecraft:cape/capenow/22.png
+java.io.FileNotFoundException: minecraft:cape/capenow/22.png
+	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:64) ~[bin/:?]
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:61) ~[bin/:?]
+	at net.minecraft.client.renderer.texture.SimpleTexture.loadTexture(SimpleTexture.java:30) ~[bin/:?]
+	at net.minecraft.client.renderer.texture.TextureManager.loadTexture(TextureManager.java:75) [bin/:?]
+	at net.minecraft.client.renderer.texture.TextureManager.bindTexture(TextureManager.java:49) [bin/:?]
+	at net.minecraft.client.renderer.entity.Render.bindTexture(Render.java:102) [bin/:?]
+	at me.gamrboy4life.paradox.devlogs.cosmetic.impl.CosmeticSnowyCape.doRenderLayer(CosmeticSnowyCape.java:31) [bin/:?]
+	at me.gamrboy4life.paradox.devlogs.cosmetic.impl.CosmeticSnowyCape.doRenderLayer(CosmeticSnowyCape.java:1) [bin/:?]
+	at net.minecraft.client.renderer.entity.RendererLivingEntity.renderLayers(RendererLivingEntity.java:467) [bin/:?]
+	at optfine.RenderPlayerOF.renderLayers(RenderPlayerOF.java:21) [bin/:?]
+	at optfine.RenderPlayerOF.renderLayers(RenderPlayerOF.java:1) [bin/:?]
+	at net.minecraft.client.renderer.entity.RendererLivingEntity.doRender(RendererLivingEntity.java:181) [bin/:?]
+	at net.minecraft.client.renderer.entity.RenderPlayer.doRender(RenderPlayer.java:76) [bin/:?]
+	at net.minecraft.client.renderer.entity.RenderPlayer.doRender(RenderPlayer.java:1) [bin/:?]
+	at net.minecraft.client.renderer.entity.RendererLivingEntity.doRender(RendererLivingEntity.java:1) [bin/:?]
+	at net.minecraft.client.renderer.entity.RenderManager.doRenderEntity(RenderManager.java:379) [bin/:?]
+	at net.minecraft.client.renderer.entity.RenderManager.renderEntityStatic(RenderManager.java:336) [bin/:?]
+	at net.minecraft.client.renderer.entity.RenderManager.renderEntitySimple(RenderManager.java:303) [bin/:?]
+	at net.minecraft.client.renderer.RenderGlobal.renderEntities(RenderGlobal.java:767) [bin/:?]
+	at net.minecraft.client.renderer.EntityRenderer.renderWorldPass(EntityRenderer.java:1554) [bin/:?]
+	at net.minecraft.client.renderer.EntityRenderer.renderWorld(EntityRenderer.java:1449) [bin/:?]
+	at net.minecraft.client.renderer.EntityRenderer.func_181560_a(EntityRenderer.java:1241) [bin/:?]
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1148) [bin/:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:428) [bin/:?]
+	at net.minecraft.client.main.Main.main(Main.java:113) [bin/:?]
+	at Start.main(Start.java:11) [bin/:?]
+[03:28:38] [Client thread/WARN]: Failed to load texture: minecraft:cape/capenow/23.png
+java.io.FileNotFoundException: minecraft:cape/capenow/23.png
+	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:64) ~[bin/:?]
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:61) ~[bin/:?]
+	at net.minecraft.client.renderer.texture.SimpleTexture.loadTexture(SimpleTexture.java:30) ~[bin/:?]
+	at net.minecraft.client.renderer.texture.TextureManager.loadTexture(TextureManager.java:75) [bin/:?]
+	at net.minecraft.client.renderer.texture.TextureManager.bindTexture(TextureManager.java:49) [bin/:?]
+	at net.minecraft.client.renderer.entity.Render.bindTexture(Render.java:102) [bin/:?]
+	at me.gamrboy4life.paradox.devlogs.cosmetic.impl.CosmeticSnowyCape.doRenderLayer(CosmeticSnowyCape.java:31) [bin/:?]
+	at me.gamrboy4life.paradox.devlogs.cosmetic.impl.CosmeticSnowyCape.doRenderLayer(CosmeticSnowyCape.java:1) [bin/:?]
+	at net.minecraft.client.renderer.entity.RendererLivingEntity.renderLayers(RendererLivingEntity.java:467) [bin/:?]
+	at optfine.RenderPlayerOF.renderLayers(RenderPlayerOF.java:21) [bin/:?]
+	at optfine.RenderPlayerOF.renderLayers(RenderPlayerOF.java:1) [bin/:?]
+	at net.minecraft.client.renderer.entity.RendererLivingEntity.doRender(RendererLivingEntity.java:181) [bin/:?]
+	at net.minecraft.client.renderer.entity.RenderPlayer.doRender(RenderPlayer.java:76) [bin/:?]
+	at net.minecraft.client.renderer.entity.RenderPlayer.doRender(RenderPlayer.java:1) [bin/:?]
+	at net.minecraft.client.renderer.entity.RendererLivingEntity.doRender(RendererLivingEntity.java:1) [bin/:?]
+	at net.minecraft.client.renderer.entity.RenderManager.doRenderEntity(RenderManager.java:379) [bin/:?]
+	at net.minecraft.client.renderer.entity.RenderManager.renderEntityStatic(RenderManager.java:336) [bin/:?]
+	at net.minecraft.client.renderer.entity.RenderManager.renderEntitySimple(RenderManager.java:303) [bin/:?]
+	at net.minecraft.client.renderer.RenderGlobal.renderEntities(RenderGlobal.java:767) [bin/:?]
+	at net.minecraft.client.renderer.EntityRenderer.renderWorldPass(EntityRenderer.java:1554) [bin/:?]
+	at net.minecraft.client.renderer.EntityRenderer.renderWorld(EntityRenderer.java:1449) [bin/:?]
+	at net.minecraft.client.renderer.EntityRenderer.func_181560_a(EntityRenderer.java:1241) [bin/:?]
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1148) [bin/:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:428) [bin/:?]
+	at net.minecraft.client.main.Main.main(Main.java:113) [bin/:?]
+	at Start.main(Start.java:11) [bin/:?]
+[03:28:38] [Client thread/WARN]: Failed to load texture: minecraft:cape/capenow/0.png
+java.io.FileNotFoundException: minecraft:cape/capenow/0.png
+	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:64) ~[bin/:?]
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:61) ~[bin/:?]
+	at net.minecraft.client.renderer.texture.SimpleTexture.loadTexture(SimpleTexture.java:30) ~[bin/:?]
+	at net.minecraft.client.renderer.texture.TextureManager.loadTexture(TextureManager.java:75) [bin/:?]
+	at net.minecraft.client.renderer.texture.TextureManager.bindTexture(TextureManager.java:49) [bin/:?]
+	at net.minecraft.client.renderer.entity.Render.bindTexture(Render.java:102) [bin/:?]
+	at me.gamrboy4life.paradox.devlogs.cosmetic.impl.CosmeticSnowyCape.doRenderLayer(CosmeticSnowyCape.java:31) [bin/:?]
+	at me.gamrboy4life.paradox.devlogs.cosmetic.impl.CosmeticSnowyCape.doRenderLayer(CosmeticSnowyCape.java:1) [bin/:?]
+	at net.minecraft.client.renderer.entity.RendererLivingEntity.renderLayers(RendererLivingEntity.java:467) [bin/:?]
+	at optfine.RenderPlayerOF.renderLayers(RenderPlayerOF.java:21) [bin/:?]
+	at optfine.RenderPlayerOF.renderLayers(RenderPlayerOF.java:1) [bin/:?]
+	at net.minecraft.client.renderer.entity.RendererLivingEntity.doRender(RendererLivingEntity.java:181) [bin/:?]
+	at net.minecraft.client.renderer.entity.RenderPlayer.doRender(RenderPlayer.java:76) [bin/:?]
+	at net.minecraft.client.renderer.entity.RenderPlayer.doRender(RenderPlayer.java:1) [bin/:?]
+	at net.minecraft.client.renderer.entity.RendererLivingEntity.doRender(RendererLivingEntity.java:1) [bin/:?]
+	at net.minecraft.client.renderer.entity.RenderManager.doRenderEntity(RenderManager.java:379) [bin/:?]
+	at net.minecraft.client.renderer.entity.RenderManager.renderEntityStatic(RenderManager.java:336) [bin/:?]
+	at net.minecraft.client.renderer.entity.RenderManager.renderEntitySimple(RenderManager.java:303) [bin/:?]
+	at net.minecraft.client.renderer.RenderGlobal.renderEntities(RenderGlobal.java:767) [bin/:?]
+	at net.minecraft.client.renderer.EntityRenderer.renderWorldPass(EntityRenderer.java:1554) [bin/:?]
+	at net.minecraft.client.renderer.EntityRenderer.renderWorld(EntityRenderer.java:1449) [bin/:?]
+	at net.minecraft.client.renderer.EntityRenderer.func_181560_a(EntityRenderer.java:1241) [bin/:?]
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1148) [bin/:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:428) [bin/:?]
+	at net.minecraft.client.main.Main.main(Main.java:113) [bin/:?]
+	at Start.main(Start.java:11) [bin/:?]
+[03:28:38] [Client thread/WARN]: Failed to load texture: minecraft:cape/capenow/1.png
+java.io.FileNotFoundException: minecraft:cape/capenow/1.png
+	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:64) ~[bin/:?]
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:61) ~[bin/:?]
+	at net.minecraft.client.renderer.texture.SimpleTexture.loadTexture(SimpleTexture.java:30) ~[bin/:?]
+	at net.minecraft.client.renderer.texture.TextureManager.loadTexture(TextureManager.java:75) [bin/:?]
+	at net.minecraft.client.renderer.texture.TextureManager.bindTexture(TextureManager.java:49) [bin/:?]
+	at net.minecraft.client.renderer.entity.Render.bindTexture(Render.java:102) [bin/:?]
+	at me.gamrboy4life.paradox.devlogs.cosmetic.impl.CosmeticSnowyCape.doRenderLayer(CosmeticSnowyCape.java:31) [bin/:?]
+	at me.gamrboy4life.paradox.devlogs.cosmetic.impl.CosmeticSnowyCape.doRenderLayer(CosmeticSnowyCape.java:1) [bin/:?]
+	at net.minecraft.client.renderer.entity.RendererLivingEntity.renderLayers(RendererLivingEntity.java:467) [bin/:?]
+	at optfine.RenderPlayerOF.renderLayers(RenderPlayerOF.java:21) [bin/:?]
+	at optfine.RenderPlayerOF.renderLayers(RenderPlayerOF.java:1) [bin/:?]
+	at net.minecraft.client.renderer.entity.RendererLivingEntity.doRender(RendererLivingEntity.java:181) [bin/:?]
+	at net.minecraft.client.renderer.entity.RenderPlayer.doRender(RenderPlayer.java:76) [bin/:?]
+	at net.minecraft.client.renderer.entity.RenderPlayer.doRender(RenderPlayer.java:1) [bin/:?]
+	at net.minecraft.client.renderer.entity.RendererLivingEntity.doRender(RendererLivingEntity.java:1) [bin/:?]
+	at net.minecraft.client.renderer.entity.RenderManager.doRenderEntity(RenderManager.java:379) [bin/:?]
+	at net.minecraft.client.renderer.entity.RenderManager.renderEntityStatic(RenderManager.java:336) [bin/:?]
+	at net.minecraft.client.renderer.entity.RenderManager.renderEntitySimple(RenderManager.java:303) [bin/:?]
+	at net.minecraft.client.renderer.RenderGlobal.renderEntities(RenderGlobal.java:767) [bin/:?]
+	at net.minecraft.client.renderer.EntityRenderer.renderWorldPass(EntityRenderer.java:1554) [bin/:?]
+	at net.minecraft.client.renderer.EntityRenderer.renderWorld(EntityRenderer.java:1449) [bin/:?]
+	at net.minecraft.client.renderer.EntityRenderer.func_181560_a(EntityRenderer.java:1241) [bin/:?]
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1148) [bin/:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:428) [bin/:?]
+	at net.minecraft.client.main.Main.main(Main.java:113) [bin/:?]
+	at Start.main(Start.java:11) [bin/:?]
+[03:28:39] [Client thread/WARN]: Failed to load texture: minecraft:cape/capenow/2.png
+java.io.FileNotFoundException: minecraft:cape/capenow/2.png
+	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:64) ~[bin/:?]
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:61) ~[bin/:?]
+	at net.minecraft.client.renderer.texture.SimpleTexture.loadTexture(SimpleTexture.java:30) ~[bin/:?]
+	at net.minecraft.client.renderer.texture.TextureManager.loadTexture(TextureManager.java:75) [bin/:?]
+	at net.minecraft.client.renderer.texture.TextureManager.bindTexture(TextureManager.java:49) [bin/:?]
+	at net.minecraft.client.renderer.entity.Render.bindTexture(Render.java:102) [bin/:?]
+	at me.gamrboy4life.paradox.devlogs.cosmetic.impl.CosmeticSnowyCape.doRenderLayer(CosmeticSnowyCape.java:31) [bin/:?]
+	at me.gamrboy4life.paradox.devlogs.cosmetic.impl.CosmeticSnowyCape.doRenderLayer(CosmeticSnowyCape.java:1) [bin/:?]
+	at net.minecraft.client.renderer.entity.RendererLivingEntity.renderLayers(RendererLivingEntity.java:467) [bin/:?]
+	at optfine.RenderPlayerOF.renderLayers(RenderPlayerOF.java:21) [bin/:?]
+	at optfine.RenderPlayerOF.renderLayers(RenderPlayerOF.java:1) [bin/:?]
+	at net.minecraft.client.renderer.entity.RendererLivingEntity.doRender(RendererLivingEntity.java:181) [bin/:?]
+	at net.minecraft.client.renderer.entity.RenderPlayer.doRender(RenderPlayer.java:76) [bin/:?]
+	at net.minecraft.client.renderer.entity.RenderPlayer.doRender(RenderPlayer.java:1) [bin/:?]
+	at net.minecraft.client.renderer.entity.RendererLivingEntity.doRender(RendererLivingEntity.java:1) [bin/:?]
+	at net.minecraft.client.renderer.entity.RenderManager.doRenderEntity(RenderManager.java:379) [bin/:?]
+	at net.minecraft.client.renderer.entity.RenderManager.renderEntityStatic(RenderManager.java:336) [bin/:?]
+	at net.minecraft.client.renderer.entity.RenderManager.renderEntitySimple(RenderManager.java:303) [bin/:?]
+	at net.minecraft.client.renderer.RenderGlobal.renderEntities(RenderGlobal.java:767) [bin/:?]
+	at net.minecraft.client.renderer.EntityRenderer.renderWorldPass(EntityRenderer.java:1554) [bin/:?]
+	at net.minecraft.client.renderer.EntityRenderer.renderWorld(EntityRenderer.java:1449) [bin/:?]
+	at net.minecraft.client.renderer.EntityRenderer.func_181560_a(EntityRenderer.java:1241) [bin/:?]
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1148) [bin/:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:428) [bin/:?]
+	at net.minecraft.client.main.Main.main(Main.java:113) [bin/:?]
+	at Start.main(Start.java:11) [bin/:?]
+[03:28:39] [Client thread/WARN]: Failed to load texture: minecraft:cape/capenow/3.png
+java.io.FileNotFoundException: minecraft:cape/capenow/3.png
+	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:64) ~[bin/:?]
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:61) ~[bin/:?]
+	at net.minecraft.client.renderer.texture.SimpleTexture.loadTexture(SimpleTexture.java:30) ~[bin/:?]
+	at net.minecraft.client.renderer.texture.TextureManager.loadTexture(TextureManager.java:75) [bin/:?]
+	at net.minecraft.client.renderer.texture.TextureManager.bindTexture(TextureManager.java:49) [bin/:?]
+	at net.minecraft.client.renderer.entity.Render.bindTexture(Render.java:102) [bin/:?]
+	at me.gamrboy4life.paradox.devlogs.cosmetic.impl.CosmeticSnowyCape.doRenderLayer(CosmeticSnowyCape.java:31) [bin/:?]
+	at me.gamrboy4life.paradox.devlogs.cosmetic.impl.CosmeticSnowyCape.doRenderLayer(CosmeticSnowyCape.java:1) [bin/:?]
+	at net.minecraft.client.renderer.entity.RendererLivingEntity.renderLayers(RendererLivingEntity.java:467) [bin/:?]
+	at optfine.RenderPlayerOF.renderLayers(RenderPlayerOF.java:21) [bin/:?]
+	at optfine.RenderPlayerOF.renderLayers(RenderPlayerOF.java:1) [bin/:?]
+	at net.minecraft.client.renderer.entity.RendererLivingEntity.doRender(RendererLivingEntity.java:181) [bin/:?]
+	at net.minecraft.client.renderer.entity.RenderPlayer.doRender(RenderPlayer.java:76) [bin/:?]
+	at net.minecraft.client.renderer.entity.RenderPlayer.doRender(RenderPlayer.java:1) [bin/:?]
+	at net.minecraft.client.renderer.entity.RendererLivingEntity.doRender(RendererLivingEntity.java:1) [bin/:?]
+	at net.minecraft.client.renderer.entity.RenderManager.doRenderEntity(RenderManager.java:379) [bin/:?]
+	at net.minecraft.client.renderer.entity.RenderManager.renderEntityWithPosYaw(RenderManager.java:359) [bin/:?]
+	at net.minecraft.client.gui.inventory.GuiInventory.drawEntityOnScreen(GuiInventory.java:121) [bin/:?]
+	at me.gamrboy4life.paradox.mods.impl.ModPlayer.render(ModPlayer.java:84) [bin/:?]
+	at me.gamrboy4life.paradox.gui.hud.HUDManager.callRenderer(HUDManager.java:71) [bin/:?]
+	at me.gamrboy4life.paradox.gui.hud.HUDManager.onRender(HUDManager.java:56) [bin/:?]
+	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source) ~[?:?]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_412]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_412]
+	at me.gamrboy4life.paradox.gvent.Gvent.call(Gvent.java:12) [bin/:?]
+	at net.minecraft.client.renderer.EntityRenderer.func_181560_a(EntityRenderer.java:1332) [bin/:?]
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1148) [bin/:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:428) [bin/:?]
+	at net.minecraft.client.main.Main.main(Main.java:113) [bin/:?]
+	at Start.main(Start.java:11) [bin/:?]
+[03:28:39] [Client thread/WARN]: Failed to load texture: minecraft:cape/capenow/4.png
+java.io.FileNotFoundException: minecraft:cape/capenow/4.png
+	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:64) ~[bin/:?]
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:61) ~[bin/:?]
+	at net.minecraft.client.renderer.texture.SimpleTexture.loadTexture(SimpleTexture.java:30) ~[bin/:?]
+	at net.minecraft.client.renderer.texture.TextureManager.loadTexture(TextureManager.java:75) [bin/:?]
+	at net.minecraft.client.renderer.texture.TextureManager.bindTexture(TextureManager.java:49) [bin/:?]
+	at net.minecraft.client.renderer.entity.Render.bindTexture(Render.java:102) [bin/:?]
+	at me.gamrboy4life.paradox.devlogs.cosmetic.impl.CosmeticSnowyCape.doRenderLayer(CosmeticSnowyCape.java:31) [bin/:?]
+	at me.gamrboy4life.paradox.devlogs.cosmetic.impl.CosmeticSnowyCape.doRenderLayer(CosmeticSnowyCape.java:1) [bin/:?]
+	at net.minecraft.client.renderer.entity.RendererLivingEntity.renderLayers(RendererLivingEntity.java:467) [bin/:?]
+	at optfine.RenderPlayerOF.renderLayers(RenderPlayerOF.java:21) [bin/:?]
+	at optfine.RenderPlayerOF.renderLayers(RenderPlayerOF.java:1) [bin/:?]
+	at net.minecraft.client.renderer.entity.RendererLivingEntity.doRender(RendererLivingEntity.java:181) [bin/:?]
+	at net.minecraft.client.renderer.entity.RenderPlayer.doRender(RenderPlayer.java:76) [bin/:?]
+	at net.minecraft.client.renderer.entity.RenderPlayer.doRender(RenderPlayer.java:1) [bin/:?]
+	at net.minecraft.client.renderer.entity.RendererLivingEntity.doRender(RendererLivingEntity.java:1) [bin/:?]
+	at net.minecraft.client.renderer.entity.RenderManager.doRenderEntity(RenderManager.java:379) [bin/:?]
+	at net.minecraft.client.renderer.entity.RenderManager.renderEntityStatic(RenderManager.java:336) [bin/:?]
+	at net.minecraft.client.renderer.entity.RenderManager.renderEntitySimple(RenderManager.java:303) [bin/:?]
+	at net.minecraft.client.renderer.RenderGlobal.renderEntities(RenderGlobal.java:767) [bin/:?]
+	at net.minecraft.client.renderer.EntityRenderer.renderWorldPass(EntityRenderer.java:1554) [bin/:?]
+	at net.minecraft.client.renderer.EntityRenderer.renderWorld(EntityRenderer.java:1449) [bin/:?]
+	at net.minecraft.client.renderer.EntityRenderer.func_181560_a(EntityRenderer.java:1241) [bin/:?]
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1148) [bin/:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:428) [bin/:?]
+	at net.minecraft.client.main.Main.main(Main.java:113) [bin/:?]
+	at Start.main(Start.java:11) [bin/:?]
+[03:28:39] [Client thread/WARN]: Failed to load texture: minecraft:cape/capenow/5.png
+java.io.FileNotFoundException: minecraft:cape/capenow/5.png
+	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:64) ~[bin/:?]
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:61) ~[bin/:?]
+	at net.minecraft.client.renderer.texture.SimpleTexture.loadTexture(SimpleTexture.java:30) ~[bin/:?]
+	at net.minecraft.client.renderer.texture.TextureManager.loadTexture(TextureManager.java:75) [bin/:?]
+	at net.minecraft.client.renderer.texture.TextureManager.bindTexture(TextureManager.java:49) [bin/:?]
+	at net.minecraft.client.renderer.entity.Render.bindTexture(Render.java:102) [bin/:?]
+	at me.gamrboy4life.paradox.devlogs.cosmetic.impl.CosmeticSnowyCape.doRenderLayer(CosmeticSnowyCape.java:31) [bin/:?]
+	at me.gamrboy4life.paradox.devlogs.cosmetic.impl.CosmeticSnowyCape.doRenderLayer(CosmeticSnowyCape.java:1) [bin/:?]
+	at net.minecraft.client.renderer.entity.RendererLivingEntity.renderLayers(RendererLivingEntity.java:467) [bin/:?]
+	at optfine.RenderPlayerOF.renderLayers(RenderPlayerOF.java:21) [bin/:?]
+	at optfine.RenderPlayerOF.renderLayers(RenderPlayerOF.java:1) [bin/:?]
+	at net.minecraft.client.renderer.entity.RendererLivingEntity.doRender(RendererLivingEntity.java:181) [bin/:?]
+	at net.minecraft.client.renderer.entity.RenderPlayer.doRender(RenderPlayer.java:76) [bin/:?]
+	at net.minecraft.client.renderer.entity.RenderPlayer.doRender(RenderPlayer.java:1) [bin/:?]
+	at net.minecraft.client.renderer.entity.RendererLivingEntity.doRender(RendererLivingEntity.java:1) [bin/:?]
+	at net.minecraft.client.renderer.entity.RenderManager.doRenderEntity(RenderManager.java:379) [bin/:?]
+	at net.minecraft.client.renderer.entity.RenderManager.renderEntityWithPosYaw(RenderManager.java:359) [bin/:?]
+	at net.minecraft.client.gui.inventory.GuiInventory.drawEntityOnScreen(GuiInventory.java:121) [bin/:?]
+	at me.gamrboy4life.paradox.mods.impl.ModPlayer.render(ModPlayer.java:84) [bin/:?]
+	at me.gamrboy4life.paradox.gui.hud.HUDManager.callRenderer(HUDManager.java:71) [bin/:?]
+	at me.gamrboy4life.paradox.gui.hud.HUDManager.onRender(HUDManager.java:56) [bin/:?]
+	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source) ~[?:?]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_412]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_412]
+	at me.gamrboy4life.paradox.gvent.Gvent.call(Gvent.java:12) [bin/:?]
+	at net.minecraft.client.renderer.EntityRenderer.func_181560_a(EntityRenderer.java:1332) [bin/:?]
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1148) [bin/:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:428) [bin/:?]
+	at net.minecraft.client.main.Main.main(Main.java:113) [bin/:?]
+	at Start.main(Start.java:11) [bin/:?]
+[03:28:39] [Client thread/WARN]: Failed to load texture: minecraft:cape/capenow/6.png
+java.io.FileNotFoundException: minecraft:cape/capenow/6.png
+	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:64) ~[bin/:?]
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:61) ~[bin/:?]
+	at net.minecraft.client.renderer.texture.SimpleTexture.loadTexture(SimpleTexture.java:30) ~[bin/:?]
+	at net.minecraft.client.renderer.texture.TextureManager.loadTexture(TextureManager.java:75) [bin/:?]
+	at net.minecraft.client.renderer.texture.TextureManager.bindTexture(TextureManager.java:49) [bin/:?]
+	at net.minecraft.client.renderer.entity.Render.bindTexture(Render.java:102) [bin/:?]
+	at me.gamrboy4life.paradox.devlogs.cosmetic.impl.CosmeticSnowyCape.doRenderLayer(CosmeticSnowyCape.java:31) [bin/:?]
+	at me.gamrboy4life.paradox.devlogs.cosmetic.impl.CosmeticSnowyCape.doRenderLayer(CosmeticSnowyCape.java:1) [bin/:?]
+	at net.minecraft.client.renderer.entity.RendererLivingEntity.renderLayers(RendererLivingEntity.java:467) [bin/:?]
+	at optfine.RenderPlayerOF.renderLayers(RenderPlayerOF.java:21) [bin/:?]
+	at optfine.RenderPlayerOF.renderLayers(RenderPlayerOF.java:1) [bin/:?]
+	at net.minecraft.client.renderer.entity.RendererLivingEntity.doRender(RendererLivingEntity.java:181) [bin/:?]
+	at net.minecraft.client.renderer.entity.RenderPlayer.doRender(RenderPlayer.java:76) [bin/:?]
+	at net.minecraft.client.renderer.entity.RenderPlayer.doRender(RenderPlayer.java:1) [bin/:?]
+	at net.minecraft.client.renderer.entity.RendererLivingEntity.doRender(RendererLivingEntity.java:1) [bin/:?]
+	at net.minecraft.client.renderer.entity.RenderManager.doRenderEntity(RenderManager.java:379) [bin/:?]
+	at net.minecraft.client.renderer.entity.RenderManager.renderEntityStatic(RenderManager.java:336) [bin/:?]
+	at net.minecraft.client.renderer.entity.RenderManager.renderEntitySimple(RenderManager.java:303) [bin/:?]
+	at net.minecraft.client.renderer.RenderGlobal.renderEntities(RenderGlobal.java:767) [bin/:?]
+	at net.minecraft.client.renderer.EntityRenderer.renderWorldPass(EntityRenderer.java:1554) [bin/:?]
+	at net.minecraft.client.renderer.EntityRenderer.renderWorld(EntityRenderer.java:1449) [bin/:?]
+	at net.minecraft.client.renderer.EntityRenderer.func_181560_a(EntityRenderer.java:1241) [bin/:?]
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1148) [bin/:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:428) [bin/:?]
+	at net.minecraft.client.main.Main.main(Main.java:113) [bin/:?]
+	at Start.main(Start.java:11) [bin/:?]
+[03:28:39] [Client thread/WARN]: Failed to load texture: minecraft:cape/capenow/7.png
+java.io.FileNotFoundException: minecraft:cape/capenow/7.png
+	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:64) ~[bin/:?]
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:61) ~[bin/:?]
+	at net.minecraft.client.renderer.texture.SimpleTexture.loadTexture(SimpleTexture.java:30) ~[bin/:?]
+	at net.minecraft.client.renderer.texture.TextureManager.loadTexture(TextureManager.java:75) [bin/:?]
+	at net.minecraft.client.renderer.texture.TextureManager.bindTexture(TextureManager.java:49) [bin/:?]
+	at net.minecraft.client.renderer.entity.Render.bindTexture(Render.java:102) [bin/:?]
+	at me.gamrboy4life.paradox.devlogs.cosmetic.impl.CosmeticSnowyCape.doRenderLayer(CosmeticSnowyCape.java:31) [bin/:?]
+	at me.gamrboy4life.paradox.devlogs.cosmetic.impl.CosmeticSnowyCape.doRenderLayer(CosmeticSnowyCape.java:1) [bin/:?]
+	at net.minecraft.client.renderer.entity.RendererLivingEntity.renderLayers(RendererLivingEntity.java:467) [bin/:?]
+	at optfine.RenderPlayerOF.renderLayers(RenderPlayerOF.java:21) [bin/:?]
+	at optfine.RenderPlayerOF.renderLayers(RenderPlayerOF.java:1) [bin/:?]
+	at net.minecraft.client.renderer.entity.RendererLivingEntity.doRender(RendererLivingEntity.java:181) [bin/:?]
+	at net.minecraft.client.renderer.entity.RenderPlayer.doRender(RenderPlayer.java:76) [bin/:?]
+	at net.minecraft.client.renderer.entity.RenderPlayer.doRender(RenderPlayer.java:1) [bin/:?]
+	at net.minecraft.client.renderer.entity.RendererLivingEntity.doRender(RendererLivingEntity.java:1) [bin/:?]
+	at net.minecraft.client.renderer.entity.RenderManager.doRenderEntity(RenderManager.java:379) [bin/:?]
+	at net.minecraft.client.renderer.entity.RenderManager.renderEntityWithPosYaw(RenderManager.java:359) [bin/:?]
+	at net.minecraft.client.gui.inventory.GuiInventory.drawEntityOnScreen(GuiInventory.java:121) [bin/:?]
+	at me.gamrboy4life.paradox.mods.impl.ModPlayer.render(ModPlayer.java:84) [bin/:?]
+	at me.gamrboy4life.paradox.gui.hud.HUDManager.callRenderer(HUDManager.java:71) [bin/:?]
+	at me.gamrboy4life.paradox.gui.hud.HUDManager.onRender(HUDManager.java:56) [bin/:?]
+	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source) ~[?:?]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_412]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_412]
+	at me.gamrboy4life.paradox.gvent.Gvent.call(Gvent.java:12) [bin/:?]
+	at net.minecraft.client.renderer.EntityRenderer.func_181560_a(EntityRenderer.java:1332) [bin/:?]
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1148) [bin/:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:428) [bin/:?]
+	at net.minecraft.client.main.Main.main(Main.java:113) [bin/:?]
+	at Start.main(Start.java:11) [bin/:?]
+[03:28:39] [Client thread/WARN]: Failed to load texture: minecraft:cape/capenow/8.png
+java.io.FileNotFoundException: minecraft:cape/capenow/8.png
+	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:64) ~[bin/:?]
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:61) ~[bin/:?]
+	at net.minecraft.client.renderer.texture.SimpleTexture.loadTexture(SimpleTexture.java:30) ~[bin/:?]
+	at net.minecraft.client.renderer.texture.TextureManager.loadTexture(TextureManager.java:75) [bin/:?]
+	at net.minecraft.client.renderer.texture.TextureManager.bindTexture(TextureManager.java:49) [bin/:?]
+	at net.minecraft.client.renderer.entity.Render.bindTexture(Render.java:102) [bin/:?]
+	at me.gamrboy4life.paradox.devlogs.cosmetic.impl.CosmeticSnowyCape.doRenderLayer(CosmeticSnowyCape.java:31) [bin/:?]
+	at me.gamrboy4life.paradox.devlogs.cosmetic.impl.CosmeticSnowyCape.doRenderLayer(CosmeticSnowyCape.java:1) [bin/:?]
+	at net.minecraft.client.renderer.entity.RendererLivingEntity.renderLayers(RendererLivingEntity.java:467) [bin/:?]
+	at optfine.RenderPlayerOF.renderLayers(RenderPlayerOF.java:21) [bin/:?]
+	at optfine.RenderPlayerOF.renderLayers(RenderPlayerOF.java:1) [bin/:?]
+	at net.minecraft.client.renderer.entity.RendererLivingEntity.doRender(RendererLivingEntity.java:181) [bin/:?]
+	at net.minecraft.client.renderer.entity.RenderPlayer.doRender(RenderPlayer.java:76) [bin/:?]
+	at net.minecraft.client.renderer.entity.RenderPlayer.doRender(RenderPlayer.java:1) [bin/:?]
+	at net.minecraft.client.renderer.entity.RendererLivingEntity.doRender(RendererLivingEntity.java:1) [bin/:?]
+	at net.minecraft.client.renderer.entity.RenderManager.doRenderEntity(RenderManager.java:379) [bin/:?]
+	at net.minecraft.client.renderer.entity.RenderManager.renderEntityStatic(RenderManager.java:336) [bin/:?]
+	at net.minecraft.client.renderer.entity.RenderManager.renderEntitySimple(RenderManager.java:303) [bin/:?]
+	at net.minecraft.client.renderer.RenderGlobal.renderEntities(RenderGlobal.java:767) [bin/:?]
+	at net.minecraft.client.renderer.EntityRenderer.renderWorldPass(EntityRenderer.java:1554) [bin/:?]
+	at net.minecraft.client.renderer.EntityRenderer.renderWorld(EntityRenderer.java:1449) [bin/:?]
+	at net.minecraft.client.renderer.EntityRenderer.func_181560_a(EntityRenderer.java:1241) [bin/:?]
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1148) [bin/:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:428) [bin/:?]
+	at net.minecraft.client.main.Main.main(Main.java:113) [bin/:?]
+	at Start.main(Start.java:11) [bin/:?]
+[03:28:39] [Client thread/WARN]: Failed to load texture: minecraft:cape/capenow/9.png
+java.io.FileNotFoundException: minecraft:cape/capenow/9.png
+	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:64) ~[bin/:?]
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:61) ~[bin/:?]
+	at net.minecraft.client.renderer.texture.SimpleTexture.loadTexture(SimpleTexture.java:30) ~[bin/:?]
+	at net.minecraft.client.renderer.texture.TextureManager.loadTexture(TextureManager.java:75) [bin/:?]
+	at net.minecraft.client.renderer.texture.TextureManager.bindTexture(TextureManager.java:49) [bin/:?]
+	at net.minecraft.client.renderer.entity.Render.bindTexture(Render.java:102) [bin/:?]
+	at me.gamrboy4life.paradox.devlogs.cosmetic.impl.CosmeticSnowyCape.doRenderLayer(CosmeticSnowyCape.java:31) [bin/:?]
+	at me.gamrboy4life.paradox.devlogs.cosmetic.impl.CosmeticSnowyCape.doRenderLayer(CosmeticSnowyCape.java:1) [bin/:?]
+	at net.minecraft.client.renderer.entity.RendererLivingEntity.renderLayers(RendererLivingEntity.java:467) [bin/:?]
+	at optfine.RenderPlayerOF.renderLayers(RenderPlayerOF.java:21) [bin/:?]
+	at optfine.RenderPlayerOF.renderLayers(RenderPlayerOF.java:1) [bin/:?]
+	at net.minecraft.client.renderer.entity.RendererLivingEntity.doRender(RendererLivingEntity.java:181) [bin/:?]
+	at net.minecraft.client.renderer.entity.RenderPlayer.doRender(RenderPlayer.java:76) [bin/:?]
+	at net.minecraft.client.renderer.entity.RenderPlayer.doRender(RenderPlayer.java:1) [bin/:?]
+	at net.minecraft.client.renderer.entity.RendererLivingEntity.doRender(RendererLivingEntity.java:1) [bin/:?]
+	at net.minecraft.client.renderer.entity.RenderManager.doRenderEntity(RenderManager.java:379) [bin/:?]
+	at net.minecraft.client.renderer.entity.RenderManager.renderEntityWithPosYaw(RenderManager.java:359) [bin/:?]
+	at net.minecraft.client.gui.inventory.GuiInventory.drawEntityOnScreen(GuiInventory.java:121) [bin/:?]
+	at me.gamrboy4life.paradox.mods.impl.ModPlayer.render(ModPlayer.java:82) [bin/:?]
+	at me.gamrboy4life.paradox.gui.hud.HUDManager.callRenderer(HUDManager.java:71) [bin/:?]
+	at me.gamrboy4life.paradox.gui.hud.HUDManager.onRender(HUDManager.java:56) [bin/:?]
+	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source) ~[?:?]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_412]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_412]
+	at me.gamrboy4life.paradox.gvent.Gvent.call(Gvent.java:12) [bin/:?]
+	at net.minecraft.client.renderer.EntityRenderer.func_181560_a(EntityRenderer.java:1332) [bin/:?]
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1148) [bin/:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:428) [bin/:?]
+	at net.minecraft.client.main.Main.main(Main.java:113) [bin/:?]
+	at Start.main(Start.java:11) [bin/:?]
+[03:28:40] [Client thread/WARN]: Failed to load texture: minecraft:cape/capenow/10.png
+java.io.FileNotFoundException: minecraft:cape/capenow/10.png
+	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:64) ~[bin/:?]
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:61) ~[bin/:?]
+	at net.minecraft.client.renderer.texture.SimpleTexture.loadTexture(SimpleTexture.java:30) ~[bin/:?]
+	at net.minecraft.client.renderer.texture.TextureManager.loadTexture(TextureManager.java:75) [bin/:?]
+	at net.minecraft.client.renderer.texture.TextureManager.bindTexture(TextureManager.java:49) [bin/:?]
+	at net.minecraft.client.renderer.entity.Render.bindTexture(Render.java:102) [bin/:?]
+	at me.gamrboy4life.paradox.devlogs.cosmetic.impl.CosmeticSnowyCape.doRenderLayer(CosmeticSnowyCape.java:31) [bin/:?]
+	at me.gamrboy4life.paradox.devlogs.cosmetic.impl.CosmeticSnowyCape.doRenderLayer(CosmeticSnowyCape.java:1) [bin/:?]
+	at net.minecraft.client.renderer.entity.RendererLivingEntity.renderLayers(RendererLivingEntity.java:467) [bin/:?]
+	at optfine.RenderPlayerOF.renderLayers(RenderPlayerOF.java:21) [bin/:?]
+	at optfine.RenderPlayerOF.renderLayers(RenderPlayerOF.java:1) [bin/:?]
+	at net.minecraft.client.renderer.entity.RendererLivingEntity.doRender(RendererLivingEntity.java:181) [bin/:?]
+	at net.minecraft.client.renderer.entity.RenderPlayer.doRender(RenderPlayer.java:76) [bin/:?]
+	at net.minecraft.client.renderer.entity.RenderPlayer.doRender(RenderPlayer.java:1) [bin/:?]
+	at net.minecraft.client.renderer.entity.RendererLivingEntity.doRender(RendererLivingEntity.java:1) [bin/:?]
+	at net.minecraft.client.renderer.entity.RenderManager.doRenderEntity(RenderManager.java:379) [bin/:?]
+	at net.minecraft.client.renderer.entity.RenderManager.renderEntityStatic(RenderManager.java:336) [bin/:?]
+	at net.minecraft.client.renderer.entity.RenderManager.renderEntitySimple(RenderManager.java:303) [bin/:?]
+	at net.minecraft.client.renderer.RenderGlobal.renderEntities(RenderGlobal.java:767) [bin/:?]
+	at net.minecraft.client.renderer.EntityRenderer.renderWorldPass(EntityRenderer.java:1554) [bin/:?]
+	at net.minecraft.client.renderer.EntityRenderer.renderWorld(EntityRenderer.java:1449) [bin/:?]
+	at net.minecraft.client.renderer.EntityRenderer.func_181560_a(EntityRenderer.java:1241) [bin/:?]
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1148) [bin/:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:428) [bin/:?]
+	at net.minecraft.client.main.Main.main(Main.java:113) [bin/:?]
+	at Start.main(Start.java:11) [bin/:?]
+[03:28:40] [Client thread/WARN]: Failed to load texture: minecraft:cape/capenow/11.png
+java.io.FileNotFoundException: minecraft:cape/capenow/11.png
+	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:64) ~[bin/:?]
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:61) ~[bin/:?]
+	at net.minecraft.client.renderer.texture.SimpleTexture.loadTexture(SimpleTexture.java:30) ~[bin/:?]
+	at net.minecraft.client.renderer.texture.TextureManager.loadTexture(TextureManager.java:75) [bin/:?]
+	at net.minecraft.client.renderer.texture.TextureManager.bindTexture(TextureManager.java:49) [bin/:?]
+	at net.minecraft.client.renderer.entity.Render.bindTexture(Render.java:102) [bin/:?]
+	at me.gamrboy4life.paradox.devlogs.cosmetic.impl.CosmeticSnowyCape.doRenderLayer(CosmeticSnowyCape.java:31) [bin/:?]
+	at me.gamrboy4life.paradox.devlogs.cosmetic.impl.CosmeticSnowyCape.doRenderLayer(CosmeticSnowyCape.java:1) [bin/:?]
+	at net.minecraft.client.renderer.entity.RendererLivingEntity.renderLayers(RendererLivingEntity.java:467) [bin/:?]
+	at optfine.RenderPlayerOF.renderLayers(RenderPlayerOF.java:21) [bin/:?]
+	at optfine.RenderPlayerOF.renderLayers(RenderPlayerOF.java:1) [bin/:?]
+	at net.minecraft.client.renderer.entity.RendererLivingEntity.doRender(RendererLivingEntity.java:181) [bin/:?]
+	at net.minecraft.client.renderer.entity.RenderPlayer.doRender(RenderPlayer.java:76) [bin/:?]
+	at net.minecraft.client.renderer.entity.RenderPlayer.doRender(RenderPlayer.java:1) [bin/:?]
+	at net.minecraft.client.renderer.entity.RendererLivingEntity.doRender(RendererLivingEntity.java:1) [bin/:?]
+	at net.minecraft.client.renderer.entity.RenderManager.doRenderEntity(RenderManager.java:379) [bin/:?]
+	at net.minecraft.client.renderer.entity.RenderManager.renderEntityWithPosYaw(RenderManager.java:359) [bin/:?]
+	at net.minecraft.client.gui.inventory.GuiInventory.drawEntityOnScreen(GuiInventory.java:121) [bin/:?]
+	at me.gamrboy4life.paradox.mods.impl.ModPlayer.render(ModPlayer.java:82) [bin/:?]
+	at me.gamrboy4life.paradox.gui.hud.HUDManager.callRenderer(HUDManager.java:71) [bin/:?]
+	at me.gamrboy4life.paradox.gui.hud.HUDManager.onRender(HUDManager.java:56) [bin/:?]
+	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source) ~[?:?]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_412]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_412]
+	at me.gamrboy4life.paradox.gvent.Gvent.call(Gvent.java:12) [bin/:?]
+	at net.minecraft.client.renderer.EntityRenderer.func_181560_a(EntityRenderer.java:1332) [bin/:?]
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1148) [bin/:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:428) [bin/:?]
+	at net.minecraft.client.main.Main.main(Main.java:113) [bin/:?]
+	at Start.main(Start.java:11) [bin/:?]
+[03:28:40] [Client thread/WARN]: Failed to load texture: minecraft:cape/capenow/12.png
+java.io.FileNotFoundException: minecraft:cape/capenow/12.png
+	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:64) ~[bin/:?]
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:61) ~[bin/:?]
+	at net.minecraft.client.renderer.texture.SimpleTexture.loadTexture(SimpleTexture.java:30) ~[bin/:?]
+	at net.minecraft.client.renderer.texture.TextureManager.loadTexture(TextureManager.java:75) [bin/:?]
+	at net.minecraft.client.renderer.texture.TextureManager.bindTexture(TextureManager.java:49) [bin/:?]
+	at net.minecraft.client.renderer.entity.Render.bindTexture(Render.java:102) [bin/:?]
+	at me.gamrboy4life.paradox.devlogs.cosmetic.impl.CosmeticSnowyCape.doRenderLayer(CosmeticSnowyCape.java:31) [bin/:?]
+	at me.gamrboy4life.paradox.devlogs.cosmetic.impl.CosmeticSnowyCape.doRenderLayer(CosmeticSnowyCape.java:1) [bin/:?]
+	at net.minecraft.client.renderer.entity.RendererLivingEntity.renderLayers(RendererLivingEntity.java:467) [bin/:?]
+	at optfine.RenderPlayerOF.renderLayers(RenderPlayerOF.java:21) [bin/:?]
+	at optfine.RenderPlayerOF.renderLayers(RenderPlayerOF.java:1) [bin/:?]
+	at net.minecraft.client.renderer.entity.RendererLivingEntity.doRender(RendererLivingEntity.java:181) [bin/:?]
+	at net.minecraft.client.renderer.entity.RenderPlayer.doRender(RenderPlayer.java:76) [bin/:?]
+	at net.minecraft.client.renderer.entity.RenderPlayer.doRender(RenderPlayer.java:1) [bin/:?]
+	at net.minecraft.client.renderer.entity.RendererLivingEntity.doRender(RendererLivingEntity.java:1) [bin/:?]
+	at net.minecraft.client.renderer.entity.RenderManager.doRenderEntity(RenderManager.java:379) [bin/:?]
+	at net.minecraft.client.renderer.entity.RenderManager.renderEntityStatic(RenderManager.java:336) [bin/:?]
+	at net.minecraft.client.renderer.entity.RenderManager.renderEntitySimple(RenderManager.java:303) [bin/:?]
+	at net.minecraft.client.renderer.RenderGlobal.renderEntities(RenderGlobal.java:767) [bin/:?]
+	at net.minecraft.client.renderer.EntityRenderer.renderWorldPass(EntityRenderer.java:1554) [bin/:?]
+	at net.minecraft.client.renderer.EntityRenderer.renderWorld(EntityRenderer.java:1449) [bin/:?]
+	at net.minecraft.client.renderer.EntityRenderer.func_181560_a(EntityRenderer.java:1241) [bin/:?]
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1148) [bin/:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:428) [bin/:?]
+	at net.minecraft.client.main.Main.main(Main.java:113) [bin/:?]
+	at Start.main(Start.java:11) [bin/:?]
+[03:28:40] [Client thread/WARN]: Failed to load texture: minecraft:cape/capenow/13.png
+java.io.FileNotFoundException: minecraft:cape/capenow/13.png
+	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:64) ~[bin/:?]
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:61) ~[bin/:?]
+	at net.minecraft.client.renderer.texture.SimpleTexture.loadTexture(SimpleTexture.java:30) ~[bin/:?]
+	at net.minecraft.client.renderer.texture.TextureManager.loadTexture(TextureManager.java:75) [bin/:?]
+	at net.minecraft.client.renderer.texture.TextureManager.bindTexture(TextureManager.java:49) [bin/:?]
+	at net.minecraft.client.renderer.entity.Render.bindTexture(Render.java:102) [bin/:?]
+	at me.gamrboy4life.paradox.devlogs.cosmetic.impl.CosmeticSnowyCape.doRenderLayer(CosmeticSnowyCape.java:31) [bin/:?]
+	at me.gamrboy4life.paradox.devlogs.cosmetic.impl.CosmeticSnowyCape.doRenderLayer(CosmeticSnowyCape.java:1) [bin/:?]
+	at net.minecraft.client.renderer.entity.RendererLivingEntity.renderLayers(RendererLivingEntity.java:467) [bin/:?]
+	at optfine.RenderPlayerOF.renderLayers(RenderPlayerOF.java:21) [bin/:?]
+	at optfine.RenderPlayerOF.renderLayers(RenderPlayerOF.java:1) [bin/:?]
+	at net.minecraft.client.renderer.entity.RendererLivingEntity.doRender(RendererLivingEntity.java:181) [bin/:?]
+	at net.minecraft.client.renderer.entity.RenderPlayer.doRender(RenderPlayer.java:76) [bin/:?]
+	at net.minecraft.client.renderer.entity.RenderPlayer.doRender(RenderPlayer.java:1) [bin/:?]
+	at net.minecraft.client.renderer.entity.RendererLivingEntity.doRender(RendererLivingEntity.java:1) [bin/:?]
+	at net.minecraft.client.renderer.entity.RenderManager.doRenderEntity(RenderManager.java:379) [bin/:?]
+	at net.minecraft.client.renderer.entity.RenderManager.renderEntityWithPosYaw(RenderManager.java:359) [bin/:?]
+	at net.minecraft.client.gui.inventory.GuiInventory.drawEntityOnScreen(GuiInventory.java:121) [bin/:?]
+	at me.gamrboy4life.paradox.mods.impl.ModPlayer.render(ModPlayer.java:82) [bin/:?]
+	at me.gamrboy4life.paradox.gui.hud.HUDManager.callRenderer(HUDManager.java:71) [bin/:?]
+	at me.gamrboy4life.paradox.gui.hud.HUDManager.onRender(HUDManager.java:56) [bin/:?]
+	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source) ~[?:?]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_412]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_412]
+	at me.gamrboy4life.paradox.gvent.Gvent.call(Gvent.java:12) [bin/:?]
+	at net.minecraft.client.renderer.EntityRenderer.func_181560_a(EntityRenderer.java:1332) [bin/:?]
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1148) [bin/:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:428) [bin/:?]
+	at net.minecraft.client.main.Main.main(Main.java:113) [bin/:?]
+	at Start.main(Start.java:11) [bin/:?]
+[03:28:40] [Client thread/WARN]: Failed to load texture: minecraft:cape/capenow/14.png
+java.io.FileNotFoundException: minecraft:cape/capenow/14.png
+	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:64) ~[bin/:?]
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:61) ~[bin/:?]
+	at net.minecraft.client.renderer.texture.SimpleTexture.loadTexture(SimpleTexture.java:30) ~[bin/:?]
+	at net.minecraft.client.renderer.texture.TextureManager.loadTexture(TextureManager.java:75) [bin/:?]
+	at net.minecraft.client.renderer.texture.TextureManager.bindTexture(TextureManager.java:49) [bin/:?]
+	at net.minecraft.client.renderer.entity.Render.bindTexture(Render.java:102) [bin/:?]
+	at me.gamrboy4life.paradox.devlogs.cosmetic.impl.CosmeticSnowyCape.doRenderLayer(CosmeticSnowyCape.java:31) [bin/:?]
+	at me.gamrboy4life.paradox.devlogs.cosmetic.impl.CosmeticSnowyCape.doRenderLayer(CosmeticSnowyCape.java:1) [bin/:?]
+	at net.minecraft.client.renderer.entity.RendererLivingEntity.renderLayers(RendererLivingEntity.java:467) [bin/:?]
+	at optfine.RenderPlayerOF.renderLayers(RenderPlayerOF.java:21) [bin/:?]
+	at optfine.RenderPlayerOF.renderLayers(RenderPlayerOF.java:1) [bin/:?]
+	at net.minecraft.client.renderer.entity.RendererLivingEntity.doRender(RendererLivingEntity.java:181) [bin/:?]
+	at net.minecraft.client.renderer.entity.RenderPlayer.doRender(RenderPlayer.java:76) [bin/:?]
+	at net.minecraft.client.renderer.entity.RenderPlayer.doRender(RenderPlayer.java:1) [bin/:?]
+	at net.minecraft.client.renderer.entity.RendererLivingEntity.doRender(RendererLivingEntity.java:1) [bin/:?]
+	at net.minecraft.client.renderer.entity.RenderManager.doRenderEntity(RenderManager.java:379) [bin/:?]
+	at net.minecraft.client.renderer.entity.RenderManager.renderEntityStatic(RenderManager.java:336) [bin/:?]
+	at net.minecraft.client.renderer.entity.RenderManager.renderEntitySimple(RenderManager.java:303) [bin/:?]
+	at net.minecraft.client.renderer.RenderGlobal.renderEntities(RenderGlobal.java:767) [bin/:?]
+	at net.minecraft.client.renderer.EntityRenderer.renderWorldPass(EntityRenderer.java:1554) [bin/:?]
+	at net.minecraft.client.renderer.EntityRenderer.renderWorld(EntityRenderer.java:1449) [bin/:?]
+	at net.minecraft.client.renderer.EntityRenderer.func_181560_a(EntityRenderer.java:1241) [bin/:?]
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1148) [bin/:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:428) [bin/:?]
+	at net.minecraft.client.main.Main.main(Main.java:113) [bin/:?]
+	at Start.main(Start.java:11) [bin/:?]
+[03:28:40] [Client thread/WARN]: Failed to load texture: minecraft:cape/capenow/15.png
+java.io.FileNotFoundException: minecraft:cape/capenow/15.png
+	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:64) ~[bin/:?]
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:61) ~[bin/:?]
+	at net.minecraft.client.renderer.texture.SimpleTexture.loadTexture(SimpleTexture.java:30) ~[bin/:?]
+	at net.minecraft.client.renderer.texture.TextureManager.loadTexture(TextureManager.java:75) [bin/:?]
+	at net.minecraft.client.renderer.texture.TextureManager.bindTexture(TextureManager.java:49) [bin/:?]
+	at net.minecraft.client.renderer.entity.Render.bindTexture(Render.java:102) [bin/:?]
+	at me.gamrboy4life.paradox.devlogs.cosmetic.impl.CosmeticSnowyCape.doRenderLayer(CosmeticSnowyCape.java:31) [bin/:?]
+	at me.gamrboy4life.paradox.devlogs.cosmetic.impl.CosmeticSnowyCape.doRenderLayer(CosmeticSnowyCape.java:1) [bin/:?]
+	at net.minecraft.client.renderer.entity.RendererLivingEntity.renderLayers(RendererLivingEntity.java:467) [bin/:?]
+	at optfine.RenderPlayerOF.renderLayers(RenderPlayerOF.java:21) [bin/:?]
+	at optfine.RenderPlayerOF.renderLayers(RenderPlayerOF.java:1) [bin/:?]
+	at net.minecraft.client.renderer.entity.RendererLivingEntity.doRender(RendererLivingEntity.java:181) [bin/:?]
+	at net.minecraft.client.renderer.entity.RenderPlayer.doRender(RenderPlayer.java:76) [bin/:?]
+	at net.minecraft.client.renderer.entity.RenderPlayer.doRender(RenderPlayer.java:1) [bin/:?]
+	at net.minecraft.client.renderer.entity.RendererLivingEntity.doRender(RendererLivingEntity.java:1) [bin/:?]
+	at net.minecraft.client.renderer.entity.RenderManager.doRenderEntity(RenderManager.java:379) [bin/:?]
+	at net.minecraft.client.renderer.entity.RenderManager.renderEntityWithPosYaw(RenderManager.java:359) [bin/:?]
+	at net.minecraft.client.gui.inventory.GuiInventory.drawEntityOnScreen(GuiInventory.java:121) [bin/:?]
+	at me.gamrboy4life.paradox.mods.impl.ModPlayer.render(ModPlayer.java:82) [bin/:?]
+	at me.gamrboy4life.paradox.gui.hud.HUDManager.callRenderer(HUDManager.java:71) [bin/:?]
+	at me.gamrboy4life.paradox.gui.hud.HUDManager.onRender(HUDManager.java:56) [bin/:?]
+	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source) ~[?:?]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_412]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_412]
+	at me.gamrboy4life.paradox.gvent.Gvent.call(Gvent.java:12) [bin/:?]
+	at net.minecraft.client.renderer.EntityRenderer.func_181560_a(EntityRenderer.java:1332) [bin/:?]
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1148) [bin/:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:428) [bin/:?]
+	at net.minecraft.client.main.Main.main(Main.java:113) [bin/:?]
+	at Start.main(Start.java:11) [bin/:?]
+[03:28:40] [Client thread/WARN]: Failed to load texture: minecraft:cape/capenow/16.png
+java.io.FileNotFoundException: minecraft:cape/capenow/16.png
+	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:64) ~[bin/:?]
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:61) ~[bin/:?]
+	at net.minecraft.client.renderer.texture.SimpleTexture.loadTexture(SimpleTexture.java:30) ~[bin/:?]
+	at net.minecraft.client.renderer.texture.TextureManager.loadTexture(TextureManager.java:75) [bin/:?]
+	at net.minecraft.client.renderer.texture.TextureManager.bindTexture(TextureManager.java:49) [bin/:?]
+	at net.minecraft.client.renderer.entity.Render.bindTexture(Render.java:102) [bin/:?]
+	at me.gamrboy4life.paradox.devlogs.cosmetic.impl.CosmeticSnowyCape.doRenderLayer(CosmeticSnowyCape.java:31) [bin/:?]
+	at me.gamrboy4life.paradox.devlogs.cosmetic.impl.CosmeticSnowyCape.doRenderLayer(CosmeticSnowyCape.java:1) [bin/:?]
+	at net.minecraft.client.renderer.entity.RendererLivingEntity.renderLayers(RendererLivingEntity.java:467) [bin/:?]
+	at optfine.RenderPlayerOF.renderLayers(RenderPlayerOF.java:21) [bin/:?]
+	at optfine.RenderPlayerOF.renderLayers(RenderPlayerOF.java:1) [bin/:?]
+	at net.minecraft.client.renderer.entity.RendererLivingEntity.doRender(RendererLivingEntity.java:181) [bin/:?]
+	at net.minecraft.client.renderer.entity.RenderPlayer.doRender(RenderPlayer.java:76) [bin/:?]
+	at net.minecraft.client.renderer.entity.RenderPlayer.doRender(RenderPlayer.java:1) [bin/:?]
+	at net.minecraft.client.renderer.entity.RendererLivingEntity.doRender(RendererLivingEntity.java:1) [bin/:?]
+	at net.minecraft.client.renderer.entity.RenderManager.doRenderEntity(RenderManager.java:379) [bin/:?]
+	at net.minecraft.client.renderer.entity.RenderManager.renderEntityStatic(RenderManager.java:336) [bin/:?]
+	at net.minecraft.client.renderer.entity.RenderManager.renderEntitySimple(RenderManager.java:303) [bin/:?]
+	at net.minecraft.client.renderer.RenderGlobal.renderEntities(RenderGlobal.java:767) [bin/:?]
+	at net.minecraft.client.renderer.EntityRenderer.renderWorldPass(EntityRenderer.java:1554) [bin/:?]
+	at net.minecraft.client.renderer.EntityRenderer.renderWorld(EntityRenderer.java:1449) [bin/:?]
+	at net.minecraft.client.renderer.EntityRenderer.func_181560_a(EntityRenderer.java:1241) [bin/:?]
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1148) [bin/:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:428) [bin/:?]
+	at net.minecraft.client.main.Main.main(Main.java:113) [bin/:?]
+	at Start.main(Start.java:11) [bin/:?]
+[03:28:41] [Client thread/WARN]: Failed to load texture: minecraft:cape/capenow/17.png
+java.io.FileNotFoundException: minecraft:cape/capenow/17.png
+	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:64) ~[bin/:?]
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:61) ~[bin/:?]
+	at net.minecraft.client.renderer.texture.SimpleTexture.loadTexture(SimpleTexture.java:30) ~[bin/:?]
+	at net.minecraft.client.renderer.texture.TextureManager.loadTexture(TextureManager.java:75) [bin/:?]
+	at net.minecraft.client.renderer.texture.TextureManager.bindTexture(TextureManager.java:49) [bin/:?]
+	at net.minecraft.client.renderer.entity.Render.bindTexture(Render.java:102) [bin/:?]
+	at me.gamrboy4life.paradox.devlogs.cosmetic.impl.CosmeticSnowyCape.doRenderLayer(CosmeticSnowyCape.java:31) [bin/:?]
+	at me.gamrboy4life.paradox.devlogs.cosmetic.impl.CosmeticSnowyCape.doRenderLayer(CosmeticSnowyCape.java:1) [bin/:?]
+	at net.minecraft.client.renderer.entity.RendererLivingEntity.renderLayers(RendererLivingEntity.java:467) [bin/:?]
+	at optfine.RenderPlayerOF.renderLayers(RenderPlayerOF.java:21) [bin/:?]
+	at optfine.RenderPlayerOF.renderLayers(RenderPlayerOF.java:1) [bin/:?]
+	at net.minecraft.client.renderer.entity.RendererLivingEntity.doRender(RendererLivingEntity.java:181) [bin/:?]
+	at net.minecraft.client.renderer.entity.RenderPlayer.doRender(RenderPlayer.java:76) [bin/:?]
+	at net.minecraft.client.renderer.entity.RenderPlayer.doRender(RenderPlayer.java:1) [bin/:?]
+	at net.minecraft.client.renderer.entity.RendererLivingEntity.doRender(RendererLivingEntity.java:1) [bin/:?]
+	at net.minecraft.client.renderer.entity.RenderManager.doRenderEntity(RenderManager.java:379) [bin/:?]
+	at net.minecraft.client.renderer.entity.RenderManager.renderEntityStatic(RenderManager.java:336) [bin/:?]
+	at net.minecraft.client.renderer.entity.RenderManager.renderEntitySimple(RenderManager.java:303) [bin/:?]
+	at net.minecraft.client.renderer.RenderGlobal.renderEntities(RenderGlobal.java:767) [bin/:?]
+	at net.minecraft.client.renderer.EntityRenderer.renderWorldPass(EntityRenderer.java:1554) [bin/:?]
+	at net.minecraft.client.renderer.EntityRenderer.renderWorld(EntityRenderer.java:1449) [bin/:?]
+	at net.minecraft.client.renderer.EntityRenderer.func_181560_a(EntityRenderer.java:1241) [bin/:?]
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1148) [bin/:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:428) [bin/:?]
+	at net.minecraft.client.main.Main.main(Main.java:113) [bin/:?]
+	at Start.main(Start.java:11) [bin/:?]
+[03:28:41] [Client thread/WARN]: Failed to load texture: minecraft:cape/capenow/18.png
+java.io.FileNotFoundException: minecraft:cape/capenow/18.png
+	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:64) ~[bin/:?]
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:61) ~[bin/:?]
+	at net.minecraft.client.renderer.texture.SimpleTexture.loadTexture(SimpleTexture.java:30) ~[bin/:?]
+	at net.minecraft.client.renderer.texture.TextureManager.loadTexture(TextureManager.java:75) [bin/:?]
+	at net.minecraft.client.renderer.texture.TextureManager.bindTexture(TextureManager.java:49) [bin/:?]
+	at net.minecraft.client.renderer.entity.Render.bindTexture(Render.java:102) [bin/:?]
+	at me.gamrboy4life.paradox.devlogs.cosmetic.impl.CosmeticSnowyCape.doRenderLayer(CosmeticSnowyCape.java:31) [bin/:?]
+	at me.gamrboy4life.paradox.devlogs.cosmetic.impl.CosmeticSnowyCape.doRenderLayer(CosmeticSnowyCape.java:1) [bin/:?]
+	at net.minecraft.client.renderer.entity.RendererLivingEntity.renderLayers(RendererLivingEntity.java:467) [bin/:?]
+	at optfine.RenderPlayerOF.renderLayers(RenderPlayerOF.java:21) [bin/:?]
+	at optfine.RenderPlayerOF.renderLayers(RenderPlayerOF.java:1) [bin/:?]
+	at net.minecraft.client.renderer.entity.RendererLivingEntity.doRender(RendererLivingEntity.java:181) [bin/:?]
+	at net.minecraft.client.renderer.entity.RenderPlayer.doRender(RenderPlayer.java:76) [bin/:?]
+	at net.minecraft.client.renderer.entity.RenderPlayer.doRender(RenderPlayer.java:1) [bin/:?]
+	at net.minecraft.client.renderer.entity.RendererLivingEntity.doRender(RendererLivingEntity.java:1) [bin/:?]
+	at net.minecraft.client.renderer.entity.RenderManager.doRenderEntity(RenderManager.java:379) [bin/:?]
+	at net.minecraft.client.renderer.entity.RenderManager.renderEntityStatic(RenderManager.java:336) [bin/:?]
+	at net.minecraft.client.renderer.entity.RenderManager.renderEntitySimple(RenderManager.java:303) [bin/:?]
+	at net.minecraft.client.renderer.RenderGlobal.renderEntities(RenderGlobal.java:767) [bin/:?]
+	at net.minecraft.client.renderer.EntityRenderer.renderWorldPass(EntityRenderer.java:1554) [bin/:?]
+	at net.minecraft.client.renderer.EntityRenderer.renderWorld(EntityRenderer.java:1449) [bin/:?]
+	at net.minecraft.client.renderer.EntityRenderer.func_181560_a(EntityRenderer.java:1241) [bin/:?]
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1148) [bin/:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:428) [bin/:?]
+	at net.minecraft.client.main.Main.main(Main.java:113) [bin/:?]
+	at Start.main(Start.java:11) [bin/:?]
+[03:28:41] [Client thread/WARN]: Failed to load texture: minecraft:cape/capenow/19.png
+java.io.FileNotFoundException: minecraft:cape/capenow/19.png
+	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:64) ~[bin/:?]
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:61) ~[bin/:?]
+	at net.minecraft.client.renderer.texture.SimpleTexture.loadTexture(SimpleTexture.java:30) ~[bin/:?]
+	at net.minecraft.client.renderer.texture.TextureManager.loadTexture(TextureManager.java:75) [bin/:?]
+	at net.minecraft.client.renderer.texture.TextureManager.bindTexture(TextureManager.java:49) [bin/:?]
+	at net.minecraft.client.renderer.entity.Render.bindTexture(Render.java:102) [bin/:?]
+	at me.gamrboy4life.paradox.devlogs.cosmetic.impl.CosmeticSnowyCape.doRenderLayer(CosmeticSnowyCape.java:31) [bin/:?]
+	at me.gamrboy4life.paradox.devlogs.cosmetic.impl.CosmeticSnowyCape.doRenderLayer(CosmeticSnowyCape.java:1) [bin/:?]
+	at net.minecraft.client.renderer.entity.RendererLivingEntity.renderLayers(RendererLivingEntity.java:467) [bin/:?]
+	at optfine.RenderPlayerOF.renderLayers(RenderPlayerOF.java:21) [bin/:?]
+	at optfine.RenderPlayerOF.renderLayers(RenderPlayerOF.java:1) [bin/:?]
+	at net.minecraft.client.renderer.entity.RendererLivingEntity.doRender(RendererLivingEntity.java:181) [bin/:?]
+	at net.minecraft.client.renderer.entity.RenderPlayer.doRender(RenderPlayer.java:76) [bin/:?]
+	at net.minecraft.client.renderer.entity.RenderPlayer.doRender(RenderPlayer.java:1) [bin/:?]
+	at net.minecraft.client.renderer.entity.RendererLivingEntity.doRender(RendererLivingEntity.java:1) [bin/:?]
+	at net.minecraft.client.renderer.entity.RenderManager.doRenderEntity(RenderManager.java:379) [bin/:?]
+	at net.minecraft.client.renderer.entity.RenderManager.renderEntityStatic(RenderManager.java:336) [bin/:?]
+	at net.minecraft.client.renderer.entity.RenderManager.renderEntitySimple(RenderManager.java:303) [bin/:?]
+	at net.minecraft.client.renderer.RenderGlobal.renderEntities(RenderGlobal.java:767) [bin/:?]
+	at net.minecraft.client.renderer.EntityRenderer.renderWorldPass(EntityRenderer.java:1554) [bin/:?]
+	at net.minecraft.client.renderer.EntityRenderer.renderWorld(EntityRenderer.java:1449) [bin/:?]
+	at net.minecraft.client.renderer.EntityRenderer.func_181560_a(EntityRenderer.java:1241) [bin/:?]
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1148) [bin/:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:428) [bin/:?]
+	at net.minecraft.client.main.Main.main(Main.java:113) [bin/:?]
+	at Start.main(Start.java:11) [bin/:?]
+[03:28:41] [Client thread/WARN]: Failed to load texture: minecraft:cape/capenow/20.png
+java.io.FileNotFoundException: minecraft:cape/capenow/20.png
+	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:64) ~[bin/:?]
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:61) ~[bin/:?]
+	at net.minecraft.client.renderer.texture.SimpleTexture.loadTexture(SimpleTexture.java:30) ~[bin/:?]
+	at net.minecraft.client.renderer.texture.TextureManager.loadTexture(TextureManager.java:75) [bin/:?]
+	at net.minecraft.client.renderer.texture.TextureManager.bindTexture(TextureManager.java:49) [bin/:?]
+	at net.minecraft.client.renderer.entity.Render.bindTexture(Render.java:102) [bin/:?]
+	at me.gamrboy4life.paradox.devlogs.cosmetic.impl.CosmeticSnowyCape.doRenderLayer(CosmeticSnowyCape.java:31) [bin/:?]
+	at me.gamrboy4life.paradox.devlogs.cosmetic.impl.CosmeticSnowyCape.doRenderLayer(CosmeticSnowyCape.java:1) [bin/:?]
+	at net.minecraft.client.renderer.entity.RendererLivingEntity.renderLayers(RendererLivingEntity.java:467) [bin/:?]
+	at optfine.RenderPlayerOF.renderLayers(RenderPlayerOF.java:21) [bin/:?]
+	at optfine.RenderPlayerOF.renderLayers(RenderPlayerOF.java:1) [bin/:?]
+	at net.minecraft.client.renderer.entity.RendererLivingEntity.doRender(RendererLivingEntity.java:181) [bin/:?]
+	at net.minecraft.client.renderer.entity.RenderPlayer.doRender(RenderPlayer.java:76) [bin/:?]
+	at net.minecraft.client.renderer.entity.RenderPlayer.doRender(RenderPlayer.java:1) [bin/:?]
+	at net.minecraft.client.renderer.entity.RendererLivingEntity.doRender(RendererLivingEntity.java:1) [bin/:?]
+	at net.minecraft.client.renderer.entity.RenderManager.doRenderEntity(RenderManager.java:379) [bin/:?]
+	at net.minecraft.client.renderer.entity.RenderManager.renderEntityWithPosYaw(RenderManager.java:359) [bin/:?]
+	at net.minecraft.client.gui.inventory.GuiInventory.drawEntityOnScreen(GuiInventory.java:121) [bin/:?]
+	at me.gamrboy4life.paradox.mods.impl.ModPlayer.render(ModPlayer.java:82) [bin/:?]
+	at me.gamrboy4life.paradox.gui.hud.HUDManager.callRenderer(HUDManager.java:71) [bin/:?]
+	at me.gamrboy4life.paradox.gui.hud.HUDManager.onRender(HUDManager.java:56) [bin/:?]
+	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source) ~[?:?]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_412]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_412]
+	at me.gamrboy4life.paradox.gvent.Gvent.call(Gvent.java:12) [bin/:?]
+	at net.minecraft.client.renderer.EntityRenderer.func_181560_a(EntityRenderer.java:1332) [bin/:?]
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1148) [bin/:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:428) [bin/:?]
+	at net.minecraft.client.main.Main.main(Main.java:113) [bin/:?]
+	at Start.main(Start.java:11) [bin/:?]
+[03:28:45] [Server thread/INFO]: Saving and pausing game...
+[03:28:45] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[03:28:45] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[03:28:45] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[03:28:46] [Client thread/INFO]: Stopping!
+[03:28:46] [Client thread/INFO]: SoundSystem shutting down...
+[03:28:46] [Server thread/INFO]: Stopping server
+[03:28:46] [Server thread/INFO]: Saving players
+[03:28:46] [Server thread/INFO]: Saving worlds
+[03:28:46] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[03:28:46] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[03:28:46] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[03:28:46] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
+[03:30:15] [Client thread/INFO]: Setting user: Player421
+[03:30:15] [Client thread/INFO]: (Session ID is token:0:Player421)
+[03:30:16] [Client thread/INFO]: LWJGL Version: 2.9.4
+[03:30:16] [Client thread/INFO]: Reloading ResourceManager: Default
+[03:30:16] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[03:30:17] [Thread-7/INFO]: Initializing LWJGL OpenAL
+[03:30:17] [Thread-7/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[03:30:17] [Thread-7/ERROR]: Error in class 'LibraryLWJGLOpenAL'
+[03:30:17] [Thread-7/ERROR]: Unable to initialize OpenAL.  Probable cause: OpenAL not supported.
+[03:30:17] [Thread-7/WARN]: ERROR MESSAGE:
+[03:30:17] [Thread-7/INFO]: Could not locate OpenAL library.
+[03:30:17] [Thread-7/WARN]: STACK TRACE:
+[03:30:17] [Thread-7/INFO]: org.lwjgl.openal.AL.create(AL.java:156)
+[03:30:17] [Thread-7/INFO]: org.lwjgl.openal.AL.create(AL.java:102)
+[03:30:17] [Thread-7/INFO]: org.lwjgl.openal.AL.create(AL.java:206)
+[03:30:17] [Thread-7/INFO]: paulscode.sound.libraries.LibraryLWJGLOpenAL.init(LibraryLWJGLOpenAL.java:164)
+[03:30:17] [Thread-7/INFO]: paulscode.sound.SoundSystem.CommandNewLibrary(SoundSystem.java:1576)
+[03:30:17] [Thread-7/INFO]: paulscode.sound.SoundSystem.CommandQueue(SoundSystem.java:2572)
+[03:30:17] [Thread-7/INFO]: paulscode.sound.CommandThread.run(CommandThread.java:121)
+[03:30:17] [Sound Library Loader/WARN]: ERROR MESSAGE:
+[03:30:17] [Sound Library Loader/INFO]: Could not locate OpenAL library.
+[03:30:17] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[03:30:17] [Thread-9/INFO]: Switching to No Sound
+[03:30:17] [Thread-9/INFO]: (Silent Mode)
+[03:30:18] [Sound Library Loader/INFO]: Sound engine started
+[03:30:18] [Client thread/INFO]: Created: 1024x512 textures-atlas
+[03:30:22] [Server thread/INFO]: Starting integrated minecraft server version 1.8.8
+[03:30:22] [Server thread/INFO]: Generating keypair
+[03:30:22] [Server thread/INFO]: Preparing start region for level 0
+[03:30:23] [Server thread/INFO]: Changing view distance to 8, from 10
+[03:30:23] [Server thread/INFO]: Player421[local:E:8f8be0fc] logged in with entity id 66 at (10372.898392877685, 71.0, 1307.853701384076)
+[03:30:23] [Server thread/INFO]: Player421 joined the game
+[03:30:23] [Server thread/INFO]: Saving and pausing game...
+[03:30:23] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[03:30:23] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[03:30:23] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[03:30:25] [Server thread/INFO]: Saving and pausing game...
+[03:30:25] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[03:30:25] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[03:30:25] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[03:30:33] [Server thread/INFO]: Saving and pausing game...
+[03:30:33] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[03:30:33] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[03:30:33] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[03:30:36] [Client thread/INFO]: [CHAT] §eYuzuClient§7: 大文字小文字問いません
+[03:30:36] [Client thread/INFO]: [CHAT] §eYuzuClient§7: キーバインド  .[b|bind] <Mod名> <key>
+[03:30:36] [Client thread/INFO]: [CHAT] §eYuzuClient§7: キーバインド初期化  .[b|bind] clear
+[03:30:36] [Client thread/INFO]: [CHAT] §eYuzuClient§7: Mod即時オン  .[t|toggle] <Mod名>
+[03:30:36] [Client thread/INFO]: [CHAT] §eYuzuClient§7: Sayコマンド  .[s|say] <任意の文字列>
+[03:30:36] [Client thread/INFO]: [CHAT] §eYuzuClient§7: Spamコマンド 使用例↓
+[03:30:36] [Client thread/INFO]: [CHAT] §eYuzuClient§7: .[c|chatspam] <数> <間隔(ミリ秒)> <任意の文字列>
+[03:30:37] [Server thread/INFO]: Saving and pausing game...
+[03:30:37] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[03:30:37] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[03:30:37] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
