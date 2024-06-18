@@ -8,7 +8,7 @@ public class ModPing extends ModDraggable{
 	@Override
 	public int getWidth() {
 		// TODO 自動生成されたメソッド・スタブ
-		return font.getStringWidth("png: 100");
+		return font.getStringWidth("ping: 100");
 	}
 
 	@Override
@@ -19,9 +19,9 @@ public class ModPing extends ModDraggable{
 	@Override
 	public void render(ScreenPosition pos) {
 		if(mc.getNetHandler().getPlayerInfo(mc.thePlayer.getUniqueID())!=null) {
-			font.drawString("png: "+mc.getNetHandler().getPlayerInfo(mc.thePlayer.getUniqueID()).getResponseTime(),pos.getAbsoluteX(),pos.getAbsoluteY(),-1);
+			font.drawString("ping: "+mc.getNetHandler().getPlayerInfo(mc.thePlayer.getUniqueID()).getResponseTime(),pos.getAbsoluteX(),pos.getAbsoluteY(),-1);
 		}else {
-			font.drawString("png: "+"Ping is null",pos.getAbsoluteX(),pos.getAbsoluteY(),-1);
+			font.drawString("ping: "+"ping is null",pos.getAbsoluteX(),pos.getAbsoluteY(),-1);
 		}
 		
 	}
@@ -29,9 +29,9 @@ public class ModPing extends ModDraggable{
 	@Override
 	public void renderDummy(ScreenPosition pos) {
 		if(mc.getNetHandler().getPlayerInfo(mc.thePlayer.getUniqueID())!=null) {
-			font.drawString("png: "+mc.getNetHandler().getPlayerInfo(mc.thePlayer.getUniqueID()).getResponseTime(),pos.getAbsoluteX(),pos.getAbsoluteY(),-1);
+			font.drawString("ping: "+mc.getNetHandler().getPlayerInfo(mc.thePlayer.getUniqueID()).getResponseTime(),pos.getAbsoluteX(),pos.getAbsoluteY(),-1);
 		}else {
-			font.drawString("png: "+"Ping is null",pos.getAbsoluteX(),pos.getAbsoluteY(),-1);
+			font.drawString("ping: "+"ping is null",pos.getAbsoluteX(),pos.getAbsoluteY(),-1);
 		}
 	}
 

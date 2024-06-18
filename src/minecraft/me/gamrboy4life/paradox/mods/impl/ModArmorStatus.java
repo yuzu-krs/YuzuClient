@@ -61,16 +61,6 @@ private void renderItemStack(ScreenPosition pos, int i, ItemStack is) {
         
     }
 
-    @Override
-    public void save(ScreenPosition pos) {
-        this.pos = pos;
-    }
-
-    @Override
-    public ScreenPosition load() {
-        
-        return pos;
-    }
 
 	@Override
 	public boolean isEnabled() {

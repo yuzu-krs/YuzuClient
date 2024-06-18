@@ -40,6 +40,8 @@ public class ModInstances {
     private static ModPotionStatus modPotionStatus;
     
     private static ModBossbar modBossbar;
+    
+
 
     public static void register(HUDManager api) {
 
@@ -78,6 +80,8 @@ public class ModInstances {
         
         modBossbar=new ModBossbar();
         api.register(modBossbar);
+        
+
         
     }
 
