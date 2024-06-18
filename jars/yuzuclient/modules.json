@@ -140,6 +140,9 @@
   "Eyes": {
     "enabled": false
   },
+  "GifCape": {
+    "enabled": false
+  },
   "Hat": {
     "enabled": false
   },

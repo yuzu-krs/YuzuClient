@@ -19,6 +19,7 @@ import me.gamrboy4life.paradox.module.misc.Cape;
 import me.gamrboy4life.paradox.module.misc.ChannelIcon;
 import me.gamrboy4life.paradox.module.misc.DeadPanic;
 import me.gamrboy4life.paradox.module.misc.Eyes;
+import me.gamrboy4life.paradox.module.misc.GifCape;
 import me.gamrboy4life.paradox.module.misc.Hat;
 import me.gamrboy4life.paradox.module.misc.Panic;
 import me.gamrboy4life.paradox.module.movement.AutoSprint;
@@ -120,6 +121,7 @@ public class ModuleManager {
 		newMod(new DeadPanic());
 		newMod(new EnchantEffect());
 		newMod(new Eyes());
+		newMod(new GifCape());
 		newMod(new Hat());
 		newMod(new Panic());
 		

@@ -1,0 +1,39 @@
+package me.gamrboy4life.paradox.module.misc;
+
+import me.gamrboy4life.paradox.module.Category;
+import me.gamrboy4life.paradox.module.Module;
+import me.gamrboy4life.paradox.devlogs.cosmetic.CosmeticBoolean; // Import the CosmeticBoolean class
+import net.minecraft.client.entity.AbstractClientPlayer;
+
+public class GifCape extends Module {
+
+    public GifCape() {
+        super("GifCape", 0, Category.MISC);
+    }
+
+    @Override
+    public void onRender() {
+        // Example usage of CosmeticBoolean methods
+        AbstractClientPlayer player = ... // Get the player instance
+        if (CosmeticBoolean.shouldRenderTopHat(player)) {
+            // Code to render top hat
+        }
+
+        if (CosmeticBoolean.SnowCape()) {
+            // Code to handle snow cape rendering
+        }
+
+        float[] haloColor = CosmeticBoolean.getHaloColor(player);
+        // Use haloColor as needed
+    }
+
+    // Add method to enable snow cape
+    public void enableSnowCape() {
+        CosmeticBoolean.setSnowCape(true);
+    }
+
+    // Add method to disable snow cape
+    public void disableSnowCape() {
+        CosmeticBoolean.setSnowCape(false);
+    }
+}

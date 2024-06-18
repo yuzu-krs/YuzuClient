@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="me.gamrboy4life.paradox.module.render.Xray"/>
     <fullyQualifiedTypeName name="me.gamrboy4life.paradox.module.render.BedWarsXray"/>
     <fullyQualifiedTypeName name="me.gamrboy4life.paradox.utils.Invoker"/>
     <fullyQualifiedTypeName name="net.minecraft.util.MovingObjectPosition.MovingObjectType"/>
@@ -60,4 +59,5 @@
     <fullyQualifiedTypeName name="java.awt.Color"/>
     <fullyQualifiedTypeName name="net.minecraft.entity.item.EntityItemFrame"/>
     <fullyQualifiedTypeName name="org.lwjgl.input.Mouse"/>
+    <fullyQualifiedTypeName name="me.gamrboy4life.paradox.devlogs.cosmetic.CosmeticBoolean"/>
 </qualifiedTypeNameHistroy>
