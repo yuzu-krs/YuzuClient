@@ -2,12 +2,15 @@ package me.gamrboy4life.paradox.mods;
 
 import me.gamrboy4life.paradox.gui.hud.HUDManager;
 import me.gamrboy4life.paradox.mods.impl.ModArmorStatus;
+import me.gamrboy4life.paradox.mods.impl.ModBossbar;
 import me.gamrboy4life.paradox.mods.impl.ModCPS;
 import me.gamrboy4life.paradox.mods.impl.ModFPSEffects;
 import me.gamrboy4life.paradox.mods.impl.ModGlintColor;
 import me.gamrboy4life.paradox.mods.impl.ModKeystrokes;
 import me.gamrboy4life.paradox.mods.impl.ModPerspective;
 import me.gamrboy4life.paradox.mods.impl.ModPing;
+import me.gamrboy4life.paradox.mods.impl.ModPlayer;
+import me.gamrboy4life.paradox.mods.impl.ModPotionStatus;
 import me.gamrboy4life.paradox.mods.impl.ModXYZ;
 import me.gamrboy4life.paradox.mods.impl.TargetHUD;
 
@@ -31,6 +34,12 @@ public class ModInstances {
     private static TargetHUD targetHUD;
     
     private static ModPing modPing;
+    
+    private static ModPlayer modPlayer;
+    
+    private static ModPotionStatus modPotionStatus;
+    
+    private static ModBossbar modBossbar;
 
     public static void register(HUDManager api) {
 
@@ -60,6 +69,15 @@ public class ModInstances {
         
         modPing=new ModPing();
         api.register(modPing);
+        
+        modPlayer=new ModPlayer();
+        api.register(modPlayer);
+        
+        modPotionStatus=new ModPotionStatus();
+        api.register(modPotionStatus);
+        
+        modBossbar=new ModBossbar();
+        api.register(modBossbar);
         
     }
 
