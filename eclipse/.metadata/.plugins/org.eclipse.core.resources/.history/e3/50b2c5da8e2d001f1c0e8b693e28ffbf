@@ -1,0 +1,66 @@
+package me.gamrboy4life.paradox.command.commands;
+
+import java.util.Random;
+
+import me.gamrboy4life.paradox.Paradox;
+import me.gamrboy4life.paradox.command.Command;
+import net.minecraft.client.Minecraft;
+import net.minecraft.network.play.client.C01PacketChatMessage;
+
+public class ChatSpam extends Command {
+
+    public ChatSpam() {
+        super("ChatSpam", "ChatSpamは、「.chatspam 数 任意の文字 ms」でスパムを行える", "chatspam", "c");
+    }
+
+    @Override
+    public void onCommand(String[] args, String command) {
+        if (args.length < 3) {
+            Paradox.instance.moduleManager.addChatMessage("そのようなモデルはありません! [.help]");
+            return;
+        }
+
+        // 最初と最後の引数が数字かどうかを確認する
+        if (!args[0].matches("\\d+") || !args[args.length - 1].matches("\\d+")) {
+            Paradox.instance.moduleManager.addChatMessage("そのようなモデルはありません! [.help]");
+            return;
+        }
+
+        // スパム回数と遅延時間を解析する
+        final int spamCount = Integer.parseInt(args[0]);
+        final int delay = Integer.parseInt(args[args.length - 1]); // msの待機時間
+        final String message = String.join(" ", args, 1, args.length - 1);
+
+        // メッセージを送信するための新しいスレッドを作成して開始する
+        Thread thread = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                for (int i = 0; i < spamCount; i++) {
+                    // ランダムな4桁のUUIDを生成
+                    String uuid = generateRandomUUID();
+                    // メッセージにUUIDを追加
+                    String finalMessage = message + uuid;
+                    // メッセージを送信
+                    Minecraft.getMinecraft().thePlayer.sendQueue.addToSendQueue(new C01PacketChatMessage(finalMessage));
+
+                    // 指定された遅延時間だけ待機
+                    try {
+                        Thread.sleep(delay);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                }
+            }
+        });
+        thread.start();
+    }
+
+    private String generateRandomUUID() {
+        // ランダムな4桁の数字を生成
+        int uuid = new Random().nextInt(10000); // 0から9999の間でランダムな数を生成
+        return String.format(" %04d", uuid); // 必ず4桁になるようにフォーマット
+    }
+}
+	
+		
+

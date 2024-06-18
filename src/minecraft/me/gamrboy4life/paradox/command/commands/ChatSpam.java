@@ -1,5 +1,6 @@
 package me.gamrboy4life.paradox.command.commands;
 
+import java.util.Arrays;
 import java.util.Random;
 
 import me.gamrboy4life.paradox.Paradox;
@@ -10,7 +11,7 @@ import net.minecraft.network.play.client.C01PacketChatMessage;
 public class ChatSpam extends Command {
 
     public ChatSpam() {
-        super("ChatSpam", "ChatSpamは、「.chatspam 数 任意の文字 ms」でスパムを行える", "chatspam", "c");
+        super("ChatSpam", "ChatSpamは、「.chatspam 数 ms 任意の文字」でスパムを行える", "chatspam", "c");
     }
 
     @Override
@@ -25,14 +26,14 @@ public class ChatSpam extends Command {
             return;
         }
         
-        if(!args[2].matches("\\d+")) {
+        if(!args[1].matches("\\d+")) {
         	Paradox.instance.moduleManager.addChatMessage("そのようなモデルはありません! [.help]");
         	return;
         }
 
         final int spamCount = Integer.parseInt(args[0]);
-        final String message = String.join(" ", args).substring(args[0].length() + 1);
-        final int delay = Integer.parseInt(args[2]); // msの待機時間
+        final String message = String.join(" ", Arrays.copyOfRange(args, 2, args.length));
+        final int delay = Integer.parseInt(args[1]); // msの待機時間
 
         // メッセージを1秒ごとに送信する
         Thread thread = new Thread(new Runnable() {
@@ -56,9 +57,13 @@ public class ChatSpam extends Command {
     }
 
     private String generateRandomUUID(Random random) {
-        // ランダムな4桁のUUIDを生成するメソッド
-        int uuid = random.nextInt(10000); // 0から9999の間でランダムな数を生成
-        return String.format(" %04d", uuid); // 必ず4桁になるようにフォーマット
+        // ランダムなアルファベットと数字を含む4文字のUUIDを生成するメソッド
+        String characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+        StringBuilder uuid = new StringBuilder(4);
+        for (int i = 0; i < 4; i++) {
+            uuid.append(characters.charAt(random.nextInt(characters.length())));
+        }
+        return " " + uuid.toString(); // 前にスペースを追加
     }
 }
 
