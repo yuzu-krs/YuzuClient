@@ -1,6 +1,6 @@
 {
   "TabGui": {
-    "enabled": true
+    "enabled": false
   },
   "AntiFire": {
     "enabled": false
@@ -24,7 +24,7 @@
     "enabled": false
   },
   "MineClicker": {
-    "enabled": true
+    "enabled": false
   },
   "Reach": {
     "enabled": false
@@ -33,7 +33,7 @@
     "enabled": false
   },
   "AutoSprint": {
-    "enabled": true
+    "enabled": false
   },
   "AutoWalk": {
     "enabled": false
@@ -96,28 +96,28 @@
     "enabled": false
   },
   "FastPlace": {
-    "enabled": true
+    "enabled": false
   },
   "BedWarsXray": {
     "enabled": false
   },
   "BlockOverlay": {
-    "enabled": true
+    "enabled": false
   },
   "ClickGui": {
     "enabled": false
   },
   "ESP Chest": {
-    "enabled": true
+    "enabled": false
   },
   "ESP Friendly": {
-    "enabled": true
+    "enabled": false
   },
   "ESP Hostile": {
-    "enabled": true
+    "enabled": false
   },
   "ESP Player": {
-    "enabled": true
+    "enabled": false
   },
   "FullBright": {
     "enabled": false

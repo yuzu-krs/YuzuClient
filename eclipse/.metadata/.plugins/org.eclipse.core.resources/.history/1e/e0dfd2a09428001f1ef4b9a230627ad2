@@ -1,7 +1,0 @@
-package me.gamrboy4life.paradox.mods.impl;
-
-import me.gamrboy4life.paradox.mods.ModDraggable;
-
-public class ModXYZ extends ModDraggable{
-
-}
