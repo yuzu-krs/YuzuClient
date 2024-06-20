@@ -12,6 +12,7 @@ import me.gamrboy4life.paradox.mods.impl.ModPing;
 import me.gamrboy4life.paradox.mods.impl.ModPlayer;
 import me.gamrboy4life.paradox.mods.impl.ModPotionStatus;
 import me.gamrboy4life.paradox.mods.impl.ModXYZ;
+import me.gamrboy4life.paradox.mods.impl.SCModuleMemUsage;
 import me.gamrboy4life.paradox.mods.impl.TargetHUD;
 
 public class ModInstances {
@@ -40,6 +41,8 @@ public class ModInstances {
     private static ModPotionStatus modPotionStatus;
     
     private static ModBossbar modBossbar;
+    
+    private static SCModuleMemUsage modMem;
     
 
 
@@ -80,6 +83,9 @@ public class ModInstances {
         
         modBossbar=new ModBossbar();
         api.register(modBossbar);
+        
+        modMem=new SCModuleMemUsage();
+        api.register(modMem);
         
 
         
