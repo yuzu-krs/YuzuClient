@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="me.gamrboy4life.paradox.module.render.BedWarsXray"/>
-    <fullyQualifiedTypeName name="me.gamrboy4life.paradox.utils.Invoker"/>
     <fullyQualifiedTypeName name="net.minecraft.util.MovingObjectPosition.MovingObjectType"/>
     <fullyQualifiedTypeName name="java.util.Timer"/>
     <fullyQualifiedTypeName name="me.gamrboy4life.paradox.utils.timers.Timer"/>
@@ -60,4 +58,6 @@
     <fullyQualifiedTypeName name="net.minecraft.entity.item.EntityItemFrame"/>
     <fullyQualifiedTypeName name="org.lwjgl.input.Mouse"/>
     <fullyQualifiedTypeName name="me.gamrboy4life.paradox.devlogs.cosmetic.CosmeticBoolean"/>
+    <fullyQualifiedTypeName name="java.awt.Font"/>
+    <fullyQualifiedTypeName name="me.gamrboy4life.paradox.utils.font.FontUtil"/>
 </qualifiedTypeNameHistroy>

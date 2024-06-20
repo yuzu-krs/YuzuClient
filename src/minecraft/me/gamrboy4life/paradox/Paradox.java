@@ -22,6 +22,7 @@ import me.gamrboy4life.paradox.mods.ModInstances;
 import me.gamrboy4life.paradox.module.Module;
 import me.gamrboy4life.paradox.module.ModuleManager;
 import me.gamrboy4life.paradox.module.render.TabGui;
+import me.gamrboy4life.paradox.utils.font.FontUtil;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.settings.KeyBinding;
 
@@ -68,6 +69,7 @@ public class Paradox {
         fileManager.init();
         GileManager.init();
         
+        FontUtil.bootstrap();
         
         SplashProgress.setProgress(1, "YuzuClient - Discord RP");
         
