@@ -152,12 +152,19 @@ public class TargetHUD extends ModDraggable{
 	}
 
 	
-		
+    private static boolean enabled = true; // 静的フィールド
+    
+
 	
-	@Override
-	public boolean isEnabled() {
-		return true;
-	}
+    @Override
+    public boolean isEnabled() {
+        return enabled; // 静的フィールドを使用
+    }
+
+    // 静的メソッド
+    public void setEnabled(boolean isEnabled) {
+        TargetHUD.enabled = isEnabled;
+    }
 
 
 }

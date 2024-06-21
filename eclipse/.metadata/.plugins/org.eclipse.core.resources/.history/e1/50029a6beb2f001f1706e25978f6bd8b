@@ -1,0 +1,17 @@
+package me.gamrboy4life.paradox.module.player;
+
+import me.gamrboy4life.paradox.module.Category;
+
+public class XYZStatus {
+	public XYZStatus() {
+		super("XYZStatus",0,Category.PLAYER);
+	}
+	
+	@Override
+	public void onUpdate() {
+		if(this.isToggled()) {
+			mc.rightClickDelayTimer=1;
+		}
+	}
+	
+}

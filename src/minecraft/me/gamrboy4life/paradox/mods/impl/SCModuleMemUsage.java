@@ -39,10 +39,18 @@ public class SCModuleMemUsage extends ModDraggable {
         font.drawString(str, pos.getAbsoluteX() + 6, pos.getAbsoluteY() + 5, -1);
     }
 
-	@Override
-	public boolean isEnabled() {
-		// TODO 自動生成されたメソッド・スタブ
-		return true;
-	}
+    private static boolean enabled = true; // 静的フィールド
+    
+
+	
+    @Override
+    public boolean isEnabled() {
+        return enabled; // 静的フィールドを使用
+    }
+
+    // 静的メソッド
+    public void setEnabled(boolean isEnabled) {
+        SCModuleMemUsage.enabled = isEnabled;
+    }
 
 }

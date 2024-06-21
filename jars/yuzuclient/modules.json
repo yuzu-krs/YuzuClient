@@ -96,10 +96,43 @@
     "enabled": false
   },
   "FastPlace": {
-    "enabled": false
+    "enabled": true
   },
   "InvHelper": {
-    "enabled": true
+    "enabled": false
+  },
+  "Armor": {
+    "enabled": false
+  },
+  "Bossbar": {
+    "enabled": false
+  },
+  "CPS": {
+    "enabled": false
+  },
+  "FPS": {
+    "enabled": false
+  },
+  "Keystrokes": {
+    "enabled": false
+  },
+  "MEM": {
+    "enabled": false
+  },
+  "Ping": {
+    "enabled": false
+  },
+  "Player": {
+    "enabled": false
+  },
+  "Potion": {
+    "enabled": false
+  },
+  "Target": {
+    "enabled": false
+  },
+  "XYZ": {
+    "enabled": false
   },
   "BedWarsXray": {
     "enabled": false

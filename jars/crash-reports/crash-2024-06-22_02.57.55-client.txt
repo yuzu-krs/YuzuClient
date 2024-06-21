@@ -1,0 +1,109 @@
+---- Minecraft Crash Report ----
+// You're mean.
+
+Time: 24/06/22 2:57
+Description: Ticking entity
+
+java.lang.IllegalStateException
+	at java.util.HashMap$HashIterator.remove(HashMap.java:1481)
+	at me.gamrboy4life.paradox.gvent.GventManager.cleanMap(GventManager.java:39)
+	at me.gamrboy4life.paradox.gvent.GventManager.unregister(GventManager.java:63)
+	at me.gamrboy4life.paradox.mods.Mod.setEnabled(Mod.java:26)
+	at me.gamrboy4life.paradox.module.status.Perspective.onUpdate(Perspective.java:18)
+	at me.gamrboy4life.paradox.module.ModuleManager.onUpdate(ModuleManager.java:176)
+	at net.minecraft.client.entity.EntityPlayerSP.onLivingUpdate(EntityPlayerSP.java:731)
+	at net.minecraft.entity.EntityLivingBase.onUpdate(EntityLivingBase.java:1825)
+	at net.minecraft.entity.player.EntityPlayer.onUpdate(EntityPlayer.java:335)
+	at net.minecraft.client.entity.EntityPlayerSP.onUpdate(EntityPlayerSP.java:174)
+	at net.minecraft.world.World.updateEntityWithOptionalForce(World.java:1887)
+	at net.minecraft.world.World.updateEntity(World.java:1856)
+	at net.minecraft.world.World.updateEntities(World.java:1708)
+	at net.minecraft.client.Minecraft.runTick(Minecraft.java:2224)
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1122)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:428)
+	at net.minecraft.client.main.Main.main(Main.java:113)
+	at Start.main(Start.java:11)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Stacktrace:
+	at java.util.HashMap$HashIterator.remove(HashMap.java:1481)
+	at me.gamrboy4life.paradox.gvent.GventManager.cleanMap(GventManager.java:39)
+	at me.gamrboy4life.paradox.gvent.GventManager.unregister(GventManager.java:63)
+	at me.gamrboy4life.paradox.mods.Mod.setEnabled(Mod.java:26)
+	at me.gamrboy4life.paradox.module.status.Perspective.onUpdate(Perspective.java:18)
+	at me.gamrboy4life.paradox.module.ModuleManager.onUpdate(ModuleManager.java:176)
+	at net.minecraft.client.entity.EntityPlayerSP.onLivingUpdate(EntityPlayerSP.java:731)
+	at net.minecraft.entity.EntityLivingBase.onUpdate(EntityLivingBase.java:1825)
+	at net.minecraft.entity.player.EntityPlayer.onUpdate(EntityPlayer.java:335)
+	at net.minecraft.client.entity.EntityPlayerSP.onUpdate(EntityPlayerSP.java:174)
+	at net.minecraft.world.World.updateEntityWithOptionalForce(World.java:1887)
+	at net.minecraft.world.World.updateEntity(World.java:1856)
+
+-- Entity being ticked --
+Details:
+	Entity Type: null (net.minecraft.client.entity.EntityPlayerSP)
+	Entity ID: 272
+	Entity Name: Player625
+	Entity's Exact location: 549.49, 63.00, 157.23
+	Entity's Block location: 549.00,63.00,157.00 - World: (549,63,157), Chunk: (at 5,3,13 in 34,9; contains blocks 544,0,144 to 559,255,159), Region: (1,0; contains chunks 32,0 to 63,31, blocks 512,0,0 to 1023,255,511)
+	Entity's Momentum: 0.00, 0.00, 0.00
+	Entity's Rider: ~~ERROR~~ NullPointerException: null
+	Entity's Vehicle: ~~ERROR~~ NullPointerException: null
+Stacktrace:
+	at net.minecraft.world.World.updateEntities(World.java:1708)
+
+-- Affected level --
+Details:
+	Level name: MpServer
+	All players: 1 total; [EntityPlayerSP['Player625'/272, l='MpServer', x=549.49, y=63.00, z=157.23]]
+	Chunk stats: MultiplayerChunkCache: 10, 10
+	Level seed: 0
+	Level generator: ID 02 - largeBiomes, ver 0. Features enabled: false
+	Level generator options: 
+	Level spawn location: 584.00,64.00,166.00 - World: (584,64,166), Chunk: (at 8,4,6 in 36,10; contains blocks 576,0,160 to 591,255,175), Region: (1,0; contains chunks 32,0 to 63,31, blocks 512,0,0 to 1023,255,511)
+	Level time: 938474 game time, 1 day time
+	Level dimension: 0
+	Level storage version: 0x00000 - Unknown?
+	Level weather: Rain time: 0 (now: true), thunder time: 0 (now: false)
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: false
+	Forced entities: 16 total; [EntityCreeper['Creeper'/135, l='MpServer', x=574.38, y=50.00, z=142.97], EntityCreeper['Creeper'/136, l='MpServer', x=569.94, y=58.00, z=140.56], EntitySkeleton['Skeleton'/137, l='MpServer', x=573.69, y=68.00, z=141.78], EntitySkeleton['Skeleton'/138, l='MpServer', x=571.31, y=57.00, z=144.38], EntitySkeleton['Skeleton'/139, l='MpServer', x=573.97, y=58.00, z=149.44], EntityZombie['Zombie'/140, l='MpServer', x=575.75, y=50.00, z=145.22], EntitySkeleton['Skeleton'/141, l='MpServer', x=567.81, y=22.00, z=172.31], EntityBat['Bat'/142, l='MpServer', x=570.75, y=41.10, z=160.16], EntityBat['Bat'/143, l='MpServer', x=565.31, y=38.09, z=169.19], EntityPlayerSP['Player625'/272, l='MpServer', x=549.49, y=63.00, z=157.23], EntitySpider['Spider'/147, l='MpServer', x=579.50, y=51.00, z=137.50], EntityZombie['Zombie'/148, l='MpServer', x=576.38, y=55.00, z=141.44], EntitySquid['Squid'/120, l='MpServer', x=530.22, y=57.13, z=137.88], EntityCreeper['Creeper'/121, l='MpServer', x=537.84, y=62.66, z=133.63], EntitySquid['Squid'/122, l='MpServer', x=535.50, y=59.00, z=151.50], EntityBat['Bat'/126, l='MpServer', x=557.00, y=51.13, z=174.88]]
+	Retry entities: 0 total; []
+	Server brand: vanilla
+	Server type: Integrated singleplayer server
+Stacktrace:
+	at net.minecraft.client.multiplayer.WorldClient.addWorldInfoToCrashReport(WorldClient.java:390)
+	at net.minecraft.client.Minecraft.addGraphicsAndWorldToCrashReport(Minecraft.java:2794)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:449)
+	at net.minecraft.client.main.Main.main(Main.java:113)
+	at Start.main(Start.java:11)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.8.8
+	Operating System: Windows 11 (amd64) version 10.0
+	CPU: 16x 12th Gen Intel(R) Core(TM) i5-12600K
+	Java Version: 1.8.0_412, Temurin
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode), Temurin
+	Memory: 637176424 bytes (607 MB) / 1037959168 bytes (989 MB) up to 1037959168 bytes (989 MB)
+	JVM Flags: 3 total; -Xincgc -Xmx1024M -Xms1024M
+	IntCache: cache: 0, tcache: 0, allocated: 13, tallocated: 99
+	Launched Version: mcp
+	LWJGL: 2.9.4
+	OpenGL: NVIDIA GeForce RTX 3060/PCIe/SSE2 GL version 4.6.0 NVIDIA 560.38, NVIDIA Corporation
+	GL Caps: Using GL 1.3 multitexturing.
+Using GL 1.3 texture combiners.
+Using framebuffer objects because OpenGL 3.0 is supported and separate blending is supported.
+Shaders are available because OpenGL 2.1 is supported.
+VBOs are available because OpenGL 1.5 is supported.
+
+	Using VBOs: No
+	Is Modded: Very likely; Jar signature invalidated
+	Type: Client (map_client.txt)
+	Resource Packs: 
+	Current Language: English (US)
+	Profiler Position: N/A (disabled)
+	CPU: 16x 12th Gen Intel(R) Core(TM) i5-12600K

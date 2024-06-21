@@ -1,0 +1,33 @@
+package me.gamrboy4life.paradox.module.player;
+
+import me.gamrboy4life.paradox.module.Category;
+import me.gamrboy4life.paradox.module.Module;
+
+public class FastPlace extends Module{
+
+	public FastPlace() {
+		super("FastPlace",0,Category.PLAYER);
+	}
+	
+	@Override
+	public void onUpdate() {
+	    if (this.isToggled()) {
+	        if (!playerHasEnderPearl() || !mc.thePlayer.getCurrentEquippedItem().getItem().equals(Items.ENDER_PEARL)) {
+	            mc.rightClickDelayTimer = 1;
+	        }
+	    }
+	}
+
+	private boolean playerHasEnderPearl() {
+	    for (int i = 0; i < mc.thePlayer.inventory.mainInventory.size(); i++) {
+	        ItemStack itemStack = mc.thePlayer.inventory.getStackInSlot(i);
+	        if (itemStack != null && itemStack.getItem() == Items.ENDER_PEARL) {
+	            return true;
+	        }
+	    }
+	    return false;
+	}
+	
+	
+
+}

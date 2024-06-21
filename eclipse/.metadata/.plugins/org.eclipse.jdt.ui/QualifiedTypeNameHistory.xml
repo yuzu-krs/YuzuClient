@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.util.Timer"/>
-    <fullyQualifiedTypeName name="me.gamrboy4life.paradox.utils.timers.Timer"/>
-    <fullyQualifiedTypeName name="net.minecraft.network.Packet"/>
     <fullyQualifiedTypeName name="me.gamrboy4life.paradox.utils.Wrapper"/>
     <fullyQualifiedTypeName name="me.gamrboy4life.paradox.event.Event"/>
     <fullyQualifiedTypeName name="java.util.Arrays"/>
@@ -60,4 +57,7 @@
     <fullyQualifiedTypeName name="me.gamrboy4life.paradox.utils.font.FontUtil"/>
     <fullyQualifiedTypeName name="me.gamrboy4life.paradox.module.Category"/>
     <fullyQualifiedTypeName name="me.gamrboy4life.paradox.module.player.InventoryHelper"/>
+    <fullyQualifiedTypeName name="me.gamrboy4life.paradox.module.status.Potion"/>
+    <fullyQualifiedTypeName name="me.gamrboy4life.paradox.module.status.Ping"/>
+    <fullyQualifiedTypeName name="net.minecraft.init.Items"/>
 </qualifiedTypeNameHistroy>

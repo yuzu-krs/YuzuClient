@@ -62,10 +62,19 @@ private void renderItemStack(ScreenPosition pos, int i, ItemStack is) {
     }
 
 
-	@Override
-	public boolean isEnabled() {
-		// TODO 自動生成されたメソッド・スタブ
-		return true;
-	}
+
+private static boolean enabled = true; // 静的フィールド
+
+
+
+@Override
+public boolean isEnabled() {
+    return enabled; // 静的フィールドを使用
+}
+
+// 静的メソッド
+public void setEnabled(boolean isEnabled) {
+    ModArmorStatus.enabled = isEnabled;
+}
 
 }

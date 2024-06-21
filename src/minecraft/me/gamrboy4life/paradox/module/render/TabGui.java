@@ -22,7 +22,7 @@ public class TabGui extends Module{
 	
 	public void draw() {
 		if(this.isToggled()) {
-			Gui.drawRect(5, 20, 60, 90, 0x90000000);
+			Gui.drawRect(5, 20, 60, 101, 0x90000000);
 			Gui.drawRect(8, 23+currentTab*13, 7+50, 34+currentTab*13, 0xFF006400);
 			
 			int count=0;

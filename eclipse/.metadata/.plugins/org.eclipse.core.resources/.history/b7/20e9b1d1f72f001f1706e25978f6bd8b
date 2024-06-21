@@ -1,0 +1,20 @@
+package me.gamrboy4life.paradox.module.status;
+
+import me.gamrboy4life.paradox.mods.impl.ModPerspective;
+import me.gamrboy4life.paradox.module.Category;
+import me.gamrboy4life.paradox.module.Module;
+
+public class Perspective extends Module {
+
+    //private final ModPerspective modPerspective;
+
+    public Perspective() {
+        super("Perspective", 0, Category.STATUS);
+        //this.modPerspective = new ModPerspective(); // ModPerspectiveのインスタンスを作成
+    }
+
+    @Override
+    public void onUpdate() {
+        //modPerspective.setEnabled(isToggled()); // モジュールの有効/無効を設定
+    }
+}

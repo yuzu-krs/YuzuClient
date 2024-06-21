@@ -1,0 +1,24 @@
+package me.gamrboy4life.paradox.module.player;
+
+import me.gamrboy4life.paradox.mods.impl.ModXYZ;
+import me.gamrboy4life.paradox.module.Category;
+import me.gamrboy4life.paradox.module.Module;
+
+public class XYZStatus extends Module {
+
+
+
+    public XYZStatus(ModXYZ modXYZ) {
+        super("XYZStatus", 0, Category.PLAYER);
+        this.modXYZ = modXYZ;
+    }
+
+    @Override
+    public void onUpdate() {
+        if (this.isToggled()) {
+            modXYZ.setEnabled(true);
+        } else {
+            modXYZ.setEnabled(false);
+        }
+    }
+}

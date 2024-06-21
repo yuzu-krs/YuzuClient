@@ -111,19 +111,18 @@ public class ModBossbar extends ModDraggable{
         return this.mc.fontRendererObj;
     }
 
-	@Override
-	public boolean isEnabled() {
-		// TODO 自動生成されたメソッド・スタブ
-		return true;
-	}
-	
-	//@Override
-		//public void save(ScreenPosition pos) {
-		//	this.pos = pos;
-		//}
 
-		//@Override
-		//public ScreenPosition load() {
-		//	return pos;
-		//}
+    private static boolean enabled = true; // 静的フィールド
+    
+
+	
+    @Override
+    public boolean isEnabled() {
+        return enabled; // 静的フィールドを使用
+    }
+
+    // 静的メソッド
+    public void setEnabled(boolean isEnabled) {
+        ModBossbar.enabled = isEnabled;
+    }
 }

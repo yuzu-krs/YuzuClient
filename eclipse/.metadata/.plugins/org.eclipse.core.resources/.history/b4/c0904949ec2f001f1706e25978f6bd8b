@@ -1,0 +1,52 @@
+package me.gamrboy4life.paradox.mods.impl;
+
+import me.gamrboy4life.paradox.gui.hud.ScreenPosition;
+import me.gamrboy4life.paradox.mods.ModDraggable;
+
+public class ModXYZ extends ModDraggable {
+
+    private static boolean enabled = false; // Add a field to store the enabled state
+
+    @Override
+    public int getWidth() {
+        return font.getStringWidth(getXYZString());
+    }
+
+    @Override
+    public int getHeight() {
+        return font.FONT_HEIGHT;
+    }
+
+    @Override
+    public void render(ScreenPosition pos) {
+        if (enabled) {
+            font.drawString(getXYZString(), pos.getAbsoluteX(), pos.getAbsoluteY(), -1);
+        }
+    }
+
+    private String getXYZString() {
+        return String.format(
+            "XYZ: %.3f / %.3f / %.3f",
+            mc.getRenderViewEntity().posX,
+            mc.getRenderViewEntity().getEntityBoundingBox().minY,
+            mc.getRenderViewEntity().posZ
+        );
+    }
+
+    @Override
+    public void renderDummy(ScreenPosition pos) {
+        if (enabled) {
+            font.drawString(getXYZString(), pos.getAbsoluteX(), pos.getAbsoluteY(), -1);
+        }
+    }
+
+    @Override
+    public boolean isEnabled() {
+        return enabled;
+    }
+
+    // Add a setter method to modify the enabled state
+    public void setEnabled(boolean enabled) {
+        this.enabled = enabled;
+    }
+}

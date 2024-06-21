@@ -55,6 +55,17 @@ import me.gamrboy4life.paradox.module.render.EspPlayer;
 import me.gamrboy4life.paradox.module.render.FullBright;
 import me.gamrboy4life.paradox.module.render.TabGui;
 import me.gamrboy4life.paradox.module.render.Xray;
+import me.gamrboy4life.paradox.module.status.Armor;
+import me.gamrboy4life.paradox.module.status.Bossbar;
+import me.gamrboy4life.paradox.module.status.CPS;
+import me.gamrboy4life.paradox.module.status.FPS;
+import me.gamrboy4life.paradox.module.status.Keystrokes;
+import me.gamrboy4life.paradox.module.status.Mem;
+import me.gamrboy4life.paradox.module.status.Ping;
+import me.gamrboy4life.paradox.module.status.Player;
+import me.gamrboy4life.paradox.module.status.Potion;
+import me.gamrboy4life.paradox.module.status.Target;
+import me.gamrboy4life.paradox.module.status.XYZ;
 import net.minecraft.client.Minecraft;
 import net.minecraft.util.ChatComponentText;
 
@@ -105,6 +116,19 @@ public class ModuleManager {
 		newMod(new FastLadder());
 		newMod(new FastPlace());
 		newMod(new InventoryHelper());
+		
+		//PVP系
+		newMod(new Armor());
+		newMod(new Bossbar());
+		newMod(new CPS());
+		newMod(new FPS());
+		newMod(new Keystrokes());
+		newMod(new Mem());
+		newMod(new Ping());
+		newMod(new Player());
+		newMod(new Potion());
+		newMod(new Target());
+		newMod(new XYZ());		
 		
 		//RENDER
 		newMod(new BedWarsXray());
