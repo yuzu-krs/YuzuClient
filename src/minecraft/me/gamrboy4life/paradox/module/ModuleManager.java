@@ -44,6 +44,7 @@ import me.gamrboy4life.paradox.module.player.Bhop;
 import me.gamrboy4life.paradox.module.player.ChestStealer;
 import me.gamrboy4life.paradox.module.player.FastLadder;
 import me.gamrboy4life.paradox.module.player.FastPlace;
+import me.gamrboy4life.paradox.module.player.InventoryHelper;
 import me.gamrboy4life.paradox.module.render.BedWarsXray;
 import me.gamrboy4life.paradox.module.render.BlockOverlay;
 import me.gamrboy4life.paradox.module.render.ClickGui;
@@ -103,6 +104,7 @@ public class ModuleManager {
 		newMod(new ChestStealer());
 		newMod(new FastLadder());
 		newMod(new FastPlace());
+		newMod(new InventoryHelper());
 		
 		//RENDER
 		newMod(new BedWarsXray());

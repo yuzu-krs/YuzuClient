@@ -1,6 +1,6 @@
 {
   "TabGui": {
-    "enabled": true
+    "enabled": false
   },
   "AntiFire": {
     "enabled": false
@@ -97,6 +97,9 @@
   },
   "FastPlace": {
     "enabled": false
+  },
+  "InvHelper": {
+    "enabled": true
   },
   "BedWarsXray": {
     "enabled": false

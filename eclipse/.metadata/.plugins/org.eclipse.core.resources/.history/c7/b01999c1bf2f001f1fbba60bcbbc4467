@@ -1,0 +1,49 @@
+package me.gamrboy4life.paradox.module.player;
+
+import me.gamrboy4life.paradox.module.Category;
+import me.gamrboy4life.paradox.module.Module;
+
+public class InventoryHelper extends Module{
+	private TimeHelper timer = new TimeHelper();
+	private int[] bestArmorDamageReducement;
+	private int[] bestArmorSlots;
+	private float bestSwordDamage;
+	private int bestSwordSlot;
+
+	public InventoryHelper() {
+		super("InvHelper",0,Category.PLAYER);
+	}
+	
+	@Override
+	public void onUpdate() {
+		if(this.isToggled()) {
+			searchForItems();
+
+			for (int i = 0; i < 4; i++) {
+			if (bestArmorSlots[i] != -1) {
+			int bestSlot = bestArmorSlots[i];
+
+			ItemStack oldArmor = mc.thePlayer.inventory.armorItemInSlot(i);
+
+			if (oldArmor != null 8& oldArmor.getItem() != null) {
+			mc.playerController.windowClick(mc. thePlayer. inventoryContainer.windowId, slotld: 8 - i,
+
+			mouseButtonClicked: 0,
+
+			mode: 1, mc.thePlayer);
+
+			mc.playerController. windowClick(mc. thePlayer. inventoryContainer.windowId, bestSlot,
+
+			mouseButtonClicked:
+
+			mode: 1, mc.thePlayer);|
+
+			ـام
+		}
+	}
+	
+	
+	
+	
+
+}

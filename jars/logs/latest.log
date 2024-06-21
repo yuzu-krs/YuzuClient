@@ -1,29 +1,69 @@
-[06:29:02] [Client thread/INFO]: Setting user: Player656
-[06:29:02] [Client thread/INFO]: (Session ID is token:0:Player656)
-[06:29:02] [Client thread/INFO]: LWJGL Version: 2.9.4
-[06:29:03] [Client thread/INFO]: Reloading ResourceManager: Default
-[06:29:03] [Sound Library Loader/INFO]: Starting up SoundSystem...
-[06:29:03] [Thread-8/INFO]: Initializing LWJGL OpenAL
-[06:29:03] [Thread-8/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
-[06:29:03] [Thread-8/ERROR]: Error in class 'LibraryLWJGLOpenAL'
-[06:29:03] [Thread-8/ERROR]: Unable to initialize OpenAL.  Probable cause: OpenAL not supported.
-[06:29:03] [Thread-8/WARN]: ERROR MESSAGE:
-[06:29:03] [Thread-8/INFO]: Could not locate OpenAL library.
-[06:29:03] [Thread-8/WARN]: STACK TRACE:
-[06:29:03] [Thread-8/INFO]: org.lwjgl.openal.AL.create(AL.java:156)
-[06:29:03] [Thread-8/INFO]: org.lwjgl.openal.AL.create(AL.java:102)
-[06:29:03] [Thread-8/INFO]: org.lwjgl.openal.AL.create(AL.java:206)
-[06:29:03] [Thread-8/INFO]: paulscode.sound.libraries.LibraryLWJGLOpenAL.init(LibraryLWJGLOpenAL.java:164)
-[06:29:03] [Thread-8/INFO]: paulscode.sound.SoundSystem.CommandNewLibrary(SoundSystem.java:1576)
-[06:29:03] [Thread-8/INFO]: paulscode.sound.SoundSystem.CommandQueue(SoundSystem.java:2572)
-[06:29:03] [Thread-8/INFO]: paulscode.sound.CommandThread.run(CommandThread.java:121)
-[06:29:04] [Sound Library Loader/WARN]: ERROR MESSAGE:
-[06:29:04] [Sound Library Loader/INFO]: Could not locate OpenAL library.
-[06:29:04] [Sound Library Loader/INFO]: Starting up SoundSystem...
-[06:29:04] [Thread-10/INFO]: Switching to No Sound
-[06:29:04] [Thread-10/INFO]: (Silent Mode)
-[06:29:04] [Sound Library Loader/INFO]: Sound engine started
-[06:29:04] [Client thread/INFO]: Created: 1024x512 textures-atlas
-[06:30:22] [Client thread/INFO]: Stopping!
-[06:30:22] [Client thread/INFO]: SoundSystem shutting down...
-[06:30:22] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
+[21:00:42] [Client thread/INFO]: Setting user: Player937
+[21:00:42] [Client thread/INFO]: (Session ID is token:0:Player937)
+[21:00:43] [Client thread/INFO]: LWJGL Version: 2.9.4
+[21:00:43] [Client thread/INFO]: Reloading ResourceManager: Default
+[21:00:43] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[21:00:44] [Thread-8/INFO]: Initializing LWJGL OpenAL
+[21:00:44] [Thread-8/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[21:00:44] [Thread-8/ERROR]: Error in class 'LibraryLWJGLOpenAL'
+[21:00:44] [Thread-8/ERROR]: Unable to initialize OpenAL.  Probable cause: OpenAL not supported.
+[21:00:44] [Thread-8/WARN]: ERROR MESSAGE:
+[21:00:44] [Thread-8/INFO]: Could not locate OpenAL library.
+[21:00:44] [Thread-8/WARN]: STACK TRACE:
+[21:00:44] [Thread-8/INFO]: org.lwjgl.openal.AL.create(AL.java:156)
+[21:00:44] [Thread-8/INFO]: org.lwjgl.openal.AL.create(AL.java:102)
+[21:00:44] [Thread-8/INFO]: org.lwjgl.openal.AL.create(AL.java:206)
+[21:00:44] [Thread-8/INFO]: paulscode.sound.libraries.LibraryLWJGLOpenAL.init(LibraryLWJGLOpenAL.java:164)
+[21:00:44] [Thread-8/INFO]: paulscode.sound.SoundSystem.CommandNewLibrary(SoundSystem.java:1576)
+[21:00:44] [Thread-8/INFO]: paulscode.sound.SoundSystem.CommandQueue(SoundSystem.java:2572)
+[21:00:44] [Thread-8/INFO]: paulscode.sound.CommandThread.run(CommandThread.java:121)
+[21:00:44] [Sound Library Loader/WARN]: ERROR MESSAGE:
+[21:00:44] [Sound Library Loader/INFO]: Could not locate OpenAL library.
+[21:00:44] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[21:00:44] [Thread-10/INFO]: Switching to No Sound
+[21:00:44] [Thread-10/INFO]: (Silent Mode)
+[21:00:45] [Sound Library Loader/INFO]: Sound engine started
+[21:00:45] [Client thread/INFO]: Created: 1024x512 textures-atlas
+[21:00:51] [Server thread/INFO]: Starting integrated minecraft server version 1.8.8
+[21:00:51] [Server thread/INFO]: Generating keypair
+[21:00:51] [Server thread/INFO]: Preparing start region for level 0
+[21:00:52] [Server thread/INFO]: Changing view distance to 8, from 10
+[21:00:52] [Server thread/INFO]: Player937[local:E:e0a48883] logged in with entity id 218 at (636.5715549823974, 67.92134571562497, 151.44528047320858)
+[21:00:52] [Server thread/INFO]: Player937 joined the game
+[21:00:52] [Server thread/INFO]: Saving and pausing game...
+[21:00:52] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[21:00:52] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[21:00:52] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[21:00:54] [Server thread/INFO]: Player937 has just earned the achievement [Taking Inventory]
+[21:00:54] [Client thread/INFO]: [CHAT] Player937 has just earned the achievement [Taking Inventory]
+[21:01:13] [Server thread/INFO]: Player937 fell out of the world
+[21:01:13] [Server thread/INFO]: [Player937: Killed Player937]
+[21:01:13] [Client thread/INFO]: [CHAT] Player937 fell out of the world
+[21:01:13] [Client thread/INFO]: [CHAT] Killed Player937
+[21:01:35] [Client thread/ERROR]: Item entity 1249 has no item?!
+[21:01:35] [Client thread/ERROR]: Item entity 1249 has no item?!
+[21:01:36] [Client thread/ERROR]: Item entity 1278 has no item?!
+[21:01:36] [Client thread/ERROR]: Item entity 1278 has no item?!
+[21:01:45] [Server thread/INFO]: [Player937: Set own game mode to Survival Mode]
+[21:01:45] [Client thread/INFO]: [CHAT] Your game mode has been updated
+[21:02:02] [Server thread/INFO]: Player937 fell out of the world
+[21:02:02] [Server thread/INFO]: [Player937: Killed Player937]
+[21:02:02] [Client thread/INFO]: [CHAT] Player937 fell out of the world
+[21:02:02] [Client thread/INFO]: [CHAT] Killed Player937
+[21:02:07] [Server thread/INFO]: [Player937: Set own game mode to Creative Mode]
+[21:02:07] [Client thread/INFO]: [CHAT] Your game mode has been updated
+[21:02:18] [Server thread/INFO]: [Player937: Set own game mode to Survival Mode]
+[21:02:18] [Client thread/INFO]: [CHAT] Your game mode has been updated
+[21:02:37] [Server thread/INFO]: Saving and pausing game...
+[21:02:37] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[21:02:37] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[21:02:37] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[21:02:43] [Client thread/INFO]: Stopping!
+[21:02:43] [Client thread/INFO]: SoundSystem shutting down...
+[21:02:43] [Server thread/INFO]: Stopping server
+[21:02:43] [Server thread/INFO]: Saving players
+[21:02:43] [Server thread/INFO]: Saving worlds
+[21:02:43] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[21:02:43] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[21:02:43] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[21:02:44] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
