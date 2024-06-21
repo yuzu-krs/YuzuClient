@@ -95,9 +95,9 @@ public class ModPotionStatus extends ModDraggable {
                     s1 = s1 + " " + I18n.format("enchantment.level.4", new Object[0]);
                 }
                 
-        		font.drawString(s1, pos.getAbsoluteX() + offsetX, (pos.getAbsoluteY() + i2) - offsetY, 0xFFFFFF, true);
+        		font.drawString(s1, pos.getAbsoluteX() + offsetX, (pos.getAbsoluteY() + i2) - offsetY, 0xFFFFFF, false);
                 String s = Potion.getDurationString(potioneffect);
-        		font.drawString(s, pos.getAbsoluteX() + offsetX, (pos.getAbsoluteY() + i2 + 10) - offsetY,0xFFFFFF, true);
+        		font.drawString(s, pos.getAbsoluteX() + offsetX, (pos.getAbsoluteY() + i2 + 10) - offsetY,0xFFFFFF, false);
                 i2 += l;
             }
         }

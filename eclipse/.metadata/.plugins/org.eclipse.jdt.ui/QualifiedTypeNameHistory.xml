@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="net.minecraft.util.MovingObjectPosition.MovingObjectType"/>
     <fullyQualifiedTypeName name="java.util.Timer"/>
     <fullyQualifiedTypeName name="me.gamrboy4life.paradox.utils.timers.Timer"/>
     <fullyQualifiedTypeName name="net.minecraft.network.Packet"/>
@@ -14,7 +13,6 @@
     <fullyQualifiedTypeName name="de.Hero.clickgui.ClickGUI"/>
     <fullyQualifiedTypeName name="me.gamrboy4life.paradox.module.misc.SmartDisabler"/>
     <fullyQualifiedTypeName name="net.minecraft.potion.Potion"/>
-    <fullyQualifiedTypeName name="me.gamrboy4life.paradox.module.Category"/>
     <fullyQualifiedTypeName name="net.minecraft.enchantment.EnchantmentHelper"/>
     <fullyQualifiedTypeName name="net.minecraft.enchantment.Enchantment"/>
     <fullyQualifiedTypeName name="me.gamrboy4life.paradox.module.Module"/>
@@ -60,4 +58,6 @@
     <fullyQualifiedTypeName name="me.gamrboy4life.paradox.devlogs.cosmetic.CosmeticBoolean"/>
     <fullyQualifiedTypeName name="java.awt.Font"/>
     <fullyQualifiedTypeName name="me.gamrboy4life.paradox.utils.font.FontUtil"/>
+    <fullyQualifiedTypeName name="me.gamrboy4life.paradox.module.Category"/>
+    <fullyQualifiedTypeName name="me.gamrboy4life.paradox.module.player.InventoryHelper"/>
 </qualifiedTypeNameHistroy>
