@@ -15,7 +15,7 @@ public class FastPlace extends Module {
     public void onUpdate() {
         if (this.isToggled()) {
            ItemStack heldItem = mc.thePlayer.getHeldItem();
-            if (heldItem == null || heldItem.getItem() != Items.ender_pearl) {
+            if (heldItem == null || heldItem.getItem() != Items.ender_pearl||heldItem.getItem()!=Items.lava_bucket||heldItem.getItem()!=Items.water_bucket) {
                 mc.rightClickDelayTimer = 1;
             }
         }
