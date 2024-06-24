@@ -69,8 +69,9 @@ public class InventoryHelper extends Module {
                     mc.thePlayer
                 );
             }
+            searchForTrash();
         }
-        searchForTrash();
+        
 
         for (Integer slot : trash) {
             mc.playerController.windowClick(
