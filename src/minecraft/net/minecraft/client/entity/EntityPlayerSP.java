@@ -2,6 +2,7 @@ package net.minecraft.client.entity;
 
 import me.gamrboy4life.paradox.Paradox;
 import me.gamrboy4life.paradox.event.events.EventChat;
+import me.gamrboy4life.paradox.gvent.impl.GventUpdate;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.audio.MovingSoundMinecartRiding;
 import net.minecraft.client.audio.PositionedSoundRecord;
@@ -169,6 +170,11 @@ public class EntityPlayerSP extends AbstractClientPlayer
      */
     public void onUpdate()
     {
+    	
+    	GventUpdate event =new GventUpdate();
+    	event.call();
+    	
+    	
         if (this.worldObj.isBlockLoaded(new BlockPos(this.posX, 0.0D, this.posZ)))
         {
             super.onUpdate();

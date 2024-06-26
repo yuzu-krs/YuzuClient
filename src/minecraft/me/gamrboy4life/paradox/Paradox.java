@@ -18,11 +18,13 @@ import me.gamrboy4life.paradox.gui.hud.HUDManager;
 import me.gamrboy4life.paradox.gvent.GventManager;
 import me.gamrboy4life.paradox.gvent.GventTarget;
 import me.gamrboy4life.paradox.gvent.impl.ClientTickEvent;
+import me.gamrboy4life.paradox.gvent.impl.GventUpdate;
 import me.gamrboy4life.paradox.mods.ModInstances;
 import me.gamrboy4life.paradox.module.Module;
 import me.gamrboy4life.paradox.module.ModuleManager;
 import me.gamrboy4life.paradox.module.render.TabGui;
 import me.gamrboy4life.paradox.utils.font.FontUtil;
+import me.gamrboy4life.paradox.websockets.SocketClient;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.settings.KeyBinding;
 
@@ -39,6 +41,8 @@ public class Paradox {
     public static TabGui hud;
     public static CommandManager cmdManager;
     public static FileManager fileManager;
+    
+    public boolean hasSent=false;
     
     public static DiscordRP discordRP = new DiscordRP();
     public static CopyOnWriteArrayList<Module> modules = new CopyOnWriteArrayList<Module>();
@@ -73,9 +77,13 @@ public class Paradox {
         
         SplashProgress.setProgress(1, "YuzuClient - Discord RP");
         
+        SocketClient.sendRequest("This is a test! Subscribe to Yuzu!");
+        
         discordRP.start();
         
         Display.setTitle(name + " " + version + " by " + creator);
+        
+        System.out.println(SocketClient.client.request("start_tutorial","Yuzu:true"));
     }
     
     public static void stopClient() {
@@ -106,4 +114,18 @@ public class Paradox {
             mc.displayGuiScreen(new HUDConfigScreen(hudManager));
         }
     }
+    
+    @GventTarget
+    public void onUpdate(GventUpdate e) {
+    	Minecraft mc =Minecraft.getMinecraft();	
+    	if(mc.thePlayer!=null&&mc.theWorld!=null) {
+    		if(!hasSent) {
+    			System.out.println(SocketClient.client.request("start_tutorial", mc.thePlayer.getGameProfile().getName()+":true"));
+    			hasSent=true;
+    		}
+    	}
+    	
+    }
+    
+    
 }

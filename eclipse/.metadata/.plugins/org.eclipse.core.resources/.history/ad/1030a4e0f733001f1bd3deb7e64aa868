@@ -1,0 +1,5 @@
+package me.gamrboy4life.paradox.gvent.impl;
+
+public class GventUpdate {
+
+}

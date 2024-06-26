@@ -1,9 +1,0 @@
-package me.gamrboy4life.paradox.mods.impl;
-
-import me.gamrboy4life.paradox.mods.Mod;
-
-public class ModGlintColor extends Mod{
-	
-	private static final Color DEFAULT_COLOR=New Color(128,64,204);
-
-}

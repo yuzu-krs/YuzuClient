@@ -2,9 +2,12 @@ package net.minecraft.client.renderer.entity;
 
 import org.lwjgl.opengl.GL11;
 
+import me.gamrboy4life.paradox.websockets.SocketClient;
 import net.minecraft.block.Block;
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.entity.AbstractClientPlayer;
 import net.minecraft.client.gui.FontRenderer;
+import net.minecraft.client.gui.Gui;
 import net.minecraft.client.renderer.GlStateManager;
 import net.minecraft.client.renderer.Tessellator;
 import net.minecraft.client.renderer.WorldRenderer;
@@ -333,9 +336,9 @@ public abstract class Render<T extends Entity>
     /**
      * Renders an entity's name above its head
      */
-    protected void renderLivingLabel(T entityIn, String str, double x, double y, double z, int maxDistance)
+    protected void renderLivingLabel(T e, String str, double x, double y, double z, int maxDistance)
     {
-        double d0 = entityIn.getDistanceSqToEntity(this.renderManager.livingPlayer);
+        double d0 = e.getDistanceSqToEntity(this.renderManager.livingPlayer);
 
         if (d0 <= (double)(maxDistance * maxDistance))
         {
@@ -343,7 +346,7 @@ public abstract class Render<T extends Entity>
             float f = 1.6F;
             float f1 = 0.016666668F * f;
             GlStateManager.pushMatrix();
-            GlStateManager.translate((float)x + 0.0F, (float)y + entityIn.height + 0.5F, (float)z);
+            GlStateManager.translate((float)x + 0.0F, (float)y + e.height + 0.5F, (float)z);
             GL11.glNormal3f(0.0F, 1.0F, 0.0F);
             GlStateManager.rotate(-this.renderManager.playerViewY, 0.0F, 1.0F, 0.0F);
             GlStateManager.rotate(this.renderManager.playerViewX, 1.0F, 0.0F, 0.0F);
@@ -355,7 +358,18 @@ public abstract class Render<T extends Entity>
             GlStateManager.tryBlendFuncSeparate(770, 771, 1, 0);
             Tessellator tessellator = Tessellator.getInstance();
             WorldRenderer worldrenderer = tessellator.getWorldRenderer();
+            
             int i = 0;
+            
+            if(e instanceof AbstractClientPlayer) {
+            	if((boolean)SocketClient.isUser(((AbstractClientPlayer)e).getGameProfile().getName())&&e.ticksExisted>20) {
+            		Minecraft.getMinecraft().getTextureManager().bindTexture(new ResourceLocation("yuzuclient/servericon.png"));
+            		Gui.drawModalRectWithCustomSizedTexture(-fontrenderer.getStringWidth(e.getDisplayName().getFormattedText())/2-12,-2,10,10,10,10,10,10);
+            	}
+            }
+            
+            
+            
 
             if (str.equals("deadmau5"))
             {
