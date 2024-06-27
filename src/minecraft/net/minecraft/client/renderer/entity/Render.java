@@ -363,7 +363,7 @@ public abstract class Render<T extends Entity>
             
             if(e instanceof AbstractClientPlayer) {
             	if((boolean)SocketClient.isUser(((AbstractClientPlayer)e).getGameProfile().getName())&&e.ticksExisted>20) {
-            		Minecraft.getMinecraft().getTextureManager().bindTexture(new ResourceLocation("yuzuclient/servericon.png"));
+            		Minecraft.getMinecraft().getTextureManager().bindTexture(new ResourceLocation("yuzuclient/server_icon.png"));
             		Gui.drawModalRectWithCustomSizedTexture(-fontrenderer.getStringWidth(e.getDisplayName().getFormattedText())/2-12,-2,10,10,10,10,10,10);
             	}
             }
