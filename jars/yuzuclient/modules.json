@@ -134,6 +134,15 @@
   "XYZ": {
     "enabled": false
   },
+  "Year": {
+    "enabled": false
+  },
+  "Date": {
+    "enabled": false
+  },
+  "Time": {
+    "enabled": false
+  },
   "BedWarsXray": {
     "enabled": false
   },

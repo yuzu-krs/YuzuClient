@@ -65,6 +65,9 @@ import me.gamrboy4life.paradox.module.status.Ping;
 import me.gamrboy4life.paradox.module.status.Player;
 import me.gamrboy4life.paradox.module.status.Potion;
 import me.gamrboy4life.paradox.module.status.Target;
+import me.gamrboy4life.paradox.module.status.W_Date;
+import me.gamrboy4life.paradox.module.status.W_Time;
+import me.gamrboy4life.paradox.module.status.W_Year;
 import me.gamrboy4life.paradox.module.status.XYZ;
 import net.minecraft.client.Minecraft;
 import net.minecraft.util.ChatComponentText;
@@ -128,7 +131,10 @@ public class ModuleManager {
 		newMod(new Player());
 		newMod(new Potion());
 		newMod(new Target());
-		newMod(new XYZ());		
+		newMod(new XYZ());
+		newMod(new W_Year());
+		newMod(new W_Date());
+		newMod(new W_Time());
 		
 		//RENDER
 		newMod(new BedWarsXray());
