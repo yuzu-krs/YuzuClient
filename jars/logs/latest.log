@@ -1,29 +1,51 @@
-[02:03:27] [Client thread/INFO]: Setting user: Player62
-[02:03:27] [Client thread/INFO]: (Session ID is token:0:Player62)
-[02:03:27] [Client thread/INFO]: LWJGL Version: 2.9.4
-[02:03:27] [Client thread/INFO]: Reloading ResourceManager: Default
-[02:03:28] [Sound Library Loader/INFO]: Starting up SoundSystem...
-[02:03:28] [Thread-8/INFO]: Initializing LWJGL OpenAL
-[02:03:28] [Thread-8/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
-[02:03:28] [Thread-8/ERROR]: Error in class 'LibraryLWJGLOpenAL'
-[02:03:28] [Thread-8/ERROR]: Unable to initialize OpenAL.  Probable cause: OpenAL not supported.
-[02:03:28] [Thread-8/WARN]: ERROR MESSAGE:
-[02:03:28] [Thread-8/INFO]: Could not locate OpenAL library.
-[02:03:28] [Thread-8/WARN]: STACK TRACE:
-[02:03:28] [Thread-8/INFO]: org.lwjgl.openal.AL.create(AL.java:156)
-[02:03:28] [Thread-8/INFO]: org.lwjgl.openal.AL.create(AL.java:102)
-[02:03:28] [Thread-8/INFO]: org.lwjgl.openal.AL.create(AL.java:206)
-[02:03:28] [Thread-8/INFO]: paulscode.sound.libraries.LibraryLWJGLOpenAL.init(LibraryLWJGLOpenAL.java:164)
-[02:03:28] [Thread-8/INFO]: paulscode.sound.SoundSystem.CommandNewLibrary(SoundSystem.java:1576)
-[02:03:28] [Thread-8/INFO]: paulscode.sound.SoundSystem.CommandQueue(SoundSystem.java:2572)
-[02:03:28] [Thread-8/INFO]: paulscode.sound.CommandThread.run(CommandThread.java:121)
-[02:03:28] [Sound Library Loader/WARN]: ERROR MESSAGE:
-[02:03:28] [Sound Library Loader/INFO]: Could not locate OpenAL library.
-[02:03:28] [Sound Library Loader/INFO]: Starting up SoundSystem...
-[02:03:29] [Thread-10/INFO]: Switching to No Sound
-[02:03:29] [Thread-10/INFO]: (Silent Mode)
-[02:03:29] [Sound Library Loader/INFO]: Sound engine started
-[02:03:29] [Client thread/INFO]: Created: 1024x512 textures-atlas
-[02:03:33] [Client thread/INFO]: Stopping!
-[02:03:33] [Client thread/INFO]: SoundSystem shutting down...
-[02:03:33] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
+[02:17:48] [Client thread/INFO]: Setting user: Player468
+[02:17:48] [Client thread/INFO]: (Session ID is token:0:Player468)
+[02:17:48] [Client thread/INFO]: LWJGL Version: 2.9.4
+[02:17:49] [Client thread/INFO]: Reloading ResourceManager: Default
+[02:17:49] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[02:17:49] [Thread-8/INFO]: Initializing LWJGL OpenAL
+[02:17:49] [Thread-8/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[02:17:49] [Thread-8/ERROR]: Error in class 'LibraryLWJGLOpenAL'
+[02:17:49] [Thread-8/ERROR]: Unable to initialize OpenAL.  Probable cause: OpenAL not supported.
+[02:17:49] [Thread-8/WARN]: ERROR MESSAGE:
+[02:17:49] [Thread-8/INFO]: Could not locate OpenAL library.
+[02:17:49] [Thread-8/WARN]: STACK TRACE:
+[02:17:49] [Thread-8/INFO]: org.lwjgl.openal.AL.create(AL.java:156)
+[02:17:49] [Thread-8/INFO]: org.lwjgl.openal.AL.create(AL.java:102)
+[02:17:49] [Thread-8/INFO]: org.lwjgl.openal.AL.create(AL.java:206)
+[02:17:49] [Thread-8/INFO]: paulscode.sound.libraries.LibraryLWJGLOpenAL.init(LibraryLWJGLOpenAL.java:164)
+[02:17:49] [Thread-8/INFO]: paulscode.sound.SoundSystem.CommandNewLibrary(SoundSystem.java:1576)
+[02:17:49] [Thread-8/INFO]: paulscode.sound.SoundSystem.CommandQueue(SoundSystem.java:2572)
+[02:17:49] [Thread-8/INFO]: paulscode.sound.CommandThread.run(CommandThread.java:121)
+[02:17:50] [Sound Library Loader/WARN]: ERROR MESSAGE:
+[02:17:50] [Sound Library Loader/INFO]: Could not locate OpenAL library.
+[02:17:50] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[02:17:50] [Thread-10/INFO]: Switching to No Sound
+[02:17:50] [Thread-10/INFO]: (Silent Mode)
+[02:17:50] [Sound Library Loader/INFO]: Sound engine started
+[02:17:51] [Client thread/INFO]: Created: 1024x512 textures-atlas
+[02:17:56] [Server thread/INFO]: Starting integrated minecraft server version 1.8.8
+[02:17:56] [Server thread/INFO]: Generating keypair
+[02:17:56] [Server thread/INFO]: Preparing start region for level 0
+[02:17:56] [Server thread/INFO]: Changing view distance to 8, from 10
+[02:17:57] [Server thread/INFO]: Player468[local:E:6c87a98e] logged in with entity id 116 at (576.8141741220918, 75.24918707874468, 459.8719228529037)
+[02:17:57] [Server thread/INFO]: Player468 joined the game
+[02:17:57] [Server thread/INFO]: Saving and pausing game...
+[02:17:57] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[02:17:57] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[02:17:57] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[02:18:18] [Server thread/INFO]: [Player468: Set own game mode to Survival Mode]
+[02:18:18] [Client thread/INFO]: [CHAT] Your game mode has been updated
+[02:18:22] [Server thread/INFO]: Saving and pausing game...
+[02:18:22] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[02:18:22] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[02:18:22] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[02:18:23] [Client thread/INFO]: Stopping!
+[02:18:23] [Client thread/INFO]: SoundSystem shutting down...
+[02:18:23] [Server thread/INFO]: Stopping server
+[02:18:23] [Server thread/INFO]: Saving players
+[02:18:23] [Server thread/INFO]: Saving worlds
+[02:18:23] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[02:18:23] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[02:18:23] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[02:18:23] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
