@@ -18,13 +18,11 @@ import me.gamrboy4life.paradox.gui.hud.HUDManager;
 import me.gamrboy4life.paradox.gvent.GventManager;
 import me.gamrboy4life.paradox.gvent.GventTarget;
 import me.gamrboy4life.paradox.gvent.impl.ClientTickEvent;
-import me.gamrboy4life.paradox.gvent.impl.GventUpdate;
 import me.gamrboy4life.paradox.mods.ModInstances;
 import me.gamrboy4life.paradox.module.Module;
 import me.gamrboy4life.paradox.module.ModuleManager;
 import me.gamrboy4life.paradox.module.render.TabGui;
 import me.gamrboy4life.paradox.utils.font.FontUtil;
-import me.gamrboy4life.paradox.websockets.SocketClient;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.settings.KeyBinding;
 
@@ -76,11 +74,7 @@ public class Paradox {
         FontUtil.bootstrap();
         
         
-        try {
-        	SocketClient.sendRequest("This is a test! Subscribe to Yuzu!");
-        }catch(Exception ex) {
-        	ex.printStackTrace();
-        }
+  
         SplashProgress.setProgress(8, "YuzuClient - Discord RP");        
         discordRP.start();
 
@@ -118,25 +112,5 @@ public class Paradox {
         }
     }
 
-    @GventTarget
-    public void onUpdate(GventUpdate e) {
-        final Minecraft mc = Minecraft.getMinecraft();
-        if (mc.thePlayer != null && mc.theWorld != null) {
-            if (!hasSent) {
-                // 非同期でサーバーとの接続試行を行う
-                new Thread(new Runnable() {
-					@Override
-					public void run() {
-					    try {
-					        System.out.println("Connecting to server...");
-					        SocketClient.client.request("start_tutorial", mc.thePlayer.getGameProfile().getName() + ":true");
-					        hasSent = true;
-					    } catch (Exception ex) {
-					        System.err.println("Failed to connect to server: " + ex.getMessage());
-					    }
-					}
-				}).start();
-            }
-        }
-    }
+
 }
