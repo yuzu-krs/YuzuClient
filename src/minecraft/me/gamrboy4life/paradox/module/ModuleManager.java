@@ -58,6 +58,7 @@ import me.gamrboy4life.paradox.module.render.Xray;
 import me.gamrboy4life.paradox.module.status.Armor;
 import me.gamrboy4life.paradox.module.status.Bossbar;
 import me.gamrboy4life.paradox.module.status.CPS;
+import me.gamrboy4life.paradox.module.status.Direction;
 import me.gamrboy4life.paradox.module.status.FPS;
 import me.gamrboy4life.paradox.module.status.Keystrokes;
 import me.gamrboy4life.paradox.module.status.Mem;
@@ -124,6 +125,7 @@ public class ModuleManager {
 		newMod(new Armor());
 		newMod(new Bossbar());
 		newMod(new CPS());
+		newMod(new Direction());
 		newMod(new FPS());
 		newMod(new Keystrokes());
 		newMod(new Mem());

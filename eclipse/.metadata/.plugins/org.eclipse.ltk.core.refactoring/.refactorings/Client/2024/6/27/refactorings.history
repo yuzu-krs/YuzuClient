@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;Pusula.png&apos; to &apos;Client/src/assets.minecraft.yuzuclient&apos;&#x0D;&#x0A;- 元のプロジェクト: &apos;Client&apos;&#x0D;&#x0A;- 宛先要素: &apos;Client/src/assets.minecraft.yuzuclient&apos;&#x0D;&#x0A;- オリジナル要素: &apos;Pusula.png&apos;&#x0D;&#x0A;- リファクタリングされた要素の参照を更新" description="ファイルを移動する" destination="/src&lt;assets.minecraft.yuzuclient" element1="src/me/gamrboy4life/paradox/mods/impl/DirectionMod/Pusula.png" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1719775914070" units="0" version="1.0"/>
+</session>

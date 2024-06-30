@@ -1,6 +1,6 @@
 {
   "TabGui": {
-    "enabled": true
+    "enabled": false
   },
   "AntiFire": {
     "enabled": false
@@ -24,7 +24,7 @@
     "enabled": false
   },
   "MineClicker": {
-    "enabled": true
+    "enabled": false
   },
   "Reach": {
     "enabled": false
@@ -96,7 +96,7 @@
     "enabled": false
   },
   "FastPlace": {
-    "enabled": true
+    "enabled": false
   },
   "InvHelper": {
     "enabled": false
@@ -108,6 +108,9 @@
     "enabled": false
   },
   "CPS": {
+    "enabled": false
+  },
+  "Direction": {
     "enabled": false
   },
   "FPS": {

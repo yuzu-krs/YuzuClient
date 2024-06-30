@@ -17,6 +17,7 @@ import me.gamrboy4life.paradox.mods.impl.ModXYZ;
 import me.gamrboy4life.paradox.mods.impl.ModYear;
 import me.gamrboy4life.paradox.mods.impl.SCModuleMemUsage;
 import me.gamrboy4life.paradox.mods.impl.TargetHUD;
+import me.gamrboy4life.paradox.mods.impl.DirectionMod.DirectionMod;
 
 public class ModInstances {
 
@@ -52,6 +53,8 @@ public class ModInstances {
     private static ModDate modDate;
     
     private static ModTime modTime;
+    
+    private static DirectionMod direction;
     
 
 
@@ -104,6 +107,9 @@ public class ModInstances {
         
 		modTime=new ModTime();
 		api.register(modTime);
+		
+		direction=new DirectionMod();
+		api.register(direction);
     }
 
 

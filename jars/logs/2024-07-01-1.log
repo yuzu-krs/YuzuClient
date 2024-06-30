@@ -1,0 +1,26 @@
+[04:28:07] [Client thread/INFO]: Setting user: Player500
+[04:28:07] [Client thread/INFO]: (Session ID is token:0:Player500)
+[04:28:07] [Client thread/INFO]: LWJGL Version: 2.9.4
+[04:28:08] [Client thread/INFO]: Reloading ResourceManager: Default
+[04:28:08] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[04:28:08] [Thread-8/INFO]: Initializing LWJGL OpenAL
+[04:28:08] [Thread-8/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[04:28:08] [Thread-8/ERROR]: Error in class 'LibraryLWJGLOpenAL'
+[04:28:08] [Thread-8/ERROR]: Unable to initialize OpenAL.  Probable cause: OpenAL not supported.
+[04:28:08] [Thread-8/WARN]: ERROR MESSAGE:
+[04:28:08] [Thread-8/INFO]: Could not locate OpenAL library.
+[04:28:08] [Thread-8/WARN]: STACK TRACE:
+[04:28:08] [Thread-8/INFO]: org.lwjgl.openal.AL.create(AL.java:156)
+[04:28:08] [Thread-8/INFO]: org.lwjgl.openal.AL.create(AL.java:102)
+[04:28:08] [Thread-8/INFO]: org.lwjgl.openal.AL.create(AL.java:206)
+[04:28:08] [Thread-8/INFO]: paulscode.sound.libraries.LibraryLWJGLOpenAL.init(LibraryLWJGLOpenAL.java:164)
+[04:28:08] [Thread-8/INFO]: paulscode.sound.SoundSystem.CommandNewLibrary(SoundSystem.java:1576)
+[04:28:08] [Thread-8/INFO]: paulscode.sound.SoundSystem.CommandQueue(SoundSystem.java:2572)
+[04:28:08] [Thread-8/INFO]: paulscode.sound.CommandThread.run(CommandThread.java:121)
+[04:28:08] [Sound Library Loader/WARN]: ERROR MESSAGE:
+[04:28:08] [Sound Library Loader/INFO]: Could not locate OpenAL library.
+[04:28:08] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[04:28:09] [Thread-10/INFO]: Switching to No Sound
+[04:28:09] [Thread-10/INFO]: (Silent Mode)
+[04:28:09] [Sound Library Loader/INFO]: Sound engine started
+[04:28:09] [Client thread/INFO]: Created: 1024x512 textures-atlas
