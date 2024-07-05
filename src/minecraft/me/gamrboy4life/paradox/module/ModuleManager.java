@@ -53,6 +53,7 @@ import me.gamrboy4life.paradox.module.render.EspFriendly;
 import me.gamrboy4life.paradox.module.render.EspHostile;
 import me.gamrboy4life.paradox.module.render.EspPlayer;
 import me.gamrboy4life.paradox.module.render.FullBright;
+import me.gamrboy4life.paradox.module.render.NightVision;
 import me.gamrboy4life.paradox.module.render.TabGui;
 import me.gamrboy4life.paradox.module.render.Xray;
 import me.gamrboy4life.paradox.module.status.Armor;
@@ -147,6 +148,7 @@ public class ModuleManager {
 		newMod(new EspHostile());
 		newMod(new EspPlayer());
 		newMod(new FullBright());
+		newMod(new NightVision());
 		newMod(new Xray());
 		
 		//MISC

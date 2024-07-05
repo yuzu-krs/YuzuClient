@@ -1,6 +1,6 @@
 {
   "TabGui": {
-    "enabled": true
+    "enabled": false
   },
   "AntiFire": {
     "enabled": false
@@ -129,7 +129,7 @@
     "enabled": false
   },
   "Potion": {
-    "enabled": false
+    "enabled": true
   },
   "Target": {
     "enabled": false
@@ -156,7 +156,7 @@
     "enabled": false
   },
   "ESP Chest": {
-    "enabled": true
+    "enabled": false
   },
   "ESP Friendly": {
     "enabled": false
@@ -168,6 +168,9 @@
     "enabled": false
   },
   "FullBright": {
+    "enabled": false
+  },
+  "NightVision": {
     "enabled": false
   },
   "Xray": {
