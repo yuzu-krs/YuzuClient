@@ -1,6 +1,6 @@
 {
   "TabGui": {
-    "enabled": false
+    "enabled": true
   },
   "AntiFire": {
     "enabled": false
@@ -156,7 +156,7 @@
     "enabled": false
   },
   "ESP Chest": {
-    "enabled": false
+    "enabled": true
   },
   "ESP Friendly": {
     "enabled": false

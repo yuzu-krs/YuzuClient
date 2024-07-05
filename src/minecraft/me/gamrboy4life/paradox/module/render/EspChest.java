@@ -4,6 +4,7 @@ import me.gamrboy4life.paradox.module.Category;
 import me.gamrboy4life.paradox.module.Module;
 import me.gamrboy4life.paradox.utils.esp.ChestESPUtils;
 import net.minecraft.tileentity.TileEntityChest;
+import net.minecraft.tileentity.TileEntityEnderChest;
 
 public class EspChest extends Module{
 
@@ -16,6 +17,8 @@ public class EspChest extends Module{
               for (Object o : mc.theWorld.loadedTileEntityList) {
                   if (o instanceof TileEntityChest) {
                       ChestESPUtils.blockESPBox(((TileEntityChest) o).getPos());
+                  }else if(o instanceof TileEntityEnderChest) {
+                	  ChestESPUtils.blockESPBox(((TileEntityEnderChest) o).getPos());
                   }
               }
           }

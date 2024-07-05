@@ -1,55 +1,61 @@
-[05:05:53] [Client thread/INFO]: Setting user: Player843
-[05:05:53] [Client thread/INFO]: (Session ID is token:0:Player843)
-[05:05:54] [Client thread/INFO]: LWJGL Version: 2.9.4
-[05:05:54] [Client thread/INFO]: Reloading ResourceManager: Default
-[05:05:54] [Sound Library Loader/INFO]: Starting up SoundSystem...
-[05:05:55] [Thread-8/INFO]: Initializing LWJGL OpenAL
-[05:05:55] [Thread-8/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
-[05:05:55] [Thread-8/ERROR]: Error in class 'LibraryLWJGLOpenAL'
-[05:05:55] [Thread-8/ERROR]: Unable to initialize OpenAL.  Probable cause: OpenAL not supported.
-[05:05:55] [Thread-8/WARN]: ERROR MESSAGE:
-[05:05:55] [Thread-8/INFO]: Could not locate OpenAL library.
-[05:05:55] [Thread-8/WARN]: STACK TRACE:
-[05:05:55] [Thread-8/INFO]: org.lwjgl.openal.AL.create(AL.java:156)
-[05:05:55] [Thread-8/INFO]: org.lwjgl.openal.AL.create(AL.java:102)
-[05:05:55] [Thread-8/INFO]: org.lwjgl.openal.AL.create(AL.java:206)
-[05:05:55] [Thread-8/INFO]: paulscode.sound.libraries.LibraryLWJGLOpenAL.init(LibraryLWJGLOpenAL.java:164)
-[05:05:55] [Thread-8/INFO]: paulscode.sound.SoundSystem.CommandNewLibrary(SoundSystem.java:1576)
-[05:05:55] [Thread-8/INFO]: paulscode.sound.SoundSystem.CommandQueue(SoundSystem.java:2572)
-[05:05:55] [Thread-8/INFO]: paulscode.sound.CommandThread.run(CommandThread.java:121)
-[05:05:55] [Sound Library Loader/WARN]: ERROR MESSAGE:
-[05:05:55] [Sound Library Loader/INFO]: Could not locate OpenAL library.
-[05:05:55] [Sound Library Loader/INFO]: Starting up SoundSystem...
-[05:05:55] [Thread-10/INFO]: Switching to No Sound
-[05:05:55] [Thread-10/INFO]: (Silent Mode)
-[05:05:56] [Sound Library Loader/INFO]: Sound engine started
-[05:05:56] [Client thread/INFO]: Created: 1024x512 textures-atlas
-[05:06:03] [Server thread/INFO]: Starting integrated minecraft server version 1.8.8
-[05:06:03] [Server thread/INFO]: Generating keypair
-[05:06:03] [Server thread/INFO]: Preparing start region for level 0
-[05:06:04] [Server thread/INFO]: Changing view distance to 8, from 10
-[05:06:04] [Server thread/INFO]: Player843[local:E:beba98aa] logged in with entity id 118 at (830.8470772647304, 70.4807108763317, 589.0493036099576)
-[05:06:04] [Server thread/INFO]: Player843 joined the game
-[05:06:04] [Server thread/INFO]: Saving and pausing game...
-[05:06:04] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
-[05:06:05] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
-[05:06:05] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
-[05:06:09] [Server thread/INFO]: [Player843: Set own game mode to Creative Mode]
-[05:06:09] [Client thread/INFO]: [CHAT] Your game mode has been updated
-[05:06:16] [Server thread/INFO]: Saving and pausing game...
-[05:06:16] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
-[05:06:16] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
-[05:06:16] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
-[05:08:04] [Server thread/INFO]: Saving and pausing game...
-[05:08:04] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
-[05:08:04] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
-[05:08:04] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
-[05:08:05] [Client thread/INFO]: Stopping!
-[05:08:05] [Client thread/INFO]: SoundSystem shutting down...
-[05:08:05] [Server thread/INFO]: Stopping server
-[05:08:05] [Server thread/INFO]: Saving players
-[05:08:05] [Server thread/INFO]: Saving worlds
-[05:08:05] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
-[05:08:05] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
-[05:08:05] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
-[05:08:05] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
+[22:07:37] [Client thread/INFO]: Setting user: Player781
+[22:07:37] [Client thread/INFO]: (Session ID is token:0:Player781)
+[22:07:37] [Client thread/INFO]: LWJGL Version: 2.9.4
+[22:07:38] [Client thread/INFO]: Reloading ResourceManager: Default
+[22:07:38] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[22:07:38] [Thread-8/INFO]: Initializing LWJGL OpenAL
+[22:07:38] [Thread-8/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[22:07:38] [Thread-8/ERROR]: Error in class 'LibraryLWJGLOpenAL'
+[22:07:38] [Thread-8/ERROR]: Unable to initialize OpenAL.  Probable cause: OpenAL not supported.
+[22:07:38] [Thread-8/WARN]: ERROR MESSAGE:
+[22:07:38] [Thread-8/INFO]: Could not locate OpenAL library.
+[22:07:38] [Thread-8/WARN]: STACK TRACE:
+[22:07:38] [Thread-8/INFO]: org.lwjgl.openal.AL.create(AL.java:156)
+[22:07:38] [Thread-8/INFO]: org.lwjgl.openal.AL.create(AL.java:102)
+[22:07:38] [Thread-8/INFO]: org.lwjgl.openal.AL.create(AL.java:206)
+[22:07:38] [Thread-8/INFO]: paulscode.sound.libraries.LibraryLWJGLOpenAL.init(LibraryLWJGLOpenAL.java:164)
+[22:07:38] [Thread-8/INFO]: paulscode.sound.SoundSystem.CommandNewLibrary(SoundSystem.java:1576)
+[22:07:38] [Thread-8/INFO]: paulscode.sound.SoundSystem.CommandQueue(SoundSystem.java:2572)
+[22:07:38] [Thread-8/INFO]: paulscode.sound.CommandThread.run(CommandThread.java:121)
+[22:07:39] [Sound Library Loader/WARN]: ERROR MESSAGE:
+[22:07:39] [Sound Library Loader/INFO]: Could not locate OpenAL library.
+[22:07:39] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[22:07:39] [Thread-10/INFO]: Switching to No Sound
+[22:07:39] [Thread-10/INFO]: (Silent Mode)
+[22:07:39] [Sound Library Loader/INFO]: Sound engine started
+[22:07:40] [Client thread/INFO]: Created: 1024x512 textures-atlas
+[22:07:46] [Server thread/INFO]: Starting integrated minecraft server version 1.8.8
+[22:07:46] [Server thread/INFO]: Generating keypair
+[22:07:46] [Server thread/INFO]: Preparing start region for level 0
+[22:07:46] [Server thread/INFO]: Changing view distance to 8, from 10
+[22:07:47] [Server thread/INFO]: Player781[local:E:0c300826] logged in with entity id 118 at (865.0584827055832, 77.0, 886.5256582984381)
+[22:07:47] [Server thread/INFO]: Player781 joined the game
+[22:07:47] [Server thread/INFO]: Saving and pausing game...
+[22:07:47] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[22:07:47] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[22:07:47] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[22:07:52] [Server thread/INFO]: Saving and pausing game...
+[22:07:52] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[22:07:52] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[22:07:52] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[22:08:47] [Server thread/INFO]: Saving and pausing game...
+[22:08:47] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[22:08:47] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[22:08:47] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[22:09:33] [Server thread/INFO]: Saving and pausing game...
+[22:09:33] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[22:09:33] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[22:09:33] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[22:10:11] [Server thread/INFO]: Saving and pausing game...
+[22:10:11] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[22:10:11] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[22:10:11] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[22:10:12] [Client thread/INFO]: Stopping!
+[22:10:12] [Client thread/INFO]: SoundSystem shutting down...
+[22:10:12] [Server thread/INFO]: Stopping server
+[22:10:12] [Server thread/INFO]: Saving players
+[22:10:12] [Server thread/INFO]: Saving worlds
+[22:10:12] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[22:10:12] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[22:10:12] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[22:10:13] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
