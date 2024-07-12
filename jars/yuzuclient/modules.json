@@ -164,6 +164,9 @@
   "ESP Hostile": {
     "enabled": false
   },
+  "ESP Items": {
+    "enabled": true
+  },
   "ESP Player": {
     "enabled": false
   },
