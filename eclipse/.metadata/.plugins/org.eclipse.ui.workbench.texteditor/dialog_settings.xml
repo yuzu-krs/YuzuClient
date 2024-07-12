@@ -6,8 +6,10 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value=""/>
+		<item key="selection" value="handleKeyboardInput"/>
 		<list key="findhistory">
+			<item value="handleKeyboardInput"/>
+			<item value="handleKey"/>
 			<item value="entity.rotationPitch"/>
 			<item value="entity.rotationYaw"/>
 			<item value="entity.prevRotationYaw"/>

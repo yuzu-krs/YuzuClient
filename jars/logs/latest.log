@@ -1,130 +1,59 @@
-[23:04:39] [Client thread/INFO]: Setting user: Player15
-[23:04:39] [Client thread/INFO]: (Session ID is token:0:Player15)
-[23:04:40] [Client thread/INFO]: LWJGL Version: 2.9.4
-[23:04:40] [Client thread/INFO]: Reloading ResourceManager: Default
-[23:04:40] [Sound Library Loader/INFO]: Starting up SoundSystem...
-[23:04:41] [Thread-8/INFO]: Initializing LWJGL OpenAL
-[23:04:41] [Thread-8/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
-[23:04:41] [Thread-8/ERROR]: Error in class 'LibraryLWJGLOpenAL'
-[23:04:41] [Thread-8/ERROR]: Unable to initialize OpenAL.  Probable cause: OpenAL not supported.
-[23:04:41] [Thread-8/WARN]: ERROR MESSAGE:
-[23:04:41] [Thread-8/INFO]: Could not locate OpenAL library.
-[23:04:41] [Thread-8/WARN]: STACK TRACE:
-[23:04:41] [Thread-8/INFO]: org.lwjgl.openal.AL.create(AL.java:156)
-[23:04:41] [Thread-8/INFO]: org.lwjgl.openal.AL.create(AL.java:102)
-[23:04:41] [Thread-8/INFO]: org.lwjgl.openal.AL.create(AL.java:206)
-[23:04:41] [Thread-8/INFO]: paulscode.sound.libraries.LibraryLWJGLOpenAL.init(LibraryLWJGLOpenAL.java:164)
-[23:04:41] [Thread-8/INFO]: paulscode.sound.SoundSystem.CommandNewLibrary(SoundSystem.java:1576)
-[23:04:41] [Thread-8/INFO]: paulscode.sound.SoundSystem.CommandQueue(SoundSystem.java:2572)
-[23:04:41] [Thread-8/INFO]: paulscode.sound.CommandThread.run(CommandThread.java:121)
-[23:04:41] [Sound Library Loader/WARN]: ERROR MESSAGE:
-[23:04:41] [Sound Library Loader/INFO]: Could not locate OpenAL library.
-[23:04:41] [Sound Library Loader/INFO]: Starting up SoundSystem...
-[23:04:41] [Thread-10/INFO]: Switching to No Sound
-[23:04:41] [Thread-10/INFO]: (Silent Mode)
-[23:04:42] [Sound Library Loader/INFO]: Sound engine started
-[23:04:42] [Client thread/INFO]: Created: 1024x512 textures-atlas
-[23:04:47] [Server thread/INFO]: Starting integrated minecraft server version 1.8.8
-[23:04:47] [Server thread/INFO]: Generating keypair
-[23:04:47] [Server thread/INFO]: Preparing start region for level 0
-[23:04:47] [Server thread/INFO]: Changing view distance to 8, from 10
-[23:04:47] [Server thread/INFO]: Player15[local:E:5b29d624] logged in with entity id 92 at (622.8320044957239, 72.78502770378924, 541.78007440448)
-[23:04:47] [Server thread/INFO]: Player15 joined the game
-[23:04:48] [Server thread/INFO]: Saving and pausing game...
-[23:04:48] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
-[23:04:48] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
-[23:04:48] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
-[23:05:25] [Server thread/INFO]: Saving and pausing game...
-[23:05:25] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
-[23:05:25] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
-[23:05:25] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
-[23:05:29] [Server thread/INFO]: Saving and pausing game...
-[23:05:29] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
-[23:05:29] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
-[23:05:29] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
-[23:05:36] [Server thread/INFO]: Saving and pausing game...
-[23:05:36] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
-[23:05:36] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
-[23:05:36] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
-[23:05:39] [Server thread/INFO]: Saving and pausing game...
-[23:05:39] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
-[23:05:39] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
-[23:05:39] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
-[23:05:51] [Client thread/INFO]: [CHAT] §eYuzuClient§7: FullBright を Rキー に設定しました
-[23:06:10] [Server thread/INFO]: Saving and pausing game...
-[23:06:10] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
-[23:06:10] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
-[23:06:10] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
-[23:06:41] [Server thread/INFO]: Saving and pausing game...
-[23:06:41] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
-[23:06:41] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
-[23:06:41] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
-[23:06:45] [Server thread/INFO]: Saving and pausing game...
-[23:06:45] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
-[23:06:45] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
-[23:06:45] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
-[23:06:47] [Server thread/INFO]: Saving and pausing game...
-[23:06:47] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
-[23:06:47] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
-[23:06:47] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
-[23:07:15] [Server thread/INFO]: Saving and pausing game...
-[23:07:15] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
-[23:07:15] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
-[23:07:15] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
-[23:07:19] [Server thread/INFO]: Saving and pausing game...
-[23:07:19] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
-[23:07:19] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
-[23:07:19] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
-[23:07:56] [Server thread/INFO]: Saving and pausing game...
-[23:07:56] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
-[23:07:56] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
-[23:07:56] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
-[23:07:59] [Server thread/INFO]: Saving and pausing game...
-[23:07:59] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
-[23:07:59] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
-[23:07:59] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
-[23:08:04] [Server thread/INFO]: Saving and pausing game...
-[23:08:04] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
-[23:08:04] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
-[23:08:04] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
-[23:08:07] [Server thread/INFO]: Saving and pausing game...
-[23:08:07] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
-[23:08:07] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
-[23:08:07] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
-[23:08:13] [Server thread/INFO]: Saving and pausing game...
-[23:08:13] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
-[23:08:14] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
-[23:08:14] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
-[23:08:15] [Server thread/INFO]: Saving and pausing game...
-[23:08:15] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
-[23:08:15] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
-[23:08:15] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
-[23:08:23] [Server thread/INFO]: [Player15: Set own game mode to Survival Mode]
-[23:08:23] [Client thread/INFO]: [CHAT] Your game mode has been updated
-[23:08:32] [Server thread/INFO]: Saving and pausing game...
-[23:08:32] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
-[23:08:32] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
-[23:08:32] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
-[23:08:39] [Server thread/INFO]: Saving and pausing game...
-[23:08:39] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
-[23:08:39] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
-[23:08:39] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
-[23:08:43] [Server thread/INFO]: Saving and pausing game...
-[23:08:43] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
-[23:08:43] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
-[23:08:43] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
-[23:09:07] [Client thread/INFO]: [CHAT] §eYuzuClient§7: FullBright を Pキー に設定しました
-[23:09:21] [Client thread/INFO]: [CHAT] §eYuzuClient§7: NightVision を Lキー に設定しました
-[23:10:04] [Server thread/INFO]: Saving and pausing game...
-[23:10:04] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
-[23:10:04] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
-[23:10:04] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
-[23:10:06] [Client thread/INFO]: Stopping!
-[23:10:06] [Client thread/INFO]: SoundSystem shutting down...
-[23:10:06] [Server thread/INFO]: Stopping server
-[23:10:06] [Server thread/INFO]: Saving players
-[23:10:06] [Server thread/INFO]: Saving worlds
-[23:10:06] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
-[23:10:06] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
-[23:10:06] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
-[23:10:06] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
+[09:24:43] [Client thread/INFO]: Setting user: Player828
+[09:24:43] [Client thread/INFO]: (Session ID is token:0:Player828)
+[09:24:43] [Client thread/INFO]: LWJGL Version: 2.9.4
+[09:24:44] [Client thread/INFO]: Reloading ResourceManager: Default
+[09:24:44] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[09:24:44] [Thread-8/INFO]: Initializing LWJGL OpenAL
+[09:24:44] [Thread-8/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[09:24:44] [Thread-8/ERROR]: Error in class 'LibraryLWJGLOpenAL'
+[09:24:44] [Thread-8/ERROR]: Unable to initialize OpenAL.  Probable cause: OpenAL not supported.
+[09:24:44] [Thread-8/WARN]: ERROR MESSAGE:
+[09:24:44] [Thread-8/INFO]: Could not locate OpenAL library.
+[09:24:44] [Thread-8/WARN]: STACK TRACE:
+[09:24:44] [Thread-8/INFO]: org.lwjgl.openal.AL.create(AL.java:156)
+[09:24:44] [Thread-8/INFO]: org.lwjgl.openal.AL.create(AL.java:102)
+[09:24:44] [Thread-8/INFO]: org.lwjgl.openal.AL.create(AL.java:206)
+[09:24:44] [Thread-8/INFO]: paulscode.sound.libraries.LibraryLWJGLOpenAL.init(LibraryLWJGLOpenAL.java:164)
+[09:24:44] [Thread-8/INFO]: paulscode.sound.SoundSystem.CommandNewLibrary(SoundSystem.java:1576)
+[09:24:44] [Thread-8/INFO]: paulscode.sound.SoundSystem.CommandQueue(SoundSystem.java:2572)
+[09:24:44] [Thread-8/INFO]: paulscode.sound.CommandThread.run(CommandThread.java:121)
+[09:24:45] [Sound Library Loader/WARN]: ERROR MESSAGE:
+[09:24:45] [Sound Library Loader/INFO]: Could not locate OpenAL library.
+[09:24:45] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[09:24:45] [Thread-10/INFO]: Switching to No Sound
+[09:24:45] [Thread-10/INFO]: (Silent Mode)
+[09:24:45] [Sound Library Loader/INFO]: Sound engine started
+[09:24:46] [Client thread/INFO]: Created: 1024x512 textures-atlas
+[09:24:51] [Server thread/INFO]: Starting integrated minecraft server version 1.8.8
+[09:24:51] [Server thread/INFO]: Generating keypair
+[09:24:51] [Server thread/INFO]: Preparing start region for level 0
+[09:24:52] [Server thread/INFO]: Changing view distance to 8, from 10
+[09:24:52] [Server thread/INFO]: Player828[local:E:58b56462] logged in with entity id 92 at (951.5310634208731, 72.24918707874468, 904.9364790124706)
+[09:24:52] [Server thread/INFO]: Player828 joined the game
+[09:24:56] [Server thread/INFO]: <Player828> こんにちは
+[09:24:56] [Client thread/INFO]: [CHAT] <Player828> こんにちは
+[09:25:03] [Server thread/INFO]: <Player828> ワッサーーーニコニコ
+[09:25:03] [Client thread/INFO]: [CHAT] <Player828> ワッサーーーニコニコ
+[09:25:05] [Server thread/INFO]: <Player828> aaa
+[09:25:05] [Client thread/INFO]: [CHAT] <Player828> aaa
+[09:25:07] [Server thread/INFO]: <Player828> fuck
+[09:25:07] [Client thread/INFO]: [CHAT] <Player828> fuck
+[09:25:09] [Server thread/INFO]: <Player828> uresii
+[09:25:09] [Client thread/INFO]: [CHAT] <Player828> uresii
+[09:25:11] [Server thread/INFO]: <Player828> nice
+[09:25:11] [Client thread/INFO]: [CHAT] <Player828> nice
+[09:25:14] [Server thread/INFO]: <Player828> ふふふ
+[09:25:14] [Client thread/INFO]: [CHAT] <Player828> ふふふ
+[09:25:16] [Server thread/INFO]: Saving and pausing game...
+[09:25:16] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[09:25:16] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[09:25:16] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[09:25:16] [Client thread/INFO]: Stopping!
+[09:25:16] [Client thread/INFO]: SoundSystem shutting down...
+[09:25:17] [Server thread/INFO]: Stopping server
+[09:25:17] [Server thread/INFO]: Saving players
+[09:25:17] [Server thread/INFO]: Saving worlds
+[09:25:17] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[09:25:17] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[09:25:17] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[09:25:17] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com

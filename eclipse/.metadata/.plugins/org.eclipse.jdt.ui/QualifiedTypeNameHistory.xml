@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="me.gamrboy4life.paradox.command.Command"/>
-    <fullyQualifiedTypeName name="java.lang.String"/>
-    <fullyQualifiedTypeName name="me.gamrboy4life.paradox.extensions.FileManager"/>
-    <fullyQualifiedTypeName name="me.gamrboy4life.paradox.utils.JsonUtils"/>
     <fullyQualifiedTypeName name="de.Hero.clickgui.ClickGUI"/>
     <fullyQualifiedTypeName name="me.gamrboy4life.paradox.module.misc.SmartDisabler"/>
     <fullyQualifiedTypeName name="net.minecraft.potion.Potion"/>
@@ -60,4 +56,8 @@
     <fullyQualifiedTypeName name="net.minecraft.client.entity.AbstractClientPlayer"/>
     <fullyQualifiedTypeName name="me.gamrboy4life.paradox.websockets.SocketClient"/>
     <fullyQualifiedTypeName name="net.minecraft.client.gui.Gui"/>
+    <fullyQualifiedTypeName name="javax.rmi.CORBA.Util"/>
+    <fullyQualifiedTypeName name="org.lwjgl.openal.Util"/>
+    <fullyQualifiedTypeName name="net.minecraft.util.Util"/>
+    <fullyQualifiedTypeName name="com.google.common.base.Strings"/>
 </qualifiedTypeNameHistroy>
