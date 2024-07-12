@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="de.Hero.clickgui.ClickGUI"/>
-    <fullyQualifiedTypeName name="me.gamrboy4life.paradox.module.misc.SmartDisabler"/>
-    <fullyQualifiedTypeName name="net.minecraft.potion.Potion"/>
-    <fullyQualifiedTypeName name="net.minecraft.enchantment.EnchantmentHelper"/>
     <fullyQualifiedTypeName name="net.minecraft.enchantment.Enchantment"/>
     <fullyQualifiedTypeName name="me.gamrboy4life.paradox.module.Module"/>
     <fullyQualifiedTypeName name="net.minecraft.client.network.NetHandlerPlayClient"/>
@@ -43,7 +39,6 @@
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="java.awt.Color"/>
     <fullyQualifiedTypeName name="net.minecraft.entity.item.EntityItemFrame"/>
-    <fullyQualifiedTypeName name="org.lwjgl.input.Mouse"/>
     <fullyQualifiedTypeName name="me.gamrboy4life.paradox.devlogs.cosmetic.CosmeticBoolean"/>
     <fullyQualifiedTypeName name="java.awt.Font"/>
     <fullyQualifiedTypeName name="me.gamrboy4life.paradox.utils.font.FontUtil"/>
@@ -60,4 +55,9 @@
     <fullyQualifiedTypeName name="org.lwjgl.openal.Util"/>
     <fullyQualifiedTypeName name="net.minecraft.util.Util"/>
     <fullyQualifiedTypeName name="com.google.common.base.Strings"/>
+    <fullyQualifiedTypeName name="me.gamrboy4life.paradox.module.render.EspItems"/>
+    <fullyQualifiedTypeName name="org.lwjgl.input.Mouse"/>
+    <fullyQualifiedTypeName name="com.google.common.base.Predicate"/>
+    <fullyQualifiedTypeName name="javax.sql.rowset.Predicate"/>
+    <fullyQualifiedTypeName name="java.util.function.Predicate"/>
 </qualifiedTypeNameHistroy>

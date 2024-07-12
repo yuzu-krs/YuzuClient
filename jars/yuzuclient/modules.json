@@ -1,6 +1,6 @@
 {
   "TabGui": {
-    "enabled": true
+    "enabled": false
   },
   "AntiFire": {
     "enabled": false
@@ -108,7 +108,7 @@
     "enabled": false
   },
   "CPS": {
-    "enabled": false
+    "enabled": true
   },
   "Direction": {
     "enabled": false
