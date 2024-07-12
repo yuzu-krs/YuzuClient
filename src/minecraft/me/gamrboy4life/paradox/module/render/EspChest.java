@@ -3,6 +3,7 @@ package me.gamrboy4life.paradox.module.render;
 import me.gamrboy4life.paradox.module.Category;
 import me.gamrboy4life.paradox.module.Module;
 import me.gamrboy4life.paradox.utils.esp.ChestESPUtils;
+import me.gamrboy4life.paradox.utils.esp.EnderChestESPUtils;
 import net.minecraft.tileentity.TileEntityChest;
 import net.minecraft.tileentity.TileEntityEnderChest;
 
@@ -18,7 +19,7 @@ public class EspChest extends Module{
                   if (o instanceof TileEntityChest) {
                       ChestESPUtils.blockESPBox(((TileEntityChest) o).getPos());
                   }else if(o instanceof TileEntityEnderChest) {
-                	  ChestESPUtils.blockESPBox(((TileEntityEnderChest) o).getPos());
+                	  EnderChestESPUtils.blockESPBox(((TileEntityEnderChest) o).getPos());
                   }
               }
           }
