@@ -159,16 +159,16 @@
     "enabled": true
   },
   "ESP Friendly": {
-    "enabled": false
+    "enabled": true
   },
   "ESP Hostile": {
-    "enabled": false
+    "enabled": true
   },
   "ESP Items": {
     "enabled": true
   },
   "ESP Player": {
-    "enabled": false
+    "enabled": true
   },
   "FullBright": {
     "enabled": false
