@@ -18,13 +18,13 @@ public class EnderChestESPUtils {
         GL11.glBlendFunc(GL11.GL_SRC_ALPHA, GL11.GL_ONE_MINUS_SRC_ALPHA);
         GL11.glEnable(GL11.GL_BLEND);
         GL11.glLineWidth(2.0F);
-        GL11.glColor4d(1, 0, 0, 0.15F);
+        GL11.glColor4d(0, 0, 1, 0.15F);
         GL11.glDisable(GL11.GL_TEXTURE_2D);
         GL11.glDisable(GL11.GL_DEPTH_TEST);
         GL11.glDepthMask(false);
 
         // Box
-        GL11.glColor4d(1, 0, 0, 0.5F);
+        GL11.glColor4d(0.7, 0, 1, 0.5F);
         RenderGlobal.func_181561_a(new AxisAlignedBB(x, y, z, x + 1.0, y + 1.0, z + 1.0));
 
         GL11.glPopAttrib(); // OpenGLの状態を復元

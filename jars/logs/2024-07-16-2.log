@@ -1,0 +1,38 @@
+[18:13:06] [Client thread/INFO]: Setting user: Player578
+[18:13:06] [Client thread/INFO]: (Session ID is token:0:Player578)
+[18:13:06] [Client thread/INFO]: LWJGL Version: 2.9.4
+[18:13:06] [Client thread/INFO]: Reloading ResourceManager: Default
+[18:13:07] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[18:13:07] [Thread-8/INFO]: Initializing LWJGL OpenAL
+[18:13:07] [Thread-8/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[18:13:07] [Thread-8/ERROR]: Error in class 'LibraryLWJGLOpenAL'
+[18:13:07] [Thread-8/ERROR]: Unable to initialize OpenAL.  Probable cause: OpenAL not supported.
+[18:13:07] [Thread-8/WARN]: ERROR MESSAGE:
+[18:13:07] [Thread-8/INFO]: Could not locate OpenAL library.
+[18:13:07] [Thread-8/WARN]: STACK TRACE:
+[18:13:07] [Thread-8/INFO]: org.lwjgl.openal.AL.create(AL.java:156)
+[18:13:07] [Thread-8/INFO]: org.lwjgl.openal.AL.create(AL.java:102)
+[18:13:07] [Thread-8/INFO]: org.lwjgl.openal.AL.create(AL.java:206)
+[18:13:07] [Thread-8/INFO]: paulscode.sound.libraries.LibraryLWJGLOpenAL.init(LibraryLWJGLOpenAL.java:164)
+[18:13:07] [Thread-8/INFO]: paulscode.sound.SoundSystem.CommandNewLibrary(SoundSystem.java:1576)
+[18:13:07] [Thread-8/INFO]: paulscode.sound.SoundSystem.CommandQueue(SoundSystem.java:2572)
+[18:13:07] [Thread-8/INFO]: paulscode.sound.CommandThread.run(CommandThread.java:121)
+[18:13:07] [Sound Library Loader/WARN]: ERROR MESSAGE:
+[18:13:07] [Sound Library Loader/INFO]: Could not locate OpenAL library.
+[18:13:07] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[18:13:08] [Thread-10/INFO]: Switching to No Sound
+[18:13:08] [Thread-10/INFO]: (Silent Mode)
+[18:13:08] [Sound Library Loader/INFO]: Sound engine started
+[18:13:08] [Client thread/INFO]: Created: 1024x512 textures-atlas
+[18:13:12] [Server thread/INFO]: Starting integrated minecraft server version 1.8.8
+[18:13:12] [Server thread/INFO]: Generating keypair
+[18:13:12] [Server thread/INFO]: Preparing start region for level 0
+[18:13:13] [Server thread/INFO]: Changing view distance to 8, from 10
+[18:13:13] [Server thread/INFO]: Player578[local:E:3c852a55] logged in with entity id 92 at (1198.366895513365, 71.0, 835.2804988237606)
+[18:13:13] [Server thread/INFO]: Player578 joined the game
+[18:13:13] [Server thread/INFO]: Saving and pausing game...
+[18:13:13] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[18:13:13] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[18:13:13] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[18:13:19] [Server thread/INFO]: Player578 has just earned the achievement [Taking Inventory]
+[18:13:19] [Client thread/INFO]: [CHAT] Player578 has just earned the achievement [Taking Inventory]
