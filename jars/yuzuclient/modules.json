@@ -32,6 +32,9 @@
   "Regen": {
     "enabled": false
   },
+  "HanShift": {
+    "enabled": false
+  },
   "AutoSprint": {
     "enabled": false
   },
@@ -53,6 +56,9 @@
   "JumpReset": {
     "enabled": false
   },
+  "MoonWalk": {
+    "enabled": false
+  },
   "NoFall": {
     "enabled": false
   },
@@ -72,6 +78,9 @@
     "enabled": false
   },
   "Step": {
+    "enabled": false
+  },
+  "WichlyBridge": {
     "enabled": false
   },
   "AntiAFK": {
@@ -96,7 +105,7 @@
     "enabled": false
   },
   "FastPlace": {
-    "enabled": false
+    "enabled": true
   },
   "InvHelper": {
     "enabled": false
@@ -117,7 +126,7 @@
     "enabled": false
   },
   "Keystrokes": {
-    "enabled": false
+    "enabled": true
   },
   "MEM": {
     "enabled": false

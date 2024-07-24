@@ -27,8 +27,10 @@ import me.gamrboy4life.paradox.module.movement.AutoWalk;
 import me.gamrboy4life.paradox.module.movement.Dolphin;
 import me.gamrboy4life.paradox.module.movement.Flight;
 import me.gamrboy4life.paradox.module.movement.Glide;
+import me.gamrboy4life.paradox.module.movement.HanShift;
 import me.gamrboy4life.paradox.module.movement.Jetpack;
 import me.gamrboy4life.paradox.module.movement.JumpReset;
+import me.gamrboy4life.paradox.module.movement.MoonWalk;
 import me.gamrboy4life.paradox.module.movement.NoFall;
 import me.gamrboy4life.paradox.module.movement.Parkour;
 import me.gamrboy4life.paradox.module.movement.Scaffold;
@@ -36,6 +38,7 @@ import me.gamrboy4life.paradox.module.movement.Sneak;
 import me.gamrboy4life.paradox.module.movement.Speed;
 import me.gamrboy4life.paradox.module.movement.Spider;
 import me.gamrboy4life.paradox.module.movement.Step;
+import me.gamrboy4life.paradox.module.movement.WichlyBridge;
 import me.gamrboy4life.paradox.module.player.AntiAFK;
 import me.gamrboy4life.paradox.module.player.AntiCobweb;
 import me.gamrboy4life.paradox.module.player.AutoMine;
@@ -97,6 +100,7 @@ public class ModuleManager {
 		newMod(new Regen());
 		
 		//MOVEMENT
+		newMod(new HanShift());
 		newMod(new AutoSprint());
 		newMod(new AutoWalk());
 		newMod(new Dolphin());
@@ -104,6 +108,7 @@ public class ModuleManager {
 		newMod(new Glide());
 		newMod(new Jetpack());
 		newMod(new JumpReset());
+		newMod(new MoonWalk());
 		newMod(new NoFall());
 		newMod(new Parkour());
 		newMod(new Scaffold());
@@ -111,6 +116,7 @@ public class ModuleManager {
 		newMod(new Speed());
 		newMod(new Spider());
 		newMod(new Step());
+		newMod(new WichlyBridge());
 		
 		//PLAYER
 		newMod(new AntiAFK());
