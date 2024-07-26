@@ -10,6 +10,7 @@ import me.gamrboy4life.paradox.command.commands.ChatSpam;
 import me.gamrboy4life.paradox.command.commands.Help;
 import me.gamrboy4life.paradox.command.commands.Say;
 import me.gamrboy4life.paradox.command.commands.Toggle;
+import me.gamrboy4life.paradox.command.commands.Tran;
 import me.gamrboy4life.paradox.event.events.EventChat;
 
 public class CommandManager {
@@ -27,6 +28,7 @@ public class CommandManager {
 		commands.add(new Toggle());
 		commands.add(new ChatSpam());
 		commands.add(new Help());
+		commands.add(new Tran());
 	}
 	
 	public static List<Command> getCommands(){

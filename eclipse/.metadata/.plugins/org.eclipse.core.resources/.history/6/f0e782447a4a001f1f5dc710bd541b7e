@@ -1,0 +1,111 @@
+package me.gamrboy4life.paradox.command.commands;
+
+import java.io.BufferedReader;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.OutputStream;
+import java.nio.file.Paths;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.TimeUnit;
+
+import me.gamrboy4life.paradox.command.Command;
+import net.minecraft.client.Minecraft;
+import net.minecraft.network.play.client.C01PacketChatMessage;
+
+public class Tran extends Command {
+
+    private static final String GO_TRAN_DIR = "C:\\Users\\yztim\\myproject\\go-tran\\cmd\\tran";
+    private final ExecutorService executorService = Executors.newSingleThreadExecutor();
+    private String sourceLang = "ja"; // 初期設定: 日本語から
+    private String targetLang = "en"; // 初期設定: 英語へ
+
+    public Tran() {
+        super("tran", "Tranで言語間の翻訳", "tran", "t");
+    }
+
+    @Override
+    public void onCommand(String[] args, String command) {
+        if (args.length == 0) {
+            Minecraft.getMinecraft().thePlayer.sendQueue.addToSendQueue(new C01PacketChatMessage("Usage: /tran <sourceLang> <targetLang> <text>"));
+            return;
+        }
+
+        // 言語コードとテキストの処理
+        if (args.length >= 2 && args[0].length() == 2 && args[1].length() == 2) {
+            sourceLang = args[0];
+            targetLang = args[1];
+            String textToTranslate = String.join(" ", args);
+            executeTranslation(textToTranslate);
+        } else {
+            // デフォルト設定の翻訳 (日本語 -> 英語)
+            String textToTranslate = String.join(" ", args);
+            executeTranslation(textToTranslate);
+        }
+    }
+
+    private void executeTranslation(final String textToTranslate) {
+        // 別スレッドで翻訳処理を実行
+        executorService.submit(new Runnable() {
+            @Override
+            public void run() {
+                String translatedText = translateText(textToTranslate);
+                if (translatedText != null) {
+                    // 出力の先頭から2つの改行までを削除する
+                    String result = translatedText.trim();
+                    
+                    // 最初の改行の位置を見つける
+                    int firstNewlineIndex = result.indexOf('\n');
+                    if (firstNewlineIndex != -1) {
+                        // 最初の改行以降の部分を取得
+                        result = result.substring(firstNewlineIndex + 1).trim();
+                        
+                        // 2つ目の改行の位置を見つける
+                        int secondNewlineIndex = result.indexOf('\n');
+                        if (secondNewlineIndex != -1) {
+                            // 2つ目の改行以降の部分を取得
+                            result = result.substring(secondNewlineIndex + 1).trim();
+                        }
+                    }
+
+                    // メインスレッドでチャットにメッセージを送信
+                    Minecraft.getMinecraft().thePlayer.sendQueue.addToSendQueue(new C01PacketChatMessage(result));
+                } else {
+                    Minecraft.getMinecraft().thePlayer.sendQueue.addToSendQueue(new C01PacketChatMessage("Translation failed."));
+                }
+            }
+        });
+    }
+
+    private String translateText(String text) {
+        try {
+            ProcessBuilder processBuilder = new ProcessBuilder("go", "run", "main.go");
+            processBuilder.directory(Paths.get(GO_TRAN_DIR).toFile());  // カレントディレクトリを設定
+            processBuilder.redirectErrorStream(true);
+            Process process = processBuilder.start();
+
+            // 標準入力にテキストを送信
+            OutputStream outputStream = process.getOutputStream();
+            outputStream.write(("s " + sourceLang + "\n").getBytes()); // ソース言語を設定
+            outputStream.write(("t " + targetLang + "\n").getBytes()); // ターゲット言語を設定
+            outputStream.write((text + "\n").getBytes()); // 翻訳するテキスト
+            outputStream.flush();
+            outputStream.close();
+
+            // 標準出力から翻訳結果を読み取る
+            InputStream inputStream = process.getInputStream();
+            BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
+            StringBuilder output = new StringBuilder();
+            String line;
+            while ((line = reader.readLine()) != null) {
+                output.append(line).append("\n");
+            }
+            process.waitFor(10, TimeUnit.SECONDS);  // プロセスの完了を待機
+
+            return output.toString().trim();
+        } catch (Exception e) {
+            e.printStackTrace();
+            return null;
+        }
+    }
+}

@@ -1,0 +1,126 @@
+package me.gamrboy4life.paradox.command.commands;
+
+import java.io.BufferedReader;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.OutputStream;
+import java.nio.file.Paths;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.TimeUnit;
+
+import me.gamrboy4life.paradox.command.Command;
+import net.minecraft.client.Minecraft;
+import net.minecraft.network.play.client.C01PacketChatMessage;
+
+public class Tran extends Command {
+
+    private static final String GO_TRAN_DIR = "C:\\Users\\yztim\\myproject\\go-tran\\cmd\\tran";
+    private final ExecutorService executorService = Executors.newSingleThreadExecutor();
+    private final String sourceLang = "ja"; // 日本語から
+    private final String targetLang = "en"; // 英語へ
+
+    public Tran() {
+        super("tran", "Tranでja->en", "tran", "t");
+    }
+
+    @Override
+    public void onCommand(String[] args, String command) {
+        if (args.length == 0) {
+            Minecraft.getMinecraft().thePlayer.sendQueue.addToSendQueue(new C01PacketChatMessage("Usage: /tran <text>"));
+            return;
+        }
+
+        final String textToTranslate = String.join(" ", args);
+
+        // 別スレッドで翻訳処理を実行
+        executorService.submit(new Runnable() {
+            @Override
+            public void run() {
+                // まずターゲット言語を設定する
+                setTargetLanguage();
+
+                // 翻訳処理を実行
+                String translatedText = translateText(textToTranslate);
+                if (translatedText != null) {
+                    // 出力の先頭から2つの改行までを削除する
+                    String result = translatedText.trim();
+                    
+                    // 最初の改行の位置を見つける
+                    int firstNewlineIndex = result.indexOf('\n');
+                    if (firstNewlineIndex != -1) {
+                        // 最初の改行以降の部分を取得
+                        result = result.substring(firstNewlineIndex + 1).trim();
+                        
+                        // 2つ目の改行の位置を見つける
+                        int secondNewlineIndex = result.indexOf('\n');
+                        if (secondNewlineIndex != -1) {
+                            // 2つ目の改行以降の部分を取得
+                            result = result.substring(secondNewlineIndex + 1).trim();
+                        }
+                    }
+
+                    // メインスレッドでチャットにメッセージを送信
+                    Minecraft.getMinecraft().thePlayer.sendQueue.addToSendQueue(new C01PacketChatMessage(result));
+                } else {
+                    Minecraft.getMinecraft().thePlayer.sendQueue.addToSendQueue(new C01PacketChatMessage("Translation failed."));
+                }
+            }
+        });
+    }
+
+    private void setTargetLanguage() {
+        try {
+            ProcessBuilder processBuilder = new ProcessBuilder("go", "run", "main.go");
+            processBuilder.directory(Paths.get(GO_TRAN_DIR).toFile());  // カレントディレクトリを設定
+            processBuilder.redirectErrorStream(true);
+            Process process = processBuilder.start();
+
+            // 標準入力にターゲット言語を設定
+            OutputStream outputStream = process.getOutputStream();
+            outputStream.write(("t " + targetLang + "\n").getBytes());
+            outputStream.flush();
+            outputStream.close();
+
+            // 標準出力から応答を読み取る（ここでは応答を無視）
+            InputStream inputStream = process.getInputStream();
+            BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
+            while (reader.readLine() != null) {
+                // 応答を無視
+            }
+            process.waitFor(5, TimeUnit.SECONDS);  // プロセスの完了を待機
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    private String translateText(String text) {
+        try {
+            ProcessBuilder processBuilder = new ProcessBuilder("go", "run", "main.go");
+            processBuilder.directory(Paths.get(GO_TRAN_DIR).toFile());  // カレントディレクトリを設定
+            processBuilder.redirectErrorStream(true);
+            Process process = processBuilder.start();
+
+            // 標準入力にテキストを送信
+            OutputStream outputStream = process.getOutputStream();
+            outputStream.write(("s " + sourceLang + "\n" + text + "\n").getBytes());
+            outputStream.flush();
+            outputStream.close();
+
+            // 標準出力から翻訳結果を読み取る
+            InputStream inputStream = process.getInputStream();
+            BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
+            StringBuilder output = new StringBuilder();
+            String line;
+            while ((line = reader.readLine()) != null) {
+                output.append(line).append("\n");
+            }
+            process.waitFor(10, TimeUnit.SECONDS);  // プロセスの完了を待機
+
+            return output.toString().trim();
+        } catch (Exception e) {
+            e.printStackTrace();
+            return null;
+        }
+    }
+}

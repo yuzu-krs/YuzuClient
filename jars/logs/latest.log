@@ -1,122 +1,53 @@
-[15:15:53] [Client thread/INFO]: Setting user: Player250
-[15:15:53] [Client thread/INFO]: (Session ID is token:0:Player250)
-[15:15:53] [Client thread/INFO]: LWJGL Version: 2.9.4
-[15:15:54] [Client thread/INFO]: Reloading ResourceManager: Default
-[15:15:54] [Sound Library Loader/INFO]: Starting up SoundSystem...
-[15:15:54] [Thread-8/INFO]: Initializing LWJGL OpenAL
-[15:15:54] [Thread-8/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
-[15:15:54] [Thread-8/ERROR]: Error in class 'LibraryLWJGLOpenAL'
-[15:15:54] [Thread-8/ERROR]: Unable to initialize OpenAL.  Probable cause: OpenAL not supported.
-[15:15:54] [Thread-8/WARN]: ERROR MESSAGE:
-[15:15:54] [Thread-8/INFO]: Could not locate OpenAL library.
-[15:15:54] [Thread-8/WARN]: STACK TRACE:
-[15:15:54] [Thread-8/INFO]: org.lwjgl.openal.AL.create(AL.java:156)
-[15:15:54] [Thread-8/INFO]: org.lwjgl.openal.AL.create(AL.java:102)
-[15:15:54] [Thread-8/INFO]: org.lwjgl.openal.AL.create(AL.java:206)
-[15:15:54] [Thread-8/INFO]: paulscode.sound.libraries.LibraryLWJGLOpenAL.init(LibraryLWJGLOpenAL.java:164)
-[15:15:54] [Thread-8/INFO]: paulscode.sound.SoundSystem.CommandNewLibrary(SoundSystem.java:1576)
-[15:15:54] [Thread-8/INFO]: paulscode.sound.SoundSystem.CommandQueue(SoundSystem.java:2572)
-[15:15:54] [Thread-8/INFO]: paulscode.sound.CommandThread.run(CommandThread.java:121)
-[15:15:55] [Sound Library Loader/WARN]: ERROR MESSAGE:
-[15:15:55] [Sound Library Loader/INFO]: Could not locate OpenAL library.
-[15:15:55] [Sound Library Loader/INFO]: Starting up SoundSystem...
-[15:15:55] [Thread-10/INFO]: Switching to No Sound
-[15:15:55] [Thread-10/INFO]: (Silent Mode)
-[15:15:55] [Sound Library Loader/INFO]: Sound engine started
-[15:15:56] [Client thread/INFO]: Created: 1024x512 textures-atlas
-[15:16:32] [Server thread/INFO]: Starting integrated minecraft server version 1.8.8
-[15:16:32] [Server thread/INFO]: Generating keypair
-[15:16:32] [Server thread/INFO]: Preparing start region for level 0
-[15:16:32] [Server thread/INFO]: Changing view distance to 8, from 10
-[15:16:32] [Server thread/INFO]: Player250[local:E:30c58578] logged in with entity id 91 at (567.3596980458532, 63.0, 1422.7094169016445)
-[15:16:32] [Server thread/INFO]: Player250 joined the game
-[15:16:33] [Server thread/INFO]: Saving and pausing game...
-[15:16:33] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
-[15:16:33] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
-[15:16:33] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
-[15:16:36] [Server thread/INFO]: Saving and pausing game...
-[15:16:36] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
-[15:16:36] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
-[15:16:36] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
-[15:17:02] [Server thread/INFO]: Saving and pausing game...
-[15:17:02] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
-[15:17:02] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
-[15:17:02] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
-[15:18:14] [Client thread/INFO]: [CHAT] §eYuzuClient§7: MoonWalk を Rキー に設定しました
-[15:23:23] [Client thread/ERROR]: Item entity 17994 has no item?!
-[15:23:23] [Client thread/ERROR]: Item entity 17994 has no item?!
-[15:23:23] [Client thread/ERROR]: Item entity 17994 has no item?!
-[15:23:23] [Client thread/ERROR]: Item entity 17994 has no item?!
-[15:23:23] [Client thread/ERROR]: Item entity 17994 has no item?!
-[15:23:23] [Client thread/ERROR]: Item entity 17994 has no item?!
-[15:23:23] [Client thread/ERROR]: Item entity 17994 has no item?!
-[15:23:23] [Client thread/ERROR]: Item entity 17994 has no item?!
-[15:24:49] [Client thread/ERROR]: Item entity 19865 has no item?!
-[15:24:49] [Client thread/ERROR]: Item entity 19865 has no item?!
-[15:24:49] [Client thread/ERROR]: Item entity 19865 has no item?!
-[15:24:49] [Client thread/ERROR]: Item entity 19865 has no item?!
-[15:24:49] [Client thread/ERROR]: Item entity 19865 has no item?!
-[15:24:49] [Client thread/ERROR]: Item entity 19865 has no item?!
-[15:24:49] [Client thread/ERROR]: Item entity 19865 has no item?!
-[15:24:49] [Client thread/ERROR]: Item entity 19865 has no item?!
-[15:25:11] [Client thread/ERROR]: Item entity 17669 has no item?!
-[15:25:11] [Client thread/ERROR]: Item entity 17669 has no item?!
-[15:25:11] [Client thread/ERROR]: Item entity 17669 has no item?!
-[15:25:11] [Client thread/ERROR]: Item entity 17669 has no item?!
-[15:25:11] [Client thread/ERROR]: Item entity 17669 has no item?!
-[15:25:11] [Client thread/ERROR]: Item entity 17669 has no item?!
-[15:25:11] [Client thread/ERROR]: Item entity 17669 has no item?!
-[15:25:11] [Client thread/ERROR]: Item entity 17669 has no item?!
-[15:25:45] [Client thread/ERROR]: Item entity 24697 has no item?!
-[15:25:45] [Client thread/ERROR]: Item entity 24697 has no item?!
-[15:25:45] [Client thread/ERROR]: Item entity 24697 has no item?!
-[15:25:45] [Client thread/ERROR]: Item entity 24697 has no item?!
-[15:25:45] [Client thread/ERROR]: Item entity 24697 has no item?!
-[15:25:45] [Client thread/ERROR]: Item entity 24697 has no item?!
-[15:25:45] [Client thread/ERROR]: Item entity 24697 has no item?!
-[15:25:45] [Client thread/ERROR]: Item entity 24697 has no item?!
-[15:25:46] [Client thread/ERROR]: Item entity 29331 has no item?!
-[15:25:46] [Client thread/ERROR]: Item entity 29331 has no item?!
-[15:25:46] [Client thread/ERROR]: Item entity 29331 has no item?!
-[15:25:46] [Client thread/ERROR]: Item entity 29331 has no item?!
-[15:25:46] [Client thread/ERROR]: Item entity 29331 has no item?!
-[15:25:46] [Client thread/ERROR]: Item entity 29331 has no item?!
-[15:25:46] [Client thread/ERROR]: Item entity 29331 has no item?!
-[15:25:46] [Client thread/ERROR]: Item entity 29331 has no item?!
-[15:26:03] [Client thread/ERROR]: Item entity 17923 has no item?!
-[15:26:03] [Client thread/ERROR]: Item entity 17923 has no item?!
-[15:26:03] [Client thread/ERROR]: Item entity 17923 has no item?!
-[15:26:03] [Client thread/ERROR]: Item entity 17923 has no item?!
-[15:26:03] [Client thread/ERROR]: Item entity 17923 has no item?!
-[15:26:03] [Client thread/ERROR]: Item entity 17923 has no item?!
-[15:26:03] [Client thread/ERROR]: Item entity 17923 has no item?!
-[15:26:03] [Client thread/ERROR]: Item entity 17923 has no item?!
-[15:26:03] [Client thread/ERROR]: Item entity 19940 has no item?!
-[15:26:03] [Client thread/ERROR]: Item entity 19940 has no item?!
-[15:26:03] [Client thread/ERROR]: Item entity 19940 has no item?!
-[15:26:03] [Client thread/ERROR]: Item entity 19940 has no item?!
-[15:26:03] [Client thread/ERROR]: Item entity 19940 has no item?!
-[15:26:03] [Client thread/ERROR]: Item entity 19940 has no item?!
-[15:26:03] [Client thread/ERROR]: Item entity 19940 has no item?!
-[15:26:03] [Client thread/ERROR]: Item entity 19940 has no item?!
-[15:27:57] [Server thread/INFO]: Saving and pausing game...
-[15:27:57] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
-[15:27:57] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
-[15:27:57] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
-[15:29:00] [Server thread/INFO]: Saving and pausing game...
-[15:29:00] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
-[15:29:00] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
-[15:29:00] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
-[15:36:09] [Server thread/INFO]: Saving and pausing game...
-[15:36:09] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
-[15:36:09] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
-[15:36:09] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
-[15:52:02] [Client thread/INFO]: Stopping!
-[15:52:02] [Client thread/INFO]: SoundSystem shutting down...
-[15:52:02] [Server thread/INFO]: Stopping server
-[15:52:02] [Server thread/INFO]: Saving players
-[15:52:02] [Server thread/INFO]: Saving worlds
-[15:52:02] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
-[15:52:02] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
-[15:52:02] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
-[15:52:02] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
+[21:01:02] [Client thread/INFO]: Setting user: Player328
+[21:01:02] [Client thread/INFO]: (Session ID is token:0:Player328)
+[21:01:03] [Client thread/INFO]: LWJGL Version: 2.9.4
+[21:01:03] [Client thread/INFO]: Reloading ResourceManager: Default
+[21:01:04] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[21:01:04] [Thread-8/INFO]: Initializing LWJGL OpenAL
+[21:01:04] [Thread-8/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[21:01:04] [Thread-8/ERROR]: Error in class 'LibraryLWJGLOpenAL'
+[21:01:04] [Thread-8/ERROR]: Unable to initialize OpenAL.  Probable cause: OpenAL not supported.
+[21:01:04] [Thread-8/WARN]: ERROR MESSAGE:
+[21:01:04] [Thread-8/INFO]: Could not locate OpenAL library.
+[21:01:04] [Thread-8/WARN]: STACK TRACE:
+[21:01:04] [Thread-8/INFO]: org.lwjgl.openal.AL.create(AL.java:156)
+[21:01:04] [Thread-8/INFO]: org.lwjgl.openal.AL.create(AL.java:102)
+[21:01:04] [Thread-8/INFO]: org.lwjgl.openal.AL.create(AL.java:206)
+[21:01:04] [Thread-8/INFO]: paulscode.sound.libraries.LibraryLWJGLOpenAL.init(LibraryLWJGLOpenAL.java:164)
+[21:01:04] [Thread-8/INFO]: paulscode.sound.SoundSystem.CommandNewLibrary(SoundSystem.java:1576)
+[21:01:04] [Thread-8/INFO]: paulscode.sound.SoundSystem.CommandQueue(SoundSystem.java:2572)
+[21:01:04] [Thread-8/INFO]: paulscode.sound.CommandThread.run(CommandThread.java:121)
+[21:01:04] [Sound Library Loader/WARN]: ERROR MESSAGE:
+[21:01:04] [Sound Library Loader/INFO]: Could not locate OpenAL library.
+[21:01:04] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[21:01:05] [Thread-10/INFO]: Switching to No Sound
+[21:01:05] [Thread-10/INFO]: (Silent Mode)
+[21:01:05] [Sound Library Loader/INFO]: Sound engine started
+[21:01:05] [Client thread/INFO]: Created: 1024x512 textures-atlas
+[21:01:09] [Server thread/INFO]: Starting integrated minecraft server version 1.8.8
+[21:01:09] [Server thread/INFO]: Generating keypair
+[21:01:09] [Server thread/INFO]: Preparing start region for level 0
+[21:01:10] [Server thread/INFO]: Changing view distance to 8, from 10
+[21:01:10] [Server thread/INFO]: Player328[local:E:ff6635c1] logged in with entity id 91 at (644.3985973432617, 82.0, 1698.997115581611)
+[21:01:10] [Server thread/INFO]: Player328 joined the game
+[21:01:10] [Server thread/INFO]: Saving and pausing game...
+[21:01:10] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[21:01:10] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[21:01:10] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[21:01:20] [Server thread/INFO]: Saving and pausing game...
+[21:01:20] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[21:01:20] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[21:01:20] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[21:01:28] [Server thread/INFO]: Saving and pausing game...
+[21:01:28] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[21:01:28] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[21:01:28] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[21:01:31] [Client thread/INFO]: Stopping!
+[21:01:31] [Client thread/INFO]: SoundSystem shutting down...
+[21:01:32] [Server thread/INFO]: Stopping server
+[21:01:32] [Server thread/INFO]: Saving players
+[21:01:32] [Server thread/INFO]: Saving worlds
+[21:01:32] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[21:01:32] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[21:01:32] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[21:01:32] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com

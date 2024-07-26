@@ -38,7 +38,7 @@ import me.gamrboy4life.paradox.module.movement.Sneak;
 import me.gamrboy4life.paradox.module.movement.Speed;
 import me.gamrboy4life.paradox.module.movement.Spider;
 import me.gamrboy4life.paradox.module.movement.Step;
-import me.gamrboy4life.paradox.module.movement.WichlyBridge;
+import me.gamrboy4life.paradox.module.movement.BreezilyBridge;
 import me.gamrboy4life.paradox.module.player.AntiAFK;
 import me.gamrboy4life.paradox.module.player.AntiCobweb;
 import me.gamrboy4life.paradox.module.player.AutoMine;
@@ -116,7 +116,7 @@ public class ModuleManager {
 		newMod(new Speed());
 		newMod(new Spider());
 		newMod(new Step());
-		newMod(new WichlyBridge());
+		newMod(new BreezilyBridge());
 		
 		//PLAYER
 		newMod(new AntiAFK());
