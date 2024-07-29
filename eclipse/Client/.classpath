@@ -41,5 +41,6 @@
 	<classpathentry kind="lib" path="C:/Users/yztim/OneDrive/デスクトップ/YuzuClient/lib/annotations-16.0.3.jar"/>
 	<classpathentry kind="lib" path="C:/Users/yztim/OneDrive/デスクトップ/YuzuClient/lib/json-20180813.jar"/>
 	<classpathentry kind="lib" path="C:/Users/yztim/OneDrive/デスクトップ/YuzuClient/lib/procbridge-1.1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/yztim/OneDrive/デスクトップ/YuzuClient/lib/jlayer-1.0.1.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

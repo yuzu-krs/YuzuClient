@@ -1,6 +1,6 @@
 {
   "TabGui": {
-    "enabled": false
+    "enabled": true
   },
   "AntiFire": {
     "enabled": false
@@ -217,5 +217,8 @@
   },
   "Panic": {
     "enabled": false
+  },
+  "SteveVoice": {
+    "enabled": true
   }
 }

@@ -22,6 +22,7 @@ import me.gamrboy4life.paradox.module.misc.Eyes;
 import me.gamrboy4life.paradox.module.misc.GifCape;
 import me.gamrboy4life.paradox.module.misc.Hat;
 import me.gamrboy4life.paradox.module.misc.Panic;
+import me.gamrboy4life.paradox.module.misc.SteveVoice;
 import me.gamrboy4life.paradox.module.movement.AutoSprint;
 import me.gamrboy4life.paradox.module.movement.AutoWalk;
 import me.gamrboy4life.paradox.module.movement.Dolphin;
@@ -172,6 +173,7 @@ public class ModuleManager {
 		newMod(new GifCape());
 		newMod(new Hat());
 		newMod(new Panic());
+		newMod(new SteveVoice());
 		
 	}
 	
