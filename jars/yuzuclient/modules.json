@@ -1,6 +1,6 @@
 {
   "TabGui": {
-    "enabled": true
+    "enabled": false
   },
   "AntiFire": {
     "enabled": false
@@ -24,7 +24,7 @@
     "enabled": false
   },
   "MineClicker": {
-    "enabled": false
+    "enabled": true
   },
   "Reach": {
     "enabled": false
@@ -32,7 +32,7 @@
   "Regen": {
     "enabled": false
   },
-  "NinjaBridge": {
+  "Ninja": {
     "enabled": false
   },
   "AutoSprint": {
@@ -57,7 +57,7 @@
     "enabled": false
   },
   "MoonWalk": {
-    "enabled": true
+    "enabled": false
   },
   "NoFall": {
     "enabled": false
@@ -132,6 +132,9 @@
     "enabled": true
   },
   "MEM": {
+    "enabled": false
+  },
+  "OldSneaking": {
     "enabled": false
   },
   "Ping": {

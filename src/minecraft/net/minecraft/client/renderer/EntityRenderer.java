@@ -25,6 +25,7 @@ import me.gamrboy4life.paradox.Paradox;
 import me.gamrboy4life.paradox.gui.MainMenu;
 import me.gamrboy4life.paradox.gvent.impl.RenderEvent;
 import me.gamrboy4life.paradox.mods.ModInstances;
+import me.gamrboy4life.paradox.utils.animation.AnimationOldSneaking;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockBed;
 import net.minecraft.block.material.Material;
@@ -687,6 +688,24 @@ public class EntityRenderer implements IResourceManagerReloadListener
             GlStateManager.rotate(f3, 1.0F, 0.0F, 0.0F);
         }
     }
+    
+    
+    
+    private static boolean  oldSneakEnabled= false; // 静的フィールド
+
+    // 静的なセッター
+    public static void setOldSneak(boolean value) {
+         oldSneakEnabled= value;
+    }
+    
+    public boolean shouldOldSneak()
+    {
+    	
+        return oldSneakEnabled;
+    }
+
+    
+    
 
     /**
      * sets up player's eye (or camera in third person mode)
@@ -694,7 +713,18 @@ public class EntityRenderer implements IResourceManagerReloadListener
     private void orientCamera(float partialTicks)
     {
         Entity entity = this.mc.getRenderViewEntity();
-        float f = entity.getEyeHeight();
+        float f;
+        
+        if(oldSneakEnabled) {
+        	 f = AnimationOldSneaking.getCustomEyeHeight(entity);
+        }else {
+             f = entity.getEyeHeight();
+        }
+        
+        
+        
+        
+        
         double d0 = entity.prevPosX + (entity.posX - entity.prevPosX) * (double)partialTicks;
         double d1 = entity.prevPosY + (entity.posY - entity.prevPosY) * (double)partialTicks + (double)f;
         double d2 = entity.prevPosZ + (entity.posZ - entity.prevPosZ) * (double)partialTicks;

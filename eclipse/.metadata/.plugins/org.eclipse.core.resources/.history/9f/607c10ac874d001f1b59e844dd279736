@@ -1,0 +1,19 @@
+package me.gamrboy4life.paradox.module.status;
+
+import me.gamrboy4life.paradox.module.Category;
+import me.gamrboy4life.paradox.module.Module;
+import net.minecraft.client.renderer.entity.layers.LayerArmorBase;
+
+public class OldSneaking extends Module {
+
+    public OldSneaking() {
+        super("OldSneaking", 0, Category.STATUS);
+    }
+
+    @Override
+    public void onUpdate() {
+        EntityRender
+        LayerArmorBase.setCombineTextures(isToggled()); // 現在の状態を反転
+        
+    }
+}

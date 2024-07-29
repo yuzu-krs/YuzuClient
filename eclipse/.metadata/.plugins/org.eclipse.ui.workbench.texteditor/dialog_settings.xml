@@ -6,8 +6,9 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="shouldC"/>
+		<item key="selection" value="entity.getEye"/>
 		<list key="findhistory">
+			<item value="entity.getEye"/>
 			<item value="shouldC"/>
 			<item value="handleKeyboardInput"/>
 			<item value="handleKey"/>
