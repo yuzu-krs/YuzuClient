@@ -21,7 +21,7 @@ public class SteveVoice extends Module {
 
     @Override
     public void onUpdate() {
-        if (this.isToggled() && mc.thePlayer.hurtTime > 8 && mc.thePlayer.onGround) {
+        if (this.isToggled() && mc.thePlayer.hurtTime > 8) {
             
                 new Thread(new Runnable() {
                     @Override
