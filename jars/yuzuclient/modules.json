@@ -24,7 +24,7 @@
     "enabled": false
   },
   "MineClicker": {
-    "enabled": true
+    "enabled": false
   },
   "Reach": {
     "enabled": false
@@ -32,7 +32,7 @@
   "Regen": {
     "enabled": false
   },
-  "HanShift": {
+  "NinjaBridge": {
     "enabled": false
   },
   "AutoSprint": {
@@ -57,7 +57,7 @@
     "enabled": false
   },
   "MoonWalk": {
-    "enabled": false
+    "enabled": true
   },
   "NoFall": {
     "enabled": false
@@ -80,7 +80,7 @@
   "Step": {
     "enabled": false
   },
-  "Breezily": {
+  "Wichly": {
     "enabled": false
   },
   "AntiAFK": {

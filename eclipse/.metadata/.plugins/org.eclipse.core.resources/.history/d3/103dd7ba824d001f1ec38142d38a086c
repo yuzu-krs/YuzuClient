@@ -1,0 +1,46 @@
+package me.gamrboy4life.paradox.module.movement;
+
+import me.gamrboy4life.paradox.module.Category;
+import me.gamrboy4life.paradox.module.Module;
+
+public class BreezilyBridge extends Module {
+
+    private long lastToggleTime;
+    private boolean isLeftPressed;
+
+    public BreezilyBridge() {
+        super("Breezily", 0, Category.MOVEMENT);
+        this.lastToggleTime = System.currentTimeMillis();
+        this.isLeftPressed = true; // 初期状態は左キー
+    }
+
+    @Override
+    public void onUpdate() {
+        if (this.isToggled()) {
+            long currentTime = System.currentTimeMillis();
+
+            // 200ミリ秒ごとにトグル
+            if (currentTime - lastToggleTime > 100) { 
+                if (isLeftPressed) {
+                    mc.gameSettings.keyBindLeft.pressed = true;
+                    mc.gameSettings.keyBindBack.pressed = true; // 後ろに下がる
+                    mc.gameSettings.keyBindRight.pressed = false; // 右キーは押さない
+                } else {
+                    mc.gameSettings.keyBindLeft.pressed = false; // 左キーは押さない
+                    mc.gameSettings.keyBindBack.pressed = true; // 後ろに下がる
+                    mc.gameSettings.keyBindRight.pressed = true; // 右キーは押す
+                }
+                isLeftPressed = !isLeftPressed;
+                lastToggleTime = currentTime;
+            }
+        }
+    }
+
+    @Override
+    public void onDisable() {
+        mc.gameSettings.keyBindLeft.pressed = false;
+        mc.gameSettings.keyBindBack.pressed = false;
+        mc.gameSettings.keyBindRight.pressed = false; // 右キーもリセット
+        super.onDisable();
+    }
+}

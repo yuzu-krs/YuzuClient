@@ -24,11 +24,11 @@ import me.gamrboy4life.paradox.module.misc.Hat;
 import me.gamrboy4life.paradox.module.misc.Panic;
 import me.gamrboy4life.paradox.module.movement.AutoSprint;
 import me.gamrboy4life.paradox.module.movement.AutoWalk;
-import me.gamrboy4life.paradox.module.movement.BreezilyBridge;
+import me.gamrboy4life.paradox.module.movement.WichlyBridge;
 import me.gamrboy4life.paradox.module.movement.Dolphin;
 import me.gamrboy4life.paradox.module.movement.Flight;
 import me.gamrboy4life.paradox.module.movement.Glide;
-import me.gamrboy4life.paradox.module.movement.HanShift;
+import me.gamrboy4life.paradox.module.movement.NinjaBridge;
 import me.gamrboy4life.paradox.module.movement.Jetpack;
 import me.gamrboy4life.paradox.module.movement.JumpReset;
 import me.gamrboy4life.paradox.module.movement.MoonWalk;
@@ -101,7 +101,7 @@ public class ModuleManager {
 		newMod(new Regen());
 		
 		//MOVEMENT
-		newMod(new HanShift());
+		newMod(new NinjaBridge());
 		newMod(new AutoSprint());
 		newMod(new AutoWalk());
 		newMod(new Dolphin());
@@ -117,7 +117,7 @@ public class ModuleManager {
 		newMod(new Speed());
 		newMod(new Spider());
 		newMod(new Step());
-		newMod(new BreezilyBridge());
+		newMod(new WichlyBridge());
 		
 		//PLAYER
 		newMod(new AntiAFK());
