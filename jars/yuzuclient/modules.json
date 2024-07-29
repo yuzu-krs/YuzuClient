@@ -24,7 +24,7 @@
     "enabled": false
   },
   "MineClicker": {
-    "enabled": false
+    "enabled": true
   },
   "Reach": {
     "enabled": false
@@ -110,6 +110,9 @@
   "InvHelper": {
     "enabled": false
   },
+  "ArmorHit": {
+    "enabled": false
+  },
   "Armor": {
     "enabled": false
   },
@@ -165,19 +168,19 @@
     "enabled": false
   },
   "ESP Chest": {
-    "enabled": true
+    "enabled": false
   },
   "ESP Friendly": {
-    "enabled": true
+    "enabled": false
   },
   "ESP Hostile": {
-    "enabled": true
+    "enabled": false
   },
   "ESP Items": {
-    "enabled": true
+    "enabled": false
   },
   "ESP Player": {
-    "enabled": true
+    "enabled": false
   },
   "FullBright": {
     "enabled": false

@@ -1,0 +1,26 @@
+package me.gamrboy4life.paradox.module.status;
+
+import me.gamrboy4life.paradox.module.Category;
+import me.gamrboy4life.paradox.module.Module;
+
+public class ArmorHit extends Module {
+
+    private LayerArmorBase layerArmorBase; // Reference to LayerArmorBase
+
+    public ArmorHit(LayerArmorBase layerArmorBase) {
+        super("ArmorHit", 0, Category.STATUS);
+        this.layerArmorBase = layerArmorBase;
+    }
+
+    @Override
+    public void onUpdate() {
+        // Example: Toggle the combineTextures property
+        boolean currentState = layerArmorBase.shouldCombineTextures();
+        layerArmorBase.setCombineTextures(!currentState); // Toggle state
+    }
+
+    // Optional: Provide a setter if needed
+    public void setLayerArmorBase(LayerArmorBase layerArmorBase) {
+        this.layerArmorBase = layerArmorBase;
+    }
+}

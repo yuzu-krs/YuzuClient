@@ -24,6 +24,7 @@ import me.gamrboy4life.paradox.module.misc.Hat;
 import me.gamrboy4life.paradox.module.misc.Panic;
 import me.gamrboy4life.paradox.module.movement.AutoSprint;
 import me.gamrboy4life.paradox.module.movement.AutoWalk;
+import me.gamrboy4life.paradox.module.movement.BreezilyBridge;
 import me.gamrboy4life.paradox.module.movement.Dolphin;
 import me.gamrboy4life.paradox.module.movement.Flight;
 import me.gamrboy4life.paradox.module.movement.Glide;
@@ -38,7 +39,6 @@ import me.gamrboy4life.paradox.module.movement.Sneak;
 import me.gamrboy4life.paradox.module.movement.Speed;
 import me.gamrboy4life.paradox.module.movement.Spider;
 import me.gamrboy4life.paradox.module.movement.Step;
-import me.gamrboy4life.paradox.module.movement.BreezilyBridge;
 import me.gamrboy4life.paradox.module.player.AntiAFK;
 import me.gamrboy4life.paradox.module.player.AntiCobweb;
 import me.gamrboy4life.paradox.module.player.AutoMine;
@@ -61,6 +61,7 @@ import me.gamrboy4life.paradox.module.render.NightVision;
 import me.gamrboy4life.paradox.module.render.TabGui;
 import me.gamrboy4life.paradox.module.render.Xray;
 import me.gamrboy4life.paradox.module.status.Armor;
+import me.gamrboy4life.paradox.module.status.ArmorHit;
 import me.gamrboy4life.paradox.module.status.Bossbar;
 import me.gamrboy4life.paradox.module.status.CPS;
 import me.gamrboy4life.paradox.module.status.Direction;
@@ -130,6 +131,7 @@ public class ModuleManager {
 		newMod(new InventoryHelper());
 		
 		//PVP系
+		newMod(new ArmorHit());
 		newMod(new Armor());
 		newMod(new Bossbar());
 		newMod(new CPS());

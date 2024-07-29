@@ -39,12 +39,24 @@ public abstract class LayerArmorBase<T extends ModelBase> implements LayerRender
         this.renderLayer(entitylivingbaseIn, p_177141_2_, p_177141_3_, partialTicks, p_177141_5_, p_177141_6_, p_177141_7_, scale, 2);
         this.renderLayer(entitylivingbaseIn, p_177141_2_, p_177141_3_, partialTicks, p_177141_5_, p_177141_6_, p_177141_7_, scale, 1);
     }
+    
+    
+    
+    private static boolean combineTextures = false; // 静的フィールド
 
+    // 静的なセッター
+    public static void setCombineTextures(boolean value) {
+        combineTextures = value;
+    }
+    
     public boolean shouldCombineTextures()
     {
-        return false;
+    	
+        return combineTextures;
     }
 
+    
+    
     private void renderLayer(EntityLivingBase entitylivingbaseIn, float p_177182_2_, float p_177182_3_, float p_177182_4_, float p_177182_5_, float p_177182_6_, float p_177182_7_, float p_177182_8_, int armorSlot)
     {
         ItemStack itemstack = this.getCurrentArmor(entitylivingbaseIn, armorSlot);
