@@ -3,6 +3,7 @@ package me.gamrboy4life.paradox.gui;
 import java.awt.Desktop;
 import java.net.URI;
 
+import me.gamrboy4life.paradox.Paradox;
 import me.gamrboy4life.paradox.alt.GuiAltManager;
 import me.gamrboy4life.paradox.utils.font.FontUtil;
 import net.minecraft.client.gui.GuiLanguage;
@@ -22,7 +23,7 @@ public class MainMenu extends GuiScreen{
     }
 
     public void initGui() {
-
+    	Paradox.getDiscordRP().update("Idle", "Main Menu");
     }
 
     public void drawScreen(int mouseX,int mouseY,float partialticks) {

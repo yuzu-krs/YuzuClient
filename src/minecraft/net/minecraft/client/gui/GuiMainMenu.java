@@ -19,7 +19,6 @@ import org.lwjgl.util.glu.Project;
 
 import com.google.common.collect.Lists;
 
-import me.gamrboy4life.paradox.Paradox;
 import me.gamrboy4life.paradox.alt.GuiAltManager;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.GlStateManager;
@@ -185,7 +184,7 @@ public class GuiMainMenu extends GuiScreen implements GuiYesNoCallback
     public void initGui()
     {
     	//Paradox
-    	Paradox.getDiscordRP().update("Idle", "Main Menu");
+    	//Paradox.getDiscordRP().update("Idle", "Main Menu");
     	
         this.viewportTexture = new DynamicTexture(256, 256);
         this.backgroundTexture = this.mc.getTextureManager().getDynamicTextureLocation("background", this.viewportTexture);
