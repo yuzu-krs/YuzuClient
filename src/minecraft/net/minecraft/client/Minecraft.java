@@ -2360,7 +2360,7 @@ public class Minecraft implements IThreadListener, IPlayerUsage
         networkmanager.sendPacket(new C00PacketLoginStart(this.getSession().getProfile()));
         this.myNetworkManager = networkmanager;
         //Paradox
-        Paradox.getDiscordRP().update("Playing singlePlayer","In Game");
+        Paradox.getDiscordRP().update("Playing SinglePlayer","In Game");
     }
 
     /**
