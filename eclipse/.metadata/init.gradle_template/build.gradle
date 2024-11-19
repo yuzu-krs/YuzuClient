@@ -1,0 +1,16 @@
+plugins {
+	id 'war'
+	id 'eclipse-wtp'
+}
+
+java.sourceCompatibility = 21
+eclipse.wtp.facet.facet name: 'jst.web', version: '6.0'
+repositories.mavenCentral()
+
+dependencies {
+	compileOnly 'org.apache.tomcat:tomcat-servlet-api:10.1.+'
+	runtimeOnly 'org.glassfish.web:jakarta.servlet.jsp.jstl:3.0.+'
+	testImplementation 'org.mockito:mockito-junit-jupiter:5.+'
+	testing.suites.test.useJUnitJupiter('5.+')
+	configurations { testImplementation.extendsFrom compileOnly }
+}

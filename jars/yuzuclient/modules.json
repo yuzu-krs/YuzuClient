@@ -1,6 +1,6 @@
 {
   "TabGui": {
-    "enabled": true
+    "enabled": false
   },
   "AntiFire": {
     "enabled": false
@@ -24,7 +24,7 @@
     "enabled": false
   },
   "MineClicker": {
-    "enabled": true
+    "enabled": false
   },
   "Reach": {
     "enabled": false
@@ -36,7 +36,7 @@
     "enabled": false
   },
   "AutoSprint": {
-    "enabled": false
+    "enabled": true
   },
   "AutoWalk": {
     "enabled": false
@@ -105,7 +105,7 @@
     "enabled": false
   },
   "FastPlace": {
-    "enabled": true
+    "enabled": false
   },
   "InvHelper": {
     "enabled": false
@@ -120,7 +120,7 @@
     "enabled": false
   },
   "CPS": {
-    "enabled": true
+    "enabled": false
   },
   "Direction": {
     "enabled": false
@@ -129,13 +129,13 @@
     "enabled": false
   },
   "Keystrokes": {
-    "enabled": true
+    "enabled": false
   },
   "MEM": {
     "enabled": false
   },
   "OldSneaking": {
-    "enabled": false
+    "enabled": true
   },
   "Ping": {
     "enabled": false
@@ -144,7 +144,7 @@
     "enabled": false
   },
   "Potion": {
-    "enabled": true
+    "enabled": false
   },
   "Target": {
     "enabled": false
@@ -219,6 +219,6 @@
     "enabled": false
   },
   "SteveVoice": {
-    "enabled": true
+    "enabled": false
   }
 }

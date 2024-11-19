@@ -1,0 +1,151 @@
+[01:48:59] [Client thread/INFO]: Setting user: Player718
+[01:48:59] [Client thread/INFO]: (Session ID is token:0:Player718)
+[01:48:59] [Client thread/INFO]: LWJGL Version: 2.9.4
+[01:49:00] [Client thread/INFO]: Reloading ResourceManager: Default
+[01:49:00] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[01:49:00] [Thread-8/INFO]: Initializing LWJGL OpenAL
+[01:49:00] [Thread-8/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[01:49:00] [Thread-8/INFO]: OpenAL initialized.
+[01:49:00] [Sound Library Loader/INFO]: Sound engine started
+[01:49:02] [Client thread/INFO]: Created: 1024x512 textures-atlas
+[01:49:06] [Server thread/INFO]: Starting integrated minecraft server version 1.8.8
+[01:49:06] [Server thread/INFO]: Generating keypair
+[01:49:06] [Server thread/INFO]: Preparing start region for level 0
+[01:49:07] [Server thread/INFO]: Changing view distance to 8, from 10
+[01:49:07] [Server thread/INFO]: Player718[local:E:a99615c1] logged in with entity id 210 at (614.6847906511263, 67.4807108763317, 131.4981794994938)
+[01:49:07] [Server thread/INFO]: Player718 joined the game
+[01:49:07] [Server thread/INFO]: Saving and pausing game...
+[01:49:08] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[01:49:08] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[01:49:08] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[01:49:10] [Server thread/INFO]: Saving and pausing game...
+[01:49:10] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[01:49:10] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[01:49:10] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[01:49:15] [Server thread/INFO]: Saving and pausing game...
+[01:49:15] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[01:49:15] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[01:49:15] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[01:49:16] [Server thread/INFO]: Saving and pausing game...
+[01:49:16] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[01:49:16] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[01:49:16] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[01:49:29] [Server thread/INFO]: Saving and pausing game...
+[01:49:29] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[01:49:29] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[01:49:29] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[01:49:47] [Server thread/INFO]: Saving and pausing game...
+[01:49:47] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[01:49:47] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[01:49:47] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[01:50:22] [Server thread/INFO]: Saving and pausing game...
+[01:50:22] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[01:50:22] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[01:50:22] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[01:51:16] [Server thread/INFO]: Saving and pausing game...
+[01:51:16] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[01:51:16] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[01:51:16] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[01:51:24] [Server thread/INFO]: Saving and pausing game...
+[01:51:24] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[01:51:24] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[01:51:24] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[01:51:36] [Server thread/INFO]: Saving and pausing game...
+[01:51:36] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[01:51:36] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[01:51:36] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[01:51:55] [Server thread/INFO]: Saving and pausing game...
+[01:51:55] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[01:51:55] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[01:51:55] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[01:52:31] [Server thread/INFO]: Saving and pausing game...
+[01:52:31] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[01:52:31] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[01:52:31] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[01:52:46] [Server thread/INFO]: Saving and pausing game...
+[01:52:46] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[01:52:46] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[01:52:46] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[01:53:15] [Server thread/INFO]: Saving and pausing game...
+[01:53:15] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[01:53:15] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[01:53:15] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[01:53:40] [Server thread/INFO]: Saving and pausing game...
+[01:53:40] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[01:53:41] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[01:53:41] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[01:53:43] [Server thread/INFO]: Saving and pausing game...
+[01:53:43] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[01:53:43] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[01:53:43] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[01:53:45] [Client thread/INFO]: [CHAT] §eYuzuClient§7: すべてのMODが無効になりました!
+[01:53:58] [Server thread/INFO]: [Player718: Set own game mode to Creative Mode]
+[01:53:58] [Client thread/INFO]: [CHAT] Your game mode has been updated
+[01:54:05] [Server thread/INFO]: Saving and pausing game...
+[01:54:05] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[01:54:05] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[01:54:05] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[01:54:18] [Server thread/INFO]: Saving and pausing game...
+[01:54:18] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[01:54:18] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[01:54:18] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[01:54:26] [Server thread/INFO]: Saving and pausing game...
+[01:54:26] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[01:54:26] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[01:54:26] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[01:54:46] [Server thread/INFO]: Saving and pausing game...
+[01:54:46] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[01:54:46] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[01:54:46] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[01:55:06] [Server thread/INFO]: Saving and pausing game...
+[01:55:06] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[01:55:06] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[01:55:06] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[01:56:24] [Server thread/INFO]: Saving and pausing game...
+[01:56:24] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[01:56:24] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[01:56:24] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[01:56:37] [Server thread/INFO]: Saving and pausing game...
+[01:56:37] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[01:56:37] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[01:56:37] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[01:56:38] [Server thread/INFO]: Saving and pausing game...
+[01:56:38] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[01:56:38] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[01:56:38] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[01:56:38] [Server thread/INFO]: Saving and pausing game...
+[01:56:38] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[01:56:38] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[01:56:38] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[01:57:54] [Server thread/INFO]: Saving and pausing game...
+[01:57:54] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[01:57:54] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[01:57:54] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[01:58:06] [Server thread/INFO]: Saving and pausing game...
+[01:58:06] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[01:58:06] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[01:58:06] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[01:58:40] [Server thread/INFO]: Saving and pausing game...
+[01:58:40] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[01:58:41] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[01:58:41] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[02:00:13] [Client thread/INFO]: [CHAT] §eYuzuClient§7: 大文字小文字問いません
+[02:00:13] [Client thread/INFO]: [CHAT] §eYuzuClient§7: キーバインド  .[b|bind] <Mod名> <key>
+[02:00:13] [Client thread/INFO]: [CHAT] §eYuzuClient§7: キーバインド初期化  .[b|bind] clear
+[02:00:13] [Client thread/INFO]: [CHAT] §eYuzuClient§7: Mod即時オン  .[t|toggle] <Mod名>
+[02:00:13] [Client thread/INFO]: [CHAT] §eYuzuClient§7: Sayコマンド  .[s|say] <任意の文字列>
+[02:00:13] [Client thread/INFO]: [CHAT] §eYuzuClient§7: Spamコマンド 使用例↓
+[02:00:13] [Client thread/INFO]: [CHAT] §eYuzuClient§7: .[c|chatspam] <数> <間隔(ミリ秒)> <任意の文字列>
+[02:00:23] [Server thread/INFO]: <Player718> 
+[02:00:23] [Client thread/INFO]: [CHAT] <Player718> 
+[02:00:28] [Server thread/INFO]: <Player718> Usage: tran <日本語>
+[02:00:28] [Client thread/INFO]: [CHAT] <Player718> Usage: tran <日本語>
+[02:00:42] [Server thread/INFO]: <Player718> Translation failed.
+[02:00:42] [Client thread/INFO]: [CHAT] <Player718> Translation failed.
+[02:00:48] [Server thread/INFO]: <Player718> Translation failed.
+[02:00:48] [Client thread/INFO]: [CHAT] <Player718> Translation failed.
+[02:01:08] [Client thread/INFO]: [CHAT] §eYuzuClient§7: コマンドが見つかりません! [.help]
+[02:01:10] [Server thread/INFO]: Saving and pausing game...
+[02:01:10] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[02:01:10] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[02:01:10] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End

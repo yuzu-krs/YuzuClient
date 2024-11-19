@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="lib" path="jars/versions/1.8.8/1.8.8.jar">
 		<attributes>
 			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="Client/jars/versions/1.8.8/1.8.8-natives"/>
@@ -37,10 +41,10 @@
 	<classpathentry kind="lib" path="jars/libraries/org/lwjgl/lwjgl/lwjgl_util/2.9.4-nightly-20150209/lwjgl_util-2.9.4-nightly-20150209.jar"/>
 	<classpathentry kind="lib" path="jars/libraries/tv/twitch/twitch/6.5/twitch-6.5.jar"/>
 	<classpathentry kind="lib" path="lib/discord-rpc.jar"/>
-	<classpathentry kind="lib" path="C:/Users/yztim/OneDrive/デスクトップ/YuzuClient/lib/slick.jar"/>
-	<classpathentry kind="lib" path="C:/Users/yztim/OneDrive/デスクトップ/YuzuClient/lib/annotations-16.0.3.jar"/>
-	<classpathentry kind="lib" path="C:/Users/yztim/OneDrive/デスクトップ/YuzuClient/lib/json-20180813.jar"/>
-	<classpathentry kind="lib" path="C:/Users/yztim/OneDrive/デスクトップ/YuzuClient/lib/procbridge-1.1.1.jar"/>
-	<classpathentry kind="lib" path="C:/Users/yztim/OneDrive/デスクトップ/YuzuClient/lib/jlayer-1.0.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/yuzut/Desktop/YuzuClient/lib/slick.jar"/>
+	<classpathentry kind="lib" path="C:/Users/yuzut/Desktop/YuzuClient/lib/annotations-16.0.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/yuzut/Desktop/YuzuClient/lib/json-20180813.jar"/>
+	<classpathentry kind="lib" path="C:/Users/yuzut/Desktop/YuzuClient/lib/procbridge-1.1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/yuzut/Desktop/YuzuClient/lib/jlayer-1.0.1.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

@@ -1,3 +1,1 @@
-INDEX VERSION 1.131
-file:/C:/Users/yztim/OneDrive/デスクトップ/YuzuClient/eclipse/.metadata/.plugins/org.eclipse.jdt.core/1865797976.index
-meta_index
+INDEX VERSION 1.134

@@ -1,0 +1,116 @@
+package net.minecraft.client.renderer.entity.layers;
+
+import me.gamrboy4life.paradox.devlogs.cosmetic.CosmeticBoolean;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.entity.AbstractClientPlayer;
+import net.minecraft.client.renderer.GlStateManager;
+import net.minecraft.client.renderer.entity.RenderPlayer;
+import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.entity.player.EnumPlayerModelParts;
+import net.minecraft.util.MathHelper;
+import net.minecraft.util.ResourceLocation;
+
+public class LayerCape implements LayerRenderer<AbstractClientPlayer> {
+    private final RenderPlayer playerRenderer;
+    private static boolean originCape = false; // CapeのON/OFF用
+
+    public LayerCape(RenderPlayer playerRendererIn) {
+        this.playerRenderer = playerRendererIn;
+    }
+
+    public static void setOriginCape(boolean originCape) {
+        LayerCape.originCape = originCape;
+    }
+
+    @Override
+    public void doRenderLayer(AbstractClientPlayer entity, float limbSwing, float limbSwingAmount, float partialTicks,
+                              float ageInTicks, float netHeadYaw, float headPitch, float scale) {
+        // Capeを描画する条件を判定
+        if (shouldRenderCustomCape(entity)) {
+            renderCustomCape(entity, partialTicks);
+        } else if (shouldRenderVanillaCape(entity)) {
+            renderVanillaCape(entity, partialTicks);
+        }
+    }
+
+    private boolean shouldRenderCustomCape(AbstractClientPlayer entity) {
+        return CosmeticBoolean.SnowCape() && originCape &&
+                entity.hasPlayerInfo() &&
+                !entity.isInvisible() &&
+                entity.isWearing(EnumPlayerModelParts.CAPE) &&
+                entity.getName().equals(Minecraft.getMinecraft().getSession().getUsername());
+    }
+
+    private boolean shouldRenderVanillaCape(AbstractClientPlayer entity) {
+        return !CosmeticBoolean.SnowCape() && !originCape &&
+                entity.hasPlayerInfo() &&
+                !entity.isInvisible() &&
+                entity.isWearing(EnumPlayerModelParts.CAPE) &&
+                entity.getLocationCape() != null;
+    }
+
+    private void renderCustomCape(AbstractClientPlayer entity, float partialTicks) {
+        this.playerRenderer.bindTexture(new ResourceLocation("yuzuclient/cape.png"));
+        renderCapeTransformations(entity, partialTicks);
+    }
+
+    private void renderVanillaCape(AbstractClientPlayer entity, float partialTicks) {
+        this.playerRenderer.bindTexture(entity.getLocationCape());
+        renderCapeTransformations(entity, partialTicks);
+    }
+
+    private void renderCapeTransformations(AbstractClientPlayer entity, float partialTicks) {
+        GlStateManager.pushMatrix();
+        GlStateManager.translate(0.0F, 0.0F, 0.125F);
+
+        double d0 = interpolate(entity.prevChasingPosX, entity.chasingPosX, partialTicks) -
+                interpolate(entity.prevPosX, entity.posX, partialTicks);
+        double d1 = interpolate(entity.prevChasingPosY, entity.chasingPosY, partialTicks) -
+                interpolate(entity.prevPosY, entity.posY, partialTicks);
+        double d2 = interpolate(entity.prevChasingPosZ, entity.chasingPosZ, partialTicks) -
+                interpolate(entity.prevPosZ, entity.posZ, partialTicks);
+
+        float yaw = interpolate(entity.prevRenderYawOffset, entity.renderYawOffset, partialTicks);
+        double sinYaw = MathHelper.sin(yaw * (float) Math.PI / 180.0F);
+        double cosYaw = -MathHelper.cos(yaw * (float) Math.PI / 180.0F);
+
+        float offsetY = MathHelper.clamp_float((float) d1 * 10.0F, -6.0F, 32.0F);
+        float capeSwing = (float) (d0 * sinYaw + d2 * cosYaw) * 100.0F;
+        float capeTwist = (float) (d0 * cosYaw - d2 * sinYaw) * 100.0F;
+
+        if (capeSwing < 0.0F) {
+            capeSwing = 0.0F;
+        }
+        if (capeSwing > 165.0F) {
+            capeSwing = 165.0F;
+        }
+
+        float cameraYaw = interpolate(entity.prevCameraYaw, entity.cameraYaw, partialTicks);
+        offsetY += MathHelper.sin(interpolate(entity.prevDistanceWalkedModified, entity.distanceWalkedModified, partialTicks) * 6.0F) * 32.0F * cameraYaw;
+
+        if (entity.isSneaking()) {
+            offsetY += 25.0F;
+            GlStateManager.translate(0.0F, 0.142F, -0.0178F);
+        }
+
+        GlStateManager.rotate(6.0F + capeSwing / 2.0F + offsetY, 1.0F, 0.0F, 0.0F);
+        GlStateManager.rotate(capeTwist / 2.0F, 0.0F, 0.0F, 1.0F);
+        GlStateManager.rotate(-capeTwist / 2.0F, 0.0F, 1.0F, 0.0F);
+        GlStateManager.rotate(180.0F, 0.0F, 1.0F, 0.0F);
+        this.playerRenderer.getMainModel().renderCape(0.0625F);
+        GlStateManager.popMatrix();
+    }
+
+    private double interpolate(double prev, double current, float partialTicks) {
+        return prev + (current - prev) * partialTicks;
+    }
+
+    private float interpolate(float prev, float current, float partialTicks) {
+        return prev + (current - prev) * partialTicks;
+    }
+
+    @Override
+    public boolean shouldCombineTextures() {
+        return false;
+    }
+}

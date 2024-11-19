@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <libraryInfos>
+    <libraryInfo home="C:\pleiades\2024-09\java\21" version="21.0.4"/>
     <libraryInfo home="C:\Program Files\Eclipse Adoptium\jdk-8.0.412.8-hotspot" version="1.8.0_412">
         <bootpath>
             <entry path="C:\Program Files\Eclipse Adoptium\jdk-8.0.412.8-hotspot\jre\lib\resources.jar"/>
@@ -17,6 +18,25 @@
         </extensionDirs>
         <endorsedDirs>
             <entry path="C:\Program Files\Eclipse Adoptium\jdk-8.0.412.8-hotspot\jre\lib\endorsed"/>
+        </endorsedDirs>
+    </libraryInfo>
+    <libraryInfo home="C:\Program Files\Eclipse Adoptium\jdk-8.0.432.6-hotspot" version="1.8.0_432">
+        <bootpath>
+            <entry path="C:\Program Files\Eclipse Adoptium\jdk-8.0.432.6-hotspot\jre\lib\resources.jar"/>
+            <entry path="C:\Program Files\Eclipse Adoptium\jdk-8.0.432.6-hotspot\jre\lib\rt.jar"/>
+            <entry path="C:\Program Files\Eclipse Adoptium\jdk-8.0.432.6-hotspot\jre\lib\sunrsasign.jar"/>
+            <entry path="C:\Program Files\Eclipse Adoptium\jdk-8.0.432.6-hotspot\jre\lib\jsse.jar"/>
+            <entry path="C:\Program Files\Eclipse Adoptium\jdk-8.0.432.6-hotspot\jre\lib\jce.jar"/>
+            <entry path="C:\Program Files\Eclipse Adoptium\jdk-8.0.432.6-hotspot\jre\lib\charsets.jar"/>
+            <entry path="C:\Program Files\Eclipse Adoptium\jdk-8.0.432.6-hotspot\jre\lib\jfr.jar"/>
+            <entry path="C:\Program Files\Eclipse Adoptium\jdk-8.0.432.6-hotspot\jre\classes"/>
+        </bootpath>
+        <extensionDirs>
+            <entry path="C:\Program Files\Eclipse Adoptium\jdk-8.0.432.6-hotspot\jre\lib\ext"/>
+            <entry path="C:\Windows\Sun\Java\lib\ext"/>
+        </extensionDirs>
+        <endorsedDirs>
+            <entry path="C:\Program Files\Eclipse Adoptium\jdk-8.0.432.6-hotspot\jre\lib\endorsed"/>
         </endorsedDirs>
     </libraryInfo>
     <libraryInfo home="C:\pleiades\2022-12\java\17" version="17.0.6"/>

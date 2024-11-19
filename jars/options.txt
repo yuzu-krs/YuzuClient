@@ -1,10 +1,10 @@
 invertYMouse:false
-mouseSensitivity:0.6549296
+mouseSensitivity:0.53521127
 fov:1.0
 gamma:1.0
 saturation:0.0
 renderDistance:8
-guiScale:3
+guiScale:0
 particles:0
 bobView:true
 anaglyph3d:false
@@ -64,7 +64,7 @@ key_key.back:31
 key_key.right:32
 key_key.jump:57
 key_key.sneak:42
-key_key.sprint:29
+key_key.sprint:-97
 key_key.drop:16
 key_key.inventory:18
 key_key.chat:20
@@ -93,7 +93,7 @@ key_Zoom:46
 key_PVP HUD:210
 key_Toggle Perspective:33
 soundCategory_master:1.0
-soundCategory_music:1.0
+soundCategory_music:0.0
 soundCategory_record:1.0
 soundCategory_weather:1.0
 soundCategory_block:1.0
