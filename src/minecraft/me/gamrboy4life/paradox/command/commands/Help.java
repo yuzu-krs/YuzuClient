@@ -21,7 +21,7 @@ public class Help extends Command{
 			Paradox.instance.moduleManager.addChatMessage("Sayコマンド  .[s|say] <任意の文字列>");
 			Paradox.instance.moduleManager.addChatMessage("Spamコマンド 使用例↓");
 			Paradox.instance.moduleManager.addChatMessage(".[c|chatspam] <数> <間隔(ミリ秒)> <任意の文字列>");
-			Paradox.instance.moduleManager.addChatMessage(".[ja|j] <任意の日本語>");
+			Paradox.instance.moduleManager.addChatMessage("翻訳コマンド  .[ja|j] <任意の日本語>");
 		}else{
 			Paradox.instance.moduleManager.addChatMessage("そのようなモデルはありません! [.help]");
 		}
